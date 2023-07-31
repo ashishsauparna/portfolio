@@ -46,17 +46,10 @@ export default function NavBar() {
             initial={{ y: '100%' }}
             animate={{ y: isOpen ? '0%' : '100%' }}
             transition={{ type: 'ease-in', duration: 0.4 }}
+            className='mobile_nav_view'
             style={{
-              position: 'fixed',
-              bottom: 0,
-              left: 0,
-              width: '100%',
-              height: '85vh',
-              background: 'rgba(255, 255, 255)',
-              padding: '20px',
-              borderTop:'1px solid #696567',
               display: isOpen ? 'block' : 'none',
-          }}>
+              }}>
             {/* Content of the animated container */}
             <div className='absolute bottom-0'>
             <ul className='grid relative bottom-16 gap-8 text-4xl'>

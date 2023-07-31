@@ -12,7 +12,7 @@ export default function FontSwap() {
 
 
   return (
-    <main className="w-2/5 flex min-h-screen flex-col items-left gap-8 mt-12"> 
+    <main className="lg:w-2/5 flex min-h-screen flex-col items-left gap-8 mt-12"> 
     <Link href="/"> &lt; Go Back</Link>
     <div className='flex flex-col gap-2'>
     <h1>Font Swap: Simplifying Font Changes for UI Designers in Figma</h1>
@@ -63,17 +63,7 @@ export default function FontSwap() {
 
     <div className='flex flex-col gap-2'>
       <h4 className='font-semibold'>More Projects</h4>
-        <div className='grid gap-4 grid-cols-2 auto-rows-auto w-full'>
-            <Link className='cell' href="https://ashishsauparna.notion.site/Salahkar-Budgeting-Savings-app-UX-Case-Study-April-2021-e85f2cae642e4be39ed12907641786fd">
-              <Image
-              src={salahkarImg}
-              alt="Picture of an man using font swap plugin on his macbook"
-              sizes="100vw"
-              className='project_image'/>
-              <h3 className='mt-4'>Salahkar - Budgeting & Savings app - UXCase Study (April 2021)</h3>
-              <p className='mt-1 text-gray-600'>The app teaches teens (ages 13-19) financial management and 
-              accounting terms for a successful future.</p>
-            </Link>
+        <div className='grid gap-4 md:grid-cols-1 lg:grid-cols-2 auto-rows-auto w-full'>
             <Link className='cell' href="https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94">
               <Image
               src={sanskritiImg}

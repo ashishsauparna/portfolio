@@ -253,6 +253,22 @@ footer{
   gap: 2.5rem; /* Equivalent to gap-4, adjust as needed */
 }
 
+.mobile_nav_view{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 85vh;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  )
+  rgb(var(--background-start-rgb));
+  padding: 20px;
+  border-top:1px solid #696567;
+}
+
 
 /* Default styles (applicable to all devices) */
 
