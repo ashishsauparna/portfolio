@@ -6,7 +6,7 @@ export default function Footer() {
 
 
   return (
-      <footer className='w-full mt-24 mb-8 mx-auto'>
+      <footer className='w-full mt-24 mb-24 mx-auto'>
         <ul className='footer_links'>
           <li>
             <Navigation name="Email" href="mailto:ashishsauparna@gmail.com"/>
