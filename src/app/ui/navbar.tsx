@@ -34,45 +34,44 @@ export default function NavBar() {
           </li>
         </ul>
       </nav>
-      <nav className='nav_mobile w-full mt-8 mx-auto flex'>
+      <nav className='nav_mobile w-full fixed pt-4 pb-2 flex'>
+        <div className='w-11/12 flex justify-between mx-auto'>
         <Image
           src={Icon}
           alt="Picture of an man using font swap plugin on his macbook"
           sizes="60vw"
           className='icon' />
+          <div className='z-10'>
           <Hamburger size={36} easing="ease-in" toggled={isOpen} toggle={setOpen} />
-          
-          <motion.div
-            initial={{ y: '100%' }}
-            animate={{ y: isOpen ? '0%' : '100%' }}
-            transition={{ type: 'ease-in', duration: 0.4 }}
-            className='mobile_nav_view'>
-            {/* Content of the animated container */}
-            <div className='absolute bottom-0 justify-between'>
-            <ul className='grid relative bottom-10 gap-8 text-4xl'>
-              <li className='mobile_ui'>
-                <Navigation name="Home" href="/" />
-              </li>
-              <li className='mobile_ui'>
-                <Navigation name="About Me" href="/about-me" />
-              </li>
-              <li className='mobile_ui'>
-                <Navigation name="My Reads" href="/my-reads" />
-              </li>
-              <li className='mobile_ui'>
-                <Navigation name="Figma Page" href="https://www.figma.com/@ashishsauparna" />
-              </li>
-              <li className='mobile_ui'>
-                <Navigation name="LinkedIn" href="https://www.linkedin.com/in/ashishsauparna/" />
-                <p className='text-xl ml-4 text-gray-500'>Connect with my UX journey</p>
-              </li>
-              <li className='mt-6 ml-1' onClick={() => setOpen(false)}>
-              <span className='flex items-center text-2xl'><Hamburger size={24} easing="ease-in" toggled={isOpen} toggle={setOpen} />
-              Close</span>
-              </li>
-            </ul>
-            </div>
-          </motion.div>
+          </div>
+            <motion.div
+              initial={{ y: '100%' }}
+              animate={{ y: isOpen ? '0%' : '100%' }}
+              transition={{ type: 'ease-in', duration: 0.4 }}
+              className='mobile_nav_view'>
+              {/* Content of the animated container */}
+              <div className='absolute bottom-0 justify-between'>
+              <ul className='grid relative bottom-10 gap-8 mb-8 text-4xl'>
+                <li className='mobile_ui'>
+                  <Navigation name="Home" href="/" />
+                </li>
+                <li className='mobile_ui'>
+                  <Navigation name="About Me" href="/about-me" />
+                </li>
+                <li className='mobile_ui'>
+                  <Navigation name="My Reads" href="/my-reads" />
+                </li>
+                <li className='mobile_ui'>
+                  <Navigation name="Figma Page" href="https://www.figma.com/@ashishsauparna" />
+                </li>
+                <li className='mobile_ui'>
+                  <Navigation name="LinkedIn" href="https://www.linkedin.com/in/ashishsauparna/" />
+                  <p className='text-xl ml-4 text-gray-500'>Connect with my UX journey</p>
+                </li>
+              </ul>
+              </div>
+            </motion.div>
+        </div>
       </nav>
       </>
   )
