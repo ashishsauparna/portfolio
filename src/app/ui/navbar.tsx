@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Navigation from './navigation';
-import Icon from '/public/as_logo.png';
+import Icon from '/public/as_logo.svg';
 import Image from 'next/image';
 import { Twirl as Hamburger } from 'hamburger-react';
 import { motion } from 'framer-motion';
@@ -40,10 +40,7 @@ export default function NavBar() {
           alt="Picture of an man using font swap plugin on his macbook"
           sizes="60vw"
           className='icon' />
-          <div className='menu_icon' onClick={()=> setOpen(true)}>
-          <Hamburger size={24} easing="ease-in" toggled={isOpen} toggle={setOpen} />
-          <span>Menu</span>
-          </div>
+          <Hamburger size={36} easing="ease-in" toggled={isOpen} toggle={setOpen} />
           
           <motion.div
             initial={{ y: '100%' }}
@@ -66,7 +63,7 @@ export default function NavBar() {
                 <Navigation name="Figma Page" href="https://www.figma.com/@ashishsauparna" />
               </li>
               <li className='mobile_ui'>
-                <Navigation name="LinkedIn" href="https://www.figma.com/@ashishsauparna" />
+                <Navigation name="LinkedIn" href="https://www.linkedin.com/in/ashishsauparna/" />
                 <p className='text-xl ml-4 text-gray-500'>Connect with my UX journey</p>
               </li>
               <li className='mt-6 ml-1' onClick={() => setOpen(false)}>
