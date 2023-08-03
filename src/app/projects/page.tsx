@@ -7,11 +7,17 @@ import Link from 'next/link';
 import fontSwapImg from '/public/fontswap_2.jpg';
 import salahkarImg from '/public/salahkar_3.png';
 import sanskritiImg from '/public/sanskriti_2.png';
+import Head from 'next/head';
 
 export default function Projects() {
 
     return (
         <main className="flex min-h-screen flex-col items-center"> 
+        <Head>
+          <title>
+            Projects: Ashish Sharma
+          </title>
+        </Head>
           <NavBar/>
           <div className='items-left mt-16'>
             <h1 className='md:w-5/6'>My Projects</h1>

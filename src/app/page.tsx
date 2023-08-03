@@ -32,7 +32,7 @@ export default function Home() {
 
         {!isProject ?
         <div className='project_grid'>
-          <Link className='cell' href="/projects/font-swap-figma-plugin">
+          <Link className='cell' target='_blank' href="/projects/font-swap-figma-plugin">
             <Image
             src={fontSwapImg}
             alt="Picture of an man using font swap plugin on his macbook"
@@ -43,7 +43,7 @@ export default function Home() {
             <p className='mt-1 text-gray-600'>Font Swap is a Figma plugin specifically designed to 
               address the font-changing challenge faced byUI designers.</p>
           </Link>
-          <Link className='cell' href="https://ashishsauparna.notion.site/Salahkar-Budgeting-Savings-app-UX-Case-Study-April-2021-e85f2cae642e4be39ed12907641786fd">
+          <Link className='cell' target='_blank' href="https://ashishsauparna.notion.site/Salahkar-Budgeting-Savings-app-UX-Case-Study-April-2021-e85f2cae642e4be39ed12907641786fd">
             <Image
             src={salahkarImg}
             alt="Picture of an man using font swap plugin on his macbook"
@@ -53,7 +53,7 @@ export default function Home() {
             <p className='mt-1 text-gray-600'>The app teaches teens (ages 13-19) financial management and 
             accounting terms for a successful future.</p>
           </Link>
-          <Link className='cell' href="https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94">
+          <Link className='cell' target='_blank' href="https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94">
             <Image
             src={sanskritiImg}
             alt="Picture of an man using font swap plugin on his macbook"
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
         :
         <div className='articles_grid'>
-          <Link className='cell' href="https://uxplanet.org/ux-case-study-font-swap-building-a-figma-plugin-e9ec6905f2e3">
+          <Link className='cell' target='_blank' href="https://uxplanet.org/ux-case-study-font-swap-building-a-figma-plugin-e9ec6905f2e3">
             <Image
             src={fontSwapArticle}
             alt="Picture of an man using font swap plugin on his macbook"
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
             <h3 className='mt-2'>UX Case Study: Font Swap -Building a Figma Plugin</h3>
           </Link>
-          <Link className='cell' href="https://medium.com/design-bootcamp/more-reasons-for-using-womp-3d-design-software-31c404d9f61d">
+          <Link className='cell' target='_blank' href="https://medium.com/design-bootcamp/more-reasons-for-using-womp-3d-design-software-31c404d9f61d">
             <Image
             src={wompArticle}
             alt="Picture of an man using font swap plugin on his macbook"
@@ -90,7 +90,7 @@ export default function Home() {
             </div>
             <h3 className='mt-2'>More reasons for using Womp 3D design software</h3>
           </Link>
-          <Link className='cell' href="https://medium.com/@ashishsauparna/how-to-document-a-ux-project-6cb5ffdce90a">
+          <Link className='cell' target='_blank' href="https://medium.com/@ashishsauparna/how-to-document-a-ux-project-6cb5ffdce90a">
             <Image
             src={documentArticle}
             alt="Picture of an man using font swap plugin on his macbook"
@@ -101,7 +101,7 @@ export default function Home() {
             </div>
             <h3 className='mt-2'>This is how I document my UX projects</h3>
           </Link>
-          <Link className='cell' href="https://medium.com/ux-planet/designing-a-user-friendly-data-table-d0f9763d2a83">
+          <Link className='cell' target='_blank' href="https://medium.com/ux-planet/designing-a-user-friendly-data-table-d0f9763d2a83">
             <Image
             src={dataTableArticle}
             alt="Picture of an man using font swap plugin on his macbook"

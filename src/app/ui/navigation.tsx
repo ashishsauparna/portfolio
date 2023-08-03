@@ -7,6 +7,7 @@ export default function Navigation(link: any) {
  
   return (
     <Link
+    target='_blank'
     className={isActive ? 'active' : 'default'}
     href={link.href}>
 

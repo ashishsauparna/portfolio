@@ -7,12 +7,18 @@ import pageBanner from '/public/font_swap_cover.png';
 import Link from 'next/link';
 import Button from '@/app/ui/button';
 import Footer from '@/app/ui/footer';
+import Head from 'next/head';
 
 export default function FontSwap() {
 
 
   return (
     <main className="lg:w-2/5 flex min-h-screen flex-col items-left gap-8 mt-12"> 
+    <Head>
+          <title>
+              Case Study: Font Swap figma plugin for UI designers
+          </title>
+    </Head>
     <Link href="/"> &lt; Go Back</Link>
     <div className='flex flex-col gap-2'>
     <h1>Font Swap: Simplifying Font Changes for UI Designers in Figma</h1>
@@ -24,7 +30,7 @@ export default function FontSwap() {
       src={pageBanner}
       alt="Picture of an man using font swap plugin on his macbook"
       sizes="100vw"
-      className='article_image'/>
+      className='object-fit w-full h-auto'/>
       
     <div className='flex flex-col gap-2'>
       <h4 className='font-semibold'>Problem</h4>
@@ -62,7 +68,7 @@ export default function FontSwap() {
     </div>
 
     <div className='flex flex-col gap-2'>
-      <h4 className='font-semibold'>More Projects</h4>
+      <h4 className='font-semibold mb-2'>View More Projects</h4>
         <div className='grid gap-4 md:grid-cols-1 lg:grid-cols-2 auto-rows-auto w-full'>
             <Link className='cell' href="https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94">
               <Image

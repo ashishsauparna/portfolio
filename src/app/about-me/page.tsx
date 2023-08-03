@@ -5,12 +5,16 @@ import Image from 'next/image';
 import AshishSharmaImg from '/public/ashish_sharma.png'
 import Footer from '../ui/footer';
 import Button from '../ui/button';
+import Head from 'next/head';
 
 export default function AboutMe() {
 
 
-  return (
+  return (  
     <main className="flex min-h-screen flex-col items-center justify-between"> 
+    <Head>
+      <title>Meet Ashish Sharma: UX Designer</title>
+    </Head>
       <NavBar/>
       <div className='intro_content mt-24'>
         <div>

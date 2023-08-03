@@ -23,7 +23,7 @@ export default function Footer() {
         </ul>
         <p className='text-gray-500 mt-4'>
         © Owned and developed by Ashish Sharma.<br/>
-        Last updated June 2023
+        Last updated August 2023
         </p>
       </footer>
   )
