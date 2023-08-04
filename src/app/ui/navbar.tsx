@@ -16,7 +16,7 @@ export default function NavBar() {
       <nav className='nav_web w-full mt-12 mx-auto flex'>
         <Image
           src={Icon}
-          alt="Picture of an man using font swap plugin on his macbook"
+          alt="AS Logo of the website in white text and blue background"
           sizes="60vw"
           className='icon' />
         <ul>
@@ -34,20 +34,20 @@ export default function NavBar() {
           </li>
         </ul>
       </nav>
-      <nav className='nav_mobile w-full fixed pt-4 pb-2 flex'>
-        <div className='w-11/12 flex justify-between mx-auto'>
+      <nav className='nav_mobile w-full fixed pt-2 pb-2 flex'>
+        <div className='w-11/12 flex justify-between mx-auto items-center'>
         <Image
           src={Icon}
-          alt="Picture of an man using font swap plugin on his macbook"
+          alt="AS Logo of the website in white text and blue background"
           sizes="60vw"
           className='icon' />
           <div className='z-10'>
-          <Hamburger size={36} easing="ease-in" toggled={isOpen} toggle={setOpen} />
+          <Hamburger size={36} duration={0.2} easing="ease-in" toggled={isOpen} toggle={setOpen} />
           </div>
             <motion.div
               initial={{ y: '100%' }}
               animate={{ y: isOpen ? '0%' : '100%' }}
-              transition={{ type: 'ease-in', duration: 0.4 }}
+              transition={{ type: 'ease-in', duration: 0.2 }}
               className='mobile_nav_view'>
               {/* Content of the animated container */}
               <div className='absolute bottom-0 justify-between'>
