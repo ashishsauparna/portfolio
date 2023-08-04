@@ -9,16 +9,16 @@ export default function Footer() {
       <footer className='w-full mt-24 mb-24 mx-auto'>
         <ul className='footer_links'>
           <li>
-            <Navigation name="Email" href="mailto:ashishsauparna@gmail.com"/>
+            <Navigation target="_blank" name="Email" href="mailto:ashishsauparna@gmail.com"/>
           </li>
           <li>
-            <Navigation name="Figma Community" href="https://www.figma.com/@ashishsauparna"/>
+            <Navigation target="_blank" name="Figma Community" href="https://www.figma.com/@ashishsauparna"/>
           </li>
           <li>
-            <Navigation name="Linkedin" href="https://www.linkedin.com/in/ashishsauparna/"/>
+            <Navigation target="_blank" name="Linkedin" href="https://www.linkedin.com/in/ashishsauparna/"/>
           </li>
           <li>
-            <Navigation name="Medium" href="https://medium.com/@ashishsauparna"/>
+            <Navigation target="_blank" name="Medium" href="https://medium.com/@ashishsauparna"/>
           </li>
         </ul>
         <p className='text-gray-500 mt-4'>
