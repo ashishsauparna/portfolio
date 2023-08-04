@@ -328,7 +328,6 @@ footer{
   }
   .nav_mobile{
     display: block;
-    border-bottom: 1px solid #cdc9cb;
     background-color: rgb(var(--background-start-rgb));
   }
   .icon{

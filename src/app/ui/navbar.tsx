@@ -42,7 +42,7 @@ export default function NavBar() {
           sizes="60vw"
           className='icon' />
           <div className='z-10'>
-          <Hamburger size={28} duration={0.3} easing="ease-in" toggled={isOpen} toggle={setOpen} />
+          <Hamburger size={30} duration={0.3} easing="ease-in" toggled={isOpen} toggle={setOpen} />
           </div>
             <motion.div
               initial={{ y: '100%' }}
