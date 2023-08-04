@@ -42,12 +42,12 @@ export default function NavBar() {
           sizes="60vw"
           className='icon' />
           <div className='z-10'>
-          <Hamburger size={36} duration={0.2} easing="ease-in" toggled={isOpen} toggle={setOpen} />
+          <Hamburger size={30} duration={0.3} easing="ease-in" toggled={isOpen} toggle={setOpen} />
           </div>
             <motion.div
               initial={{ y: '100%' }}
               animate={{ y: isOpen ? '0%' : '100%' }}
-              transition={{ type: 'ease-in', duration: 0.2 }}
+              transition={{ type: 'ease-in', duration: 0.3 }}
               className='mobile_nav_view'>
               {/* Content of the animated container */}
               <div className='absolute bottom-0 justify-between'>
