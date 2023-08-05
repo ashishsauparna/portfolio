@@ -1,20 +1,20 @@
-'use client'
-
 import NavBar from '../ui/navbar'
 import Image from 'next/image';
 import AshishSharmaImg from '/public/ashish_sharma.png'
 import Footer from '../ui/footer';
 import Button from '../ui/button';
-import Head from 'next/head';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title:'Meet Ashish Sharma',
+  description: 'Ashish Sharma, an Innovation Experience Designer at EY, Gurgaon, India. From studying chartered accountancy to UX design, join Ashish on this exciting journey of bridging people and technology.',
+}
 
 export default function AboutMe() {
 
 
   return (  
     <main className="flex min-h-screen flex-col items-center justify-between"> 
-    <Head>
-      <title>Meet Ashish Sharma: UX Designer</title>
-    </Head>
       <NavBar/>
       <div className='intro_content mt-24'>
         <div>

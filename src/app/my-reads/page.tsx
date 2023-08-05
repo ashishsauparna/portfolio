@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image';
 import Link from 'next/link';
 import LeanUXBook from '/public/books/lean_ux.png';
@@ -14,16 +12,21 @@ import WingsOfFireBook from '/public/books/wings_of_fire.png';
 import InnerBook from '/public/books/inner_eng.png';
 import NavBar from '../ui/navbar';
 import Footer from '../ui/footer';
-import Head from 'next/head';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'My Reads',
+  openGraph: {
+      title: 'My Reads',
+    },
+  description: 'I find solace in self-help and fiction books. They offer insights, hope, and a broader perspective on life. These reads have inspired personal growth, and I hope they can do the same for you.',
+}
 
 export default function Home() {
 
 
   return (
     <main className="flex min-h-screen flex-col items-center"> 
-    <Head>
-      <title>My Reads</title>
-    </Head>
       <NavBar/>
       <div className='items-left mt-24 w-full'>
 

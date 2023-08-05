@@ -5,6 +5,7 @@ import Footer from './ui/footer';
 import { useState } from 'react';
 import ProjectsData from './ui/projects';
 import ArticlesData from './ui/articles';
+import Head from 'next/head';
 
 export default function Home() {
 
@@ -13,6 +14,9 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center"> 
+    <Head>
+      <title>Ashish Sharma: UX Designer</title>
+    </Head>
       <NavBar/>
       <div className='items-left mt-16'>
         <h1 className='md:w-5/6'>Namaste! 

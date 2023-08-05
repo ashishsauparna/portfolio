@@ -1,24 +1,17 @@
 'use client'
 
 import Image from 'next/image';
-import salahkarImg from '/public/salahkar_3.png';
 import sanskritiImg from '/public/sanskriti_2.png';
 import pageBanner from '/public/font_swap_cover.png';
 import Link from 'next/link';
 import Button from '@/app/ui/button';
 import Footer from '@/app/ui/footer';
-import Head from 'next/head';
 
 export default function FontSwap() {
 
 
   return (
     <main className="lg:w-2/5 flex min-h-screen flex-col items-left gap-8 mt-12"> 
-    <Head>
-          <title>
-              Case Study: Font Swap figma plugin for UI designers
-          </title>
-    </Head>
     <Link href="/"> &lt; Go Back</Link>
     <div className='flex flex-col gap-2'>
     <h1>Font Swap: Simplifying Font Changes for UI Designers in Figma</h1>
