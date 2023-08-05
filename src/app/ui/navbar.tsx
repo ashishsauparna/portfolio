@@ -37,7 +37,7 @@ export default function NavBar() {
           </li>
         </ul>
       </nav>
-      <nav className='nav_mobile w-full fixed pt-2 pb-2 flex'>
+      <nav className='nav_mobile w-full pt-2 pb-2'>
         <div className='w-11/12 flex justify-between mx-auto items-center'>
           <Link href={'/'}>
           <Image
