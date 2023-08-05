@@ -16,7 +16,7 @@ export default function NavBar() {
       <nav className='nav_web w-full mt-12 mx-auto flex'>
         <Image
           src={Icon}
-          alt="AS Logo of the website in white text and blue background"
+          alt="A Logo of the website in white text and blue background. The logo says AS short for Ashish Sharma"
           sizes="60vw"
           className='icon' />
         <ul>
@@ -38,7 +38,7 @@ export default function NavBar() {
         <div className='w-11/12 flex justify-between mx-auto items-center'>
         <Image
           src={Icon}
-          alt="AS Logo of the website in white text and blue background"
+          alt="A Logo of the website in white text and blue background. The logo says AS short for Ashish Sharma"
           sizes="60vw"
           className='icon' />
           <div className='z-10'>

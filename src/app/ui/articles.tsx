@@ -15,7 +15,7 @@ export default function ArticlesData() {
           <Link className='cell' href="https://uxplanet.org/ux-case-study-font-swap-building-a-figma-plugin-e9ec6905f2e3">
             <Image
             src={fontSwapArticle}
-            alt="Picture of an man using font swap plugin on his macbook"
+            alt="Picture of an girl using font swap a figma plugin on her macbook"
             sizes="100vw"
             className='article_image'/>
             <div className='flex flex-row mt-4'>
@@ -27,7 +27,7 @@ export default function ArticlesData() {
           <Link className='cell' href="https://medium.com/design-bootcamp/more-reasons-for-using-womp-3d-design-software-31c404d9f61d">
             <Image
             src={wompArticle}
-            alt="Picture of an man using font swap plugin on his macbook"
+            alt="Picture of a blue 3d sofa/couch in a white background"
             sizes="100vw"
             className='article_image'/>
             <div className='flex flex-row mt-4'>
@@ -39,7 +39,7 @@ export default function ArticlesData() {
           <Link className='cell' href="https://medium.com/@ashishsauparna/how-to-document-a-ux-project-6cb5ffdce90a">
             <Image
             src={documentArticle}
-            alt="Picture of an man using font swap plugin on his macbook"
+            alt="Picture of a guy sitting on the roof top while using his laptop. The time is morning"
             sizes="100vw"
             className='article_image'/>
             <div className='flex flex-row mt-4'>
@@ -50,7 +50,7 @@ export default function ArticlesData() {
           <Link className='cell' href="https://medium.com/ux-planet/designing-a-user-friendly-data-table-d0f9763d2a83">
             <Image
             src={dataTableArticle}
-            alt="Picture of an man using font swap plugin on his macbook"
+            alt="vector art of a data table showing selection of rows. The data table is white in color with gery rectangle representing as text and light green color as selection. The background of the image is also green."
             sizes="100vw"
             className='article_image'/>
             <div className='flex flex-row mt-4'>

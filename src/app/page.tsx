@@ -1,16 +1,6 @@
 'use client'
 
 import NavBar from './ui/navbar';
-import Image from 'next/image';
-import fontSwapImg from '/public/fontswap_2.jpg';
-import salahkarImg from '/public/salahkar_3.png';
-import sanskritiImg from '/public/sanskriti_2.png';
-import rozgarImg from '/public/case_study_rozgar.jpg';
-import fontSwapArticle from '/public/fontswap.jpg';
-import documentArticle from '/public/documenting.jpg';
-import wompArticle from '/public/womp_3d.png';
-import dataTableArticle from '/public/data_table.png';
-import Link from 'next/link';
 import Footer from './ui/footer';
 import { useState } from 'react';
 import ProjectsData from './ui/projects';
