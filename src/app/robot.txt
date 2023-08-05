@@ -2,4 +2,4 @@ User-Agent: *
 Allow: /
 Disallow: /private/
 
-Sitemap: https:www.ashishsauparna.com/sitemap.xml
+Sitemap: https://www.ashishsauparna.in/sitemap.xml
