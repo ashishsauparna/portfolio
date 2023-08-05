@@ -30,7 +30,7 @@ export default function NavBar() {
             <Navigation name="My Reads" href="/my-reads" />
           </li>
           <li>
-            <Navigation name="Figma Page" href="https://www.figma.com/@ashishsauparna" />
+            <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" />
           </li>
         </ul>
       </nav>
@@ -63,6 +63,9 @@ export default function NavBar() {
                 </li>
                 <li className='mobile_ui'>
                   <Navigation name="Figma Page" href="https://www.figma.com/@ashishsauparna" />
+                </li>
+                <li>
+                  <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" />
                 </li>
                 <li className='mobile_ui'>
                   <Navigation name="LinkedIn" href="https://www.linkedin.com/in/ashishsauparna/" />
