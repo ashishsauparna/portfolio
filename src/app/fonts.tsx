@@ -1,4 +1,4 @@
-import { Albert_Sans, IBM_Plex_Mono, Space_Mono } from 'next/font/google'
+import { Albert_Sans, Alegreya, Nanum_Myeongjo, Roboto_Slab} from 'next/font/google'
  
 export const AlbertSans = Albert_Sans({
   subsets: ['latin'],
@@ -6,9 +6,15 @@ export const AlbertSans = Albert_Sans({
   display: 'swap',
 })
  
-export const SpaceMono = Space_Mono({
-    subsets: ['latin'],
-    variable: '--font-space-mono',
-    display: 'swap',
-    weight: '700'
+export const LibreBaskerville = Nanum_Myeongjo({
+  subsets: ['latin'],
+  variable: '--font-libre-baskerville',
+  display: 'swap',
+  weight:'800'
+})
+
+export const AlegreyaFont = Alegreya({
+  subsets: ['latin'],
+  variable: '--font-alegreya',
+  display: 'swap',
 })

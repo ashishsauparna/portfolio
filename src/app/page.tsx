@@ -20,7 +20,8 @@ export default function Home() {
       <NavBar/>
       <div className='items-left mt-16'>
         <h1 className='md:w-5/6'>Namaste! 
-        Welcome to the design & articles library of Ashish Sharma</h1>
+        Welcome to the <br/><span style={isProject ? {} : {}} onClick={()=> setProject(true)}>design</span> & 
+        <span style={!isProject ? {} : {}} onClick={()=> setProject(false)}> articles</span> library of Ashish Sharma</h1>
 
         <div className='flex flex-row gap-4 mt-16'>
           <h4 className={isProject ? 'tab_active' : 'tab_default'} onClick={()=> setProject(true)}>My Projects</h4>

@@ -20,7 +20,7 @@ export default function ArticlesData() {
             className='article_image'/>
             <div className='flex flex-row mt-4'>
               <h5>New</h5>
-              <h5 className='ml-2 text-gray-500'>3 mins read</h5>
+              <h5 className='ml-2 text-zinc-500 font-medium'>3 mins read</h5>
             </div>
             <h3 className='mt-2'>UX Case Study: Font Swap -Building a Figma Plugin</h3>
           </Link>
@@ -32,7 +32,7 @@ export default function ArticlesData() {
             className='article_image'/>
             <div className='flex flex-row mt-4'>
               <h5>New</h5>
-              <h5 className='ml-2 text-gray-500'>2 mins read</h5>
+              <h5 className='ml-2 text-zinc-500 font-medium'>2 mins read</h5>
             </div>
             <h3 className='mt-2'>More reasons for using Womp 3D design software</h3>
           </Link>
@@ -43,7 +43,7 @@ export default function ArticlesData() {
             sizes="100vw"
             className='article_image'/>
             <div className='flex flex-row mt-4'>
-              <h5 className='text-gray-500'>2 mins read</h5>
+              <h5 className='text-gray-500 font-medium'>2 mins read</h5>
             </div>
             <h3 className='mt-2'>This is how I document my UX projects</h3>
           </Link>
@@ -54,7 +54,7 @@ export default function ArticlesData() {
             sizes="100vw"
             className='article_image'/>
             <div className='flex flex-row mt-4'>
-              <h5 className='text-gray-500'>2 mins read</h5>
+              <h5 className='text-gray-500 font-medium'>2 mins read</h5>
             </div>
             <h3 className='mt-2'>5 ways to design a user-friendly data table</h3>
           </Link>
