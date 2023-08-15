@@ -280,6 +280,15 @@ footer{
   padding: 20px;
 }
 
+.pencile_mark{
+  position: absolute;
+  top: 10px;
+  z-index: -1;
+  height: 100px;
+  transform: rotate(-4deg);
+  width: auto;
+}
+
 
 /* Default styles (applicable to all devices) */
 
