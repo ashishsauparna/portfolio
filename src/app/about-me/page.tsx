@@ -26,7 +26,7 @@ export default function AboutMe() {
         <Button name="Connect on LinkedIn" href="https://www.linkedin.com/in/ashishsauparna/"/>
         </div>
         <div>
-        <h4>Hello again! I am Ashish Sharma, an Innovation Experience Designer at EY, Gurgaon, India.</h4><br/>
+        <h1>Hello again! I am Ashish Sharma, an Innovation Experience Designer at EY, Gurgaon, India.</h1><br/>
         <p>My journey has been a dynamic ride, from studying chartered accountancy to developing apps on the Google Play Store. One of my notable projects, Saral, where I aimed to revolutionize society by connecting people with local household service providers. 
           Along the way, I gained invaluable insights by working for a competitor in the service industry. <br/><br/>
           During the lockdown, I explored graphic and logo design, which ultimately led me to the world of UX/UI. It was a pivotal moment when I discovered my true calling in UX design.<br/><br/>

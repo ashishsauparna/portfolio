@@ -162,16 +162,16 @@ li .active:hover{
 }
 
 .tab_active{
-  border: 1px solid #696567;
-  border-radius: 200px;
-  padding: 0.2rem 1rem;
+  font-family: var(--font-libre-baskerville);
+  letter-spacing: 0.1 rem;
+  font-style: italic;
+  text-decoration: underline;
   cursor: pointer;
+  color: #2c49cd;
 }
 
 .tab_default{
-  border: 1px solid transparent;
-  border-radius: 200px;
-  padding: 0.2rem 1rem;
+  font-family: var(--font-alegreya);
   cursor: pointer;
 }
 
@@ -281,16 +281,42 @@ footer{
 }
 
 .pencile_mark{
+  fill:none;
+  stroke:#2c49cd;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width:24px;
+}
+
+.underline_css{
   position: absolute;
-  top: 10px;
-  z-index: -1;
-  height: 100px;
+  height: auto;
+  bottom: -4px;
+  left: 0;
   transform: rotate(-4deg);
+  width: 140px;
+}
+
+/* ImageHover.css */
+.hover-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+}
+
+.hover-image {
+  position: absolute;
+  top: -140px;
+  left: -40px;
+  opacity: 0;
+  height: 120px;
   width: auto;
 }
 
-
-/* Default styles (applicable to all devices) */
+.hover-link:hover .hover-image{
+  opacity: 1;
+}
 
 /* Tablet styles */
 @media screen and (max-width: 908px) {
