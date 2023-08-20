@@ -66,6 +66,7 @@ export default function ArticlesData() {
         <div className='articles_grid'>
           {imageInfo.map((image, index) => (
             <motion.div
+            key={index}
             variants={fadeInAnimation}
             initial="initial"
             whileInView="animate"
@@ -77,7 +78,6 @@ export default function ArticlesData() {
                 <Image
                 src={image.src}
                 alt={image.alt}
-                key={index}
                 sizes="100vw"
                 className='article_image'/>
                 <div className='flex flex-row mt-4'>

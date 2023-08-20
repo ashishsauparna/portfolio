@@ -71,6 +71,7 @@ export default function ProjectsData() {
     <div className='project_grid'>
     {imageInfo.map((image, index) => (
       <motion.div
+      key={index}
       variants={fadeInAnimation}
       initial="initial"
       whileInView="animate"
@@ -78,7 +79,7 @@ export default function ProjectsData() {
       viewport={{
         once:true
       }}>
-      <Link key={index} className='cell' href={image.href}>
+      <Link className='cell' href={image.href}>
         <Image
         src={image.src}
         alt={image.alt}
