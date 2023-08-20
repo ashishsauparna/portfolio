@@ -77,6 +77,7 @@ export default function ArticlesData() {
                 <Image
                 src={image.src}
                 alt={image.alt}
+                key={index}
                 sizes="100vw"
                 className='article_image'/>
                 <div className='flex flex-row mt-4'>

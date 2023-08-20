@@ -78,7 +78,7 @@ export default function ProjectsData() {
       viewport={{
         once:true
       }}>
-      <Link className='cell' href={image.href}>
+      <Link key={index} className='cell' href={image.href}>
         <Image
         src={image.src}
         alt={image.alt}
