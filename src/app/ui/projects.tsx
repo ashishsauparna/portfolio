@@ -59,7 +59,7 @@ export default function ProjectsData() {
       opacity:1,
       y:0,
       transition:{
-        delay:0.3 * index,
+        delay:0.2 * index,
         duration:0.4,
         type:"swing"
       }
