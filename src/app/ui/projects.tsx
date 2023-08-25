@@ -14,7 +14,7 @@ export default function ProjectsData() {
     {
       src: fontSwapImg,
       alt: "Picture of a man using font swap plugin on his MacBook",
-      href: "/projects/font-swap-figma-plugin",
+      href: "https://medium.com/ux-planet/ux-case-study-font-swap-building-a-figma-plugin-e9ec6905f2e3",
       new: "New Case Study",
       heading: "Font Swap: Switch mixed fonts",
       subHeading:"Font Swap is a Figma plugin specifically designed to address the font-changing challenge faced byUI designers."
