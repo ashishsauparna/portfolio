@@ -49,7 +49,7 @@ export default function Resume() {
       const fadeInAnimation = {
         initial:{
           opacity:0,
-          x:40
+          x:-40
         },
         animate: (index: number) => ({
           opacity:1,
@@ -83,13 +83,6 @@ export default function Resume() {
         <main className="flex min-h-screen flex-col items-center justify-between"> 
           <NavBar/>
           <div className='intro_content mt-40'>
-            <div>
-            <h2>Pronounced:</h2>
-            <h2>Aa - shee - sh</h2><br/>
-            <p>As a UX designer, I&apos;m passionate about the human element in my work. 
-              Uncovering intricate problems and crafting solutions through both qualitative and quantitative research fuels my drive. 
-              I&apos;d describe myself as a curious and devoted design professional who values diversity, inclusion, and collaboration.</p>
-            </div> 
             <motion.div
             variants={fadeInAnimation}
             initial="initial"
@@ -104,7 +97,14 @@ export default function Resume() {
               sizes="60vw"
               className='ashish_image'/>
             {/* <Button name="Connect on LinkedIn" href="https://www.linkedin.com/in/ashishsauparna/"/> */}
-            </motion.div>      
+            </motion.div>   
+            <div>
+            <h2>Pronounced:</h2>
+            <h2>Aa - shee - sh</h2><br/>
+            <p>As a UX designer, I&apos;m passionate about the human element in my work. 
+              Uncovering intricate problems and crafting solutions through both qualitative and quantitative research fuels my drive. 
+              I&apos;d describe myself as a curious and devoted design professional who values diversity, inclusion, and collaboration.</p>
+            </div>    
           </div>
           <div className='intro_content mt-24'>
             <div>
