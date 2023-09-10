@@ -8,7 +8,7 @@ export default function Navigation(link: any) {
   return (
     <Link
     target={link.target}
-    className={isActive ? 'active' : 'default'}
+    className={isActive ? 'active' : link.status}
     href={link.href}>
 
     {link.name}

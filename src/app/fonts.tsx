@@ -1,4 +1,6 @@
-import { Albert_Sans, Alegreya, Nanum_Myeongjo, Roboto_Slab} from 'next/font/google'
+import { Albert_Sans, Alegreya, Nanum_Myeongjo, Playfair_Display} from 'next/font/google'
+import localFont from 'next/font/local'
+
  
 export const AlbertSans = Albert_Sans({
   subsets: ['latin'],
@@ -6,15 +8,18 @@ export const AlbertSans = Albert_Sans({
   display: 'swap',
 })
  
-export const LibreBaskerville = Nanum_Myeongjo({
+export const LibreBaskerville = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-libre-baskerville',
-  display: 'swap',
-  weight:'800'
+  display: 'swap'
 })
 
 export const AlegreyaFont = Alegreya({
   subsets: ['latin'],
   variable: '--font-alegreya',
-  display: 'swap',
+})
+
+export const LocalFont = localFont({
+  src:'../../fonts/Butler-Light.woff',
+  variable: '--font-butler',
 })

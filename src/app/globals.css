@@ -5,7 +5,7 @@
 
 :root {
   --foreground-rgb: 28,28,28;     /* Black text color for light mode */
-  --background-start-rgb: 242, 246, 250;
+  --background-start-rgb: 254, 254, 254;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -19,6 +19,7 @@
 
 body {
   font-size: 1.1rem;
+  font-weight: 360;
   font-family: var(--font-albert-sans);
   color: var(--foreground-rgb); /* Text color based on light/dark mode */
   background: linear-gradient(
@@ -56,7 +57,7 @@ body {
 .book_grid{
   display: grid;
   column-gap: 1.2rem; /* Sets the gap between grid items to 16px/1rem */
-  row-gap: 2rem;
+  row-gap: 7rem;
   grid-template-columns: repeat(5, 1fr); /* Creates a 4-column grid layout */
   grid-auto-rows: auto; /* Automatically adjusts the row size based on content */
   width: 100%; /* Sets the width of the element to 100% of its container */
@@ -68,15 +69,24 @@ body {
 /*Defining headings*/
 h1{
   font-size: 3rem;
-  font-family: var(--font-alegreya);
+  font-family: var(--font-butler);
   margin-bottom: 1rem;
   line-height: 1.5(3rem);
 }
 
+h2{
+  font-size: 2.1rem;
+  font-family: var(--font-butler);
+  font-weight: 400;
+  line-height: 1.2(2.1rem);
+}
+
+
 h3{
   font-size: 1.2rem;
   letter-spacing: 0.2px;
-  font-family: var(--font-libre-baskerville);
+  font-family: var(--font-albert-sans);
+  font-weight: 500;
 }
 
 h3:hover{
@@ -88,9 +98,9 @@ h4{
 }
 
 h5{
-  font-size: 1rem;
-  font-weight: 600;
-  color: #1974a5;
+  font-family: var(--font-alegreya);
+  font-size: 1.2rem;
+  color: #2c49cd;
 }
 
 .ibm_italic{
@@ -139,7 +149,8 @@ li .default{
   border: 1px solid transparent;
   border-radius: 200px;
   padding: 0.2rem 1rem;
-  font-weight: 500;
+  font-weight: 460;
+  color: #7B797A;
 }
 
 a {
@@ -151,10 +162,10 @@ a:hover {
 }
 
 li .active{
-  border: 1px solid #696567;
+  border: 1px solid transparent;
   border-radius: 200px;
   padding: 0.4rem 1rem;
-  font-weight: 500;
+  font-weight: 460;
 }
 
 li .active:hover{
@@ -162,21 +173,18 @@ li .active:hover{
 }
 
 .tab_active{
-  font-family: var(--font-libre-baskerville);
-  letter-spacing: 0.1 rem;
-  font-style: italic;
-  text-decoration: underline;
+  position: relative;
   cursor: pointer;
   color: #2c49cd;
 }
 
 .tab_default{
-  font-family: var(--font-alegreya);
+  position: relative;
   cursor: pointer;
 }
 
 .tab_default:hover{
-  text-decoration: underline;
+  color: #2c49cd;
 }
 
 .button{
@@ -194,6 +202,7 @@ li .active:hover{
   display: inline-flex;
   flex-direction: column;
   text-decoration: none;
+  gap: 16px;
 }
 
 .cell:hover{
@@ -203,7 +212,7 @@ li .active:hover{
 .project_image{
   object-fit: cover;
   width: 100%;
-  height: 340px;
+  height: 420px;
   transition: transform 0.3s ease;
 }
 
@@ -212,10 +221,10 @@ li .active:hover{
 }
 
 .ashish_image{
-  object-fit: cover;
-  width: 100%;
-  height: 220px;
-  margin-bottom: 2rem;
+  object-fit: contain;
+  width: auto;
+  height: 420px;
+  align-items: start;
 }
 
 .article_image{
@@ -261,8 +270,10 @@ footer{
 
 .intro_content{
   display: grid;
+  width: 90%;
   grid-template-columns: 0.8fr 1fr;
-  gap: 2.5rem; /* Equivalent to gap-4, adjust as needed */
+  gap: 12rem; /* Equivalent to gap-4, adjust as needed */
+  align-items: end;
 }
 
 .mobile_nav_view{
@@ -282,18 +293,18 @@ footer{
 
 .pencile_mark{
   fill:none;
-  stroke:#2c49cd;
+  stroke:#2c4acd39;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width:24px;
+  stroke-width:40px;
 }
 
 .underline_css{
   position: absolute;
   height: auto;
-  bottom: -4px;
+  z-index: -1;
+  bottom: -18px;
   left: 0;
-  transform: rotate(-4deg);
   width: 140px;
 }
 
@@ -301,8 +312,10 @@ footer{
 .hover-link {
   position: relative;
   display: inline-block;
-  text-decoration: none;
+  text-decoration: none !important;
   color: #333;
+  border-bottom: none;
+  line-height: 3.4rem;
 }
 
 .hover-image {
@@ -335,8 +348,8 @@ footer{
 
   .project_grid {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem; /* Sets the gap between grid items to 16px/1rem */
-    row-gap: 5.5rem;
+    column-gap: 0.2rem; /* Sets the gap between grid items to 16px/1rem */
+    row-gap: 6rem;
   }
 
   .articles_grid{
@@ -389,6 +402,7 @@ footer{
     grid-template-columns: repeat(2, 1fr);
   }
   .intro_content{
+    width: 100%;
     grid-template-columns: 1fr;
   }
 }

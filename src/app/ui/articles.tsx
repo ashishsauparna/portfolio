@@ -84,7 +84,7 @@ export default function ArticlesData() {
                   <h5>{image.new}</h5>
                   <h5 className='ml-2 text-zinc-500 font-medium'>{image.readingTime}</h5>
                 </div>
-                <h3 className='mt-2'>{image.heading}</h3>
+                <h3>{image.heading}</h3>
               </Link>
             </motion.div>
           ))}

@@ -24,17 +24,17 @@ export default function NavBar() {
         </Link>
         <ul>
           <li>
-            <Navigation name="Home" href="/" />
+            <Navigation name="Home" href="/" status="default" />
           </li>
           <li>
-            <Navigation name="About Me" href="/about-me" />
+            <Navigation name="About Me" href="/about-me" status="default" />
           </li>
           <li>
-            <Navigation name="My Reads" href="/my-reads" />
+            <Navigation name="My Reads" href="/my-reads" status="default" />
           </li>
-          <li>
+          {/* <li>
             <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" />
-          </li>
+          </li> */}
         </ul>
       </nav>
       <nav className='nav_mobile w-full pt-2 pb-2'>
@@ -58,22 +58,22 @@ export default function NavBar() {
               <div className='absolute bottom-0 justify-between'>
               <ul className='grid relative bottom-10 gap-8 mb-8 text-4xl'>
                 <li className='mobile_ui'>
-                  <Navigation name="Home" href="/" />
+                  <Navigation name="Home" href="/" status="default" />
                 </li>
                 <li className='mobile_ui'>
-                  <Navigation name="About Me" href="/about-me" />
+                  <Navigation name="About Me" href="/about-me" status="default" />
                 </li>
                 <li className='mobile_ui'>
-                  <Navigation name="My Reads" href="/my-reads" />
+                  <Navigation name="My Reads" href="/my-reads" status="default" />
                 </li>
                 <li className='mobile_ui'>
-                  <Navigation name="Figma Page" href="https://www.figma.com/@ashishsauparna" />
+                  <Navigation name="Figma Page" href="https://www.figma.com/@ashishsauparna" status="active" />
                 </li>
                 <li>
-                  <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" />
+                  <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" status="active" />
                 </li>
                 <li className='mobile_ui'>
-                  <Navigation name="LinkedIn" href="https://www.linkedin.com/in/ashishsauparna/" />
+                  <Navigation name="LinkedIn" href="https://www.linkedin.com/in/ashishsauparna/" status="active" />
                   <p className='text-xl ml-4 text-gray-500'>Connect with my UX journey</p>
                 </li>
               </ul>
