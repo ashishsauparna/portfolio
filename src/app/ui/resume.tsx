@@ -86,9 +86,9 @@ export default function Resume() {
             <div>
             <h2>Pronounced:</h2>
             <h2>Aa - shee - sh</h2><br/>
-            <p>As a UX designer, I'm passionate about the human element in my work. 
+            <p>As a UX designer, I&apos;m passionate about the human element in my work. 
               Uncovering intricate problems and crafting solutions through both qualitative and quantitative research fuels my drive. 
-              I'd describe myself as a curious and devoted design professional who values diversity, inclusion, and collaboration.</p>
+              I&apos;d describe myself as a curious and devoted design professional who values diversity, inclusion, and collaboration.</p>
             </div> 
             <motion.div
             variants={fadeInAnimation}
@@ -112,9 +112,9 @@ export default function Resume() {
               <p className='leading-7'>User Research | Heuristic Analysis | Persona Development | Customer Journey Mapping | Interaction Design | Wire framing | Data Visualisation | Storytelling | Web Programming</p>
             </div>
             <div>
-            Outside of my 9-to-5 grind, you'll often find me deep into podcasts. I'm all about expanding my skillset, and recently, I've taken up card tricks as a new challenge.
+            Outside of my 9-to-5 grind, you&apos;ll often find me deep into podcasts. I&apos;m all about expanding my skillset, and recently, I&apos;ve taken up card tricks as a new challenge.
             <br/><br/>
-            Currently, I'm in a battle to stay faithful to my meditation routine and stepping up my social game – believe me, it's a real struggle!
+            Currently, I&apos;m in a battle to stay faithful to my meditation routine and stepping up my social game – believe me, it&apos;s a real struggle!
             </div>
           </div>
     
