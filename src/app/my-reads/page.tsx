@@ -1,17 +1,81 @@
 import { Metadata } from 'next';
 import Books from '../ui/books';
+import NavBar from '../ui/navbar';
+import Footer from '../ui/footer';
+import Image from 'next/image';
+import IgStory from 'public/books_story.png';
+import Inspirations from '../ui/inspirations';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'My Reads',
   openGraph: {
       title: 'My Reads',
     },
-  description: 'I find solace in self-help and fiction books. They offer insights, hope, and a broader perspective on life. These reads have inspired personal growth, and I hope they can do the same for you.',
+  description: 'Its a space of all my favourite books, podcasts, articles, people I am inspired by and things that I enjoy and love, that I hope you might like as well.',
 }
 
 export default function Home() {
 
+  const designInsp = [
+    {
+      name: "Land-book",
+      href: "https://land-book.com/"
+    },
+    {
+      name: "Awwwards",
+      href: "https://www.awwwards.com/"
+    },
+    {
+      name: "Lapa Ninja",
+      href: "https://www.lapa.ninja/"
+    },
+    {
+      name: "Godly",
+      href: "https://godly.website/"
+    },
+    {
+      name: "UI Sources",
+      href: "https://www.uisources.com/"
+    },
+    {
+      name: "Bookmarks.Design",
+      href: "https://www.bookmarks.design/"
+    },
+  ]
+
   return (
-    <Books/>
+    <main className="flex min-h-screen flex-col items-center"> 
+        <NavBar/>
+        <div className='intro_content mt-24'>
+          <div>
+            <Image src={IgStory} alt={'Book holding'}
+            style={{width:"100%", height:"auto"}}/>
+          </div>
+          <div>
+            <h2 className='mb-2'>What am I reading and listening to?</h2>
+            <p>Its a space of all my favourite books, podcasts, articles, people I am inspired by and things that I enjoy and love, that I hope you might like as well.</p>
+            
+            <h2 className='mb-2 mt-24'>The Books I still go back to</h2>
+            <Books/>
+          </div>
+        </div>
+
+        <div className='recomendation_content mt-24 w-full'>
+
+          <h2 className='mb-2'>My design inspiration</h2>
+          <div style={{display:"flex", alignItems:"flex-start", gap:"16px", flexWrap:"wrap"}}>
+            {
+              designInsp.map((data, index) => (
+                <Link key={index} href={data.href} style={{padding:"4px 16px", border:"1px solid #383838", fontSize:"1rem"}}>{data.name}</Link>
+              ))
+            }
+          </div>
+        
+          <h2 className='mb-2 mt-24'>People that inspire me</h2>
+          <Inspirations/>
+        </div>
+        <Footer/>
+      </main>    
   )
 }

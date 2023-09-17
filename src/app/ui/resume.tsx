@@ -4,13 +4,14 @@ import Image from 'next/image';
 import AshishSharmaImg from '/public/ashish_sharma.png'
 import Footer from '../ui/footer';
 import { animate, motion } from 'framer-motion';
+import Link from 'next/link';
 
 
 export default function Resume() {
     const experience = [
         {
           position: "UX Designer + Developer | July 2023 - Present",
-          company: "Figma Plugin - Font Swap",
+          company: "Figma Plugin - Font Swap (350+ users)",
         },
         {
           position: "UX Consultant | March 2022 - Present",
@@ -104,6 +105,7 @@ export default function Resume() {
             <p>As a UX designer, I&apos;m passionate about the human element in my work. 
               Uncovering intricate problems and crafting solutions through both qualitative and quantitative research fuels my drive. 
               I&apos;d describe myself as a curious and devoted design professional who values diversity, inclusion, and collaboration.</p>
+              <Link href={'https://drive.google.com/file/d/1wO1XHk-YPxpcah6PUr189qE3oKofoobH/view?usp=sharing'}><h3 className='underline-offset-8 mt-4 underline text-blue-700'>View full resume</h3></Link>
             </div>    
           </div>
           <div className='intro_content mt-24'>
@@ -133,7 +135,7 @@ export default function Resume() {
                 <br/><span className='text-gray-500'>{data.school}</span>
                 </p>
               ))}
-            </div>
+          </div>
           <div>
             <h2 className='mb-8'>Experience</h2>
               {experience.map((data, index) => (

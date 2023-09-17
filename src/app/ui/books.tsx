@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import LeanUXBook from '/public/books/lean_ux.png';
 import SprintBook from '/public/books/sprint.png';
 import PocketFullOfDo from '/public/books/pocket_full_of_do.png';
@@ -12,11 +13,16 @@ import CrushingItBook from '/public/books/crusshing_it.png';
 import FiveAmBook from '/public/books/5_am_club.png';
 import WingsOfFireBook from '/public/books/wings_of_fire.png';
 import InnerBook from '/public/books/inner_eng.png';
-import NavBar from '../ui/navbar';
-import Footer from '../ui/footer';
-import { motion } from 'framer-motion';
+import { animate, motion} from 'framer-motion';
 
 export default function Books() {
+
+  const [limit, setLimit] = useState(
+    {
+      start: 0,
+      end: 3
+    }
+  );
 
     const books = [
       {
@@ -80,28 +86,82 @@ export default function Books() {
         name:"Inner Engineering"
       },
     ]
+
+    const numberOfDivs = Math.round(books.length/3); // You can change this number as needed
+
+    //console.log(numberOfDivs)
+
+    const blankDivs = Array.from({ length: numberOfDivs }, (_, index) => (
+      <div 
+      key={index} onClick={() => handleDivClick(index)}
+      className={index > limit.start/3 ? "bg-zinc-300" : "bg-zinc-900"}
+      style={{width:"100%", height:"6px", cursor:"pointer"}}></div>
+    ));
+
+    const handleDivClick = (index:any) => {
+      setLimit(
+        {
+          start: (index+1)*3-3,
+          end: (index+1)*3
+        }
+      )
+      
+    }
+
+    const intervalDuration = 3000;
+
+    const changeBookAutomatically = () => {
+    setLimit((prevLimit) => {
+      if(prevLimit.end > (numberOfDivs*3)-1){
+        const nextStart = 0;
+        const nextEnd = 3;
+        return { start: nextStart, end: nextEnd };
+      }else{
+        const nextStart = prevLimit.start + 3;
+        const nextEnd = prevLimit.end + 3;
+        return { start: nextStart, end: nextEnd };
+      }
+      });
+    };
+
+    useEffect(() => {
+      // Start changing books automatically when the component mounts
+      const timerId = setInterval(changeBookAutomatically, intervalDuration);
+
+      // Clear the interval when the component unmounts
+      return () => clearInterval(timerId);
+
+    }, [books]);
+
     const fadeInAnimation = {
         initial:{
           opacity:0,
           y:40
         },
         animate: (index: number) => ({
-          opacity:1,
-          y:0,
+          opacity: 1,
+          y: 0,
           transition:{
             delay:0.2 * index,
             duration:0.4,
             type:"swing"
-          }
+          },
         }),
+        goback: (index: number) => ({
+          opacity: 0,
+          y: 40,
+          transition:{
+            delay:0.2 * index,
+            duration:0.4,
+            type:"swing"
+          },
+        })
       }
   
     return (
-      <main className="flex min-h-screen flex-col items-center"> 
-        <NavBar/>
-        <div className='items-left mt-24 w-full'>
-          <div className='book_grid mb-24'>
-            {books.map((book, index) => (
+      <div className='items-left w-full'>
+          <div className='book_grid'>
+            {books.slice(limit.start, limit.end).map((book, index) => (
               <motion.div
               key={index}
               variants={fadeInAnimation}
@@ -111,19 +171,20 @@ export default function Books() {
               viewport={{
                 once:true
               }}>
-              <Link className='cell' href={book.href}>
+              <Link href={book.href}>
                 <Image
                 src={book.src}
                 alt={book.alt}
                 sizes="100vw"
                 className='book_image'/>
-                <h3 className='mt-2'>{book.name}</h3>
               </Link>
               </motion.div>
             ))}
           </div>
+          <div className='mt-6 w-1/5' style={{display:"flex", gap:"4px"}}>
+            {blankDivs}
+          </div>
         </div>
-        <Footer/>
-      </main>
     )
   }
+  
