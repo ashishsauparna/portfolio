@@ -89,7 +89,7 @@ export default function Inspirations() {
               }}>
               <Link key={index} className='cell' href={data.href}>
                   <Image src={data.img} alt={data.alt} className='avatar_images'/>
-                  <h3>{data.name}</h3>
+                  <p>{data.name}</p>
                 </Link>
               </motion.div>
             ))}

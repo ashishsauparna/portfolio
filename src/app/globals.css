@@ -237,7 +237,8 @@ li .active:hover{
 .avatar_images{
   object-fit: cover;
   width: 100%;
-  height: 120px;
+  height: 114px;
+  transition: transform 0.3s ease;
 }
 
 .article_image{
@@ -247,6 +248,10 @@ li .active:hover{
   transition: transform 0.3s ease;
 }
 .article_image:hover{
+  transform: translateY(-4px);
+}
+
+.avatar_images:hover{
   transform: translateY(-4px);
 }
 
