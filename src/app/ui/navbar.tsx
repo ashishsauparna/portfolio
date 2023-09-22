@@ -57,23 +57,23 @@ export default function NavBar() {
               {/* Content of the animated container */}
               <div className='absolute bottom-0 justify-between'>
               <ul className='grid relative bottom-10 gap-8 mb-8 text-4xl'>
-                <li className='mobile_ui'>
-                  <Navigation name="Home" href="/" status="default" />
-                </li>
-                <li className='mobile_ui'>
-                  <Navigation name="About Me" href="/about-me" status="default" />
-                </li>
-                <li className='mobile_ui'>
-                  <Navigation name="My Reads" href="/my-reads" status="default" />
-                </li>
-                <li className='mobile_ui'>
-                  <Navigation name="Figma Page" href="https://www.figma.com/@ashishsauparna" status="active" />
+                <li>
+                  <Navigation name="Home" href="/" status="mobile_ui" />
                 </li>
                 <li>
-                  <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" status="active" />
+                  <Navigation name="About Me" href="/about-me" status="mobile_ui" />
                 </li>
-                <li className='mobile_ui'>
-                  <Navigation name="LinkedIn" href="https://www.linkedin.com/in/ashishsauparna/" status="active" />
+                <li>
+                  <Navigation name="My Reads" href="/my-reads" status="mobile_ui" />
+                </li>
+                <li>
+                  <Navigation name="Figma Page" href="https://www.figma.com/@ashishsauparna" status="mobile_ui" />
+                </li>
+                <li>
+                  <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" status="mobile_ui" />
+                </li>
+                <li>
+                  <Navigation name="LinkedIn" href="https://www.linkedin.com/in/ashishsauparna/" status="mobile_ui" />
                   <p className='text-xl ml-4 text-gray-500'>Connect with my UX journey</p>
                 </li>
               </ul>

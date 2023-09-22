@@ -93,7 +93,7 @@ h3{
   font-size: 1.2rem;
   letter-spacing: 0.2px;
   font-family: var(--font-albert-sans);
-  font-weight: 500;
+  font-weight: 460;
 }
 
 h3:hover{
@@ -173,9 +173,18 @@ li .active{
   border-radius: 200px;
   padding: 0.4rem 1rem;
   font-weight: 460;
+  text-decoration: underline;
 }
 
 li .active:hover{
+  text-decoration: underline;
+}
+
+li .mobile_ui{
+  border: 1px solid transparent;
+  border-radius: 200px;
+  padding: 0.4rem 1rem;
+  font-weight: 460;
   text-decoration: none;
 }
 
