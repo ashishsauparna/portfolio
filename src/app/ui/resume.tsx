@@ -11,7 +11,7 @@ export default function Resume() {
     const experience = [
         {
           position: "UX Designer + Developer | July 2023 - Present",
-          company: "Figma Plugin - Font Swap (350+ users)",
+          company: "Figma Plugin - Font Swap (500+ users)",
         },
         {
           position: "UX Consultant | March 2022 - Present",
@@ -105,7 +105,7 @@ export default function Resume() {
             <p>As a UX designer, I&apos;m passionate about the human element in my work. 
               Uncovering intricate problems and crafting solutions through both qualitative and quantitative research fuels my drive. 
               I&apos;d describe myself as a curious and devoted design professional who values diversity, inclusion, and collaboration.</p>
-              <Link href={'https://drive.google.com/file/d/1wO1XHk-YPxpcah6PUr189qE3oKofoobH/view?usp=sharing'}><h3 className='underline-offset-8 mt-4 underline text-blue-700'>View full resume</h3></Link>
+              <Link href={'https://drive.google.com/file/d/1RkEjmaiJ0BmOuZXsXyYsc1isZ5kaSDh4/view?usp=sharing'}><h3 className='underline-offset-8 mt-4 underline text-blue-700'>View full resume</h3></Link>
             </div>    
           </div>
           <div className='intro_content mt-24'>
