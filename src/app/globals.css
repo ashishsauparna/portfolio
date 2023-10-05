@@ -188,6 +188,10 @@ li .mobile_ui{
   text-decoration: none;
 }
 
+li .mobile_ui:hover{
+  text-decoration: underline;
+}
+
 .tab_active{
   position: relative;
   cursor: pointer;

@@ -10,19 +10,19 @@ export default function Footer() {
 
         <ul className='footer_links mb-4'>
           <li>
-          <Navigation target="_blank" name="ashishsauparna@gmail.com" href="mailto:ashishsauparna@gmail.com" status="active"/>
+          <Navigation target="_blank" name="ashishsauparna@gmail.com" href="mailto:ashishsauparna@gmail.com" status="mobile_ui"/>
           </li>
         </ul>
         
         <ul className='footer_links'>
           <li>
-            <Navigation target="_blank" name="Figma Community" href="https://www.figma.com/@ashishsauparna" status="active"/>
+            <Navigation target="_blank" name="Figma Community" href="https://www.figma.com/@ashishsauparna" status="mobile_ui"/>
           </li>
           <li>
-            <Navigation target="_blank" name="Linkedin" href="https://www.linkedin.com/in/ashishsauparna/" status="active"/>
+            <Navigation target="_blank" name="Linkedin" href="https://www.linkedin.com/in/ashishsauparna/" status="mobile_ui"/>
           </li>
           <li>
-            <Navigation target="_blank" name="Medium" href="https://medium.com/@ashishsauparna" status="active"/>
+            <Navigation target="_blank" name="Medium" href="https://medium.com/@ashishsauparna" status="mobile_ui"/>
           </li>
         </ul>
         
