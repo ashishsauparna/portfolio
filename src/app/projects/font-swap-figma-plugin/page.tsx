@@ -6,12 +6,25 @@ import pageBanner from '/public/font_swap_cover.png';
 import Link from 'next/link';
 import Button from '@/app/ui/button';
 import Footer from '@/app/ui/footer';
+import Script from 'next/script';
 
 export default function FontSwap() {
 
 
   return (
     <main className="lg:w-2/5 flex min-h-screen flex-col items-left gap-8 mt-12"> 
+    
+    <Script src="https://www.googletagmanager.com/gtag/js?id=G-2N9F9N8KHK" />
+    <Script id="google-analytics">
+      {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2N9F9N8KHK');
+      `}
+    </Script>
+
     <Link href="/"> &lt; Go Back</Link>
     <div className='flex flex-col gap-2'>
     <h1>Font Swap: Simplifying Font Changes for UI Designers in Figma</h1>

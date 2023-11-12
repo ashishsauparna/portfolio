@@ -34,6 +34,16 @@ export default function Home() {
     <Head>
       <title>Ashish Sharma: UX Designer</title>
     </Head>
+    <Script src="https://www.googletagmanager.com/gtag/js?id=G-2N9F9N8KHK" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-2N9F9N8KHK');
+        `}
+      </Script>
       <NavBar/>
       <div className='items-left mt-32'>
         <h1 className='md:w-5/6 mb-24'>Namaste! 

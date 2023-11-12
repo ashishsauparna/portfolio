@@ -6,6 +6,7 @@ import Image from 'next/image';
 import IgStory from 'public/books_story.png';
 import Inspirations from '../ui/inspirations';
 import Link from 'next/link';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'My Reads',
@@ -46,6 +47,16 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center"> 
+    <Script src="https://www.googletagmanager.com/gtag/js?id=G-2N9F9N8KHK" />
+    <Script id="google-analytics">
+      {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2N9F9N8KHK');
+      `}
+    </Script>
         <NavBar/>
         <div className='intro_content mt-24'>
           <div>

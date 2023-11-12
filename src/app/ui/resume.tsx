@@ -5,6 +5,7 @@ import AshishSharmaImg from '/public/ashish_sharma.png'
 import Footer from '../ui/footer';
 import { animate, motion } from 'framer-motion';
 import Link from 'next/link';
+import Script from 'next/script';
 
 
 export default function Resume() {
@@ -82,6 +83,16 @@ export default function Resume() {
     
       return (  
         <main className="flex min-h-screen flex-col items-center justify-between"> 
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-2N9F9N8KHK" />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-2N9F9N8KHK');
+          `}
+        </Script>
           <NavBar/>
           <div className='intro_content mt-40'>
             <motion.div
