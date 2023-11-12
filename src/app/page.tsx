@@ -10,6 +10,7 @@ import Link from 'next/link';
 import YourSVG from './ui/underline_svg';
 import Image from 'next/image';
 import AshishSharmaImg from '/public/ashish_sharma.png';
+import Script from 'next/script';
 
 export default function Home() {
 
@@ -29,7 +30,7 @@ export default function Home() {
 
 
   return (
-    <main className="flex min-h-screen flex-col items-center"> 
+    <main className="flex min-h-screen flex-col items-center">
     <Head>
       <title>Ashish Sharma: UX Designer</title>
     </Head>
