@@ -50,7 +50,7 @@ export default function Home() {
         <div className='mb-24 hero_grid'>
           <div className='md:w-5/6'>
             <h1>Namaste! 
-            I'm&nbsp;
+            I&apos;m&nbsp;
             {/* <span className={isProject ? "tab_active" : "tab_default"} onClick={()=> setProject(true)}>
             {isProject ?
             <div className='underline_css'>
