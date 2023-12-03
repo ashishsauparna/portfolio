@@ -36,24 +36,7 @@ export default function ProjectsData() {
       heading: "Rozgar: Helps you look for blue collar jobs",
       subHeading:"This Case study includes Research and understanding of \
       the online and offline market of Blue collar workers."
-    },
-    {
-      src: salahkarImg,
-      alt: "Picture of a laptop and mobile showing the salahkar app",
-      href: "https://ashishsauparna.notion.site/Salahkar-Budgeting-Savings-app-UX-Case-Study-April-2021-e85f2cae642e4be39ed12907641786fd",
-      new: "UX Case Study - April 2021",
-      heading: "Salahkar: Budgeting & Savings app",
-      subHeading:"The app teaches teens (ages 13-19) financial management and \
-      accounting terms for a successful future."
-    },
-    {
-      src: sanskritiImg,
-      alt: "Picture of an girl using sanskriti app on her mobile phone. She is sitting inside her car",
-      href: "https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94",
-      new: "UX Case Study - March 2021",
-      heading: "Sanskriti App: Discover artifacts and their museums",
-      subHeading:"The app is designed to sync well with students and the people exploring specific timelines."
-    },
+    }
     // Add more objects as needed
   ];
   

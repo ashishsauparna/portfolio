@@ -43,6 +43,15 @@ body {
   margin-bottom: 24px; /* Sets bottom margin to 24 units */
 }
 
+.hero_grid {
+  display: grid;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  column-gap: 8rem;
+  grid-template-columns: 1fr 1fr; /* Creates a 4-column grid layout */
+}
+
 .articles_grid {
   display: grid;
   column-gap: 1.2rem; /* Sets the gap between grid items to 16px/1rem */
@@ -75,7 +84,7 @@ body {
 
 /*Defining headings*/
 h1{
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-family: var(--font-butler);
   margin-bottom: 1rem;
   line-height: 1.5(3rem);
@@ -250,7 +259,8 @@ li .mobile_ui:hover{
 .avatar_images{
   object-fit: cover;
   width: 100%;
-  height: 114px;
+  height: 100%;
+  border-radius: 100px;
   transition: transform 0.3s ease;
 }
 
@@ -340,11 +350,9 @@ footer{
 }
 
 .underline_css{
-  position: absolute;
   height: auto;
-  z-index: -1;
-  bottom: -18px;
-  left: 0;
+  margin-top: 2px;
+  top: 0;
   width: 140px;
 }
 

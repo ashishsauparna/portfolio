@@ -15,7 +15,7 @@ export default function ArticlesData() {
       src: fontSwapArticle,
       alt: "Picture of an girl using font swap a figma plugin on her macbook",
       href: "https://uxplanet.org/ux-case-study-font-swap-building-a-figma-plugin-e9ec6905f2e3",
-      new: "New Article",
+      new: `New •`,
       readingTime: "3 mins read",
       heading:"UX Case Study: Font Swap -Building a Figma Plugin"
     },
@@ -23,7 +23,7 @@ export default function ArticlesData() {
       src: wompArticle,
       alt: "Picture of an girl using font swap a figma plugin on her macbook",
       href: "https://medium.com/design-bootcamp/more-reasons-for-using-womp-3d-design-software-31c404d9f61d",
-      new: "New Article",
+      new: "New •",
       readingTime: "2 mins read",
       heading:"More reasons for using Womp 3D design software"
     },

@@ -30,6 +30,9 @@ export default function NavBar() {
             <Navigation name="About Me" href="/about-me" status="default" />
           </li>
           <li>
+            <Navigation name="My Articles" href="/articles" status="default" />
+          </li>
+          <li>
             <Navigation name="My Reads" href="/my-reads" status="default" />
           </li>
           {/* <li>
