@@ -89,7 +89,7 @@ export default function Home() {
               
             </Link>
           </div>
-          <div>
+          <div className='hero_image'>
           <Link href={'https://www.figma.com/community/plugin/1246737736127570810/font-swap'} target='_blank'>
           <Image
               src={FontSwapBanner}

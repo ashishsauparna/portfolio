@@ -459,6 +459,12 @@ footer{
     width: 100%;
     grid-template-columns: 1fr;
   }
+  .hero_image{
+    display: none;
+  }
+  .hero_grid{
+    grid-template-columns: 1fr;
+  }
   .home_content{
     width: 100%;
   }
