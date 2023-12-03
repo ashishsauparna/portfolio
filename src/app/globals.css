@@ -409,6 +409,12 @@ footer{
   .avatar_grid{
     grid-template-columns: repeat(2, 1fr);
   }
+  .hero_image{
+    display: none;
+  }
+  .hero_grid{
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Mobile styles */
