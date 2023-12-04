@@ -12,7 +12,7 @@ export default function Resume() {
     const experience = [
         {
           position: "UX Designer + Developer | July 2023 - Present",
-          company: "Figma Plugin - Font Swap (500+ users)",
+          company: "Figma Plugin - Font Swap (2.5K+ users)",
         },
         {
           position: "UX Consultant | March 2022 - Present",
