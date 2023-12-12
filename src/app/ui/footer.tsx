@@ -27,8 +27,7 @@ export default function Footer() {
         </ul>
         
         <p className='text-gray-500 mt-4 leading-[2rem]'>
-        © Designed and developed by Ashish Sharma<br/>
-        Last updated August 2023
+        © Assembled with pixels by Ashish Sharma 2023
         </p>
       </footer>
   )

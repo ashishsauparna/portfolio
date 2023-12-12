@@ -1,9 +1,9 @@
 import NavBar from '../ui/navbar';
 import Footer from '../ui/footer';
-import ProjectsData from '../ui/projects';
 import { Metadata } from 'next';
 import Script from 'next/script';
 import ArticlesData from '../ui/articles';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Projects | Ashish Sharma',
@@ -29,7 +29,7 @@ export default function Articles() {
         </Script>
           <NavBar/>
           <div className='items-left mt-32'>
-            <h1 className='md:w-5/6'>My Articles</h1>
+            <p style={{fontWeight:"500"}}>Check out my Articles on <Link href="https://ashishsauparna.medium.com">Medium</Link> 🔥 </p>
             <ArticlesData/>
           </div>
           <Footer/>

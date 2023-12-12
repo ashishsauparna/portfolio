@@ -3,8 +3,6 @@
 import Image from 'next/image';
 import fontSwapImg from '/public/fontswap_2.jpg';
 import delhiveryPoster from '/public/Outside_in_poster.png'
-import salahkarImg from '/public/salahkar_3.png';
-import sanskritiImg from '/public/sanskriti_2.png';
 import rozgarImg from '/public/case_study_rozgar.jpg';
 import Link from 'next/link';
 import { animate, motion } from 'framer-motion';
@@ -16,15 +14,15 @@ export default function ProjectsData() {
       src: delhiveryPoster,
       alt: "Vector image of 2 folders with the label of outside-in analysis",
       href: "https://miro.com/app/board/uXjVMrWRtKY=/?share_link_id=492406900633",
-      new: "Work in Progress...",
-      heading: "Outside-In Analysis: Delhivery",
-      subHeading:"Conducting an outside-in analysis of one of the popular courier handeling brand in India."
+      new: "WIP: December 2023",
+      heading: "Conducting an Outside-In Analysis",
+      subHeading:"Outside-in analysis can deepen the understanding of product and customer experiences. Here's my insight from five sessions so far."
     },
     {
       src: fontSwapImg,
       alt: "Picture of a man using font swap plugin on his MacBook",
       href: "https://medium.com/ux-planet/ux-case-study-font-swap-building-a-figma-plugin-e9ec6905f2e3",
-      new: "Product Case Study",
+      new: "Product Case Study - June 2023",
       heading: "Font Swap: Switch mixed fonts",
       subHeading:"Font Swap is a Figma plugin specifically designed to address the font-changing challenge faced by UI designers."
     },

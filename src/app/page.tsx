@@ -12,6 +12,7 @@ import Image from 'next/image';
 import AshishSharmaImg from '/public/ashish_sharma.png';
 import FontSwapBanner from '/public/font_swap_banner.png';
 import Script from 'next/script';
+import ArrowForwardIcon from '/public/arrow_icon.svg';
 
 export default function Home() {
 
@@ -77,16 +78,19 @@ export default function Home() {
             </Link> </h1>
 
             <p>
-            By day, I work as a UX Consultant at EY, using design to bring accessiblity to digital life. <br/><br/>
+            By day ☀️, I work as a UX Consultant at EY, using design to bring accessiblity to digital life. <br/><br/>
             By the weekend, I&apos;m helping the community. I&apos;m developing a Figma plugin that lets users switch 
             fonts without compromising on font styles.
             </p>
             <br/> 
             <Link href={'https://www.figma.com/community/plugin/1246737736127570810/font-swap'} target='_blank' 
-            className='underline-offset-4 mt-4 underline text-blue-700'>
-              <h3>Try Font Swap Now!
-              </h3>
-              
+            className='button'>
+             Try Font Swap
+             <Image
+              src={ArrowForwardIcon}
+              alt="Black and white portait of Ashish Sharma"
+              sizes="100vw"
+              className='arrow_icon'/>
             </Link>
           </div>
           <div className='hero_image'>
@@ -95,7 +99,7 @@ export default function Home() {
               src={FontSwapBanner}
               alt="Black and white portait of Ashish Sharma"
               sizes="100vw"
-              className='project-image'/>
+              className='project_banner_1'/>
           </Link>
           </div>
         </div>
@@ -103,12 +107,14 @@ export default function Home() {
           <h4 className={isProject ? 'tab_active' : 'tab_default'} onClick={()=> setProject(true)}>My Projects</h4>
           <h4 className={!isProject ? 'tab_active' : 'tab_default'} onClick={()=> setProject(false)}>Articles</h4>
         </div> */}
-
-        {isProject ?
-        <ProjectsData/>
-        :
-        <ArticlesData/>
-        }
+        <div>
+          <p style={{fontWeight:"500", marginBottom:"-18px"}}>Special Projects ✨</p>
+          {isProject ?
+          <ProjectsData/>
+          :
+          <ArticlesData/>
+          }
+        </div>
       </div>
       <Footer/>
     </main>
