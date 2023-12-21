@@ -7,7 +7,6 @@ import ProjectsData from './ui/projects';
 import ArticlesData from './ui/articles';
 import Head from 'next/head';
 import Link from 'next/link';
-import YourSVG from './ui/underline_svg';
 import Image from 'next/image';
 import AshishSharmaImg from '/public/ashish_sharma.png';
 import FontSwapBanner from '/public/font_swap_banner.png';

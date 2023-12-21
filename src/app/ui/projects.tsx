@@ -13,7 +13,7 @@ export default function ProjectsData() {
     {
       src: delhiveryPoster,
       alt: "Vector image of 2 folders with the label of outside-in analysis",
-      href: "https://miro.com/app/board/uXjVMrWRtKY=/?share_link_id=492406900633",
+      href: "https://medium.com/@ashishsauparna/strategic-ux-insights-the-what-and-how-of-outside-in-analysis-d33bc0ba2905",
       new: "WIP: December 2023",
       heading: "Conducting an Outside-In Analysis",
       subHeading:"Outside-in analysis can deepen the understanding of product and customer experiences. Here's my insight from five sessions so far."
