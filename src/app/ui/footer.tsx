@@ -18,8 +18,14 @@ export default function Footer() {
           <li>
             <Navigation target="_blank" name="Figma Community" href="https://www.figma.com/@ashishsauparna" status="mobile_ui"/>
           </li>
+          <li className='dash'>
+            /
+          </li>
           <li>
             <Navigation target="_blank" name="Linkedin" href="https://www.linkedin.com/in/ashishsauparna/" status="mobile_ui"/>
+          </li>
+          <li className='dash'>
+            /
           </li>
           <li>
             <Navigation target="_blank" name="Medium" href="https://medium.com/@ashishsauparna" status="mobile_ui"/>

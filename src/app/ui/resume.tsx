@@ -117,7 +117,7 @@ export default function Resume() {
               Uncovering intricate problems and crafting solutions through both qualitative and quantitative research fuels my drive. 
               I&apos;d describe myself as a curious and devoted design professional who values diversity, inclusion, and collaboration.</p>
               <Link href={'https://drive.google.com/file/d/1hTt53MEkU1F4BCmVPvfNnZA9BOeZRc-z/view?usp=share_link'}>
-                <h3 className='underline-offset-4 mt-4 underline text-blue-700'>View my full resume</h3></Link>
+                <h3 className='underline-offset-4 mt-4 underline text-blue-700'>View resume</h3></Link>
             </div>    
           </div>
           <div className='intro_content mt-24'>

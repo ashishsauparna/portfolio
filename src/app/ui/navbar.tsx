@@ -14,7 +14,7 @@ export default function NavBar() {
 
   return (
       <>
-      <nav className='nav_web w-full mt-12 mx-auto flex'>
+      <nav className='nav_web w-full mt-8 mx-auto'>
         <Link href={'/'}>
         <Image
           src={Icon}
@@ -22,15 +22,24 @@ export default function NavBar() {
           sizes="60vw"
           className='icon' />
         </Link>
-        <ul>
+        <ul className='nav_links'>
           <li>
             <Navigation name="Home" href="/" status="default" />
+          </li>
+          <li>
+            /
           </li>
           <li>
             <Navigation name="About Me" href="/about-me" status="default" />
           </li>
           <li>
+            /
+          </li>
+          <li>
             <Navigation name="My Articles" href="/articles" status="default" />
+          </li>
+          <li>
+            /
           </li>
           <li>
             <Navigation name="My Reads" href="/my-reads" status="default" />

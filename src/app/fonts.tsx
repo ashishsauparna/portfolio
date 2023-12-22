@@ -1,4 +1,4 @@
-import { Albert_Sans, Alegreya, Nanum_Myeongjo, Playfair_Display} from 'next/font/google'
+import { Albert_Sans, Alegreya, Nanum_Myeongjo, Playfair_Display, Space_Grotesk} from 'next/font/google'
 import localFont from 'next/font/local'
 
  
@@ -19,7 +19,8 @@ export const AlegreyaFont = Alegreya({
   variable: '--font-alegreya',
 })
 
-export const LocalFont = localFont({
-  src:'../../fonts/Butler-Light.woff',
+export const LocalFont = Space_Grotesk({
+  subsets: ['latin'],
   variable: '--font-butler',
+  display: 'swap'
 })

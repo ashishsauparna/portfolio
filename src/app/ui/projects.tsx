@@ -6,6 +6,7 @@ import delhiveryPoster from '/public/Outside_in_poster.png'
 import rozgarImg from '/public/case_study_rozgar.jpg';
 import Link from 'next/link';
 import { animate, motion } from 'framer-motion';
+import Button from './button';
 
 export default function ProjectsData() {
 
@@ -68,18 +69,19 @@ export default function ProjectsData() {
       viewport={{
         once:true
       }}>
-      <Link className='cell' href={image.href}>
+      <div className='cell'>
         <Image
         src={image.src}
         alt={image.alt}
         sizes="100vw"
         className='project_image'/>
-        <div>
+        <div className='pr-8'>
         <h5>{image.new}</h5>
         <h3>{image.heading}</h3>
+        <p className='text-zinc-600 mt-2.5'>{image.subHeading}</p>
+        <div className='mt-4'> <Button href={image.href} name="View"/> </div>
         </div>
-        <p className='text-zinc-600 -mt-2.5'>{image.subHeading}</p>
-      </Link>
+      </div>
       </motion.div>
     ))}
   </div>

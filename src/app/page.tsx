@@ -9,9 +9,11 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import AshishSharmaImg from '/public/ashish_sharma.png';
-import FontSwapBanner from '/public/font_swap_banner.png';
+import FontSwapBanner from '/public/font_swap_banner.svg';
+import HeroBackground from '/public/hero_background.svg';
 import Script from 'next/script';
-import ArrowForwardIcon from '/public/arrow_icon.svg';
+import Button from './ui/button';
+import { motion } from 'framer-motion';
 
 export default function Home() {
 
@@ -29,6 +31,21 @@ export default function Home() {
     setPosition({ x: 0, y: 0 });
   };
 
+  const fadeInAnimation = {
+    initial:{
+      opacity:0,
+      y:20
+    },
+    animate: () => ({
+      opacity:1,
+      y:0,
+      transition:{
+        delay:0,
+        duration:0.4,
+        type:"swing"
+      }
+    }),
+  }
 
   return (
     <main className="flex min-h-screen flex-col items-center">
@@ -47,9 +64,14 @@ export default function Home() {
       </Script>
       <NavBar/>
       <div className='items-left mt-32 home_content'>
-        <div className='mb-24 hero_grid'>
-          <div className='md:w-5/6'>
-            <h1>Namaste! 
+        <Image
+          src={HeroBackground}
+          alt="Black and white portait of Ashish Sharma"
+          sizes="100vw"
+          className='project_banner_2'/>
+        <div className='mb-56 hero_grid'>
+          <div className='md:w-11/12 2xl:w-5/6'>
+            <h1>Hi,
             I&apos;m&nbsp;
             {/* <span className={isProject ? "tab_active" : "tab_default"} onClick={()=> setProject(true)}>
             {isProject ?
@@ -74,33 +96,37 @@ export default function Home() {
               sizes="100vw"
               className='hover-image'
               style={{ transform: `translate(${position.x}px, ${position.y}px)` }}/>
-            </Link> </h1>
+            </Link>
+            <div style={{marginTop:"-8px"}}>
+            UX consultant by day, <br/>
+            building stuff by night
+            </div>
+            </h1>
 
-            <p>
-            By day ☀️, I work as a UX Consultant at EY, using design to bring accessiblity to digital life. <br/><br/>
+            {/* <p className='md:text-lg'>
+            By day, I work as a <span style={{fontWeight:"500"}}>UX Consultant at EY</span>, using design to bring accessiblity to digital life. <br/><br/>
             By the weekend, I&apos;m helping the community. I&apos;m developing a Figma plugin that lets users switch 
             fonts without compromising on font styles.
-            </p>
+            </p> */}
             <br/> 
-            <Link href={'https://www.figma.com/community/plugin/1246737736127570810/font-swap'} target='_blank' 
-            className='button'>
-             Try Font Swap
-             <Image
-              src={ArrowForwardIcon}
-              alt="Black and white portait of Ashish Sharma"
-              sizes="100vw"
-              className='arrow_icon'/>
-            </Link>
+            <Button href={'https://www.figma.com/community/plugin/1246737736127570810/font-swap'}
+            name="Try Font Swap on Figma"/>
           </div>
-          <div className='hero_image'>
-          <Link href={'https://www.figma.com/community/plugin/1246737736127570810/font-swap'} target='_blank'>
+          <motion.div 
+          variants={fadeInAnimation}
+          initial="initial"
+          whileInView="animate"
+          viewport={{
+            once:true
+          }}
+          className='project_banner_1'>
+          {/* <Link href={'https://www.figma.com/community/plugin/1246737736127570810/font-swap'} target='_blank'> */}
           <Image
               src={FontSwapBanner}
               alt="Black and white portait of Ashish Sharma"
-              sizes="100vw"
-              className='project_banner_1'/>
-          </Link>
-          </div>
+              sizes="100vw"/>
+          {/* </Link> */}
+          </motion.div>
         </div>
         {/* <div className='flex flex-row gap-8 mt-24'>
           <h4 className={isProject ? 'tab_active' : 'tab_default'} onClick={()=> setProject(true)}>My Projects</h4>

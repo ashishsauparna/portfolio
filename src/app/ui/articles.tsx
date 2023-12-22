@@ -74,7 +74,7 @@ export default function ArticlesData() {
             viewport={{
               once:true
             }}>
-              <Link className='cell' href={image.href}>
+              <Link className='cell_two' href={image.href}>
                 <Image
                 src={image.src}
                 alt={image.alt}
