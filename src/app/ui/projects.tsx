@@ -15,9 +15,9 @@ export default function ProjectsData() {
       src: delhiveryPoster,
       alt: "Vector image of 2 folders with the label of outside-in analysis",
       href: "https://medium.com/@ashishsauparna/strategic-ux-insights-the-what-and-how-of-outside-in-analysis-d33bc0ba2905",
-      new: "WIP: December 2023",
-      heading: "Conducting an Outside-In Analysis",
-      subHeading:"Outside-in analysis can deepen the understanding of product and customer experiences. Here's my insight from five sessions so far."
+      new: "December 2023",
+      heading: "The What and How of Outside-In Analysis",
+      subHeading:"Outside-in analysis can deepen the understanding of product and customer experiences. Here's my insight after being part of 5 sessions so far."
     },
     {
       src: fontSwapImg,
@@ -69,7 +69,7 @@ export default function ProjectsData() {
       viewport={{
         once:true
       }}>
-      <div className='cell'>
+      <Link className='cell' href={image.href} target='_blank'>
         <Image
         src={image.src}
         alt={image.alt}
@@ -81,7 +81,7 @@ export default function ProjectsData() {
         <p className='text-zinc-600 mt-2.5'>{image.subHeading}</p>
         <div className='mt-4'> <Button href={image.href} name="View"/> </div>
         </div>
-      </div>
+      </Link>
       </motion.div>
     ))}
   </div>
