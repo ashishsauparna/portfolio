@@ -116,7 +116,7 @@ export default function Resume() {
             <p>As a UX designer, I&apos;m passionate about the human element in my work. 
               Uncovering intricate problems and crafting solutions through both qualitative and quantitative research fuels my drive. 
               I&apos;d describe myself as a curious and devoted design professional who values diversity, inclusion, and collaboration.</p>
-              <Link href={'https://drive.google.com/file/d/1hTt53MEkU1F4BCmVPvfNnZA9BOeZRc-z/view?usp=share_link'}>
+              <Link href={'https://drive.google.com/file/d/1eK2rZqecstTmCcAX_sw5w8E5WOtR0GPi/view?usp=sharing'}>
                 <h3 className='underline-offset-4 mt-4 underline text-blue-700'>View resume</h3></Link>
             </div>    
           </div>
