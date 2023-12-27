@@ -3,7 +3,7 @@ import Books from '../ui/books';
 import NavBar from '../ui/navbar';
 import Footer from '../ui/footer';
 import Image from 'next/image';
-import IgStory from 'public/books_story.png';
+import IgStory from '/public/books_story.png';
 import Inspirations from '../ui/inspirations';
 import Link from 'next/link';
 import Script from 'next/script';

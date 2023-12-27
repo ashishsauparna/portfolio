@@ -76,7 +76,8 @@ export default function FontSwap() {
     <div className='flex flex-col gap-2'>
       <h4 className='font-semibold mb-2'>View More Projects</h4>
         <div className='grid gap-4 md:grid-cols-1 lg:grid-cols-2 auto-rows-auto w-full'>
-            <Link className='cell' href="https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94">
+            <Link href="https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94">
+              <div className='cell'>
               <Image
               src={sanskritiImg}
               alt="Picture of an man using font swap plugin on his macbook"
@@ -85,6 +86,7 @@ export default function FontSwap() {
               <h3 className='mt-4'>Sanskriti - UX Case Study (March 2021)</h3>
               <p className='mt-1 text-gray-600'>Discover artifacts and their museums withSanskriti app. 
                 The app is perfect for class projects or exploring specific timelines.</p>
+              </div>
             </Link>
         </div>
     </div>

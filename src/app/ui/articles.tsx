@@ -74,17 +74,19 @@ export default function ArticlesData() {
             viewport={{
               once:true
             }}>
-              <Link className='cell_two' href={image.href}>
-                <Image
-                src={image.src}
-                alt={image.alt}
-                sizes="100vw"
-                className='article_image'/>
-                <div className='flex flex-row mt-4'>
-                  <h5>{image.new}</h5>
-                  <h5 className='ml-2 text-zinc-500 font-medium'>{image.readingTime}</h5>
+              <Link href={image.href}>
+                <div className='cell_two'>
+                  <Image
+                  src={image.src}
+                  alt={image.alt}
+                  sizes="100vw"
+                  className='article_image'/>
+                  <div className='flex flex-row mt-4'>
+                    <h5>{image.new}</h5>
+                    <h5 className='ml-2 text-zinc-500 font-medium'>{image.readingTime}</h5>
+                  </div>
+                  <h3>{image.heading}</h3>
                 </div>
-                <h3>{image.heading}</h3>
               </Link>
             </motion.div>
           ))}

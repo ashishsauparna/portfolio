@@ -7,6 +7,7 @@ import rozgarImg from '/public/case_study_rozgar.jpg';
 import Link from 'next/link';
 import { animate, motion } from 'framer-motion';
 import Button from './button';
+import ArrowForwardIcon from '/public/arrow_icon.svg';
 
 export default function ProjectsData() {
 
@@ -69,17 +70,26 @@ export default function ProjectsData() {
       viewport={{
         once:true
       }}>
-      <Link className='cell' href={image.href} target='_blank'>
-        <Image
-        src={image.src}
-        alt={image.alt}
-        sizes="100vw"
-        className='project_image'/>
-        <div className='pr-8'>
-        <h5>{image.new}</h5>
-        <h3>{image.heading}</h3>
-        <p className='text-zinc-600 mt-2.5'>{image.subHeading}</p>
-        <div className='mt-4'> <Button href={image.href} name="View"/> </div>
+      <Link href={image.href} target='_blank'>
+        <div className='cell'>
+          <Image
+          src={image.src}
+          alt={image.alt}
+          sizes="100vw"
+          className='project_image'/>
+          <div className='pr-8'>
+            <h5>{image.new}</h5>
+            <h3>{image.heading}</h3>
+            <p className='text-zinc-600 mt-2.5 mb-4'>{image.subHeading}</p>
+            <div className="button">
+            View
+            <Image
+              src={ArrowForwardIcon}
+              alt="white arrow pointing to right"
+              sizes="100vw"
+              className='arrow_icon'/>
+            </div>
+          </div>
         </div>
       </Link>
       </motion.div>

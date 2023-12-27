@@ -87,10 +87,12 @@ export default function Inspirations() {
               viewport={{
                 once:true
               }}>
-              <Link key={index} className='cell_two' href={data.href}>
-                  <Image src={data.img} alt={data.alt} className='avatar_images'/>
-                  <p className='text-center'>{data.name}</p>
-                </Link>
+              <Link key={index} href={data.href}>
+                  <div className='cell_two'>
+                    <Image src={data.img} alt={data.alt} className='avatar_images'/>
+                    <p className='text-center'>{data.name}</p>
+                  </div>
+              </Link>
               </motion.div>
             ))}
           </div>
