@@ -739,7 +739,7 @@
     
     searchInput.addEventListener('input', (event) => {
       searchQuery = event.target.value;
-      parent.postMessage({ pluginMessage: { query: "getQuery", foundQuery: searchQuery} }, "*");
+      parent.postMessage({ pluginMessage: { query: "getQuery", foundQuery: searchQuery}, pluginId: "1246737736127570810" }, "*");
     });
     
     // ***************** Update on Search - Column 2
