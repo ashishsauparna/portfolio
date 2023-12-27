@@ -1050,7 +1050,7 @@
             const allChipContainers = fontListElementOld.querySelectorAll(".chip");
             allChipContainers.forEach((container) => {
               container.classList.remove("checked");
-              parent.postMessage({ pluginMessage: { query: "getQuery", foundQuery: searchInput.value } }, "*");
+              parent.postMessage({ pluginMessage: { query: "getQuery", foundQuery: searchInput.value }, pluginId: "1246737736127570810"  }, "*");
             });
     
             // Add the 'checked' class to the current chip container
@@ -1130,7 +1130,7 @@
     
     
     // Send the "getFonts" message to the parent context
-    parent.postMessage({ pluginMessage: { type: "getFonts" } }, "*");
+    parent.postMessage({ pluginMessage: { type: "getFonts" }, pluginId: "1246737736127570810"  }, "*");
     
     
     
@@ -1138,7 +1138,7 @@
     button.addEventListener('click', function () {
       //console.log(selectedFont)
       if(isSelectedFontChecked & isNewFontChecked){
-        parent.postMessage({ pluginMessage: { name: "changeFont", selectedFont: selectedFont, newFont: newFont } }, '*');
+        parent.postMessage({ pluginMessage: { name: "changeFont", selectedFont: selectedFont, newFont: newFont }, pluginId: "1246737736127570810"  }, '*');
         body.classList.add("progress-cursor");
       }else{
         console.error("Your internet is not working!")
