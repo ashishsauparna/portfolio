@@ -1203,7 +1203,7 @@
     if (params && params['access_token']) {
       var xhr = new XMLHttpRequest();
       xhr.open('GET',
-          'https://openidconnect.googleapis.com/v1/userinfo' +
+          'https://openidconnect.googleapis.com/v1/userinfo?' +
           'access_token=' + params['access_token']);
       xhr.onreadystatechange = function (e) {
         if (xhr.readyState === 4 && xhr.status === 200) {
