@@ -1152,7 +1152,7 @@
       const client_id = '224939236194-tp92u16rbrnce5i9mpon56sah9otslbu.apps.googleusercontent.com';
       const redirect_uri = 'https://www.ashishsauparna.in/index.html';
       const scope = 'openid profile email';
-      const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=${client_id}&scope=${encodeURIComponent(scope)}&redirect_uri=${encodeURIComponent(redirect_uri)}&access_type=offline&prompt=consent`;
+      const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=token&client_id=${client_id}&scope=${encodeURIComponent(scope)}&redirect_uri=${encodeURIComponent(redirect_uri)}&access_type=offline&prompt=consent`;
 
       //const authUrl = 'https://fontswap.azurewebsites.net/api/HttpTrigger1?code=YChaxg521pjvmvwRWdV-9Zp4jC37xtH77vZV_R_ZvgL9AzFuKtucMw==&action=login';
       window.open(authUrl, '_blank');
