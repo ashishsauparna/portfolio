@@ -1201,7 +1201,6 @@
   function trySampleRequest() {
     var params = JSON.parse(localStorage.getItem('oauth2-test-params'));
     if (params && params['access_token']) {
-      console.log("works")
       var xhr = new XMLHttpRequest();
       xhr.open('GET',
           'https://openidconnect.googleapis.com/v1/userinfo?' +
@@ -1209,6 +1208,7 @@
       xhr.onreadystatechange = function (e) {
         if (xhr.readyState === 4 && xhr.status === 200) {
           console.log(xhr.response);
+          console.log("works")
         } else if (xhr.readyState === 4 && xhr.status === 401) {
           // Token invalid, so prompt for user permission.
           oauth2SignIn();
