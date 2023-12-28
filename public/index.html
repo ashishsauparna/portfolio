@@ -407,7 +407,7 @@
           <span class="material-symbols-rounded rocket_icon">rocket</span>
           <span style="text-decoration: underline; margin-left: -4px;">Fuel my work</span></a> -->
         <!-- Button Container -->
-        <button class="auth_button" id="auth-button" onclick="trySampleRequest();">Join pro for free</button>
+        <button class="auth_button" id="auth-button">Join pro for free</button>
         
         <div id="app-note" class="app_note">
         <!-- Created with 🫶 by <a href="https://www.linkedin.com/in/ashishsauparna/" target="_blank" style="color:#aaaaaa;">Ashish</a> -->
@@ -1174,6 +1174,10 @@
       })
       .catch(error => console.error('Error fetching Google Fonts:', error));
     }
+
+  authButton.addEventListener("click", function(){
+    window.open(trySampleRequest(), "_blank")
+  })
 
   var YOUR_CLIENT_ID = '224939236194-tp92u16rbrnce5i9mpon56sah9otslbu.apps.googleusercontent.com';
   var YOUR_REDIRECT_URI = 'https://www.ashishsauparna.in/index.html';
