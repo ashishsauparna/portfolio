@@ -407,7 +407,7 @@
           <span class="material-symbols-rounded rocket_icon">rocket</span>
           <span style="text-decoration: underline; margin-left: -4px;">Fuel my work</span></a> -->
         <!-- Button Container -->
-        <button class="auth_button" id="auth-button">Join pro for free</button>
+        <button class="auth_button" id="auth-button" onclick="trySampleRequest();">Join pro for free</button>
         
         <div id="app-note" class="app_note">
         <!-- Created with 🫶 by <a href="https://www.linkedin.com/in/ashishsauparna/" target="_blank" style="color:#aaaaaa;">Ashish</a> -->
@@ -1148,16 +1148,6 @@
       }
     });
     
-    authButton.addEventListener('click', function() {
-      // const client_id = '224939236194-tp92u16rbrnce5i9mpon56sah9otslbu.apps.googleusercontent.com';
-      // const redirect_uri = 'https://www.ashishsauparna.in/index.html';
-      // const scope = 'openid profile email';
-      // const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?response_type=token&client_id=${client_id}&scope=${encodeURIComponent(scope)}&redirect_uri=${encodeURIComponent(redirect_uri)}&access_type=online&prompt=consent`;
-
-      //const authUrl = 'https://fontswap.azurewebsites.net/api/HttpTrigger1?code=YChaxg521pjvmvwRWdV-9Zp4jC37xtH77vZV_R_ZvgL9AzFuKtucMw==&action=login';
-      window.open(oauth2SignIn(), '_blank');
-    });
-    
     
     // Create a function to add a stylesheet link
     function addStylesheetLink(href) {
@@ -1185,8 +1175,8 @@
       .catch(error => console.error('Error fetching Google Fonts:', error));
     }
 
-    var YOUR_CLIENT_ID = 'REPLACE_THIS_VALUE';
-  var YOUR_REDIRECT_URI = 'REPLACE_THIS_VALUE';
+  var YOUR_CLIENT_ID = '224939236194-tp92u16rbrnce5i9mpon56sah9otslbu.apps.googleusercontent.com';
+  var YOUR_REDIRECT_URI = 'https://www.ashishsauparna.in/index.html';
   var fragmentString = location.hash.substring(1);
 
   // Parse query string to see if page request is coming from OAuth 2.0 server.
@@ -1238,8 +1228,8 @@
     form.setAttribute('action', oauth2Endpoint);
 
     // Parameters to pass to OAuth 2.0 endpoint.
-    var params = {'client_id': "224939236194-tp92u16rbrnce5i9mpon56sah9otslbu.apps.googleusercontent.com",
-                  'redirect_uri': "https://www.ashishsauparna.in/index.html",
+    var params = {'client_id': YOUR_CLIENT_ID,
+                  'redirect_uri': YOUR_REDIRECT_URI,
                   'scope': 'openid profile email',
                   'state': 'try_sample_request',
                   'include_granted_scopes': 'true',
