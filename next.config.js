@@ -3,13 +3,6 @@
  */
 
 const nextConfig = {
-    /* config options here */
-    rewrites: async () => [
-        {
-          source: "/",
-          destination: "/index.html",
-        },
-      ],
-  }
+}
    
 module.exports = nextConfig
