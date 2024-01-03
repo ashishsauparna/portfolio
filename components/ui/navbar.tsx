@@ -14,7 +14,7 @@ export default function NavBar() {
 
   return (
       <>
-      <nav className='nav_web w-full mt-8 mx-auto'>
+      <nav className='web_nav w-full mx-auto'>
         <Link href={'/'}>
         <Image
           src={Icon}
@@ -49,8 +49,7 @@ export default function NavBar() {
           </li> */}
         </ul>
       </nav>
-      <nav className='nav_mobile w-full pt-2 pb-2'>
-        <div className='w-11/12 flex justify-between mx-auto items-center'>
+      <nav className='mobile_nav w-full pt-2 pb-2'>
           <Link href={'/'}>
           <Image
             src={Icon}
@@ -91,7 +90,6 @@ export default function NavBar() {
               </ul>
               </div>
             </motion.div>
-        </div>
       </nav>
       </>
   )

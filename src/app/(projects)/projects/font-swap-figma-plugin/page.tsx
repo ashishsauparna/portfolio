@@ -4,8 +4,8 @@ import Image from 'next/image';
 import sanskritiImg from '/public/sanskriti_2.png';
 import pageBanner from '/public/font_swap_cover.png';
 import Link from 'next/link';
-import Button from '@/app/ui/button';
-import Footer from '@/app/ui/footer';
+import Button from '../../../../../components/ui/button';
+import Footer from '../../../../../components/ui/footer';
 import Script from 'next/script';
 
 export default function FontSwap() {

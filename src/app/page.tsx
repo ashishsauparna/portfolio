@@ -1,57 +1,23 @@
-'use client'
-
-import NavBar from './ui/navbar';
-import Footer from './ui/footer';
-import { useState } from 'react';
-import ProjectsData from './ui/projects';
-import ArticlesData from './ui/articles';
-import Head from 'next/head';
-import Link from 'next/link';
+import NavBar from '../../components/ui/navbar';
+import Footer from '../../components/ui/footer';
+import ProjectsData from './(projects)/projects';
 import Image from 'next/image';
-import AshishSharmaImg from '/public/ashish_sharma.png';
-import FontSwapBanner from '/public/font_swap_banner.svg';
 import HeroBackground from '/public/hero_background.svg';
 import Script from 'next/script';
-import Button from './ui/button';
-import { motion } from 'framer-motion';
+import Button from '../../components/ui/button';
+import HeroImage from '../../components/ui/heroimage';
+import HeroAshishImg from '../../components/ui/heroashishimg';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Ashish Sharma UX Designer',
+  description: 'Step into my digital home. I am Ashish Sharma, inviting you to explore my design work, insightful articles, and the books that have shaped my journey.',
+}
 
 export default function Home() {
 
-  const [isProject, setProject] = useState(true);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e:any) => {
-    const linkRect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - linkRect.left;
-    const y = e.clientY - linkRect.top;
-    setPosition({ x, y });
-  };
-
-  const handleMouseLeave = () => {
-    setPosition({ x: 0, y: 0 });
-  };
-
-  const fadeInAnimation = {
-    initial:{
-      opacity:0,
-      y:20
-    },
-    animate: () => ({
-      opacity:1,
-      y:0,
-      transition:{
-        delay:0,
-        duration:0.4,
-        type:"swing"
-      }
-    }),
-  }
-
   return (
     <main className="flex min-h-screen flex-col items-center">
-    <Head>
-      <title>Ashish Sharma: UX Designer</title>
-    </Head>
     <Script src="https://www.googletagmanager.com/gtag/js?id=G-2N9F9N8KHK" />
       <Script id="google-analytics">
         {`
@@ -88,57 +54,21 @@ export default function Home() {
             : "" }
             articles</span> library 
             of  */}
-            <Link className='hover-link' style={{position:"relative"}} href={"/about-me"} 
-            onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}> Ashish
-            <Image
-              src={AshishSharmaImg}
-              alt="Black and white portait of Ashish Sharma"
-              sizes="100vw"
-              className='hover-image'
-              style={{ transform: `translate(${position.x}px, ${position.y}px)` }}/>
-            </Link>
+            <HeroAshishImg/>
             <div style={{marginTop:"-8px"}}>
             UX consultant by day, <br/>
             building stuff by night
             </div>
             </h1>
-
-            {/* <p className='md:text-lg'>
-            By day, I work as a <span style={{fontWeight:"500"}}>UX Consultant at EY</span>, using design to bring accessiblity to digital life. <br/><br/>
-            By the weekend, I&apos;m helping the community. I&apos;m developing a Figma plugin that lets users switch 
-            fonts without compromising on font styles.
-            </p> */}
             <br/> 
             <Button href={'https://www.figma.com/community/plugin/1246737736127570810/font-swap'}
             name="Try Font Swap on Figma"/>
           </div>
-          <motion.div 
-          variants={fadeInAnimation}
-          initial="initial"
-          whileInView="animate"
-          viewport={{
-            once:true
-          }}
-          className='project_banner_1'>
-          {/* <Link href={'https://www.figma.com/community/plugin/1246737736127570810/font-swap'} target='_blank'> */}
-          <Image
-              src={FontSwapBanner}
-              alt="Black and white portait of Ashish Sharma"
-              sizes="100vw"/>
-          {/* </Link> */}
-          </motion.div>
+          <HeroImage/>
         </div>
-        {/* <div className='flex flex-row gap-8 mt-24'>
-          <h4 className={isProject ? 'tab_active' : 'tab_default'} onClick={()=> setProject(true)}>My Projects</h4>
-          <h4 className={!isProject ? 'tab_active' : 'tab_default'} onClick={()=> setProject(false)}>Articles</h4>
-        </div> */}
         <div>
           <p style={{fontWeight:"500", marginBottom:"-18px"}}>Special Projects ✨</p>
-          {isProject ?
           <ProjectsData/>
-          :
-          <ArticlesData/>
-          }
         </div>
       </div>
       <Footer/>

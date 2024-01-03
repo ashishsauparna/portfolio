@@ -1,5 +1,4 @@
-import { Albert_Sans, Alegreya, Nanum_Myeongjo, Playfair_Display, Space_Grotesk} from 'next/font/google'
-import localFont from 'next/font/local'
+import { Albert_Sans, Alegreya, Space_Grotesk} from 'next/font/google';
 
  
 export const AlbertSans = Albert_Sans({
@@ -7,20 +6,14 @@ export const AlbertSans = Albert_Sans({
   variable: '--font-albert-sans',
   display: 'swap',
 })
- 
-export const LibreBaskerville = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-libre-baskerville',
-  display: 'swap'
-})
 
 export const AlegreyaFont = Alegreya({
   subsets: ['latin'],
   variable: '--font-alegreya',
 })
 
-export const LocalFont = Space_Grotesk({
+export const SpaceGothic = Space_Grotesk({
   subsets: ['latin'],
-  variable: '--font-butler',
+  variable: '--font-space-gothic',
   display: 'swap'
 })

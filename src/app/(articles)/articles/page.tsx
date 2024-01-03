@@ -1,14 +1,14 @@
-import NavBar from '../ui/navbar';
-import Footer from '../ui/footer';
+import NavBar from '../../../../components/ui/navbar';
+import Footer from '../../../../components/ui/footer';
 import { Metadata } from 'next';
 import Script from 'next/script';
-import ArticlesData from '../ui/articles';
+import ArticlesData from '../articles';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Projects | Ashish Sharma',
+  title: 'Articles | Ashish Sharma',
   openGraph: {
-      title: 'Projects | Ashish Sharma',
+      title: 'Articles | Ashish Sharma',
     },
   description: 'Explore captivating UX case studies, and innovative Figma plugins in the portfolio of Ashish Sharma. Discover thought processes, design methodologies, and user-centric solutions that exemplify expertise in creating intuitive digital experiences.',
 }

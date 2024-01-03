@@ -1,10 +1,10 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { AlbertSans, AlegreyaFont, LocalFont } from './fonts'
-import Script from 'next/script'
+import { AlbertSans, AlegreyaFont, SpaceGothic } from './fonts'
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.ashishsauparna.in'),
   title:{
     default:'Ashish Sharma UX Designer',
     template:'%s'
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${AlbertSans.variable} ${LocalFont.variable} ${AlegreyaFont.variable}`}>
+    <html lang="en" className={`${AlbertSans.variable} ${SpaceGothic.variable} ${AlegreyaFont.variable}`}>
       <body>
         {children}
       </body>

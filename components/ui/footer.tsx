@@ -6,7 +6,7 @@ export default function Footer() {
 
 
   return (
-      <footer className='w-full mt-48 mb-24 mx-auto'>
+      <footer className='w-full mx-auto'>
 
         <ul className='footer_links mb-4'>
           <li>

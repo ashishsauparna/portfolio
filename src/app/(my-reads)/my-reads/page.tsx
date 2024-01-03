@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
-import Books from '../ui/books';
-import NavBar from '../ui/navbar';
-import Footer from '../ui/footer';
+import Books from '../books';
+import NavBar from '../../../../components/ui/navbar';
+import Footer from '../../../../components/ui/footer';
 import Image from 'next/image';
 import IgStory from '/public/books_story.png';
-import Inspirations from '../ui/inspirations';
+import Inspirations from '../inspirations';
 import Link from 'next/link';
 import Script from 'next/script';
 
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: 'Its a space of all my favourite books, podcasts, articles, people I am inspired by and things that I enjoy and love, that I hope you might like as well.',
 }
 
-export default function Home() {
+export default function MyReads() {
 
   const designInsp = [
     {

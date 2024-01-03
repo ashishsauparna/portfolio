@@ -6,7 +6,6 @@ import delhiveryPoster from '/public/Outside_in_poster.png'
 import rozgarImg from '/public/case_study_rozgar.jpg';
 import Link from 'next/link';
 import { animate, motion } from 'framer-motion';
-import Button from './button';
 import ArrowForwardIcon from '/public/arrow_icon.svg';
 
 export default function ProjectsData() {
