@@ -9,6 +9,10 @@ export default function HeroAshishImg(){
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
     const handleMouseMove = (e:any) => {
+      // if(e.clientX > 239 && e.clientY > 240){
+
+      // }
+      // console.log(e.clientY)
       const linkRect = e.currentTarget.getBoundingClientRect();
       const x = e.clientX - linkRect.left;
       const y = e.clientY - linkRect.top;

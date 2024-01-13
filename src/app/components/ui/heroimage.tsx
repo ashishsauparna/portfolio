@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from 'next/image';
-import FontSwapBanner from '/public/font_swap_banner.svg';
+import FontSwapBanner from '/public/font_swap_banner.png';
 
 export default function HeroImage(){
     const fadeInAnimation = {

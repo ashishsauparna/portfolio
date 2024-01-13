@@ -5,41 +5,41 @@ import { motion } from "framer-motion"
 export default function MotionCV(){
 
     const experience = [
-        {
-          position: "UX Designer + Developer | July 2023 - Present",
-          company: "Figma Plugin - Font Swap (2.5K+ users)",
-        },
-        {
-          position: "UX Consultant | March 2022 - Present",
-          company: "EY GDS",
-        },
-        {
-          position: "UX/UI Designer | August 2021 - March 2022",
-          company: "Tekie",
-        },
-        {
-          position: "UX Design Intern | July 2021 - August 2021",
-          company: "Assetmonk",
-        }
+      {
+        position: "UX Consultant | March 2022 - Present",
+        company: "EY GDS",
+      },
+      {
+        position: "UX Designer + Developer | July 2023 - Present",
+        company: "Figma Plugin - Font Swap (4.8K+ users)",
+      },
+      {
+        position: "UX/UI Designer | August 2021 - March 2022",
+        company: "Tekie",
+      },
+      {
+        position: "UX Design Intern | July 2021 - August 2021",
+        company: "Assetmonk",
+      }
       ]
     
-      const education = [
-        {
-          study:"Design thinking - Bronze Badge",
-          school: "EY Innovation"
-        },
-        {
-          study:"Google UX Design Certificate",
-          school: "Google, Coursera"
-        },
-        {
-          study:"B. Com. with Honours",
-          school: "Delhi University (DU)"
-        },
-        {
-          study:"Introduction to typography",
-          school: "CalArts, Coursera"
-        }
+    const education = [
+      {
+        study:"Design thinking - Bronze Badge",
+        school: "EY Innovation"
+      },
+      {
+        study:"Google UX Design Certificate",
+        school: "Google, Coursera"
+      },
+      {
+        study:"B. Com. with Honours",
+        school: "Delhi University (DU)"
+      },
+      {
+        study:"Introduction to typography",
+        school: "CalArts, Coursera"
+      }
     
       ]
       

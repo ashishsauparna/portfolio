@@ -1,5 +1,5 @@
-import NavBar from '../../../../components/ui/navbar';
-import Footer from '../../../../components/ui/footer';
+import NavBar from '../../components/ui/navbar';
+import Footer from '../../components/ui/footer';
 import { Metadata } from 'next';
 import Script from 'next/script';
 import ArticlesData from '../articles';

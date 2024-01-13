@@ -1,12 +1,12 @@
-import NavBar from '../../components/ui/navbar';
-import Footer from '../../components/ui/footer';
+import NavBar from './components/ui/navbar';
+import Footer from './components/ui/footer';
 import ProjectsData from './(projects)/projects';
 import Image from 'next/image';
 import HeroBackground from '/public/hero_background.svg';
 import Script from 'next/script';
-import Button from '../../components/ui/button';
-import HeroImage from '../../components/ui/heroimage';
-import HeroAshishImg from '../../components/ui/heroashishimg';
+import Button from './components/ui/button';
+import HeroImage from './components/ui/heroimage';
+import HeroAshishImg from './components/ui/heroashishimg';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -29,15 +29,16 @@ export default function Home() {
         `}
       </Script>
       <NavBar/>
-      <div className='items-left mt-32 home_content'>
-        <Image
-          src={HeroBackground}
-          alt="Black and white portait of Ashish Sharma"
-          sizes="100vw"
-          className='project_banner_2'/>
-        <div className='mb-56 hero_grid'>
+      <div className='items-left mt-16'>
+        <div className='hero_grid'>
+          <Image
+            src={HeroBackground}
+            alt="Black and white portait of Ashish Sharma"
+            sizes="100vw"
+            className='project_banner_2'/>
+          <HeroImage/>
           <div className='md:w-11/12 2xl:w-5/6'>
-            <h1>Hi,
+            <h1>Namaste,
             I&apos;m&nbsp;
             {/* <span className={isProject ? "tab_active" : "tab_default"} onClick={()=> setProject(true)}>
             {isProject ?
@@ -60,11 +61,9 @@ export default function Home() {
             building stuff by night
             </div>
             </h1>
-            <br/> 
             <Button href={'https://www.figma.com/community/plugin/1246737736127570810/font-swap'}
             name="Try Font Swap on Figma"/>
           </div>
-          <HeroImage/>
         </div>
         <div>
           <p style={{fontWeight:"500", marginBottom:"-18px"}}>Special Projects ✨</p>

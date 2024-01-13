@@ -9,7 +9,7 @@ export default function Footer() {
       <footer className='w-full mx-auto'>
 
         <ul className='footer_links mb-4'>
-          <li>
+          <li>📩 &nbsp;
           <Navigation target="_blank" name="ashishsauparna@gmail.com" href="mailto:ashishsauparna@gmail.com" status="mobile_ui"/>
           </li>
         </ul>
@@ -33,7 +33,7 @@ export default function Footer() {
         </ul>
         
         <p className='text-gray-500 mt-4 leading-[2rem]'>
-        © Assembled with pixels by Ashish Sharma 2023
+        © Assembled with pixels by Ashish Sharma 2024
         </p>
       </footer>
   )
