@@ -57,7 +57,7 @@ export default function Home() {
             of  */}
             <HeroAshishImg/>
             <div style={{marginTop:"-8px"}}>
-            UX consultant by day, <br/>
+            UX consultant at EY by day, <br/>
             building stuff by night
             </div>
             </h1>
