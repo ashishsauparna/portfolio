@@ -38,7 +38,7 @@ export default function Home() {
             className='project_banner_2'/>
           <HeroImage/>
           <div className='md:w-11/12 2xl:w-5/6'>
-            <h1>Namaste,
+            <h1>Hi,
             I&apos;m&nbsp;
             {/* <span className={isProject ? "tab_active" : "tab_default"} onClick={()=> setProject(true)}>
             {isProject ?
@@ -57,8 +57,7 @@ export default function Home() {
             of  */}
             <HeroAshishImg/>
             <div style={{marginTop:"-8px"}}>
-            UX consultant at EY by day, <br/>
-            building stuff by night
+             a UX Designer at EY. <br/>I build stuff ✨
             </div>
             </h1>
             <Button href={'https://www.figma.com/community/plugin/1246737736127570810/font-swap'}
