@@ -11,7 +11,7 @@ export default function MotionCV(){
       },
       {
         position: "UX Designer + Developer | July 2023 - Present",
-        company: "Figma Plugin - Font Swap (4.8K+ users)",
+        company: "Figma Plugin - Font Swap (9.0K+ users)",
       },
       {
         position: "UX/UI Designer | August 2021 - March 2022",
