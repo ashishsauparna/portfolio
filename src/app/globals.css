@@ -45,7 +45,7 @@ body {
 
 .hero_grid {
   display: grid;
-  width: 100%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   column-gap: 8rem;
@@ -495,6 +495,7 @@ footer{
     grid-template-columns: repeat(2, 1fr);
   }
   .hero_grid{
+    width: 100%;
     grid-template-columns: 1fr;
     margin-bottom: 12rem;
   }
