@@ -7,7 +7,7 @@ export default function MotionCV(){
     const experience = [
       {
         position: "UX Consultant | March 2022 - Present",
-        company: "EY GDS",
+        company: "EY (Ernst & Young)",
       },
       {
         position: "UX Designer + Developer | July 2023 - Present",
@@ -68,7 +68,7 @@ export default function MotionCV(){
                 once:true
             }}>
             <div>
-                <h2 className='mb-8'>Education</h2>
+                <h1 className='mb-8'>Education</h1>
                 {education.map((data, index) => (
                     <p key={index} className='leading-7 mb-4'>
                     <span style={{fontWeight:"460"}}>{data.study}</span>
@@ -77,7 +77,7 @@ export default function MotionCV(){
                 ))}
             </div>
             <div>
-                <h2 className='mb-8'>Experience</h2>
+                <h1 className='mb-8'>Experience</h1>
                 {experience.map((data, index) => (
                     <p key={index} className='leading-7 mb-4'>
                     

@@ -64,17 +64,17 @@ export default function MyReads() {
             style={{width:"100%", height:"auto"}}/>
           </div>
           <div>
-            <h2 className='mb-2'>What am I reading and listening to?</h2>
+            <h1 className='mb-4'>What am I reading and listening to?</h1>
             <p>Its a space of all my favourite books, podcasts, articles, people I am inspired by and things that I enjoy and love, that I hope you might like as well.</p>
             
-            <h2 className='mb-2 mt-24'>The Books I still go back to</h2>
+            <h1 className='mb-4 mt-24'>The Books I still go back to</h1>
             <Books/>
           </div>
         </div>
 
         <div className='recomendation_content mt-24 w-full'>
 
-          <h2 className='mb-2'>My design inspiration</h2>
+          <h1 className='mb-4'>My design inspiration</h1>
           <div style={{display:"flex", alignItems:"flex-start", gap:"16px", flexWrap:"wrap"}}>
             {
               designInsp.map((data, index) => (
@@ -83,7 +83,7 @@ export default function MyReads() {
             }
           </div>
         
-          <h2 className='mb-2 mt-24'>People that inspire me</h2>
+          <h1 className='mb-4 mt-24'>People that inspire me</h1>
           <Inspirations/>
         </div>
         <Footer/>

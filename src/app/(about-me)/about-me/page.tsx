@@ -33,8 +33,8 @@ export default function AboutMe() {
       <div className='intro_content mt-40'>
         <MotionImage/>
         <div>
-        <h2>Pronounced:</h2>
-        <h2>Aa - shee - sh</h2><br/>
+        <h1>Pronounced:</h1>
+        <h1>Aa - shee - sh</h1><br/>
         <p>As a UX designer with 4+ years in UX design, I&apos;m passionate about the human element in my work. 
           Uncovering intricate problems and crafting solutions through both qualitative and quantitative research fuels my drive. 
           I&apos;d describe myself as a curious and devoted design professional who values diversity, inclusion, and collaboration.</p>
@@ -46,7 +46,7 @@ export default function AboutMe() {
       </div>
       <div className='intro_content mt-24'>
         <div>
-          <h2 className='mb-4'>Skills & Interest</h2>
+          <h1 className='mb-4'>Skills & Interest</h1>
           <p className='leading-7'>User Research | Heuristic Analysis | Persona Development | Customer Journey Mapping | Interaction Design | Wire framing | Data Visualisation | Storytelling | Web Programming</p>
         </div>
         <div>

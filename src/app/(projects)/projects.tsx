@@ -23,15 +23,15 @@ export default function ProjectsData() {
       src: fontSwapImg,
       alt: "Picture of a man using font swap plugin on his MacBook",
       href: "https://medium.com/ux-planet/ux-case-study-font-swap-building-a-figma-plugin-e9ec6905f2e3",
-      new: "Product Case Study - June 2023",
-      heading: "Font Swap: Switch mixed fonts",
-      subHeading:"Font Swap is a Figma plugin specifically designed to address the font-changing challenge faced by UI designers."
+      new: "June 2023 - Case Study",
+      heading: "Font Swap — Building a Figma Plugin",
+      subHeading:"A Figma plugin specifically designed to address the font-replacing challenge faced by UI designers."
     },
     {
       src: rozgarImg,
       alt: "Picture of an man wokring on construction site",
       href: "https://medium.com/@ashishsauparna/rozgar-ux-case-study-jan-2022-49dfe9f33ae3",
-      new: "UX Case Study - January 2022",
+      new: "January 2022 - Case Study",
       heading: "Rozgar: Helps you look for blue collar jobs",
       subHeading:"This Case study includes Research and understanding of \
       the online and offline market of Blue collar workers."
@@ -78,7 +78,7 @@ export default function ProjectsData() {
           className='project_image'/>
           <div className='pr-8'>
             <h5>{image.new}</h5>
-            <h3>{image.heading}</h3>
+            <h1 style={{margin:"24px 0px"}}>{image.heading}</h1>
             <p className='text-zinc-600 mt-2.5 mb-4'>{image.subHeading}</p>
             <div className="button">
             View

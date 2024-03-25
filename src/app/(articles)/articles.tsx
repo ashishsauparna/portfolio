@@ -83,9 +83,9 @@ export default function ArticlesData() {
                   className='article_image'/>
                   <div className='flex flex-row mt-4'>
                     <h5>{image.new}</h5>
-                    <h5 className='ml-2 text-zinc-500 font-medium'>{image.readingTime}</h5>
+                    <h5 className='ml-2 text-zinc-500 font-medium font-thin'>{image.readingTime}</h5>
                   </div>
-                  <h3>{image.heading}</h3>
+                  <h1>{image.heading}</h1>
                 </div>
               </Link>
             </motion.div>
