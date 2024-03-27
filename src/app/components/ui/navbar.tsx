@@ -33,19 +33,19 @@ export default function NavBar() {
             /
           </li>
           <li>
-            <Navigation name="About Me" href="/about-me" status="default" />
+            <Navigation name="😇 About Me" href="/about-me" status="default" />
           </li>
           <li>
             /
           </li>
           <li>
-            <Navigation name="My Articles" href="/articles" status="default" />
+            <Navigation name="📖 My Reads" href="/my-reads" status="default" />
           </li>
           <li>
             /
           </li>
           <li>
-            <Navigation name="My Reads" href="/my-reads" status="default" />
+            <Navigation name="🔗 My Articles" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/>
           </li>
           {/* <li>
             <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" />
