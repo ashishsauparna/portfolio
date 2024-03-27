@@ -33,7 +33,7 @@ export default function Footer() {
         </ul>
         
         <p className='text-gray-500 mt-4 leading-[2rem]'>
-        © Assembled with pixels by Ashish 2024
+        © Assembled with pixels by Ashish. Last updated March 2024
         </p>
       </footer>
   )
