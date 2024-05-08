@@ -1,15 +1,9 @@
-<svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_1495_169)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M17.0978 24.5068C19.6245 28.8832 25.3244 30.3228 29.8288 27.7221L20.7128 11.9327L15.6904 22.0692L17.0978 24.5068Z" fill="url(#paint0_linear_1495_169)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M20.7127 11.9329L16.48 4.60156C16.2274 4.16586 15.7477 3.9094 15.2331 3.93495C14.7185 3.96051 14.2533 4.26388 14.0238 4.72352L2.34225 28.2097C6.96382 30.364 12.5763 28.3742 14.8802 23.7645L20.7127 11.9329Z" fill="#2684FF"/>
-</g>
-<defs>
-<linearGradient id="paint0_linear_1495_169" x1="19.6044" y1="15.935" x2="39.1988" y2="26.2493" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0052CC"/>
-<stop offset="1" stop-color="#2684FF"/>
-</linearGradient>
-<clipPath id="clip0_1495_169">
-<rect width="32" height="32" fill="white" transform="translate(0 0.448242)"/>
-</clipPath>
-</defs>
+<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="15.4756" cy="15.5754" r="14.1926" fill="#2684FF"/>
+<rect x="1.43296" y="1.53281" width="28.0852" height="28.0858" stroke="#2684FF" stroke-width="0.3"/>
+<rect x="29.0675" y="29.1672" width="1.20139" height="1.20139" fill="white" stroke="#2684FF" stroke-width="0.1"/>
+<rect x="29.0675" y="0.782422" width="1.20139" height="1.20139" fill="white" stroke="#2684FF" stroke-width="0.1"/>
+<rect x="26.8063" y="14.3244" width="1.20139" height="1.20139" rx="0.600696" fill="white" stroke="#2684FF" stroke-width="0.1"/>
+<rect x="0.682263" y="0.782422" width="1.20139" height="1.20139" fill="white" stroke="#2684FF" stroke-width="0.1"/>
+<rect x="0.682263" y="29.1672" width="1.20139" height="1.20139" fill="white" stroke="#2684FF" stroke-width="0.1"/>
 </svg>

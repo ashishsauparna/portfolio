@@ -156,7 +156,7 @@ main{
 .icon{
   object-fit: contain;
   width: auto;
-  height: 24px;
+  height: 42px;
 }
 
 .logo_container{
@@ -206,7 +206,7 @@ li .active{
   border: 1px solid transparent;
   font-weight: 460;
   color: #0069E5;
-  border-bottom: 2px solid #8AC0FF;
+  border-bottom: 0.5px solid #8AC0FF;
 }
 
 li .active:hover{
