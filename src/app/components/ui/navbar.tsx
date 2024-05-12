@@ -14,7 +14,7 @@ export default function NavBar() {
 
   return (
       <>
-      <nav className='web_nav w-full mx-auto'>
+      <nav className='web_nav'>
         <Link href={'/'}>
           <div className='logo_container'>
         <Image
@@ -22,30 +22,29 @@ export default function NavBar() {
           alt="A Logo of the website in white text and blue background. The logo says AS short for Ashish Sharma"
           sizes="60vw"
           className='icon' />
-          Ashish Sharma
           </div>
         </Link>
         <ul className='nav_links'>
           <li>
             <Navigation name="Home" href="/" status="default" />
           </li>
-          <li>
+          <li className='text-slate-300'>
             /
           </li>
           <li>
-          😇&nbsp;<Navigation name="About Me" href="/about-me" status="default" />
+          😇&nbsp;<Navigation name="About" href="/about-me" status="default" />
           </li>
-          <li>
+          <li className='text-slate-300'>
             /
           </li>
           <li>
-          📖&nbsp;<Navigation name="My Reads" href="/my-reads" status="default" />
+          📖&nbsp;<Navigation name="Reads" href="/my-reads" status="default" />
           </li>
-          <li>
+          <li className='text-slate-300'>
             /
           </li>
           <li>
-          <Navigation name="My Articles" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/>
+          <Navigation name="My Articles" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/> &nbsp;
           </li>
           {/* <li>
             <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" />

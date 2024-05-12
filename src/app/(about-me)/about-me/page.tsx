@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Footer from '../../components/ui/footer';
 import MotionCV from '../motioncv';
 import Button from '../../components/ui/button';
+import LinkButton from '@/app/components/ui/linkbutton';
 
 export const metadata: Metadata = {
   title: {
@@ -35,9 +36,9 @@ export default function AboutMe() {
         <div>
         <h1>Pronounced:</h1>
         <h1>Aa - shee - sh</h1><br/>
-        <p>As a UX designer with 4+ years in UX design, I&apos;m passionate about the human element in my work. 
-          Uncovering intricate problems and crafting solutions through both qualitative and quantitative research fuels my drive. 
-          I&apos;d describe myself as a curious and devoted design professional who values diversity, inclusion, and collaboration.</p>
+        <p>
+        UX for me is like a game of skill. I like to see how things turn out when I twist them my way. Of course, empathizing with the user and understanding their experiences are part of it. But what&apos;s interesting for me is if they are comfortable, fearless, and accomplished at the end.
+        </p>
           <Button href="https://drive.google.com/file/d/1eK2rZqecstTmCcAX_sw5w8E5WOtR0GPi/view?usp=sharing" name="View Resume"/>
           {/* <Link href={'https://drive.google.com/file/d/1eK2rZqecstTmCcAX_sw5w8E5WOtR0GPi/view?usp=sharing'}>
             
@@ -50,9 +51,10 @@ export default function AboutMe() {
           <p className='leading-7'>User Research | Heuristic Analysis | Persona Development | Customer Journey Mapping | Interaction Design | Wire framing | Data Visualisation | Storytelling | Web Programming</p>
         </div>
         <div>
-        Outside of my 9-to-5 grind, you&apos;ll often find me developing softwares for fun. I&apos;m all about expanding my skillset, and recently, I&apos;ve taken up card tricks as a new challenge.
+        Outside of my 9-to-5 grind, you&apos;ll find me developing 👨🏻‍💻 <LinkButton name="Figma plugin" href="https://www.figma.com/@ashishsauparna"/> to make my work easy. I&apos;m all about expanding my skillset, and currently, I&apos;m obsessed with completing&nbsp;<LinkButton name="Last of us part II" href="https://www.youtube.com/watch?v=vhII1qlcZ4E"/>
+        {/* <LinkButton name="Last of us part 2" href=""/> */}
         <br/><br/>
-        Currently, I&apos;m in a battle to stay faithful to my satvic lifestyle and daily Gym routine – believe me, it&apos;s a real struggle!
+        Currently, I&apos;m in a battle to stay faithful to my satvic 🧘 lifestyle and daily Gym routine – believe me, it&apos;s a real struggle!
         </div>
       </div>
       <MotionCV/>

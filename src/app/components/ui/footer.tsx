@@ -6,7 +6,7 @@ export default function Footer() {
 
 
   return (
-      <footer className='w-full mx-auto'>
+      <footer>
 
         <ul className='footer_links mb-4'>
           <li>📩 &nbsp;

@@ -29,7 +29,7 @@ export default function Home() {
         `}
       </Script>
       <NavBar/>
-      <div className='items-left mt-16'>
+      <div className='items-left recomendation_content'>
         <div className='hero_grid'>
           <Image
             src={HeroBackground}
@@ -56,9 +56,9 @@ export default function Home() {
             articles</span> library 
             of  */}
             <HeroAshishImg/>
-            <div style={{marginTop:"-8px"}}>
-             a UX Designer at EY. <br/>I build stuff ✨
-            </div>
+            <span style={{marginTop:"-8px"}}>
+            &nbsp;living in Gurgaon, India. It is where I work as a UX Designer at EY and I love building stuff ✨
+            </span>
             </h1>
             <Button href={'https://www.figma.com/community/plugin/1246737736127570810/font-swap'}
             name="Try Font Swap on Figma"/>

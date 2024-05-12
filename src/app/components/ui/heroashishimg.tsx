@@ -25,7 +25,7 @@ export default function HeroAshishImg(){
 
     return(
         <Link className='hover-link' style={{position:"relative"}} href={"/about-me"} 
-            onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}> Ashish
+            onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}> Ashish Sharma
             <Image
               src={AshishSharmaImg}
               alt="Black and white portait of Ashish Sharma"
