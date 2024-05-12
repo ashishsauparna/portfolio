@@ -11,11 +11,11 @@ export default function Button(link: any) {
       <div className="button">
       {link.name}
 
-      <Image
+      {/* <Image
         src={ArrowForwardIcon}
         alt="white arrow pointing to right"
         sizes="100vw"
-        className='arrow_icon'/>
+        className='arrow_icon'/> */}
       </div>
       
     </Link>

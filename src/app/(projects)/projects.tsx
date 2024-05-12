@@ -82,11 +82,11 @@ export default function ProjectsData() {
             <p className='text-zinc-600 mt-2.5 mb-4'>{image.subHeading}</p>
             <div className="button">
             View
-            <Image
+            {/* <Image
               src={ArrowForwardIcon}
               alt="white arrow pointing to right"
               sizes="100vw"
-              className='arrow_icon'/>
+              className='arrow_icon'/> */}
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Navigation from './navigation';
 import Icon from '/public/as_logo.svg';
+import IconGif from '/public/eye_logo.gif';
 import Image from 'next/image';
 import { Twirl as Hamburger } from 'hamburger-react';
 import { motion } from 'framer-motion';
@@ -10,13 +11,30 @@ import Link from 'next/link';
 
 export default function NavBar() {
 
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(false);
+  const [showGif, setShowGif] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowGif(true);
+      setTimeout(() => {
+        setShowGif(false);
+      }, 1000); // Adjust this value to control how long the GIF stays visible
+    }, 4000); // 12 seconds in milliseconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
       <>
       <nav className='web_nav'>
         <Link href={'/'}>
           <div className='logo_container'>
+        {showGif && <Image
+          src={IconGif}
+          alt="A Logo of the website in white text and blue background. The logo says AS short for Ashish Sharma"
+          sizes="60vw"
+          className='icon_gif' />}
         <Image
           src={Icon}
           alt="A Logo of the website in white text and blue background. The logo says AS short for Ashish Sharma"
@@ -32,7 +50,8 @@ export default function NavBar() {
             /
           </li>
           <li>
-          😇&nbsp;<Navigation name="About" href="/about-me" status="default" />
+          {/* 😇&nbsp; */}
+          <Navigation name="About" href="/about-me" status="default" />
           </li>
           <li className='text-slate-300'>
             /
