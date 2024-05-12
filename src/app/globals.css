@@ -51,12 +51,11 @@ body {
   column-gap: 8rem;
   border-radius: 1rem;
   position: relative;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   height: 70vh;
   align-items: center;
   justify-content: center;
   grid-template-columns: 1fr 1fr; /* Creates a 4-column grid layout */
-  overflow: hidden;
 }
 
 .articles_grid {
@@ -153,7 +152,7 @@ main{
 .icon{
   object-fit: contain;
   width: auto;
-  height: 42px;
+  height: 48px;
 }
 
 .icon:hover{
@@ -163,7 +162,7 @@ main{
 .icon_gif{
   object-fit: contain;
   width: auto;
-  height: 42px;
+  height: 48px;
   top: 36px;
   position: absolute;
 }
@@ -326,6 +325,19 @@ li .mobile_ui:hover{
   width: 480px;
   height: 480px;
   border-radius: 4px;
+}
+
+.project_image_blur{
+  object-fit: cover;
+  width: 480px;
+  height: 480px;
+  border-radius: 4px;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.cell:hover .project_image_blur{
+  opacity: 0;
 }
 
 .project_banner_1{

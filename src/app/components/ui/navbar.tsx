@@ -57,13 +57,13 @@ export default function NavBar() {
             /
           </li> */}
           <li>
-          📖&nbsp;<Navigation name="Reads" href="/my-reads" status="default" />
+          <Navigation name="Inspirations" href="/my-reads" status="default" />
           </li>
           {/* <li className='text-slate-300'>
             /
           </li> */}
           <li>
-          <Navigation name="My Articles" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/> &nbsp;
+          <Navigation name="Medium" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/> &nbsp;
           </li>
           {/* <li>
             <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" />

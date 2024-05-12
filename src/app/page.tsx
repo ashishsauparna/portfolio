@@ -63,7 +63,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <p style={{fontWeight:"500", marginBottom:"-18px"}}>Special Projects ✨</p>
+          <h3 style={{marginBottom:"-18px"}}>Special Projects ✨</h3>
           <ProjectsData/>
         </div>
       </div>

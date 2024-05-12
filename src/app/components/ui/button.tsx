@@ -1,14 +1,22 @@
+"use client"
 import Link from 'next/link';
-import Image from 'next/image';
-import ArrowForwardIcon from '/public/arrow_icon.svg';
  
 export default function Button(link: any) {
+
+  // const time = useTime();
+  // const transforme = useTransform(
+  //   time,
+  //   [],
+  //   [],
+  //   { clamp: false}
+  // )
  
   return (
     <Link
     target='_blank'
     href={link.href}>
-      <div className="button">
+      <div
+      className="button">
       {link.name}
 
       {/* <Image
