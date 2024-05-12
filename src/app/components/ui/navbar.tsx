@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Navigation from './navigation';
 import Icon from '/public/as_logo.svg';
-import IconGif from '/public/eye_logo.gif';
+import IconGif from '/public/as_logo_closed.svg';
 import Image from 'next/image';
 import { Twirl as Hamburger } from 'hamburger-react';
 import { motion } from 'framer-motion';
@@ -19,8 +19,8 @@ export default function NavBar() {
       setShowGif(true);
       setTimeout(() => {
         setShowGif(false);
-      }, 1000); // Adjust this value to control how long the GIF stays visible
-    }, 4000); // 12 seconds in milliseconds
+      }, 250); // Adjust this value to control how long the GIF stays visible
+    }, 6000); // 12 seconds in milliseconds
 
     return () => clearInterval(interval);
   }, []);
@@ -46,22 +46,22 @@ export default function NavBar() {
           <li>
             <Navigation name="Home" href="/" status="default" />
           </li>
-          <li className='text-slate-300'>
+          {/* <li className='text-slate-300'>
             /
-          </li>
+          </li> */}
           <li>
           {/* 😇&nbsp; */}
           <Navigation name="About" href="/about-me" status="default" />
           </li>
-          <li className='text-slate-300'>
+          {/* <li className='text-slate-300'>
             /
-          </li>
+          </li> */}
           <li>
           📖&nbsp;<Navigation name="Reads" href="/my-reads" status="default" />
           </li>
-          <li className='text-slate-300'>
+          {/* <li className='text-slate-300'>
             /
-          </li>
+          </li> */}
           <li>
           <Navigation name="My Articles" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/> &nbsp;
           </li>

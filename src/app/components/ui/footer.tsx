@@ -18,21 +18,21 @@ export default function Footer() {
           <li>
             <Navigation target="_blank" name="Figma Community" href="https://www.figma.com/@ashishsauparna" status="mobile_ui"/>
           </li>
-          <li className='dash'>
+          {/* <li className='dash'>
             /
-          </li>
+          </li> */}
           <li>
             <Navigation target="_blank" name="Linkedin" href="https://www.linkedin.com/in/ashishsauparna/" status="mobile_ui"/>
           </li>
-          <li className='dash'>
+          {/* <li className='dash'>
             /
-          </li>
+          </li> */}
           <li>
             <Navigation target="_blank" name="Medium" href="https://medium.com/@ashishsauparna" status="mobile_ui"/>
           </li>
         </ul>
         
-        <p className='text-gray-500 mt-4 leading-[2rem]'>
+        <p className='text-gray-500 mt-4 leading-[2rem] text-base'>
         © Assembled with pixels by Ashish. Last updated March 2024
         </p>
       </footer>
