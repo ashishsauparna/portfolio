@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import Script from 'next/script';
 import NavBar from '../../components/ui/navbar';
 import MotionImage from '../motionimage';
-import Link from 'next/link';
 import Footer from '../../components/ui/footer';
 import MotionCV from '../motioncv';
 import Button from '../../components/ui/button';
@@ -31,32 +30,48 @@ export default function AboutMe() {
       `}
     </Script>
       <NavBar/>
-      <div className='intro_content mt-40'>
+      <div className='intro_content_first mt-40'>
         <MotionImage/>
-        <div>
-        <h1>Pronounced:</h1>
-        <h1>Aa - shee - sh</h1><br/>
-        <p>
-        UX for me is like a game of skill. I like to see how things turn out when I twist them my way. Of course, empathizing with the user and understanding their experiences are part of it. But what&apos;s interesting for me is if they are comfortable, fearless, and accomplished at the end.
-        </p>
-          <Button href="https://drive.google.com/file/d/1eK2rZqecstTmCcAX_sw5w8E5WOtR0GPi/view?usp=sharing" name="View Resume"/>
-          {/* <Link href={'https://drive.google.com/file/d/1eK2rZqecstTmCcAX_sw5w8E5WOtR0GPi/view?usp=sharing'}>
-            
-            <h3 className='underline-offset-4 mt-4 underline text-blue-700'>View resume</h3></Link> */}
-        </div>    
+
+        <div className='intro_content_sec'>
+
+          <div>
+            <div className='flex gap-4 items-start'>
+              <div className='w-3 h-3 bg-zinc-900 absolute -ml-8'>
+              </div>
+              <h5 className='text-2xl text-slate-900 -mt-2'>Pronounced: Aa - shee - sh</h5>
+            </div>
+            <p className='mb-4 mt-4'>
+              UX for me is like a game of skill. I like to see how things turn out when I twist them my way. Of course, empathizing with the user and understanding their experiences are part of it. But what&apos;s interesting for me is if they are comfortable, fearless, and accomplished at the end.
+            </p>
+            <Button href="https://drive.google.com/file/d/1eK2rZqecstTmCcAX_sw5w8E5WOtR0GPi/view?usp=sharing" name="View Resume"/>
+          </div>
+
+          <div className='-mt-2'>
+            <div className='w-3 h-3 bg-zinc-900 absolute -ml-8 mt-2'>
+            </div>
+              Outside of my 9-to-5 grind, you&apos;ll find me developing 👨🏻‍💻 <LinkButton name="Figma plugin" href="https://www.figma.com/@ashishsauparna"/> to make my work easy. I&apos;m all about expanding my skillset, and currently, I&apos;m obsessed with completing&nbsp;<LinkButton name="Last of us part II" href="https://www.youtube.com/watch?v=vhII1qlcZ4E"/>
+              <br/><br/>
+              Currently, I&apos;m in a battle to stay faithful to my satvic 🧘 lifestyle and daily Gym routine – believe me, it&apos;s a real struggle!
+          </div> 
+        </div>
+
       </div>
-      <div className='intro_content mt-24'>
-        <div>
+
+      {/* <div className='intro_content mt-24'> */}
+        {/* <div>
           <h1 className='mb-4'>Skills & Interest</h1>
-          <p className='leading-7'>User Research | Heuristic Analysis | Persona Development | Customer Journey Mapping | Interaction Design | Wire framing | Data Visualisation | Storytelling | Web Programming</p>
-        </div>
-        <div>
-        Outside of my 9-to-5 grind, you&apos;ll find me developing 👨🏻‍💻 <LinkButton name="Figma plugin" href="https://www.figma.com/@ashishsauparna"/> to make my work easy. I&apos;m all about expanding my skillset, and currently, I&apos;m obsessed with completing&nbsp;<LinkButton name="Last of us part II" href="https://www.youtube.com/watch?v=vhII1qlcZ4E"/>
+          <p className='leading-7 cv_parah'>User Research | Heuristic Analysis | Persona Development | Customer Journey Mapping | Interaction Design | Wire framing | Data Visualisation | Storytelling | Web Programming</p>
+        </div> */}
+        {/* <div className='cv_parah'>
+        <div className='w-4 h-4 bg-zinc-900 absolute -ml-8 mt-2'>
+        </div> */}
+        {/* Outside of my 9-to-5 grind, you&apos;ll find me developing 👨🏻‍💻 <LinkButton name="Figma plugin" href="https://www.figma.com/@ashishsauparna"/> to make my work easy. I&apos;m all about expanding my skillset, and currently, I&apos;m obsessed with completing&nbsp;<LinkButton name="Last of us part II" href="https://www.youtube.com/watch?v=vhII1qlcZ4E"/> */}
         {/* <LinkButton name="Last of us part 2" href=""/> */}
-        <br/><br/>
+        {/* <br/><br/>
         Currently, I&apos;m in a battle to stay faithful to my satvic 🧘 lifestyle and daily Gym routine – believe me, it&apos;s a real struggle!
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
       <MotionCV/>
       <Footer/>
     </main>

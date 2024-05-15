@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { Twirl as Hamburger } from 'hamburger-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import OutwardArrow from '/public/outward_arrow.svg';
 
 export default function NavBar() {
 
@@ -62,8 +63,12 @@ export default function NavBar() {
           {/* <li className='text-slate-300'>
             /
           </li> */}
-          <li>
+          <li className='flex'>
           <Navigation name="Medium" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/> &nbsp;
+          <Image
+          src={OutwardArrow}
+          alt='outward arrow icon'
+          />
           </li>
           {/* <li>
             <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" />

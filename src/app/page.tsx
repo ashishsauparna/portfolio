@@ -2,11 +2,8 @@ import NavBar from './components/ui/navbar';
 import Footer from './components/ui/footer';
 import ProjectsData from './(projects)/projects';
 import Image from 'next/image';
-import HeroBackground from '/public/hero_background.svg';
 import Script from 'next/script';
-import Button from './components/ui/button';
-import HeroImage from './components/ui/heroimage';
-import HeroAshishImg from './components/ui/heroashishimg';
+import OutwardArrow from '/public/outward_arrow.svg';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -29,41 +26,39 @@ export default function Home() {
         `}
       </Script>
       <NavBar/>
-      <div className='items-left recomendation_content'>
-        <div className='hero_grid'>
-          <Image
-            src={HeroBackground}
-            alt="Black and white portait of Ashish Sharma"
-            sizes="100vw"
-            className='project_banner_2'/>
-          <HeroImage/>
-          <div className='md:w-11/12 2xl:w-5/6 mt-12'>
-            <h1>Hi,
-            I&apos;m&nbsp;
-            {/* <span className={isProject ? "tab_active" : "tab_default"} onClick={()=> setProject(true)}>
-            {isProject ?
-            <div className='underline_css'>
-              <YourSVG />
+      <div className='items-left body_width'>
+        <div className='mt-8 mb-32'>
+          <div className='relative mb-32'>
+            <div className='flex gap-4 items-start'>
+                <div className='w-10 h-10 bg-zinc-900'>
+                </div>
+              <div>
+                <h2>Ashish Sharma</h2>
+                <h5 className='text-slate-900'>Based in Gurgaon, India</h5>
               </div>
-            : "" }
-              design</span> &&nbsp;
-            <span className={!isProject ? "tab_active" : "tab_default"} onClick={()=> setProject(false)}>
-            {!isProject ?
-            <div className='underline_css'>
-            <YourSVG />
             </div>
-            : "" }
-            articles</span> library 
-            of  */}
-            <HeroAshishImg/>
-            &nbsp;living in Gurgaon, India. It is where I work as a UX Designer at EY and I love building stuff ✨
-            </h1>
-            <Button href={'https://www.figma.com/community/plugin/1246737736127570810/font-swap'}
-            name="Try Font Swap on Figma"/>
+            <div className='absolute right-0 top-0'>
+              <div>
+                <h2 className='mb-2'>Welcome to my</h2>
+                <h2>Portfolio 2024</h2>
+              </div>
+            </div>
+          </div>
+          <h1 className='text-8xl quote text-slate-400'>
+            Not Just a UX designer, <br/>I build stuff ✨
+          </h1>
+        </div>
+        <div className='flex justify-center items-center'>
+          <div className='flex gap-4'>
+            <Image
+            src={OutwardArrow}
+            alt='Outward arrow icon'
+            className='rotate-90'
+            />
+          (Scroll to view projects)
           </div>
         </div>
         <div>
-          <h3 style={{marginBottom:"-18px"}}>Special Projects ✨</h3>
           <ProjectsData/>
         </div>
       </div>

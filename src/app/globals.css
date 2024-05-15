@@ -17,7 +17,7 @@
 } */
 
 body {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 360;
   margin: 0;
   padding: 0;
@@ -31,15 +31,20 @@ body {
     rgb(var(--background-start-rgb)); /* Background color based on light/dark mode */
 }
 
+.body_width{
+  width: 90%;
+}
+
 .project_grid {
   display: grid;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  row-gap: 2rem;
-  grid-template-columns: repeat(1, 1fr); /* Creates a 4-column grid layout */
+  row-gap: 8rem;
+  column-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr; /* Creates a 4-column grid layout */
   grid-auto-rows: auto; /* Automatically adjusts the row size based on content */
-  margin-top: 3rem; /* Sets top margin to 8 units */
+  margin-top: 8rem; /* Sets top margin to 8 units */
   margin-bottom: 24px; /* Sets bottom margin to 24 units */
 }
 
@@ -79,12 +84,10 @@ body {
 .avatar_grid{
   display: grid;
   column-gap: 4rem; /* Sets the gap between grid items to 16px/1rem */
-  row-gap: 2rem;
-  grid-template-columns: repeat(6, 1fr); /* Creates a 4-column grid layout */
+  grid-template-columns: 1fr; /* Creates a 4-column grid layout */
   grid-auto-rows: auto; /* Automatically adjusts the row size based on content */
   width: 100%; /* Sets the width of the element to 100% of its container */
   margin-top: 2rem; /* Sets top margin to 8 units */
-  margin-bottom: 24px; /* Sets bottom margin to 24 units */
 }
 
 
@@ -95,14 +98,15 @@ h1{
   margin-bottom: 1rem;
   letter-spacing: -0.5px;
   font-weight: 300;
+  line-height: 1.2rem;
 }
 
 h2{
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-family: var(--font-space-gothic);
-  font-weight: 450;
-  letter-spacing: -1px;
-  line-height: 1.2(1.8rem);
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 1.2rem;
 }
 
 
@@ -120,7 +124,7 @@ h4{
 h5{
   font-family: var(--font-alegreya);
   font-size: 1.2rem;
-  color: #2c49cd;
+  color: #0069E5;
 }
 
 .ibm_italic{
@@ -129,7 +133,7 @@ h5{
 }
 
 main{
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -142,8 +146,9 @@ main{
   justify-content: space-between;
   align-items: center;
   padding-bottom: 24px;
-  margin-top: 2rem;
+  margin-top: 2.2rem;
   width: 90%;
+  z-index: 10;
 }
 .mobile_nav{
   display: none;
@@ -163,7 +168,7 @@ main{
   object-fit: contain;
   width: auto;
   height: 48px;
-  top: 36px;
+  top: 34px;
   position: absolute;
 }
 
@@ -172,10 +177,9 @@ main{
 }
 
 .logo_container{
-  margin-top: 0.3rem;
+  margin-top: -8px;
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
   font-weight: 400;
   color: #0e1320;
 }
@@ -196,11 +200,12 @@ ul {
 
 .nav_links{
   gap: 2rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: var(--font-space-gothic);
 }
 
 li .default{
+  border-bottom: 1.5px solid transparent;
   font-weight: 400;
 }
 
@@ -220,7 +225,6 @@ a:hover {
 
 li .active{
   font-weight: 400;
-  text-decoration: line-through;
 }
 
 
@@ -228,6 +232,8 @@ li .mobile_ui{
   font-weight: 400; 
   font-family: var(--font-space-gothic);
   text-decoration: none;
+  margin-left: -1.3rem;
+  border-bottom: 1.5px solid transparent;
 }
 
 li .mobile_ui:hover{
@@ -237,7 +243,7 @@ li .mobile_ui:hover{
 .tab_active{
   position: relative;
   cursor: pointer;
-  color: #2c49cd;
+  color: #0069E5;
 }
 
 .tab_default{
@@ -254,7 +260,7 @@ li .mobile_ui:hover{
   font-family: var(--font-space-gothic);
   font-size: 1rem;
   color: #0069E5;
-  padding: 0.4rem 1.3rem;
+  padding: 0.4rem 0.8rem;
   font-weight: 400;
   text-align: center;
   margin-top: 1rem;
@@ -280,8 +286,9 @@ li .mobile_ui:hover{
 }
 
 .link_button{
+  font-family: var(--font-alegreya);
+  font-size: 1.2rem;
   color: #0069E5;
-  font-weight: 500;
 }
 .link_button:hover{
   text-decoration: underline;
@@ -292,16 +299,12 @@ li .mobile_ui:hover{
 
 .cell{
   position: relative;
-  width: 100%;
+  width: auto;
   height: auto;
-  display: flex;
   flex-direction: row;
   text-decoration: none;
   align-items: center;
   gap: 24px;
-  background-color: #e9ebf0;
-  border-radius: 1rem;
-  overflow: hidden;
 }
 
 .cell:hover{
@@ -310,9 +313,9 @@ li .mobile_ui:hover{
 }
 
 .cell_two{
-  justify-content: center;
-  align-items: center;
+  display: flex;
   text-decoration: none;
+  gap: 2rem;
 }
 
 .cell_two:hover{
@@ -322,18 +325,18 @@ li .mobile_ui:hover{
 
 .project_image{
   object-fit: cover;
-  width: 480px;
-  height: 480px;
+  width: 100%;
+  height: 420px;
   border-radius: 4px;
 }
 
 .project_image_blur{
   object-fit: cover;
-  width: 480px;
-  height: 480px;
+  width: 100%;
+  height: 420px;
   border-radius: 4px;
   position: absolute;
-  transition: 0.5s;
+  transition: opacity 0.6s ease;
 }
 
 .cell:hover .project_image_blur{
@@ -341,11 +344,8 @@ li .mobile_ui:hover{
 }
 
 .project_banner_1{
-  width: 50%;
+  width: 100%;
   height: auto;
-  border-radius: 4px;
-  right: 0%;
-  bottom: 40px;
   position: absolute;
 }
 .project_banner_2{
@@ -365,9 +365,8 @@ li .mobile_ui:hover{
 }
 
 .avatar_images{
-  width: 100%;
+  width: 80px;
   height: auto;
-  border-radius: 1000px;
   margin-bottom: 1rem;
   transition: transform 0.3s ease;
 }
@@ -399,6 +398,7 @@ li .mobile_ui:hover{
 /* Footer */
 
 ul.footer_links{
+  display: grid;
   justify-content: left;
   gap: 16px;
 }
@@ -410,12 +410,9 @@ footer{
   margin-left: auto;
   margin-right: auto;
   margin-top: 10rem;
-  margin-bottom: 6rem;
   padding-top: 3rem;
   padding-bottom: 1rem;
-  border-top: 1px solid #e1e2e5;
 }
-
 
 .intro_content{
   display: grid;
@@ -425,8 +422,36 @@ footer{
   align-items: end;
 }
 
-.recomendation_content{
+.intro_content_first{
+  display: grid;
   width: 90%;
+  grid-template-columns: 0.8fr 1.5fr;
+  gap: 1rem; /* Equivalent to gap-4, adjust as needed */
+  align-items: end;
+}
+
+.intro_content_sec{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem; /* Equivalent to gap-4, adjust as needed */
+  align-items: start;
+}
+
+.intro_content_three{
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem; /* Equivalent to gap-4, adjust as needed */
+  align-items: start;
+}
+
+.recomendation_content{
+  display: grid;
+  width: 90%;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem; /* Equivalent to gap-4, adjust as needed */
+  align-items: start;
 }
 
 .mobile_nav_view{
@@ -482,6 +507,19 @@ footer{
 .hover-link:hover .hover-image{
   opacity: 1;
   display: block;
+}
+
+.cv_parah{
+  width: 100%;
+}
+
+.quote{
+  font-family: var(--font-alegreya);
+  width: 80%;
+}
+
+.serif{
+  font-family: var(--font-alegreya);
 }
 
 /* Tablet Portrait styles */

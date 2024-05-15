@@ -114,7 +114,7 @@ export default function Books() {
     setLimit((prevLimit) => {
       if(prevLimit.end > (numberOfDivs*3)-1){
         const nextStart = 0;
-        const nextEnd = 3;
+        const nextEnd = 6;
         return { start: nextStart, end: nextEnd };
       }else{
         const nextStart = prevLimit.start + 3;

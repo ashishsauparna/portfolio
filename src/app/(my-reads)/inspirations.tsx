@@ -10,6 +10,7 @@ import Sapta from '/public/inspiration/sapta.jpeg';
 import Jim from '/public/inspiration/jim.jpeg';
 import Ashwini from '/public/inspiration/ashwini.jpeg';
 import { animate, motion } from 'framer-motion';
+import OutwardArrow from '/public/outward_arrow.svg';
 
 export default function Inspirations() {
 
@@ -68,7 +69,7 @@ export default function Inspirations() {
           y: 0,
           transition:{
             delay:0.2 * index,
-            duration:0.4,
+            duration:0.3,
             type:"swing"
           },
         })
@@ -87,10 +88,19 @@ export default function Inspirations() {
               viewport={{
                 once:true
               }}>
-              <Link key={index} href={data.href}>
+              <Link key={index} href={data.href} target='_blank'>
                   <div className='cell_two'>
                     <Image src={data.img} alt={data.alt} className='avatar_images'/>
-                    <h3 className='text-center'>{data.name}</h3>
+                    <div>
+                      <span className='flex'><h3>{data.name}</h3>
+                      <Image
+                        src={OutwardArrow}
+                        alt='outward arrow icon'
+                        width={20}
+                      /></span>
+                      <h5>Instagram</h5>
+                    </div>
+                    
                   </div>
               </Link>
               </motion.div>

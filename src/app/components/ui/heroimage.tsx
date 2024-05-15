@@ -29,11 +29,12 @@ export default function HeroImage(){
         viewport={{
           once:true
         }}
-        className='project_banner_1'>
+        className='project_banner_1 inset-0 flex justify-center items-center'>
         <Image
             src={FontSwapBanner}
             alt="Black and white portait of Ashish Sharma"
-            sizes="100vw"/>
+            sizes="100vw"
+            className="w-2/4"/>
         </motion.div>
     )
 }

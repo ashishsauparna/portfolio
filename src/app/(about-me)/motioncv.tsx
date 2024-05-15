@@ -60,19 +60,20 @@ export default function MotionCV(){
       }
       
     return(
-        <motion.div className='intro_content mt-24 !items-start'
+        <motion.div className='intro_content_three mt-48 !items-start'
             variants={fadeInAnimationText}
             initial="initial"
             whileInView="animate"
             viewport={{
                 once:true
             }}>
+              <div></div>
             <div>
                 <h1 className='mb-8'>Education</h1>
                 {education.map((data, index) => (
                     <p key={index} className='leading-7 mb-4'>
                     <span style={{fontWeight:"460"}}>{data.study}</span>
-                    <br/><span className='text-gray-500'>{data.school}</span>
+                    <br/><h5 className='text-gray-500'>{data.school}</h5>
                     </p>
                 ))}
             </div>
@@ -82,7 +83,7 @@ export default function MotionCV(){
                     <p key={index} className='leading-7 mb-4'>
                     
                     <span style={{fontWeight:"460"}}>{data.company}</span><br/>
-                    <span className='text-gray-500'>{data.position}</span>
+                    <h5 className='text-gray-500'>{data.position}</h5>
                     </p>
                 ))}
                 </div>

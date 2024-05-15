@@ -3,7 +3,7 @@ import Books from '../books';
 import NavBar from '../../components/ui/navbar';
 import Footer from '../../components/ui/footer';
 import Image from 'next/image';
-import IgStory from '/public/books_story.png';
+import IgStory from '/public/books_story.jpg';
 import Inspirations from '../inspirations';
 import Link from 'next/link';
 import Script from 'next/script';
@@ -58,34 +58,46 @@ export default function MyReads() {
       `}
     </Script>
         <NavBar/>
-        <div className='intro_content mt-24'>
-          <div>
-            <Image src={IgStory} alt={'Book holding'}
-            style={{width:"100%", height:"auto"}}/>
+          <div className='intro_content_three mt-24'>
+              <div>
+                <Image src={IgStory} alt={'Book holding'}
+                style={{width:"80%", height:"auto"}}/>
+              </div>
+            <div>
+              <div className='flex gap-4 items-start'>
+                <div className='w-3 h-3 bg-zinc-900 absolute -ml-8'>
+                </div>
+                <h5 className='text-2xl text-slate-900 -mt-2'>What am I reading and listening to?</h5>
+              </div>
+              <p className='mb-4 mt-4'>Its a space of all my favourite books, podcasts, articles, people I am inspired by and things that I enjoy and love, that I hope you might like as well.</p>
+              <p className='tracking-widest mt-12'>(Work in progress...)</p>
+            </div>
+            <div className='w-full'>
+              <div className='flex gap-4 items-start'>
+                <div className='w-3 h-3 bg-zinc-900 absolute -ml-8'>
+                </div>
+                <h5 className='text-2xl text-slate-900 -mt-2'>People that inspire me</h5>
+              </div>
+              <Inspirations/>
+            </div>
           </div>
-          <div>
-            <h1 className='mb-4'>What am I reading and listening to?</h1>
-            <p>Its a space of all my favourite books, podcasts, articles, people I am inspired by and things that I enjoy and love, that I hope you might like as well.</p>
-            
-            <h1 className='mb-4 mt-24'>The Books I still go back to</h1>
-            <Books/>
-          </div>
-        </div>
 
-        <div className='recomendation_content mt-24 w-full'>
-
-          <h1 className='mb-4'>My design inspiration</h1>
-          <div style={{display:"flex", alignItems:"flex-start", gap:"16px", flexWrap:"wrap"}}>
-            {
-              designInsp.map((data, index) => (
-                <Link key={index} href={data.href} style={{padding:"4px 16px", border:"1px solid #383838", fontSize:"1rem"}}>{data.name}</Link>
-              ))
-            }
+        {/* <div className='recomendation_content mt-24 !items-start'>
+          <div>
+            <h1 className='mb-4'>My design inspiration</h1>
+            <div style={{display:"flex", alignItems:"flex-start", gap:"16px", flexWrap:"wrap"}}>
+              {
+                designInsp.map((data, index) => (
+                  <Link key={index} href={data.href} style={{padding:"4px 16px", border:"1px solid #383838", fontSize:"1rem"}}>{data.name}</Link>
+                ))
+              }
+            </div>
           </div>
-        
-          <h1 className='mb-4 mt-24'>People that inspire me</h1>
+          <div>
+          <h1 className='mb-4'>People that inspire me</h1>
           <Inspirations/>
-        </div>
+          </div>
+        </div> */}
         <Footer/>
       </main>    
   )
