@@ -32,7 +32,7 @@ export default function ProjectsData() {
       alt: "Vector image of 2 folders with the label of outside-in analysis",
       href: "https://medium.com/@ashishsauparna/strategic-ux-insights-the-what-and-how-of-outside-in-analysis-d33bc0ba2905",
       new: "Dec 23",
-      heading: "Outside-In Analysis",
+      heading: "CX Research - Delhivery",
       subHeading:"Understanding trends and innovations in a logistic industry"
     },
     {
@@ -104,11 +104,20 @@ export default function ProjectsData() {
         {
           image.src ? 
           <div>
+            <motion.div
+            whileHover={{
+              opacity:0,
+            }}
+            transition={{
+              type:"keyframes",
+              ease: "easeInOut"
+            }}>
             <Image
             src={image.srcBlur}
             alt={image.alt}
             sizes="100vw"
             className='project_image_blur'/>
+            </motion.div>
             <Image
             src={image.src}
             alt={image.alt}

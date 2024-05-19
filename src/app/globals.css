@@ -336,11 +336,6 @@ li .mobile_ui:hover{
   height: 420px;
   border-radius: 4px;
   position: absolute;
-  transition: opacity 0.6s ease;
-}
-
-.cell:hover .project_image_blur{
-  opacity: 0;
 }
 
 .project_banner_1{
