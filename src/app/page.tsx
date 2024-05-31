@@ -45,7 +45,13 @@ export default function Home() {
             </div>
           </div>
           <h1 className='text-8xl quote text-slate-400'>
-            Not Just a UX designer, <br/>I build stuff ✨
+            Not Just a UX designer, <br/>I build stuff <span className='inline-flex ml-4'>
+            <svg width="58" height="60" viewBox="0 0 58 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.93506 5.31982L10.6199 27.3269" stroke="#94a3b8" stroke-width="7"/>
+            <path d="M22 1.83252L28.6848 23.8396" stroke="#94a3b8" stroke-width="7"/>
+            <path d="M10.7021 55.606C19.5661 56.4923 45.4772 55.606 53.1212 13.3423" stroke="#94a3b8" stroke-width="7"/>
+            </svg>
+            </span>
           </h1>
         </div>
         <div className='flex justify-center items-center'>
