@@ -14,7 +14,7 @@ import { useState } from 'react';
 
 export default function ProjectsData() {
 
-  const [blurImage, setBlurImage] = useState(true);
+  // const [blurImage, setBlurImage] = useState(true);
 
   const imageInfo = [
     {
@@ -30,7 +30,7 @@ export default function ProjectsData() {
       src: delhiveryPoster,
       srcBlur:delhiveryPosterBlur,
       alt: "Vector image of 2 folders with the label of outside-in analysis",
-      href: "https://medium.com/@ashishsauparna/strategic-ux-insights-the-what-and-how-of-outside-in-analysis-d33bc0ba2905",
+      href: "/projects/delhivery-research",
       new: "Dec 23",
       heading: "CX Research - Delhivery",
       subHeading:"Understanding trends and innovations in a logistic industry"
@@ -39,7 +39,7 @@ export default function ProjectsData() {
       src: fontSwapImg,
       srcBlur:fontSwapImgBlur,
       alt: "Picture of a man using font swap plugin on his MacBook",
-      href: "https://medium.com/ux-planet/ux-case-study-font-swap-building-a-figma-plugin-e9ec6905f2e3",
+      href: "/projects/fontswap-research",
       new: "Jun 23",
       heading: "Font Swap — Building a Figma Plugin",
       subHeading:"A Figma plugin addressing multitask"
@@ -48,7 +48,7 @@ export default function ProjectsData() {
       src: rozgarImg,
       srcBlur:rozgarImgBlur,
       alt: "Picture of an man wokring on construction site",
-      href: "https://medium.com/@ashishsauparna/rozgar-ux-case-study-jan-2022-49dfe9f33ae3",
+      href: "/projects/rozgar-research",
       new: "Jan 22",
       heading: "Rozgar: Helps you look for blue collar jobs",
       subHeading:"Understanding the online/offline market of Blue collar workers."
@@ -66,8 +66,8 @@ export default function ProjectsData() {
       opacity:1,
       y:0,
       transition:{
-        delay:0.2 * index,
-        duration:0.4,
+        delay:0.1 * index,
+        duration:0.2,
         type:"swing"
       }
     }),
@@ -86,10 +86,10 @@ export default function ProjectsData() {
       viewport={{
         once:true
       }}>
-      <Link href={image.href} target='_blank'>
+      <Link href={image.href}>
         <div className='cell'>
           <div className='mb-4 flex justify-between'>
-            <h2>{image.heading}</h2>
+            <h4>{image.heading}</h4>
             {
           image.src ? 
           <div>

@@ -69,7 +69,7 @@ export default function MotionCV(){
             }}>
               <div></div>
             <div>
-                <h1 className='mb-8'>Education</h1>
+                <h2 className='mb-8'>Education</h2>
                 {education.map((data, index) => (
                     <p key={index} className='leading-7 mb-4'>
                     <span style={{fontWeight:"460"}}>{data.study}</span>
@@ -78,7 +78,7 @@ export default function MotionCV(){
                 ))}
             </div>
             <div>
-                <h1 className='mb-8'>Experience</h1>
+                <h2 className='mb-8'>Experience</h2>
                 {experience.map((data, index) => (
                     <p key={index} className='leading-7 mb-4'>
                     

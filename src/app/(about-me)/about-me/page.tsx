@@ -57,21 +57,6 @@ export default function AboutMe() {
         </div>
 
       </div>
-
-      {/* <div className='intro_content mt-24'> */}
-        {/* <div>
-          <h1 className='mb-4'>Skills & Interest</h1>
-          <p className='leading-7 cv_parah'>User Research | Heuristic Analysis | Persona Development | Customer Journey Mapping | Interaction Design | Wire framing | Data Visualisation | Storytelling | Web Programming</p>
-        </div> */}
-        {/* <div className='cv_parah'>
-        <div className='w-4 h-4 bg-zinc-900 absolute -ml-8 mt-2'>
-        </div> */}
-        {/* Outside of my 9-to-5 grind, you&apos;ll find me developing 👨🏻‍💻 <LinkButton name="Figma plugin" href="https://www.figma.com/@ashishsauparna"/> to make my work easy. I&apos;m all about expanding my skillset, and currently, I&apos;m obsessed with completing&nbsp;<LinkButton name="Last of us part II" href="https://www.youtube.com/watch?v=vhII1qlcZ4E"/> */}
-        {/* <LinkButton name="Last of us part 2" href=""/> */}
-        {/* <br/><br/>
-        Currently, I&apos;m in a battle to stay faithful to my satvic 🧘 lifestyle and daily Gym routine – believe me, it&apos;s a real struggle!
-        </div> */}
-      {/* </div> */}
       <MotionCV/>
       <Footer/>
     </main>

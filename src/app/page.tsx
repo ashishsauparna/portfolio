@@ -33,23 +33,23 @@ export default function Home() {
                 <div className='w-10 h-10 bg-zinc-900'>
                 </div>
               <div>
-                <h2>Ashish Sharma</h2>
+                <h4>Ashish Sharma</h4>
                 <h5 className='text-slate-900'>Based in Gurgaon, India</h5>
               </div>
             </div>
             <div className='absolute right-0 top-0'>
               <div>
-                <h2 className='mb-2'>Welcome to my</h2>
-                <h2>Portfolio 2024</h2>
+                <h4 className='mb-2'>Welcome to my</h4>
+                <h4>Portfolio 2024</h4>
               </div>
             </div>
           </div>
-          <h1 className='text-8xl quote text-slate-400'>
+          <h1 className='text-slate-400'>
             Not Just a UX designer, <br/>I build stuff <span className='inline-flex ml-4'>
             <svg width="58" height="60" viewBox="0 0 58 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.93506 5.31982L10.6199 27.3269" stroke="#94a3b8" stroke-width="7"/>
-            <path d="M22 1.83252L28.6848 23.8396" stroke="#94a3b8" stroke-width="7"/>
-            <path d="M10.7021 55.606C19.5661 56.4923 45.4772 55.606 53.1212 13.3423" stroke="#94a3b8" stroke-width="7"/>
+            <path d="M3.93506 5.31982L10.6199 27.3269" stroke="#94a3b8" strokeWidth="7"/>
+            <path d="M22 1.83252L28.6848 23.8396" stroke="#94a3b8" strokeWidth="7"/>
+            <path d="M10.7021 55.606C19.5661 56.4923 45.4772 55.606 53.1212 13.3423" stroke="#94a3b8" strokeWidth="7"/>
             </svg>
             </span>
           </h1>

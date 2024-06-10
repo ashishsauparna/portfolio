@@ -93,33 +93,33 @@ body {
 
 /*Defining headings*/
 h1{
-  font-size: 1.6rem;
-  font-family: var(--font-space-gothic);
+  font-size: 6rem;
+  font-family: var(--font-alegreya);
   margin-bottom: 1rem;
   letter-spacing: -0.5px;
-  font-weight: 300;
-  line-height: 1.2rem;
+  font-weight: 400;
+  line-height: 6rem;
 }
 
 h2{
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-family: var(--font-space-gothic);
-  font-weight: 400;
   letter-spacing: -0.5px;
-  line-height: 1.2rem;
 }
 
-
 h3{
-  font-size: 1.2rem;
-  letter-spacing: 0.2px;
+  font-size: 1.3rem;
   font-family: var(--font-space-gothic);
-  font-weight: 360;
+  font-weight: 430;
+  margin-bottom: 0.2rem;
 }
 
 h4{
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: var(--font-space-gothic);
+  font-weight: 450;
 }
+
 
 h5{
   font-family: var(--font-alegreya);
@@ -515,6 +515,48 @@ footer{
 
 .serif{
   font-family: var(--font-alegreya);
+}
+
+.score_grid{
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.score_tab{
+  margin-top: 2rem;
+  display: block;
+  position: relative;
+  border: 1px solid #D6D6D6;
+  padding: 24px;
+  padding-bottom: 8px;
+}
+
+.description_tab{
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: center; /* Align items in the center vertically */
+  gap: 0.5rem;
+  position: relative;
+}
+
+.description_tab::before{
+  content: "";
+  display: inline-block;
+  width: 10px;  /* Adjust the size as needed */
+  height: 10px; /* Adjust the size as needed */
+  background-color: #232122; /* Change the color if you want */
+  margin-right: 4px; /* Space between the square and the text */
+  vertical-align: middle; /* Align the square vertically with the text */
+}
+
+.content_grid_two{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem; /* Equivalent to gap-4, adjust as needed */
+  align-items: start;
 }
 
 /* Tablet Portrait styles */
