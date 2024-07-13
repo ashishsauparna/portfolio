@@ -6,6 +6,7 @@ import NavBar from '@/app/components/ui/navbar';
 import Footer from '@/app/components/ui/footer';
 import Button from '@/app/components/ui/button';
 import DelhiveryBanner from '/public/Outside_in_poster.png';
+import ProgressBar from "@/app/components/ui/progressbar";
 
 
 export default function DelhiveryResearch() {
@@ -33,9 +34,15 @@ export default function DelhiveryResearch() {
             </h2>
                 <h4 style={{marginTop:"0.3rem", fontWeight:"300"}}>Understanding Trends and <br/>innovations in a logistic industry</h4>
                 <div>
-                    <Button href="https://miro.com/welcomeonboard/WEhBbWxIQTVITFNUZUF1Tm1ZWHdTMXZkVjJCTmNNd3pTbWJVMTZiTzRLQk9XdWgzSWhiTlhYbWVvRDM2SEtWYnwzNDU4NzY0NTYyMzY0Mjg3NTkwfDI=?share_link_id=242834876031" name="View Progress on Miro"/>
-                    <h3 className='mt-24 mb-2'>
-                        What did this research Include?
+                    <h3 className='mt-12 mb-2'>
+                        Progress so far..
+                    </h3>
+                    <div className="w-2/5 mt-2"><ProgressBar progress={40}/></div>
+
+                    <Button href="https://miro.com/welcomeonboard/WEhBbWxIQTVITFNUZUF1Tm1ZWHdTMXZkVjJCTmNNd3pTbWJVMTZiTzRLQk9XdWgzSWhiTlhYbWVvRDM2SEtWYnwzNDU4NzY0NTYyMzY0Mjg3NTkwfDI=?share_link_id=242834876031" name="Open Miro in new tab"/>
+                    
+                    <h3 className='mt-12 mb-2'>
+                        What does this research Include?
                     </h3>
                     <div className='grid grid-row-3'>
                         <div className="description_tab">
@@ -68,10 +75,11 @@ export default function DelhiveryResearch() {
             </div>
             <div>
 
-              <Image
+              {/* <Image
               src={DelhiveryBanner}
               alt="Font Swap Banner"
-              />
+              /> */}
+              <iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVMrWRtKY=/?moveToViewport=-3409,-7877,58890,28610&embedId=393622349668" frameBorder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowFullScreen></iframe>
 
             </div>
         </div>
@@ -91,7 +99,7 @@ export default function DelhiveryResearch() {
                             Overall Time
                         </h3>
                         <h2 style={{fontSize:"4rem", letterSpacing:"-3px", marginTop:"1rem"}}>
-                            20 &nbsp;<span className='text-5xl text-amber-400'>☀️ days</span>
+                            30 <span className='text-4xl' style={{letterSpacing:"0"}}>days...</span>
                         </h2>
                     </div>
                     <div className="score_tab">

@@ -6,6 +6,7 @@ import NavBar from '@/app/components/ui/navbar';
 import Footer from '@/app/components/ui/footer';
 import Button from '@/app/components/ui/button';
 import RozgarBanner from '/public/case_study_rozgar.jpg';
+import ProgressBar from "@/app/components/ui/progressbar";
 
 
 export default function RozgarResearch() {
@@ -33,7 +34,11 @@ export default function RozgarResearch() {
             </h2>
                 <h4 style={{marginTop:"0.3rem", fontWeight:"300"}}>Understanding the <br/>online/offline market for Blue collar workers </h4>
                 <div>
-                    <Button href="https://medium.com/@ashishsauparna/rozgar-ux-case-study-jan-2022-49dfe9f33ae3" name="View detailed research"/>
+                    <h3 className='mt-12 mb-2'>
+                        Complete ✅
+                    </h3>
+                    <div className="w-2/5 mt-2"><ProgressBar progress={100}/></div>
+                    <Button href="https://medium.com/@ashishsauparna/rozgar-ux-case-study-jan-2022-49dfe9f33ae3" name="Open detailed research"/>
                     <h3 className='mt-24 mb-2'>
                         Key Solutions:
                     </h3>
@@ -73,10 +78,7 @@ export default function RozgarResearch() {
             </div>
             <div>
 
-              <Image
-              src={RozgarBanner}
-              alt="Font Swap Banner"
-              />
+              <iframe style={{border: "1px solid rgba(0, 0, 0, 0.1)"}} width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FI42lCRSFRSsTKKh3sR5Wvf%2FRojgar%3Fnode-id%3D12-9356%26t%3DhcgTNwmc8EimWJ07-1" allowFullScreen></iframe>
 
             </div>
         </div>

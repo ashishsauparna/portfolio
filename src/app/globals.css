@@ -257,14 +257,14 @@ li .mobile_ui:hover{
 }
 
 .button{
-  border: 1px solid #0069E5;
   font-family: var(--font-space-gothic);
   font-size: 1rem;
-  color: #0069E5;
-  padding: 0.4rem 0.8rem;
+  color: #fefefe;
+  background-color: #0069E5;
+  padding: 0.6rem 1.2rem;
   font-weight: 400;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   display: inline-flex;
   text-decoration: none;
   position: relative;
@@ -272,7 +272,7 @@ li .mobile_ui:hover{
 }
 .button:hover{
   text-decoration: none !important;
-  background-color: #0069E5;
+  background-color: #054895;
   color: #fefefe;
 }
 .arrow_icon {

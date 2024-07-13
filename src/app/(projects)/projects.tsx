@@ -6,6 +6,8 @@ import delhiveryPoster from '/public/Outside_in_poster.png'
 import rozgarImg from '/public/case_study_rozgar.jpg';
 import fontSwapImgBlur from '/public/fontswap_2_blur.png';
 import delhiveryPosterBlur from '/public/Outside_in_poster_blur.png'
+import buttonSmithImg from '/public/button_smith_banner.jpg'
+import buttonSmithImgBlur from '/public/button_smith_banner_blur.jpg'
 import rozgarImgBlur from '/public/case_study_rozgar_blur.png';
 import Link from 'next/link';
 import { animate, motion } from 'framer-motion';
@@ -27,6 +29,15 @@ export default function ProjectsData() {
       subHeading:""
     },
     {
+      src: buttonSmithImg,
+      srcBlur:buttonSmithImgBlur,
+      alt: "Picture of an man wokring on construction site",
+      href: "/projects/buttonsmith-research",
+      new: "May 24",
+      heading: "Button Smith - Create & doc. all button states",
+      subHeading:"A Figma Plugin making esigner life easy."
+    },
+    {
       src: delhiveryPoster,
       srcBlur:delhiveryPosterBlur,
       alt: "Vector image of 2 folders with the label of outside-in analysis",
@@ -43,6 +54,15 @@ export default function ProjectsData() {
       new: "Jun 23",
       heading: "Font Swap — Building a Figma Plugin",
       subHeading:"A Figma plugin addressing multitask"
+    },
+    {
+      src: "",
+      srcBlur:"",
+      alt: "",
+      href: "",
+      new: "",
+      heading: "",
+      subHeading:""
     },
     {
       src: rozgarImg,

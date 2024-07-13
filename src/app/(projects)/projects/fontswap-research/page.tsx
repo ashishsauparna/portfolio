@@ -6,6 +6,8 @@ import NavBar from '@/app/components/ui/navbar';
 import Footer from '@/app/components/ui/footer';
 import Button from '@/app/components/ui/button';
 import FontSwapBanner from '/public/fontswap_2.jpg';
+import YouTubeEmbed from "@/app/components/ui/youtube-embed";
+import ProgressBar from "@/app/components/ui/progressbar";
 
 
 export default function FontSwapResearch() {
@@ -33,6 +35,10 @@ export default function FontSwapResearch() {
             </h2>
                 <h4 style={{marginTop:"0.3rem", fontWeight:"300"}}>A Figma Plugin addressing <br/>multitasks</h4>
                 <div>
+                    <h3 className='mt-12 mb-2'>
+                        Complete ✅
+                    </h3>
+                    <div className="w-2/5 mt-2"><ProgressBar progress={100}/></div>
                     <Button href="https://medium.com/ux-planet/ux-case-study-font-swap-building-a-figma-plugin-e9ec6905f2e3" name="View detailed research"/>
                     <h3 className='mt-24 mb-2'>
                         Key Solutions:
@@ -63,10 +69,11 @@ export default function FontSwapResearch() {
             </div>
             <div>
 
-              <Image
+              {/* <Image
               src={FontSwapBanner}
               alt="Font Swap Banner"
-              />
+              /> */}
+              <YouTubeEmbed videoId="uJtddv6lGhY"/>
 
             </div>
         </div>
@@ -86,7 +93,7 @@ export default function FontSwapResearch() {
                             Users earned
                         </h3>
                         <h2 style={{fontSize:"4rem", letterSpacing:"-3px", marginTop:"1rem"}}>
-                            15K
+                            +17K <span className='text-4xl' style={{letterSpacing:"0"}}>users</span>
                         </h2>
                     </div>
                     <div className="score_tab">
