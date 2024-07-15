@@ -16,8 +16,6 @@ import { useState } from 'react';
 
 export default function ProjectsData() {
 
-  // const [blurImage, setBlurImage] = useState(true);
-
   const imageInfo = [
     {
       src: "",
@@ -25,7 +23,7 @@ export default function ProjectsData() {
       alt: "",
       href: "",
       new: "",
-      heading: "Special Projects ✨",
+      heading: "My Projects ⚡️",
       subHeading:""
     },
     {
@@ -34,7 +32,7 @@ export default function ProjectsData() {
       alt: "Picture of an man wokring on construction site",
       href: "/projects/buttonsmith-research",
       new: "May 24",
-      heading: "Button Smith - Create & doc. all button states",
+      heading: "Button Smith | Figma Plugin",
       subHeading:"A Figma Plugin making esigner life easy."
     },
     {
@@ -43,7 +41,7 @@ export default function ProjectsData() {
       alt: "Vector image of 2 folders with the label of outside-in analysis",
       href: "/projects/delhivery-research",
       new: "Dec 23",
-      heading: "CX Research - Delhivery",
+      heading: "Delhivery | CX Research",
       subHeading:"Understanding trends and innovations in a logistic industry"
     },
     {
@@ -52,7 +50,7 @@ export default function ProjectsData() {
       alt: "Picture of a man using font swap plugin on his MacBook",
       href: "/projects/fontswap-research",
       new: "Jun 23",
-      heading: "Font Swap — Building a Figma Plugin",
+      heading: "Font Swap | Figma Plugin",
       subHeading:"A Figma plugin addressing multitask"
     },
     {
@@ -70,7 +68,7 @@ export default function ProjectsData() {
       alt: "Picture of an man wokring on construction site",
       href: "/projects/rozgar-research",
       new: "Jan 22",
-      heading: "Rozgar: Helps you look for blue collar jobs",
+      heading: "Rozgar | Mobile Application",
       subHeading:"Understanding the online/offline market of Blue collar workers."
     }
     // Add more objects as needed
@@ -147,7 +145,7 @@ export default function ProjectsData() {
           : ""
         }
           <div className='mt-4 flex justify-between'>
-            <h5 className='mr-20'>{image.subHeading}</h5>
+            <h5 className='mr-20 whitespace-pre-line'>{image.subHeading}</h5>
             <h5 className='text-right whitespace-nowrap'>{image.new}</h5>
           </div>
         </div>
