@@ -44,7 +44,7 @@ export default function AboutMe() {
             <p className='mb-4 mt-4'>
               UX for me is like a game of skill. I like to see how things turn out when I twist them my way. Of course, empathizing with the user and understanding their experiences are part of it. But what&apos;s interesting for me is if they are comfortable, fearless, and accomplished at the end.
             </p>
-            <Button href="https://drive.google.com/file/d/1eK2rZqecstTmCcAX_sw5w8E5WOtR0GPi/view?usp=sharing" name="View Resume"/>
+            <Button href="https://drive.google.com/file/d/1ZSNwRmH_NFad1FuJxVxoCsSnlrOGHxR5/view?usp=share_link" name="View Resume"/>
           </div>
 
           <div className='-mt-2'>
