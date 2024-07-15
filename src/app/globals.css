@@ -259,8 +259,8 @@ li .mobile_ui:hover{
 .button{
   font-family: var(--font-space-gothic);
   font-size: 1rem;
-  color: #fefefe;
-  background-color: #0069E5;
+  color: #0069E5;
+  border: 1px solid #0069E5;
   padding: 0.6rem 1.2rem;
   font-weight: 400;
   text-align: center;
@@ -272,7 +272,7 @@ li .mobile_ui:hover{
 }
 .button:hover{
   text-decoration: none !important;
-  background-color: #054895;
+  background-color: #0069E5;
   color: #fefefe;
 }
 .arrow_icon {
@@ -519,7 +519,7 @@ footer{
 }
 
 .score_grid{
-  width: 75%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
@@ -531,13 +531,12 @@ footer{
   position: relative;
   border: 1px solid #D6D6D6;
   padding: 24px;
-  padding-bottom: 8px;
+  padding: 24px 24px;
 }
 
 .description_tab{
   margin-top: 0.3rem;
   display: flex;
-  align-items: center; /* Align items in the center vertically */
   gap: 0.5rem;
   position: relative;
 }
@@ -546,10 +545,11 @@ footer{
   content: "";
   display: inline-block;
   width: 10px;  /* Adjust the size as needed */
-  height: 10px; /* Adjust the size as needed */
-  background-color: #232122; /* Change the color if you want */
+  height: 10px; /* Adjust the size as needed */ 
+  background-color: #0069E5; /* Change the color if you want */
   margin-right: 4px; /* Space between the square and the text */
   vertical-align: middle; /* Align the square vertically with the text */
+  transform: translateY(8px);
 }
 
 .content_grid_two{

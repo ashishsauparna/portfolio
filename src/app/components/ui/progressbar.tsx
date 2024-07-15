@@ -4,9 +4,9 @@ interface ProgressBarProps {
   
   const ProgressBar = ({ progress }: ProgressBarProps) => {
     return (
-      <div className="bg-gray-200 rounded overflow-hidden">
+      <div className="bg-gray-200 overflow-hidden">
         <div
-          className="bg-[#0069E5] h-2 rounded transition-all duration-500"
+          className="bg-[#0069E5] h-2 transition-all duration-500"
           style={{ width: `${progress}%` }}
         />
       </div>
