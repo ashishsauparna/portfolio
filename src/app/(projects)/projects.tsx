@@ -18,17 +18,8 @@ export default function ProjectsData() {
 
   const imageInfo = [
     {
-      src: "",
-      srcBlur:"",
-      alt: "",
-      href: "",
-      new: "",
-      heading: "My Projects ⚡️",
-      subHeading:""
-    },
-    {
       src: buttonSmithImg,
-      srcBlur:buttonSmithImgBlur,
+      srcBlur:"",
       alt: "Picture of an man wokring on construction site",
       href: "/projects/buttonsmith-research",
       new: "May 24",
@@ -36,8 +27,17 @@ export default function ProjectsData() {
       subHeading:"A Figma Plugin making esigner life easy."
     },
     {
+      src: "",
+      srcBlur:"",
+      alt: "",
+      href: "",
+      new: "",
+      heading: "",
+      subHeading:""
+    },
+    {
       src: delhiveryPoster,
-      srcBlur:delhiveryPosterBlur,
+      srcBlur:"",
       alt: "Vector image of 2 folders with the label of outside-in analysis",
       href: "/projects/delhivery-research",
       new: "Dec 23",
@@ -46,7 +46,7 @@ export default function ProjectsData() {
     },
     {
       src: fontSwapImg,
-      srcBlur:fontSwapImgBlur,
+      srcBlur:"",
       alt: "Picture of a man using font swap plugin on his MacBook",
       href: "/projects/fontswap-research",
       new: "Jun 23",
@@ -64,7 +64,7 @@ export default function ProjectsData() {
     },
     {
       src: rozgarImg,
-      srcBlur:rozgarImgBlur,
+      srcBlur:"",
       alt: "Picture of an man wokring on construction site",
       href: "/projects/rozgar-research",
       new: "Jan 22",
@@ -130,11 +130,11 @@ export default function ProjectsData() {
               type:"keyframes",
               ease: "easeInOut"
             }}>
-            <Image
+            {/* <Image
             src={image.srcBlur}
             alt={image.alt}
             sizes="100vw"
-            className='project_image_blur'/>
+            className='project_image_blur'/> */}
             </motion.div>
             <Image
             src={image.src}

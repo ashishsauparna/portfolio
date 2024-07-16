@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Script from 'next/script';
 import OutwardArrow from '/public/outward_arrow.svg';
 import { Metadata } from 'next';
+import LottieAnimation from './components/ui/scrollanimation';
 
 export const metadata: Metadata = {
   title: 'Ashish Sharma UX Designer',
@@ -30,7 +31,7 @@ export default function Home() {
         <div className='mt-8 mb-32'>
           <div className='relative mb-32'>
             <div className='flex gap-4 items-start'>
-                <div className='w-10 h-10 bg-zinc-900'>
+                <div className='w-11 h-11 bg-zinc-900' style={{transform:"translateY(4px)"}}>
                 </div>
               <div>
                 <h4>Ashish Sharma</h4>
@@ -54,13 +55,15 @@ export default function Home() {
             </span>
           </h1>
         </div>
-        <div className='flex justify-center items-center'>
-          <div className='flex gap-4'>
-            <Image
+        <div className='justify-center items-center'>
+
+        <LottieAnimation width={35} height={35} />
+          <div className='flex justify-center mt-4'>
+            {/* <Image
             src={OutwardArrow}
             alt='Outward arrow icon'
             className='rotate-90'
-            />
+            /> */}
           (Scroll to view projects)
           </div>
         </div>
