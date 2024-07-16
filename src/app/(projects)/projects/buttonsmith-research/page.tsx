@@ -9,7 +9,7 @@ export default function ButtonSmithResearch() {
       title="Button Smith"
       year="May 2024"
       subtitle="One Figma Plugin to generates and documents all your button states"
-      buttonHref="https://medium.com/ux-planet/ux-case-study-button-smith-effortless-button-creation-8b9c7b9f8f2a"
+      buttonHref="https://medium.com/@ashishsauparna/the-journey-of-building-button-smith-from-idea-to-launch-274b2252d3ed"
       buttonText="View detailed research"
       progress={100}
       descriptionItems={[
