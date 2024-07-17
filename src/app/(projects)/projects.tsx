@@ -12,7 +12,6 @@ import rozgarImgBlur from '/public/case_study_rozgar_blur.png';
 import Link from 'next/link';
 import { animate, motion } from 'framer-motion';
 import OutwardArrow from '/public/outward_arrow.svg';
-import { useState } from 'react';
 
 export default function ProjectsData() {
 
@@ -24,16 +23,9 @@ export default function ProjectsData() {
       href: "/projects/buttonsmith-research",
       new: "May 24",
       heading: "Button Smith | Figma Plugin",
-      subHeading:"A Figma Plugin making esigner life easy."
-    },
-    {
-      src: "",
-      srcBlur:"",
-      alt: "",
-      href: "",
-      new: "",
-      heading: "",
-      subHeading:""
+      subHeading:"A Figma Plugin making esigner life easy.",
+      large: false,
+      shortImage: false
     },
     {
       src: delhiveryPoster,
@@ -42,7 +34,9 @@ export default function ProjectsData() {
       href: "/projects/delhivery-research",
       new: "Dec 23",
       heading: "Delhivery | CX Research",
-      subHeading:"Understanding trends and innovations in a logistic industry"
+      subHeading:"Understanding trends and innovations in a logistic industry",
+      large: true,
+      shortImage: true
     },
     {
       src: fontSwapImg,
@@ -51,7 +45,9 @@ export default function ProjectsData() {
       href: "/projects/fontswap-research",
       new: "Jun 23",
       heading: "Font Swap | Figma Plugin",
-      subHeading:"A Figma plugin addressing multitask"
+      subHeading:"A Figma plugin addressing multitask",
+      large: false,
+      shortImage: false
     },
     {
       src: "",
@@ -60,7 +56,9 @@ export default function ProjectsData() {
       href: "",
       new: "",
       heading: "",
-      subHeading:""
+      subHeading:"",
+      large: false,
+      shortImage: false
     },
     {
       src: rozgarImg,
@@ -69,7 +67,9 @@ export default function ProjectsData() {
       href: "/projects/rozgar-research",
       new: "Jan 22",
       heading: "Rozgar | Mobile Application",
-      subHeading:"Understanding the online/offline market of Blue collar workers."
+      subHeading:"Understanding the online/offline market of Blue collar workers.",
+      large: false,
+      shortImage: true
     }
     // Add more objects as needed
   ];
@@ -103,7 +103,9 @@ export default function ProjectsData() {
       custom={index}
       viewport={{
         once:true
-      }}>
+      }}
+      className={image.large ? 'cell large' : 'cell'} // Conditionally apply 'large' class
+      >
       <Link href={image.href}>
         <div className='cell'>
           <div className='mb-4 flex justify-between'>
@@ -140,7 +142,7 @@ export default function ProjectsData() {
             src={image.src}
             alt={image.alt}
             sizes="100vw"
-            className='project_image'/>
+            className={image.shortImage ? 'project_image small' : 'project_image'}/>
           </div>
           : ""
         }
