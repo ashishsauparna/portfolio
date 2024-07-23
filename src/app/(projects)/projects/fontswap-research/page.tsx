@@ -34,9 +34,9 @@ export default function FontSwapResearch() {
       stakeholdersTitle="Stakeholders"
       stakeholdersSubtitle="UI Designers"
       scoreTitle2 = "Overall Users"
-      usersEarned="+17k"
+      usersEarned="+18k"
       usersText="users"
-      peopleInvolved="👨🏻‍💻"
+      peopleInvolved="🙋🏻"
       useiframe = {false}
     />)
 }

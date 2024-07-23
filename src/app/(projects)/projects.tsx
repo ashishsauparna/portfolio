@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import fontSwapImg from '/public/fontswap_2.jpg';
-import delhiveryPoster from '/public/Outside_in_poster.png'
+import delhiveryPoster from '/public/Outside_in_poster.jpg'
 import rozgarImg from '/public/case_study_rozgar.jpg';
 import fontSwapImgBlur from '/public/fontswap_2_blur.png';
 import delhiveryPosterBlur from '/public/Outside_in_poster_blur.png'
@@ -25,7 +25,7 @@ export default function ProjectsData() {
       heading: "Button Smith | Figma Plugin",
       subHeading:"A Figma Plugin making esigner life easy.",
       large: false,
-      shortImage: false
+      shortImage: true
     },
     {
       src: delhiveryPoster,
@@ -36,7 +36,7 @@ export default function ProjectsData() {
       heading: "Delhivery | CX Research",
       subHeading:"Understanding trends and innovations in a logistic industry",
       large: true,
-      shortImage: true
+      shortImage: false
     },
     {
       src: fontSwapImg,
@@ -147,8 +147,8 @@ export default function ProjectsData() {
           : ""
         }
           <div className='mt-4 flex justify-between'>
-            <h5 className='mr-20 whitespace-pre-line'>{image.subHeading}</h5>
-            <h5 className='text-right whitespace-nowrap'>{image.new}</h5>
+            <h5 className='mr-20 whitespace-pre-line' style={{color:"#232122"}}>{image.subHeading}</h5>
+            <h5 className='text-right whitespace-nowrap' style={{color:"#232122"}}>{image.new}</h5>
           </div>
         </div>
       </Link>

@@ -34,9 +34,8 @@ export default function RozgarResearch() {
     stakeholdersTitle="Stakeholders"
     stakeholdersSubtitle="👷🏼‍♂️ 👨🏻‍🏭 📦 🔩"
     scoreTitle2 = "Overall Time Spent"
-    usersEarned="3"
-    usersText="days"
-    peopleInvolved="👨🏻‍💻"
+    usersEarned="3 days"
+    peopleInvolved="🙋🏻"
     useiframe = {true}
   />
   )

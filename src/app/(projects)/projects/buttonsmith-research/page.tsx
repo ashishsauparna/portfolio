@@ -21,9 +21,10 @@ export default function ButtonSmithResearch() {
       youtubeVideoIdOrMiroLink="FfLtALrdE0I"
       stakeholdersTitle="Stakeholders"
       stakeholdersSubtitle="UI/Visual Designers"
-      usersEarned="+216"
+      scoreTitle2 = "Overall Users"
+      usersEarned="+250"
       usersText="users"
-      peopleInvolved="👨🏻‍💻"
+      peopleInvolved="🙋🏻🙋🏻"
     />
   )
 }

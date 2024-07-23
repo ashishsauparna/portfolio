@@ -15,7 +15,6 @@ export default function DelhiveryResearch() {
   
 
   return (
-
     <ProjectPage
       title="UX Research - Delhivery"
       year="Dec 23"
@@ -34,10 +33,10 @@ export default function DelhiveryResearch() {
       stakeholdersTitle="Research Company"
       stakeholdersSubtitle="Delhivery"
       scoreTitle2 = "Overall Time Spent"
-      usersEarned="16"
-      usersText="days"
-      peopleInvolved="👨🏻‍💻"
+      usersEarned="16 hours"
+      peopleInvolved="🙋🏻"
       useiframe = {true}
     />
+
   )
 }
