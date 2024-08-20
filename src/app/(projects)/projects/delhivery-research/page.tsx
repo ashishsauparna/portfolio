@@ -90,7 +90,7 @@ export default function DelhiveryResearch() {
                         </div>
                     ))}
                 </div>
-                <Button href={"https://medium.com/@ashishsauparna/the-journey-of-building-button-smith-from-idea-to-launch-274b2252d3ed"} name={"View detailed research"}/>
+                <Button href={"https://miro.com/app/board/uXjVMrWRtKY=/?share_link_id=143662822406"} name={"View detailed research"}/>
             </div>
           </div>
 

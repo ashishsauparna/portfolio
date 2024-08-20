@@ -90,7 +90,7 @@ export default function ButtonSmithResearch() {
                         </div>
                     ))}
                 </div>
-                <Button href={"https://medium.com/@ashishsauparna/the-journey-of-building-button-smith-from-idea-to-launch-274b2252d3ed"} name={"View detailed research"}/>
+                <Button href={"https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=529-7&t=hcDzdTGFhRkszfsj-1"} name={"View detailed research"}/>
             </div>
           </div>
           <div>

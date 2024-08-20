@@ -89,7 +89,7 @@ export default function RozgarResearch() {
                   </p>
 
                 </div>
-                <Button href={"https://medium.com/@ashishsauparna/the-journey-of-building-button-smith-from-idea-to-launch-274b2252d3ed"} name={"View detailed research"}/>
+                <Button href={"https://medium.com/@ashishsauparna/rozgar-ux-case-study-jan-2022-49dfe9f33ae3"} name={"View detailed research"}/>
             </div>
           </div>
           <div>

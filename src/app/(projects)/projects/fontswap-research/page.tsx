@@ -113,7 +113,7 @@ export default function FontSwapResearch() {
                         </div>
                     ))}
                 </div>
-                <Button href={"https://medium.com/@ashishsauparna/the-journey-of-building-button-smith-from-idea-to-launch-274b2252d3ed"} name={"View detailed research"}/>
+                <Button href={"https://www.figma.com/design/VspD6hZZcvYiE2QM3dwHJD/Font-Swap-Plugin?node-id=1-7019&t=iPooSAi8QYkKt0Td-1"} name={"View detailed research"}/>
             </div>
           </div>
           <div>
