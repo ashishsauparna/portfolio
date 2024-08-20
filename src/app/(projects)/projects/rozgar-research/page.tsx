@@ -1,5 +1,3 @@
-"use client"
-
 import Image from "next/image";
 import Script from 'next/script';
 import NavBar from '@/app/components/ui/navbar';

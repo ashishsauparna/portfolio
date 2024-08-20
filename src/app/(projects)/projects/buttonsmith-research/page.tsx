@@ -1,5 +1,3 @@
-"use client"
-
 import ArrowHeading from "@/app/components/ui/arrowheading";
 import Button from "@/app/components/ui/button";
 import Footer from "@/app/components/ui/footer";
