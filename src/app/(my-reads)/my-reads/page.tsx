@@ -70,7 +70,6 @@ export default function MyReads() {
                 <h5 className='text-2xl text-slate-900 -mt-2'>What am I reading and listening to?</h5>
               </div>
               <p className='mb-4 mt-4'>Its a space of all my favourite books, podcasts, articles, people I am inspired by and things that I enjoy and love, that I hope you might like as well.</p>
-              <p className='tracking-widest mt-12'>(Work in progress...)</p>
             </div>
             <div className='w-full'>
               <div className='flex gap-4 items-start'>
