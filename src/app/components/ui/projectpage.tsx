@@ -1,15 +1,12 @@
 "use client"
 
 import Script from 'next/script';
-import Image from 'next/image';
 import NavBar from '@/app/components/ui/navbar';
 import Footer from '@/app/components/ui/footer';
 import Button from '@/app/components/ui/button';
 import YouTubeEmbed from "@/app/components/ui/youtube-embed";
-import ProgressBar from "@/app/components/ui/progressbar";
-import ArrowIcon from '/public/outward_arrow.svg';
-import Image1 from '/public/delhivery/image_1.jpg';
 import Link from "next/link";
+import ArrowHeading from './arrowheading';
 
 const ProjectPage = ({
   title = 'Font Swap',
@@ -47,34 +44,45 @@ const ProjectPage = ({
             `}
         </Script>
         <NavBar/>
-      <div className="items-left body_width">
-        <div className="flex flex-col items-start mt-8" style={{color: "#0069E5"}}>
+
+        <div className="items-left body_width">
+
+
+
+        {/* ---------- Back button here ---------- */}
+
+
+        <div className="flex flex-col items-start mt-8 font-medium" style={{color: "#0069E5"}}>
             <Link href={"/"}>
-                &lt; Go Back
+                &lt; Back
             </Link>
         </div>
+
+
+
+        {/* ---------- Title here ---------- */}
+
+
+
         <div className="pt-12">
             <h2>{title}
-            <sup className='text-base text-slate-600 ml-2'>{year}</sup>
             </h2>
             <h4 style={{marginTop:"0.3rem", fontWeight:"300"}}>{subtitle}</h4>
         </div>
+
+
+
+
+
+
+
+        {/* ---------- First Fold Grid - Includes Impact and an Image ---------- */}
+
+
         <div className="mb-20 mt-16 content_grid_two">
+          <div>
             <div>
-                {useiframe ? (
-                    <iframe width="100%" height="502" 
-                    style={{border: "1px solid rgba(0, 0, 0, 0.1)"}}
-                    src={youtubeVideoIdOrMiroLink} 
-                    allow="fullscreen; clipboard-read; clipboard-write" 
-                    allowFullScreen></iframe>
-                ) : (<YouTubeEmbed videoId={youtubeVideoIdOrMiroLink}/>)}
-            </div>
-          <div className="pl-8">
-            <div>
-                <h3 className='mb-2'>
-                    Project progress {progress}%
-                </h3>
-                <div className="w-full mt-4 mb-4"><ProgressBar progress={progress}/></div>
+                <ArrowHeading heading = "Impact"/>
                 <div className='grid grid-row-3 mb-4 gap-2'>
                     {descriptionItems.map((item, index) => (
                         <div className="description_tab" key={index}>
@@ -87,50 +95,96 @@ const ProjectPage = ({
                 <Button href={buttonHref} name={buttonText}/>
             </div>
           </div>
+          <div>
+                {useiframe ? (
+                    <iframe width="100%" height="502" 
+                    style={{border: "1px solid rgba(0, 0, 0, 0.1)"}}
+                    src={youtubeVideoIdOrMiroLink} 
+                    allow="fullscreen; clipboard-read; clipboard-write" 
+                    allowFullScreen></iframe>
+                ) : (<YouTubeEmbed videoId={youtubeVideoIdOrMiroLink}/>)}
+            </div>
         </div>
-        <div className='flex w-full justify-center items-center mt-24'>
-            <div className='score_grid'>
-                <div className="score_tab">
-                    <h3 style={{color:"#232122"}}>
-                        {stakeholdersTitle}
-                    </h3>
-                    <h5 style={{fontSize:"3rem", color:"#232122"}}>
-                        {stakeholdersSubtitle}
-                    </h5>
+
+
+
+
+
+
+
+
+        {/* ---------- Second Fold Grid - Includes Objective, Timeline and Pannel Size ---------- */}
+
+
+        <div className='content_grid_two w-full mt-28 gap-24'>
+            <div style={{width:"70%"}}>
+                <ArrowHeading heading = "Objective"/>
+                <div>
+                    To enhance design efficiency by utilizing the plugin, which simplifies the creation of reusable button components from design variations.
                 </div>
-                <div className="score_tab">
-                    <h3 style={{color:"#232122"}}>
-                        {scoreTitle2}
-                    </h3>
-                    <h5 style={{fontSize:"3rem", color:"#232122"}}>
-                        {usersEarned} 
-                        {/* <span className='text-4xl' style={{letterSpacing:"0"}}>{usersText}</span> */}
-                    </h5>
+            </div>
+            <div className='flex gap-24'>
+
+                <div>
+                    <ArrowHeading heading = "Timeline"/>
+                    <div>
+                    1.5 months for first release
+                    </div>
                 </div>
-                <div className="score_tab">
-                    <h3 style={{color:"#232122"}}>
-                        # of people involved
-                    </h3>
-                    <h5 style={{fontSize:"3rem", color:"#232122"}}>
-                        {peopleInvolved}
-                    </h5>
+                <div>
+                    <ArrowHeading heading = "Panel Size" number = "4"/>
+                    <div className='items-center justify-center flex gap-4'>
+                    <div className='w-12 h-12 bg-slate-400'>
+                        
+                    </div>
+                    <div className='-mt-2'>
+                        <h3>Ashish Sharma</h3>
+                        <p className='text-base -mt-2'>UX Designer</p>
+                    </div>
+                    
+                  </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+
+        {/* ---------- Third Fold - Includes Research & Inspirations ---------- */}
+
+
+        <div className='mt-28'>
+            <ArrowHeading heading = "Research & Inspirations"/>
+            <div className='grid grid-row-3 mb-4 gap-2'>
+                <div className="description_tab">
+                    <h4 style={{fontWeight: "350"}}>
+                        Creating How might we statements
+                    </h4>
+                </div>
+                <div className="description_tab">
+                    <h4 style={{fontWeight: "350"}}>
+                        Heuristics competitor analysis
+                    </h4>
+                </div>
+                <div className="description_tab">
+                    <h4 style={{fontWeight: "350"}}>
+                        How the users reacting as per their needs?
+                    </h4>
+                </div>
+            </div>
+            <div className='content_grid_two mt-12'>
+                <div style={{width:"50%"}}>
+                Research showed popular plugins excelled in minimal effort but failed to deliver as promised and lacked updates.
+                </div>
+
+                <div style={{width:"70%"}}>
+                Derived inspiration from plugins highlighted admired features and potential improvements, guiding the creation of a new, superior plugin.
                 </div>
             </div>
         </div>
-        {/* <div className='flex w-full justify-start items-center mt-24 gap-8'>
-        <div className='w-full'>
-            <Image src={ArrowIcon} alt={"an arrow icon"} width={72} className="rotate-90 -ms-4"/>
+
         </div>
-        <div className='w-full'>
-            During our secondary research, we found that the company was founded in 2011 and is headquartered in Gurgaon.
-        </div>
-        <div className='w-full'>
-            The brand is active on all major social media platforms, provides tracking, and has a support page.
-        </div>
-        </div>
-        <Image src={Image1} alt='' className='w-full mt-24'/> */}
-      </div>
-    <Footer/>
+        <Footer/>
     </main>
   )
 }

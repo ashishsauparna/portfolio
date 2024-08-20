@@ -104,10 +104,11 @@ h2{
   font-size: 1.6rem;
   font-family: var(--font-space-gothic);
   letter-spacing: -0.5px;
+  font-weight: 500;
 }
 
 h3{
-  font-size: 1.3rem;
+  font-size: 22px;
   font-family: var(--font-space-gothic);
   font-weight: 430;
   margin-bottom: 0.2rem;
@@ -125,6 +126,10 @@ h5{
   font-family: var(--font-alegreya);
   font-size: 1.2rem;
   color: #0069E5;
+}
+
+.para-width{
+  width: 28%;
 }
 
 .ibm_italic{
@@ -552,7 +557,7 @@ footer{
   display: inline-block;
   width: 10px;  /* Adjust the size as needed */
   height: 10px; /* Adjust the size as needed */ 
-  background-color: #0069E5; /* Change the color if you want */
+  background-color: #232122; /* Change the color if you want */
   margin-right: 4px; /* Space between the square and the text */
   vertical-align: middle; /* Align the square vertically with the text */
   transform: translateY(8px);
@@ -560,8 +565,7 @@ footer{
 
 .content_grid_two{
   display: grid;
-  width: 100%;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem; /* Equivalent to gap-4, adjust as needed */
   align-items: start;
 }
