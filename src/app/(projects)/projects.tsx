@@ -109,7 +109,7 @@ export default function ProjectsData() {
       <Link href={image.href}>
         <div className='cell'>
           <div className='mb-4 flex justify-between'>
-            <h4>{image.heading}</h4>
+            <h4 className='font-normal'>{image.heading}</h4>
             {
           image.src ? 
           <div>
