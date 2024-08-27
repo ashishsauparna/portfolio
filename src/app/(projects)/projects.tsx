@@ -4,11 +4,7 @@ import Image from 'next/image';
 import fontSwapImg from '/public/fontswap_2.jpg';
 import delhiveryPoster from '/public/Outside_in_poster.jpg'
 import rozgarImg from '/public/case_study_rozgar.jpg';
-import fontSwapImgBlur from '/public/fontswap_2_blur.png';
-import delhiveryPosterBlur from '/public/Outside_in_poster_blur.png'
 import buttonSmithImg from '/public/button_smith_banner.jpg'
-import buttonSmithImgBlur from '/public/button_smith_banner_blur.jpg'
-import rozgarImgBlur from '/public/case_study_rozgar_blur.png';
 import Link from 'next/link';
 import { animate, motion } from 'framer-motion';
 import OutwardArrow from '/public/outward_arrow.svg';

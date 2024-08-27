@@ -38,7 +38,7 @@ export default function Home() {
                 className='absolute -z-10 top-1'/>
               <div>
                 <h4>Ashish Sharma</h4>
-                <h5 className='text-slate-900 -mt-1'>Based in Gurgaon, India</h5>
+                <h5 className='text-xl'>UX designer - since 2019</h5>
               </div>
             </div>
             <div className='absolute right-0 top-0'>
