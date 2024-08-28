@@ -59,10 +59,10 @@ export default function DelhiveryResearch() {
 
 
         <div>
-            <h2>Font Swap
+            <h2>Delhivery
             </h2>
             <h4 style={{marginTop:"0.3rem", fontWeight:"300"}}>
-              A Figma Plugin addressing to replace all font styles with 3 clicks
+              Understanding Trends and innovations in a logistic industry
             </h4>
         </div>
 
@@ -124,8 +124,7 @@ export default function DelhiveryResearch() {
             <div style={{width:"70%"}}>
                 <ArrowHeading heading = "Objective"/>
                 <div>
-                To make sure the use is able to test fonts on Figma as it was becoming a big problem when 
-                within my design team when working on a short deadline projects.
+                The objective is to understand the business, identify growth areas, and align with evolving technology trends and industry direction for strategic success.
                 </div>
             </div>
             <div className='flex gap-24'>
@@ -133,7 +132,7 @@ export default function DelhiveryResearch() {
                 <div>
                     <ArrowHeading heading = "Timeline"/>
                     <div>
-                    3 months for first release
+                      Did not set
                     </div>
                 </div>
                 <div>
