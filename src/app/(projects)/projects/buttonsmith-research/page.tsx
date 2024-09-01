@@ -274,22 +274,6 @@ export default function ButtonSmithResearch() {
 
 
 
-        {/* ---------- Final thoughts & conclusion ---------- */}
-
-
-        <div className='content_grid_two gap-24 body_width mt-24'>
-  
-          <div style={{width:"70%"}}>
-              <ArrowHeading heading = "Final thoughts & conclusion"/>
-              <div>
-              New challenges do still arrive, but identifying them is a key. Once they are identified, I know that I&apos;ll eventually find better solutions.
-              </div>
-          </div>
-        </div>
-
-
-
-
 
 
         {/* ---------- Images ---------- */}
@@ -306,6 +290,23 @@ export default function ButtonSmithResearch() {
         className="w-full mt-12"
         />
 
+
+
+
+
+
+        {/* ---------- Final thoughts & conclusion ---------- */}
+
+
+        <div className='content_grid_two gap-24 body_width mt-24'>
+          
+          <div style={{width:"70%"}}>
+              <ArrowHeading heading = "Final thoughts & conclusion"/>
+              <div>
+              New challenges do still arrive, but identifying them is a key. Once they are identified, I know that I&apos;ll eventually find better solutions.
+              </div>
+          </div>
+        </div>
 
 
         {/* ---------- Footer ---------- */}
