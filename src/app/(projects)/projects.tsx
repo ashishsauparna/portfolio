@@ -105,13 +105,15 @@ export default function ProjectsData() {
       <Link href={image.href}>
         <div className='cell'>
           <div className='mb-4 flex justify-between'>
-            <h4 className='font-normal'>{image.heading}</h4>
+            <h4 className='font-regular text-xl'>{image.heading}</h4>
             {
           image.src ? 
           <div>
             <Image
             src={OutwardArrow}
+            width={28}
             alt='outward arrow icon'
+            className='arrowrotate'
             />
           </div>
           : ""
@@ -142,9 +144,9 @@ export default function ProjectsData() {
           </div>
           : ""
         }
-          <div className='mt-4 flex justify-between'>
-            <h5 className='mr-20 whitespace-pre-line' style={{color:"#232122"}}>{image.subHeading}</h5>
-            <h5 className='text-right whitespace-nowrap' style={{color:"#232122"}}>{image.new}</h5>
+          <div className='mt-4 flex justify-between text-gray-600'>
+            <h3 className='mr-16 whitespace-pre-line text-lg'>{image.subHeading}</h3>
+            <h3 className='text-right whitespace-nowrap text-lg'>{image.new}</h3>
           </div>
         </div>
       </Link>

@@ -4,7 +4,9 @@ import ProjectsData from './(projects)/projects';
 import Image from 'next/image';
 import Script from 'next/script';
 import BlueSpectrum from '/public/blue spectrum.png';
+import CheckVector from '/public/check_vector.svg';
 import OutwardArrowDown from '/public/arrow_outward.svg'
+import AshishSharmaImg from '/public/ashish_sharma.png';
 import { Metadata } from 'next';
 import LottieAnimation from './components/ui/scrollanimation';
 
@@ -29,13 +31,13 @@ export default function Home() {
       </Script>
       <NavBar/>
       <div className='items-left body_width'>
-        <div className='mt-8 mb-12'>
-          <div className='relative mb-64'>
+        <div className='mt-8 mb-16'>
+          <div className='relative mb-28'>
             <div className='flex gap-4 items-start relative'>
                 <div className='w-11 h-11 bg-zinc-900' style={{transform:"translateY(4px)"}}>
                 </div>
-                <Image src={BlueSpectrum} alt={'a blue color spectrum'} width={45}
-                className='absolute -z-10 top-1'/>
+                {/* <Image src={BlueSpectrum} alt={'a blue color spectrum'} width={45}
+                className='absolute -z-10 top-1'/> */}
               <div>
                 <h4>Ashish Sharma</h4>
                 <h5 className='text-xl'>UX designer - since 2019</h5>
@@ -47,27 +49,32 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <h1 className='text-slate-800'>
-            Not Just a UX designer, <br/>I build stuff <span className='inline-flex ml-4'>
-            <svg width="58" height="60" viewBox="0 0 58 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3.93506 5.31982L10.6199 27.3269" stroke="#232122" strokeWidth="6"/>
-            <path d="M22 1.83252L28.6848 23.8396" stroke="#232122" strokeWidth="6"/>
-            <path d="M10.7021 55.606C19.5661 56.4923 45.4772 55.606 53.1212 13.3423" stroke="#232122" strokeWidth="6"/>
+          <div className='flex items-start justify-center text-center w-full'>
+          <h1 className='text-slate-800 tracking-tight font-regular leading-none text-6xl'>
+          🧑‍🎨 Crafting design solutions <br/>for a better user experience 
+            {/* <span className='inline-flex ml-4'>
+            <svg width="42" height="42" viewBox="0 0 58 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.93506 5.31982L10.6199 27.3269" stroke="#232122" strokeWidth="8"/>
+            <path d="M22 1.83252L28.6848 23.8396" stroke="#232122" strokeWidth="8"/>
+            <path d="M10.7021 55.606C19.5661 56.4923 45.4772 55.606 53.1212 13.3423" stroke="#232122" strokeWidth="8"/>
             </svg>
-            </span>
+            </span> */}
           </h1>
+          {/* <Image src={AshishSharmaImg} alt={''} height={700} className='ml-12 relative bottom-[35px]'/> */}
+          </div>
         </div>
-        <div className='grid justify-center items-center'>
+        <div className='grid justify-center place-items-center overflow-visible'>
 
-          {/* <Image src={OutwardArrowDown} alt={'Outwoard arrow down icon'} width={16} className='flex text-center'/> */}
-        <LottieAnimation width={35} height={35} />
+        
+        {/* <LottieAnimation width={35} height={35} /> */}
           <h4 className='flex justify-center mt-4 font-normal'>
             {/* <Image
             src={OutwardArrow}
             alt='Outward arrow icon'
             className='rotate-90'
             /> */}
-          Scroll to view projects
+          <Image src={OutwardArrowDown} alt={'Outwoard arrow down icon'} width={14}/> &nbsp;
+          (Scroll to view projects)
           </h4>
         </div>
         <div>

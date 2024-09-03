@@ -84,7 +84,7 @@ export default function ButtonSmithResearch() {
         <div className="mb-20 content_grid_two">
           <div>
             <div>
-                <ArrowHeading heading = "💪 Impact"/>
+                <ArrowHeading heading = "Impact" arrow = {true}/>
                 <div className='grid grid-row-3 mb-4 gap-2'>
                     {descriptionItems.map((item, index) => (
                         <div className="description_tab" key={index}>
@@ -128,7 +128,7 @@ export default function ButtonSmithResearch() {
 
         <div className='content_grid_two w-full gap-24'>
             <div style={{width:"70%"}}>
-                <ArrowHeading heading = "📌 Objective"/>
+                <ArrowHeading heading = "💭 Objective"/>
                 <div>
                     To enhance design efficiency by utilizing the plugin, which simplifies the creation of 
                     reusable button components from design variations.
@@ -137,7 +137,7 @@ export default function ButtonSmithResearch() {
             <div className='flex gap-24'>
 
                 <div>
-                    <ArrowHeading heading = "Duration"/>
+                    <ArrowHeading heading = "⏳ Duration"/>
                     <div>
                     1.5 months for first release
                     </div>
@@ -167,8 +167,8 @@ export default function ButtonSmithResearch() {
                         </div>
 
                         <div className='flex gap-4'>
-                          <div className='w-12 h-12 bg-slate-500 text-white font-semibold text-xl content-center text-center'>
-                            4
+                          <div className='w-12 h-12 bg-slate-200 text-white font-semibold text-xl content-center text-center'>
+                            👥
                           </div>
                           <div>
                             <h3>Design Colleagues</h3>

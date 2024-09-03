@@ -128,6 +128,16 @@ h5{
   color: #0069E5;
 }
 
+.heading_bypass{
+  background: linear-gradient(135deg, #0077d4, #3399ff, #0077d4); /* Slightly darker blue shades */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.background_bypass{
+  background: linear-gradient(135deg, #0091ea, #66b2ff, #0091ea);
+}
+
 .para-width{
   width: 28%;
 }
@@ -264,9 +274,10 @@ li .mobile_ui:hover{
   font-family: var(--font-space-gothic);
   font-size: 1rem;
   color: #0069E5;
-  border: 1px solid #0069E5;
+  background-color: #fafcfd;
+  border: 1.5px solid #0069E5;
   padding: 0.6rem 1.2rem;
-  font-weight: 400;
+  font-weight: 450;
   text-align: center;
   margin-top: 1.2rem;
   display: inline-flex;
@@ -291,13 +302,15 @@ li .mobile_ui:hover{
 }
 
 .link_button{
-  font-family: var(--font-alegreya);
-  font-size: 1.2rem;
+  font-family: var(--font-space-gothic);
+  font-size: 1.1rem;
+  font-weight: 450;
   color: #0069E5;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 .link_button:hover{
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  color: #0077d4;
 }
 
 /* Designing everything in Grid */
@@ -310,12 +323,28 @@ li .mobile_ui:hover{
   text-decoration: none;
   align-items: center;
   gap: 24px;
+  /* transition: ease-in-out .2s; */
 }
 
 .cell:hover{
   text-decoration: none;
   color: #333;
+  transition: transform 0.5s ease-in-out;
 }
+
+.arrowrotate{
+  transition: transform 0.2s ease-in-out;
+  transform: rotate(90deg);
+}
+
+.cell:hover .arrowrotate{
+  transform: rotate(0deg);
+}
+
+.cell:hover .project_image{
+  filter: brightness(80%);
+}
+
 
 .cell.large {
   grid-column: span 2; /* Make the cell span 2 columns */
@@ -338,6 +367,7 @@ li .mobile_ui:hover{
   object-fit: cover;
   width: 100%;
   height: 520px;
+  transition: ease-in-out 1s;
 }
 
 .project_image.small{

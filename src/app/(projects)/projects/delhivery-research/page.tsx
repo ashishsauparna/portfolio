@@ -79,7 +79,7 @@ export default function DelhiveryResearch() {
         <div className="content_grid_two">
           <div>
             <div>
-                <ArrowHeading heading = "Project Progress 40%"/>
+                <ArrowHeading heading = "Project Progress 40%" arrow ={true}/>
                 <div className='grid grid-row-3 mb-4 gap-2'>
                     {descriptionItems.map((item, index) => (
                         <div className="description_tab" key={index}>
@@ -122,7 +122,7 @@ export default function DelhiveryResearch() {
 
         <div className='content_grid_two w-full gap-24 mb-24'>
             <div style={{width:"70%"}}>
-                <ArrowHeading heading = "📌 Objective"/>
+                <ArrowHeading heading = "💭 Objective"/>
                 <div>
                 The objective is to understand the business, identify growth areas, and align with evolving technology trends and industry direction for strategic success.
                 </div>
@@ -130,7 +130,7 @@ export default function DelhiveryResearch() {
             <div className='flex gap-24'>
 
                 <div>
-                    <ArrowHeading heading = "Duration"/>
+                    <ArrowHeading heading = "⏳ Duration"/>
                     <div>
                       Within the last quater of 2024
                     </div>

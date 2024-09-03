@@ -133,7 +133,7 @@ export default function RozgarResearch() {
             <div className='flex gap-24'>
 
                 <div>
-                    <ArrowHeading heading = "Timeline"/>
+                    <ArrowHeading heading = "⏳ Duration"/>
                     <div>
                       3 days challenge
                     </div>

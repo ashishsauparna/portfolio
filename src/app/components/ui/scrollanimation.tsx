@@ -16,7 +16,7 @@ const LottieAnimation = ({ width = 400, height = 400, loop = true, autoplay = tr
       autoplay={autoplay}
       loop={loop}
       src={animationData}
-      style={{ height: `${height}px`, width: `${width}px` }}
+      style={{ height: `${height}px`, width: `${width}px`, overflow:'visible' }}
     />
   );
 };
