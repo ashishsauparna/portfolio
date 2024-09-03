@@ -31,8 +31,8 @@ export default function Home() {
       </Script>
       <NavBar/>
       <div className='items-left body_width'>
-        <div className='mt-8 mb-16'>
-          <div className='relative mb-28'>
+        <div className='mt-4 mb-28'>
+          <div className='relative mb-40'>
             <div className='flex gap-4 items-start relative'>
                 <div className='w-11 h-11 bg-zinc-900' style={{transform:"translateY(4px)"}}>
                 </div>
