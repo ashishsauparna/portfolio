@@ -5,6 +5,7 @@ import Footer from '@/app/components/ui/footer';
 import Button from '@/app/components/ui/button';
 import ArrowHeading from "@/app/components/ui/arrowheading";
 import ArrowBack from "@/../../public/arrow_back.svg";
+import DP from "@/../../public/ashish_sharma.png";
 import MacbookCover from "@/../../public/mackbook_silver_blackbg.png";
 import Link from "next/link";
 
@@ -95,16 +96,15 @@ export default function DelhiveryResearch() {
           {/* ---------- Image Macbook ---------- */}
 
           <div className="relative">
-            <div className="relative z-10 pointer-events-none">
+            {/* <div className="relative z-10 pointer-events-none">
               <Image src={MacbookCover} 
               alt={"Mackbook background cover"}
             />
-            </div>
-            <iframe width="450" height="292" 
-            style={{border: "1px solid rgba(0, 0, 0, 0.1)"}}
+            </div> */}
+            <iframe width="560" height="420" 
             src={"https://miro.com/app/live-embed/uXjVMrWRtKY=/?moveToViewport=-3409,-7877,58890,28610&embedId=393622349668"} 
             allow="fullscreen; clipboard-read; clipboard-write" 
-            className="absolute top-[18.2%] left-[20%] z-0"
+            className="w-full"
             allowFullScreen>
             </iframe>
           </div>
@@ -122,7 +122,7 @@ export default function DelhiveryResearch() {
 
         <div className='content_grid_two w-full gap-24 mb-24'>
             <div style={{width:"70%"}}>
-                <ArrowHeading heading = "Objective"/>
+                <ArrowHeading heading = "📌 Objective"/>
                 <div>
                 The objective is to understand the business, identify growth areas, and align with evolving technology trends and industry direction for strategic success.
                 </div>
@@ -130,17 +130,19 @@ export default function DelhiveryResearch() {
             <div className='flex gap-24'>
 
                 <div>
-                    <ArrowHeading heading = "Timeline"/>
+                    <ArrowHeading heading = "Duration"/>
                     <div>
-                      Did not set
+                      Within the last quater of 2024
                     </div>
                 </div>
                 <div>
                     <ArrowHeading heading = "Panel Size" number = "1"/>
                     <div className='items-center justify-center flex gap-4'>
-                    <div className='w-12 h-12 bg-slate-400'>
-                        
+
+                    <div className='w-12 h-12'>
+                    <Image src={DP} alt={"Ashish Sharma Profile picture"} className='object-cover w-full h-full'/>
                     </div>
+                    
                     <div className='-mt-2'>
                         <h3>Ashish Sharma</h3>
                         <p className='text-base -mt-2'>UX Designer</p>

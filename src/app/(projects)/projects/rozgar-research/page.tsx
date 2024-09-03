@@ -10,6 +10,7 @@ import CompAnalysis from "@/../../public/projects/rozgar/competitor_analysis.png
 import CustomerJourney from "@/../../public/projects/rozgar/customer_journey.png";
 import MacbookCover from "@/../../public/mackbook_silver_blackbg.png";
 import ArrowBack from "@/../../public/arrow_back.svg"
+import DP from "@/../../public/ashish_sharma.png";
 
 
 export default function RozgarResearch() {
@@ -73,8 +74,8 @@ export default function RozgarResearch() {
         <div className="mb-20 content_grid_two">
           <div>
             <div>
-                <ArrowHeading heading = "Defining a Blue collar worker?"/>
-                <div className='grid grid-row-3 mb-4 gap-8 w-[60%]'>
+                <ArrowHeading heading = "📖 Defining a Blue collar worker?"/>
+                <div className='grid grid-row-3 mb-4 gap-8 w-[75%]'>
 
                   <p>
                   Blue-collar work involves manual labor with lower educational requirements and 
@@ -119,12 +120,13 @@ export default function RozgarResearch() {
 
 
         <div className='content_grid_two w-full gap-24 -mt-24'>
-            <div style={{width:"60%"}}>
-                <ArrowHeading heading = "Conducting User Research"/>
+            <div style={{width:"70%"}}>
+                <ArrowHeading heading = "📝 User Research"/>
                 <div>
                   I Interviewed three participants working in different backgrounds. 
                   It was an in-person interviews that I recorded for later reference. 
-                  In order to understand the pain-points I tried to derivate their context what they
+                  In order to understand the pain-points I tried to derivate their context what they...
+                  <br/>
                   <span className="font-medium"> Say — think — do — hear</span>
                 </div>
             </div>
@@ -139,8 +141,8 @@ export default function RozgarResearch() {
                 <div>
                     <ArrowHeading heading = "Panel Size" number = "1"/>
                     <div className='items-center justify-center flex gap-4'>
-                    <div className='w-12 h-12 bg-slate-400'>
-                        
+                    <div className='w-12 h-12'>
+                      <Image src={DP} alt={"Ashish Sharma Profile picture"} className='object-cover w-full h-full'/>
                     </div>
                     <div className='-mt-2'>
                         <h3>Ashish Sharma</h3>
@@ -191,7 +193,7 @@ export default function RozgarResearch() {
         <div className='content_grid_two gap-24 body_width mt-24'>
           
             <div style={{width:"70%"}}>
-                <ArrowHeading heading = "Solution"/>
+                <ArrowHeading heading = "💡 Solution"/>
                 <div>
                 The Solution to connect blue-collar workers with job opportunities through a user-friendly app, 
                 addressing the challenges of finding work and utilizing smartphones effectively.
@@ -199,7 +201,7 @@ export default function RozgarResearch() {
             </div>
 
             <div style={{width:"70%"}}>
-                <ArrowHeading heading = "Challenges & learnings"/>
+                <ArrowHeading heading = "🏋️‍♀️ Challenges & learnings"/>
                 <div>
                 Key challenges included low smartphone literacy among workers, reliance on word-of-mouth for 
                 job searches, and difficulties with payment negotiations and job security.
@@ -234,7 +236,7 @@ export default function RozgarResearch() {
         <div className='content_grid_two gap-24 body_width mt-24'>
           
           <div style={{width:"70%"}}>
-              <ArrowHeading heading = "Final thoughts & conclusion"/>
+              <ArrowHeading heading = "🧘 Final thoughts & conclusion"/>
               <div>
               New challenges do still arrive, but identifying them is a key. Once they are identified, 
               I know that I&apos;ll eventually find better solutions.

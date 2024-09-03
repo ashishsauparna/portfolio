@@ -10,7 +10,7 @@ const ArrowHeading = (data: any) => {
             </h3>
             { data.number ?
 
-            <div className="bg-slate-900 w-6 h-6 text-white items-center justify-center flex text-sm pt-1">
+            <div className="bg-slate-900 w-8 h-8 text-white font-bold items-center justify-center flex text-base pt-1">
             {data.number}
             </div>:
             ""

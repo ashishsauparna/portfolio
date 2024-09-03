@@ -12,6 +12,10 @@ import UIFrames from "@/../../public/projects/buttonsmith/uiframes.png";
 import UICollective from "@/../../public/projects/buttonsmith/uicollective.png";
 import MacbookCover from "@/../../public/mackbook_silver_blackbg.png";
 import ArrowBack from "@/../../public/arrow_back.svg";
+import DP from "@/../../public/ashish_sharma.png";
+import LakshyaDP from "@/../../public/lakshya_raj.png";
+import FigmaLogo from "@/../../public/Figma_logo.svg";
+import Logo from "@/../../public/projects/buttonsmith/logo.svg"
 
 export default function ButtonSmithResearch() {
 
@@ -59,7 +63,9 @@ export default function ButtonSmithResearch() {
 
 
         <div>
-            <h2>Button Smith
+            <h2>
+              {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
+              Button Smith
             </h2>
             <h4 style={{marginTop:"0.3rem", fontWeight:"300"}}>
               One Figma Plugin to generates and documents all your button states
@@ -78,7 +84,7 @@ export default function ButtonSmithResearch() {
         <div className="mb-20 content_grid_two">
           <div>
             <div>
-                <ArrowHeading heading = "Impact"/>
+                <ArrowHeading heading = "💪 Impact"/>
                 <div className='grid grid-row-3 mb-4 gap-2'>
                     {descriptionItems.map((item, index) => (
                         <div className="description_tab" key={index}>
@@ -122,7 +128,7 @@ export default function ButtonSmithResearch() {
 
         <div className='content_grid_two w-full gap-24'>
             <div style={{width:"70%"}}>
-                <ArrowHeading heading = "Objective"/>
+                <ArrowHeading heading = "📌 Objective"/>
                 <div>
                     To enhance design efficiency by utilizing the plugin, which simplifies the creation of 
                     reusable button components from design variations.
@@ -131,17 +137,18 @@ export default function ButtonSmithResearch() {
             <div className='flex gap-24'>
 
                 <div>
-                    <ArrowHeading heading = "Timeline"/>
+                    <ArrowHeading heading = "Duration"/>
                     <div>
                     1.5 months for first release
                     </div>
                 </div>
                 <div>
-                    <ArrowHeading heading = "Panel Size" number = "5"/>
+                    <ArrowHeading heading = "Panel Size" number = "6"/>
                       <div className="grid gap-2">
 
                         <div className='flex gap-4'>
-                          <div className='w-12 h-12 bg-slate-400'>
+                          <div className='w-12 h-12'>
+                            <Image src={DP} alt={"Ashish Sharma Profile picture"} className='object-cover w-full h-full'/>
                           </div>
                           <div>
                             <h3>Ashish Sharma</h3>
@@ -150,7 +157,8 @@ export default function ButtonSmithResearch() {
                         </div>
 
                         <div className='flex gap-4'>
-                          <div className='w-12 h-12 bg-slate-400'>
+                          <div className='w-12 h-12'>
+                            <Image src={LakshyaDP} alt={"Ashish Sharma Profile picture"} className='object-cover w-full h-full'/>
                           </div>
                           <div>
                             <h3>Lakshya Raj</h3>
@@ -159,7 +167,8 @@ export default function ButtonSmithResearch() {
                         </div>
 
                         <div className='flex gap-4'>
-                          <div className='w-12 h-12 bg-slate-400'>
+                          <div className='w-12 h-12 bg-slate-500 text-white font-semibold text-xl content-center text-center'>
+                            4
                           </div>
                           <div>
                             <h3>Design Colleagues</h3>
@@ -183,7 +192,7 @@ export default function ButtonSmithResearch() {
 
 
         <div>
-            <ArrowHeading heading = "Research & Inspirations"/>
+            <ArrowHeading heading = "📝 Research & Inspirations"/>
             <div className='grid grid-row-3 mb-4 gap-2'>
                 <div className="description_tab">
                     <h4 style={{fontWeight: "350"}}>
@@ -258,13 +267,13 @@ export default function ButtonSmithResearch() {
         <div className='content_grid_two gap-24 body_width mt-24'>
           
             <div style={{width:"70%"}}>
-                <ArrowHeading heading = "Solution"/>
+                <ArrowHeading heading = "💡 Solution"/>
                 <div>
                 The solution allowed users to preview designs, change colors and fonts, and adjust secondary controls like border radius and padding.                </div>
             </div>
 
             <div style={{width:"70%"}}>
-                <ArrowHeading heading = "Challenges & learnings"/>
+                <ArrowHeading heading = "🏋️ Challenges & learnings"/>
                 <div>
                 The need for a clear user experience started by analyzing the view-to-use ratio and applying trial and error, we improved user experience with time.                </div>
             </div>
@@ -301,7 +310,7 @@ export default function ButtonSmithResearch() {
         <div className='content_grid_two gap-24 body_width mt-24'>
           
           <div style={{width:"70%"}}>
-              <ArrowHeading heading = "Final thoughts & conclusion"/>
+              <ArrowHeading heading = "🧘 Final thoughts & conclusion"/>
               <div>
               New challenges do still arrive, but identifying them is a key. Once they are identified, I know that I&apos;ll eventually find better solutions.
               </div>

@@ -1,0 +1,10 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="127.996" height="127.996" rx="17.9872" fill="#F1F1F1"/>
+<rect x="63.7715" y="19.2992" width="25.5807" height="25.5807" transform="rotate(45 63.7715 19.2992)" fill="#9D80C6"/>
+<rect x="38.3922" y="44.6826" width="25.5807" height="25.5807" transform="rotate(45 38.3922 44.6826)" fill="#9D80C6"/>
+<rect x="89.1456" y="44.6826" width="25.5807" height="25.5807" transform="rotate(45 89.1456 44.6826)" fill="#9D80C6"/>
+<rect x="63.7715" y="70.0523" width="25.5807" height="25.5807" transform="rotate(45 63.7715 70.0523)" fill="#9D80C6"/>
+<rect x="64.2115" y="85.69" width="46.491" height="26.0148" rx="13.0074" fill="#0981C5"/>
+<rect x="64.2115" y="85.69" width="46.491" height="26.0148" rx="13.0074" stroke="#F1F1F1" stroke-width="6.01988"/>
+<path d="M73.5493 100.061L76.6286 95.9238L80.6559 101.471L83.1433 95.9238L85.3927 101.471L88.2967 97.8051L91.6847 101.471L93.8143 95.9238L97.1056 101.471L101.365 97.8051" stroke="#F1F1F1" stroke-width="1.20398" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

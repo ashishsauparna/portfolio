@@ -11,13 +11,14 @@ import UIFrames from "@/../../public/projects/fontswap/uiframes.png";
 import UserbaseImg from "@/../../public/projects/fontswap/userbase.png";
 import MacbookCover from "@/../../public/mackbook_silver_blackbg.png";
 import ArrowBack from "@/../../public/arrow_back.svg";
+import DP from "@/../../public/ashish_sharma.png";
 
 
 export default function FontSwapResearch() {
 
   const descriptionItems = [
     { text: 'Saved a chunk of time spent in testing/replacing font on a website or an application project.'},
-    { text: 'Has raised over 19K+ users in span of year'},
+    { text: 'Has raised over 20K+ users in span of year'},
     { text: 'Received a great feedback leading to plugin improvement.'},
     { text: 'The success has let to finally making money'}
   ]
@@ -99,9 +100,9 @@ export default function FontSwapResearch() {
 
 
         <div className="content_grid_two">
-          <div>
+          <div className="mr-4">
             <div>
-                <ArrowHeading heading = "Impact"/>
+                <ArrowHeading heading = "💪 Impact"/>
                 <div className='grid grid-row-3 mb-4 gap-2'>
                     {descriptionItems.map((item, index) => (
                         <div className="description_tab" key={index}>
@@ -114,8 +115,9 @@ export default function FontSwapResearch() {
                 <Button href={"https://www.figma.com/design/VspD6hZZcvYiE2QM3dwHJD/Font-Swap-Plugin?node-id=1-7019&t=iPooSAi8QYkKt0Td-1"} name={"View detailed research"}/>
             </div>
           </div>
-          <div>
 
+
+          <div>
           
           <div className="relative">
             <div className="relative z-10 pointer-events-none">
@@ -147,7 +149,7 @@ export default function FontSwapResearch() {
 
         <div className='content_grid_two w-full gap-24'>
             <div style={{width:"70%"}}>
-                <ArrowHeading heading = "Objective"/>
+                <ArrowHeading heading = "📌 Objective"/>
                 <div>
                 To make sure the use is able to test fonts on Figma as it was becoming a big problem when 
                 within my design team when working on a short deadline projects.
@@ -156,7 +158,7 @@ export default function FontSwapResearch() {
             <div className='flex gap-24'>
 
                 <div>
-                    <ArrowHeading heading = "Timeline"/>
+                    <ArrowHeading heading = "Duration"/>
                     <div>
                     3 months for first release
                     </div>
@@ -166,8 +168,9 @@ export default function FontSwapResearch() {
 
                     <div className="grid gap-2">
                       <div className='flex gap-4'>
-                        <div className='w-12 h-12 bg-slate-400'>
-                        </div>
+                          <div className='w-12 h-12'>
+                            <Image src={DP} alt={"Ashish Sharma Profile picture"} className='object-cover w-full h-full'/>
+                          </div>
                         <div>
                           <h3>Ashish Sharma</h3>
                           <p className='text-base -mt-2'>UX Designer</p>
@@ -175,7 +178,8 @@ export default function FontSwapResearch() {
                       </div>
 
                       <div className='flex gap-4'>
-                        <div className='w-12 h-12 bg-slate-400'>
+                        <div className='w-12 h-12 bg-slate-500 text-white font-semibold text-xl content-center text-center'>
+                          4
                         </div>
                         <div>
                           <h3>Design Colleagues</h3>
@@ -200,7 +204,7 @@ export default function FontSwapResearch() {
 
 
         <div>
-            <ArrowHeading heading = "Research & Inspirations"/>
+            <ArrowHeading heading = "📝 Research & Inspirations"/>
             <div className='grid grid-row-3 mb-4 gap-2'>
                 <div className="description_tab">
                     <h4 style={{fontWeight: "350"}}>
@@ -275,13 +279,13 @@ export default function FontSwapResearch() {
         <div className='content_grid_two gap-24 body_width mt-24'>
           
             <div style={{width:"70%"}}>
-                <ArrowHeading heading = "Solution"/>
+                <ArrowHeading heading = "💡 Solution"/>
                 <div>
                 The solution allowed users to preview designs, change colors and fonts, and adjust secondary controls like border radius and padding.                </div>
             </div>
 
             <div style={{width:"70%"}}>
-                <ArrowHeading heading = "Challenges & learnings"/>
+                <ArrowHeading heading = "🏋️‍♀️ Challenges & learnings"/>
                 <div>
                 The need for a clear user experience started by analyzing the view-to-use ratio and applying trial and error, we improved user experience with time.                </div>
             </div>
@@ -314,7 +318,7 @@ export default function FontSwapResearch() {
         <div className='content_grid_two gap-24 body_width mt-24'>
           
           <div style={{width:"70%"}}>
-              <ArrowHeading heading = "Final thoughts & conclusion"/>
+              <ArrowHeading heading = "🧘 Final thoughts & conclusion"/>
               <div>
               New challenges do still arrive, but identifying them is a key. Once they are identified, I know that I&apos;ll eventually find better solutions.
               </div>
