@@ -363,14 +363,14 @@ export default function FontSwapResearch() {
                   </div>
                   <div className="description_tab2">
                       <h4 style={{fontWeight: "350"}}>
-                          Addressing users' need for fonts not appearing in the search list, even when they didn’t offer the same weights, but needed to be tested.
+                          Addressing users&apos; need for fonts not appearing in the search list, even when they didn&apos;t offer the same weights, but needed to be tested.
                       </h4>
                   </div>
 
                   Development challenges included issue like:
                   <div className="description_tab2">
                       <h4 style={{fontWeight: "350"}}>
-                          Placing the GIF tutorial to help users get started, which Figma’s API didn’t allow directly.
+                          Placing the GIF tutorial to help users get started, which Figma&apos;s API didn&apos;t allow directly.
                       </h4>
                   </div>
                   <div className="description_tab2">
@@ -390,7 +390,7 @@ export default function FontSwapResearch() {
           <div style={{width:"70%"}}>
               <ArrowHeading heading = "💡 Solution & Learnings"/>
               <div className='grid mb-4 gap-4'>
-                
+
               The solution focused on the following 
                   <div className="description_tab2">
                       <h4 style={{fontWeight: "350"}}>
@@ -404,7 +404,7 @@ export default function FontSwapResearch() {
                   </div>
                   <div className="description_tab2">
                       <h4 style={{fontWeight: "350"}}>
-                          Applying Jacob’s Law of Similarity by keeping the plugin design similar to popular plugins like Font Replacer in the font replacement category.
+                          Applying Jacob&apos;s Law of Similarity by keeping the plugin design similar to popular plugins like Font Replacer in the font replacement category.
                       </h4>
                   </div>
                   <div className="description_tab2">
