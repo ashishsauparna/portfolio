@@ -1,5 +1,8 @@
 import Image from "next/image";
 import ArrowOurward from '/public/arrow_outward.svg';
+import Button from "./button";
+import LinkButton from "./linkbutton";
+import ButtonSmall from "./button_small";
 
 const ArrowHeading = (data: any) => {
     return (
@@ -13,6 +16,12 @@ const ArrowHeading = (data: any) => {
             <div className="bg-slate-900 w-6 h-6 text-white font-bold items-center justify-center flex text-base pt-[2px] -mt-2">
             {data.number}
             </div>:
+            ""
+
+            }
+            { data.buttonName ?
+
+            <ButtonSmall href={data.buttonHref} name={data.buttonName}/>:
             ""
 
             }

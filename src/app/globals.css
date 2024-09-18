@@ -213,6 +213,10 @@ ul {
   font-size: 1rem;
 }
 
+li{
+  display: list-item;
+}
+
 .nav_links{
   gap: 2rem;
   font-size: 1.1rem;
@@ -273,9 +277,9 @@ li .mobile_ui:hover{
 .button{
   font-family: var(--font-space-gothic);
   font-size: 1rem;
-  color: #0069E5;
-  background-color: #fafcfd;
-  border: 1.5px solid #0069E5;
+  color: #ffffff;
+  background-color: #0069E5;
+  /* border: 1.5px solid #0069E5; */
   padding: 0.6rem 1.2rem;
   font-weight: 450;
   text-align: center;
@@ -286,10 +290,31 @@ li .mobile_ui:hover{
   gap: 16px;
 }
 .button:hover{
-  text-decoration: none !important;
+  text-decoration: underline;
   background-color: #0069E5;
   color: #fefefe;
 }
+
+.button_small{
+  font-family: var(--font-space-gothic);
+  font-size: 1rem;
+  color: #0069E5;
+  background-color: #fafcfd;
+  border: 1.5px solid #0069E5;
+  padding: 0.3rem 0.8rem;
+  font-weight: 450;
+  text-align: center;
+  display: inline-flex;
+  text-decoration: none;
+  position: relative;
+}
+
+.button_small:hover{
+  text-decoration: underline;
+  background-color: #0069E5;
+  color: #fefefe;
+}
+
 .arrow_icon {
   position: relative;
   right: 8px;
@@ -578,8 +603,9 @@ footer{
 }
 
 .description_tab{
-  margin-top: 0.3rem;
-  display: flex;
+  margin-bottom: 8px;
+  display: flex; /* Ensures flexbox behavior */
+  align-items: flex-start; /* Aligns the items at the start */
   gap: 0.5rem;
   position: relative;
 }
@@ -587,12 +613,32 @@ footer{
 .description_tab::before{
   content: "";
   display: inline-block;
-  width: 10px;  /* Adjust the size as needed */
-  height: 10px; /* Adjust the size as needed */ 
-  background-color: #232122; /* Change the color if you want */
-  margin-right: 4px; /* Space between the square and the text */
-  vertical-align: middle; /* Align the square vertically with the text */
-  transform: translateY(8px);
+  width: 10px;
+  height: 10px;
+  background-color: #232122;
+  margin-right: 4px;
+  flex-shrink: 0; /* Prevents the square from shrinking */
+  vertical-align: middle;
+  margin-top: 6px; /* Adjust the vertical spacing */
+}
+
+.description_tab2 {
+  display: flex; /* Ensures flexbox behavior */
+  align-items: flex-start; /* Aligns the items at the start */
+  gap: 0.5rem;
+  position: relative;
+}
+
+.description_tab2::before {
+  content: "";
+  display: inline-block;
+  width: 10.5px;
+  height: 10px;
+  background-color: #232122;
+  margin-right: 14px;
+  flex-shrink: 0; /* Prevents the square from shrinking */
+  vertical-align: middle;
+  margin-top: 11px; /* Adjust the vertical spacing */
 }
 
 .content_grid_two{
