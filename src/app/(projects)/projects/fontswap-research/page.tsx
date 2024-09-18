@@ -399,7 +399,7 @@ export default function FontSwapResearch() {
                   </div>
                   <div className="description_tab2">
                       <h4 style={{fontWeight: "350"}}>
-                          Improving heuristics to ensure users don't make mistakes while using the plugin.
+                          Improving heuristics to ensure users don&apos;t make mistakes while using the plugin.
                       </h4>
                   </div>
                   <div className="description_tab2">
