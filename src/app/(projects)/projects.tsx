@@ -24,17 +24,6 @@ export default function ProjectsData() {
       shortImage: true
     },
     {
-      src: delhiveryPoster,
-      srcBlur:"",
-      alt: "Vector image of 2 folders with the label of outside-in analysis",
-      href: "/projects/delhivery-research",
-      new: "Dec 23",
-      heading: "Delhivery | CX Research",
-      subHeading:"Understanding trends and innovations in a logistic industry",
-      large: true,
-      shortImage: false
-    },
-    {
       src: fontSwapImg,
       srcBlur:"",
       alt: "Picture of a man using font swap plugin on his MacBook",
@@ -42,6 +31,17 @@ export default function ProjectsData() {
       new: "Jun 23",
       heading: "Font Swap | Figma Plugin",
       subHeading:"A Figma plugin addressing multitask",
+      large: true,
+      shortImage: false
+    },
+    {
+      src: delhiveryPoster,
+      srcBlur:"",
+      alt: "Vector image of 2 folders with the label of outside-in analysis",
+      href: "/projects/delhivery-research",
+      new: "Dec 23",
+      heading: "Delhivery | CX Research",
+      subHeading:"Understanding trends and innovations in a logistic industry",
       large: false,
       shortImage: false
     },
@@ -121,7 +121,7 @@ export default function ProjectsData() {
           </div>
         {
           image.src ? 
-          <div>
+          <div className="image-container">
             <motion.div
             whileHover={{
               opacity:0,
