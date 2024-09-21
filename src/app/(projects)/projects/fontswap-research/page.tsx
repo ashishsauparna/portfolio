@@ -127,7 +127,7 @@ export default function FontSwapResearch() {
               />
             </div> */}
 
-            <iframe className="relative z-10 w-full border border-gray-100" style={{"border": "1px solid rgba(0, 0, 0, 0.1);"}} height={"450"} src="https://embed.figma.com/design/VspD6hZZcvYiE2QM3dwHJD/Font-Swap-Plugin?node-id=1-7019&embed-host=share" allowFullScreen></iframe>
+            <iframe className="relative z-10 w-full bg-gray-100" style={{"border": "1px solid rgba(0, 0, 0, 0.1);"}} height={"450"} src="https://embed.figma.com/design/VspD6hZZcvYiE2QM3dwHJD/Font-Swap-Plugin?node-id=1-7019&embed-host=share" allowFullScreen></iframe>
 
 
 
