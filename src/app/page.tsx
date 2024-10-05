@@ -3,12 +3,8 @@ import Footer from './components/ui/footer';
 import ProjectsData from './(projects)/projects';
 import Image from 'next/image';
 import Script from 'next/script';
-import BlueSpectrum from '/public/blue spectrum.png';
-import CheckVector from '/public/check_vector.svg';
 import OutwardArrowDown from '/public/arrow_outward.svg'
-import AshishSharmaImg from '/public/ashish_sharma.png';
 import { Metadata } from 'next';
-import LottieAnimation from './components/ui/scrollanimation';
 
 export const metadata: Metadata = {
   title: 'Ashish Sharma UX Designer',
@@ -50,8 +46,9 @@ export default function Home() {
             </div>
           </div>
           <div className='flex items-start justify-center text-center w-full'>
-          <h1 className='text-slate-800 tracking-tight font-regular leading-none text-6xl'>
-          🧑‍🎨 Crafting design solutions <br/>for a better user experience 
+          <h1 className='text-slate-800 tracking-tight leading-none text-7xl'>
+          <span className='font-offbit'>Crafting solutions</span><br/>
+          <span className='font-recoleta'>for a better experience</span>
             {/* <span className='inline-flex ml-4'>
             <svg width="42" height="42" viewBox="0 0 58 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.93506 5.31982L10.6199 27.3269" stroke="#232122" strokeWidth="8"/>

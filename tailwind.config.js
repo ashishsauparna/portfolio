@@ -12,6 +12,14 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        'albert-sans': ['var(--font-albert-sans)', 'sans-serif'],
+        'alegreya': ['var(--font-alegreya)', 'serif'],
+        'space-gothic': ['var(--font-space-gothic)', 'sans-serif'],
+        'abc-whyte': ['var(--font-abc-whyte)', 'sans-serif'],
+        'offbit': ['var(--font-offbit)', 'monospace'],
+        'recoleta': ['var(--font-recoleta)', 'serif'],
+      },
     },
   },
   plugins: [],

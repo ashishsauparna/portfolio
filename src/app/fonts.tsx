@@ -1,4 +1,5 @@
 import { Albert_Sans, Alegreya, Space_Grotesk} from 'next/font/google';
+import localFont from 'next/font/local';
 
  
 export const AlbertSans = Albert_Sans({
@@ -16,4 +17,19 @@ export const SpaceGothic = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-space-gothic',
   display: 'swap'
+})
+
+export const ABCFont = localFont({
+  src: './fonts/ABCWhyteInktrap.woff2',
+  variable: '--font-abc-whyte',
+})
+
+export const OffBit = localFont({
+  src: './fonts/OffBit.woff2',
+  variable: '--font-offbit',
+})
+
+export const Recoleta = localFont({
+  src: './fonts/Recoleta-Regular.otf',
+  variable: '--font-recoleta',
 })
