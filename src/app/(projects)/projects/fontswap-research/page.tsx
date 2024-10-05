@@ -391,7 +391,7 @@ export default function FontSwapResearch() {
               <ArrowHeading heading = "💡 Solution & Learnings"/>
               <div className='grid mb-4 gap-4'>
 
-              The solution focused on the following 
+              The solution focused on the following:
                   <div className="description_tab2">
                       <h4 style={{fontWeight: "350"}}>
                           Refining font replacement through multiple iterations, with the final UI effectively matching and replacing all font styles seamlessly.
