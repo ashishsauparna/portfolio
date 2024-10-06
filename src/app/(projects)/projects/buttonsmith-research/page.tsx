@@ -44,7 +44,7 @@ export default function ButtonSmithResearch() {
         {/* ---------- Back button here ---------- */}
 
 
-        <div className="items-left body_width grid gap-24 mt-8 font-medium" style={{color: "#0069E5"}}>
+        <div className="sticky top-10 items-left body_width grid gap-24 mt-8 font-medium" style={{color: "#0069E5"}}>
             <Link href={"/"}>
                 <div className="inline-flex items-center justify-start hover:underline gap-2 button_small cursor-pointer">
                   <Image

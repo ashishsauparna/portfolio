@@ -2,8 +2,6 @@ import Image from "next/image";
 import Script from 'next/script';
 import NavBar from '@/app/components/ui/navbar';
 import Footer from '@/app/components/ui/footer';
-import Button from '@/app/components/ui/button';
-import YouTubeEmbed from "@/app/components/ui/youtube-embed";
 import Link from "next/link";
 import ArrowHeading from "@/app/components/ui/arrowheading";
 import HeuristicsImg from "@/../../public/projects/fontswap/heuristics.png";
@@ -13,6 +11,8 @@ import UserbaseImg from "@/../../public/projects/fontswap/userbase.png";
 import ResearchImg from "@/../../public/projects/fontswap/research.png";
 import ArrowBack from "@/../../public/arrow_back.svg";
 import DP from "@/../../public/ashish_sharma.png";
+import StarSVG from "@/../../public/star.svg";
+import Banner from "@/../../public/projects/fontswap/banner.png";
 
 
 export default function FontSwapResearch() {
@@ -88,118 +88,92 @@ export default function FontSwapResearch() {
         {/* ---------- Title here ---------- */}
 
 
-        <div>
-            <h2>Font Swap
-            </h2>
-            <h4 style={{marginTop:"0.3rem", fontWeight:"300"}}>
-              A Figma Plugin addressing to replace all font styles with 3 clicks
+        <div className="flex flex-col justify-center items-center w-full mt-24">
+            <h4 className="flex" style={{fontWeight:"500", width:"25%", textAlign:"center"}}>
+                A Figma Plugin addressing to replace all font styles with 3 clicks
             </h4>
-        </div>
-
-
-
-
-
-
-
-        {/* ---------- Impact ---------- */}
-
-
-        <div className="content_grid_two">
-          <div className="mr-4">
-            <div>
-                <ArrowHeading heading = "Impact" arrow={true}/>
-                <div className='grid grid-row-3 mb-4 gap-2'>
-                    {descriptionItems.map((item, index) => (
-                        <div className="description_tab" key={index}>
-                            <h4 style={{fontWeight: "350"}}>
-                                {item.text}
-                            </h4>
-                        </div>
-                    ))}
-                </div>
-                <Button href={"https://www.figma.com/design/VspD6hZZcvYiE2QM3dwHJD/Font-Swap-Plugin?node-id=1-7019&t=iPooSAi8QYkKt0Td-1"} name={"View detailed research"}/>
-            </div>
-          </div>
-
-
-          <div>
-          
-          <div className="relative">
-            {/* <div className="relative z-10 pointer-events-none">
-              <Image src={MacbookCover} 
-              alt={"Mackbook background cover"}
+            <h1 className="flex mt-48 gap-8 font-recoleta justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
+              {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
+              Font Swap
+              <Image
+              src={StarSVG}
+              alt="Star image"
+              width={32}
+              className="rotating-star"
               />
-            </div> */}
-
-            <iframe className="relative z-10 w-full bg-gray-100" style={{"border": "1px solid rgba(0, 0, 0, 0.1);"}} height={"450"} src="https://embed.figma.com/design/VspD6hZZcvYiE2QM3dwHJD/Font-Swap-Plugin?node-id=1-7019&embed-host=share" allowFullScreen></iframe>
-
-
-
-            <div className="absolute top-[18.2%] left-[20%] z-0">
-            {/* <YouTubeEmbed videoId={"uJtddv6lGhY"}/> */}
-            </div>
-
-          </div>
-
-
-          </div>
+              Font Swap 
+              <Image
+              src={StarSVG}
+              alt="Star image"
+              width={32}
+              className="rotating-star"
+              />
+              Font Swap
+            </h1>
+        </div>
         </div>
 
 
+        {/* ---------- Image ---------- */}
+
+        <Image
+        src={Banner}
+        alt="how might we questions"
+        className="w-full"
+        />
 
 
 
 
 
+        <div className="items-left body_width grid gap-24 mt-24">
 
         {/* ---------- Objective ---------- */}
 
 
         <div className='content_grid_two w-full gap-24'>
-            <div style={{width:"70%"}}>
-                <ArrowHeading heading = "💭 Objective"/>
-                <div>
+          <div style={{width:"70%"}}></div>
+          <div className="flex flex-col gap-24">
+            <div>
+                <ArrowHeading heading = "Story worth talking about"/>
+                <div style={{width:"80%"}}>
                 To make sure the use is able to test fonts on Figma as it was becoming a big problem when 
                 within my design team when working on a short deadline projects.
                 </div>
             </div>
-            <div className='flex gap-24'>
 
                 <div>
-                    <ArrowHeading heading = "⏳ Duration"/>
+                    <ArrowHeading heading = "Timeline"/>
                     <div>
-                    3 months for first release
+                    June 2023 - Ongoing
                     </div>
                 </div>
-                <div className="items-start">
-                    <ArrowHeading heading = "Panel Size" number = "5"/>
+                <div>
+                    <ArrowHeading heading = "Panel Size" number = "6"/>
+                      <div className="flex flex-wrap gap-8" style={{width:"80%"}}>
 
-                    <div className="grid gap-2">
-                      <div className='flex gap-4'>
+                        <div className='flex gap-4'>
                           <div className='w-12 h-12'>
                             <Image src={DP} alt={"Ashish Sharma Profile picture"} className='object-cover w-full h-full'/>
                           </div>
-                        <div>
-                          <h3>Ashish Sharma</h3>
-                          <p className='text-base -mt-2'>UX Designer</p>
+                          <div>
+                            <h3>Ashish Sharma</h3>
+                            <p className='text-base -mt-2'>UX Designer</p>
+                          </div>
+                        </div>
+
+                        <div className='flex gap-4'>
+                          <div className='w-12 h-12 bg-slate-200 text-white font-semibold text-xl content-center text-center'>
+                            👥
+                          </div>
+                          <div>
+                            <h3>Design Colleagues</h3>
+                            <p className='text-base -mt-2'>Product Testing</p>
+                          </div>
                         </div>
                       </div>
 
-                      <div className='flex gap-4'>
-                        <div className='w-12 h-12 bg-slate-200 text-white font-semibold text-xl content-center text-center'>
-                          👥
-                        </div>
-                        <div>
-                          <h3>Design Colleagues</h3>
-                          <p className='text-base -mt-2'>Product Testing</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    
                 </div>
-
             </div>
             
         </div>
@@ -209,13 +183,14 @@ export default function FontSwapResearch() {
 
 
 
-        {/* ---------- Research ---------- */}
+        {/* ---------- Research Approach ---------- */}
 
 
-        <div className='max-w-lg'>
-            <ArrowHeading heading = "Research & Inspirations" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/VspD6hZZcvYiE2QM3dwHJD/Font-Swap-Plugin?node-id=59-283&t=EE8NCwJ3QkssAU1o-1"/>
-            <div className='grid grid-cols-2 grid-rows-2 gap-x-1 justify-between gap-y-4'>
-                <div className="description_tab">
+        <div className='content_grid_two gap-24 w-full'>
+          <div style={{width:"70%"}}>
+            <ArrowHeading heading = "Research Approach" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=654-7&t=SaIecvX0yD7wvp7I-1"/>
+            <div className='grid grid-cols-1 grid-rows-2 gap-x-1 justify-between gap-y-2'>
+            <div className="description_tab">
                     <h4 style={{fontWeight: "350"}}>
                       Brainstorming Ideas
                     </h4>
@@ -236,26 +211,34 @@ export default function FontSwapResearch() {
                     </h4>
                 </div>
             </div>
-        </div>
+          </div>
 
-        </div>
 
-        <div className='content_grid_two gap-24 mt-12 body_width'>
-
-          <div style={{width:"70%"}}>
+          <div>
+          <div style={{width:"80%", display:"grid"}}>
+          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 1] </b>
           Competitor analysis helped gather data regarding features offered, 
           interface designs, documentation, and unique selling points. 
           This later contributed to developing a well-defined persona. 
           After conducting user interviews, a user journey was developed.
           </div>
 
-          <div style={{width:"70%"}}>
+          <br/><br/>
+
+          <div style={{width:"80%", display:"grid"}}>
+          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 2] </b>
           This process revealed opportunities, such as enabling the plugin to switch mixed 
           font styles and addressing style detachment. Heuristic analysis, with input from two colleagues, 
           helped identify improvements for a more user-friendly plugin experience.
           </div>
+          </div>
+
 
         </div>
+        </div>
+
+
+
 
 
 
@@ -285,18 +268,14 @@ export default function FontSwapResearch() {
 
 
 
-        {/* ---------- More Research ---------- */}
+        {/* ---------- Design Approach ---------- */}
 
 
-        <div className='content_grid_two mt-24 body_width'>
+        <div className="content_grid_two gap-24 mt-24 body_width">
 
-
-        {/* ---------- Design & Testing ---------- */}
-
-
-        <div className="max-w-lg">
-            <ArrowHeading heading = "Design & Testing" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/VspD6hZZcvYiE2QM3dwHJD/Font-Swap-Plugin?node-id=116-502&t=EE8NCwJ3QkssAU1o-1"/>
-            <div className='grid grid-cols-2 grid-rows-2 mb-4 gap-4'>
+          <div style={{width:"70%"}}>
+            <ArrowHeading heading = "Design Approach" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=656-195&t=SaIecvX0yD7wvp7I-1"/>
+            <div className='grid grid-cols-2 grid-rows-2 mb-4 mt-8 gap-y-2 gap-x-0'>
                 <div className="description_tab">
                     <h4 style={{fontWeight: "350"}}>
                       MoSCoW Prioritization
@@ -304,7 +283,7 @@ export default function FontSwapResearch() {
                 </div>
                 <div className="description_tab">
                     <h4 style={{fontWeight: "350"}}>
-                      UI WorkFlow
+                      UI WorkFlow & Release
                     </h4>
                 </div>
                 <div className="description_tab">
@@ -318,24 +297,32 @@ export default function FontSwapResearch() {
                     </h4>
                 </div>
             </div>
-        </div>
+          </div>
+
+          <div>
+
+          <div style={{width:"80%", display:"grid"}}>
+          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 1] </b>
+            After identifying user motivations and needs, I gained a clear understanding of the 
+            features and accessibility improvements that would elevate the design. The final version went 
+            through 16 iterations to achieve the most adaptable user experience.
+          </div>
+
+          <br/><br/>
+
+          <div style={{width:"80%", display:"grid"}}>
+          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 2] </b>
+            Usability testing revealed the users&apos; need for an improved visual experience, 
+            such as clearer guidance on selecting layers, handling cases where no font is found due to 
+            incorrect selection, and addressing situations where the searched font doesn&apos;t exist.
+          </div>
+
+
+          </div>
+
         </div>
 
-        <div className='content_grid_two gap-24 mt-12 body_width'>
 
-        <div style={{width:"70%"}}>
-        After identifying user motivations and needs, I gained a clear understanding of the 
-        features and accessibility improvements that would elevate the design. The final version went 
-        through 16 iterations to achieve the most adaptable user experience.
-        </div>
-
-        <div style={{width:"70%"}}>
-        Usability testing revealed the users&apos; need for an improved visual experience, 
-        such as clearer guidance on selecting layers, handling cases where no font is found due to 
-        incorrect selection, and addressing situations where the searched font doesn&apos;t exist.
-        </div>
-
-        </div>
 
         
 
@@ -350,87 +337,83 @@ export default function FontSwapResearch() {
 
 
 
-
         {/* ---------- Solution and Challenges ---------- */}
 
 
         <div className='content_grid_two gap-24 body_width mt-24'>
+          {/* Challenges & learnings */}
 
-          {/* Challenges */}
-          <div style={{width:"70%"}}>
-              <ArrowHeading heading = "🏋️‍♀️ Challenges"/>
+              <ArrowHeading heading = "Challenges & learnings" arrow={true}/>
               <div className='grid mb-4 gap-4'>
-              The major design challenge involved 
+                <b style={{fontWeight:"500", marginBottom:"2rem"}}>What was the Problem?</b>
                   <div className="description_tab2">
                       <h4 style={{fontWeight: "350"}}>
-                          Continuous iterations to optimize for mixed fonts and address login access, while ensuring the login link is evident but not disruptive to the overall UI.
+                      Continuous iterations to optimize for mixed fonts and address login access, while ensuring the 
+                      login link is evident but not disruptive to the overall UI.
                       </h4>
                   </div>
                   <div className="description_tab2">
                       <h4 style={{fontWeight: "350"}}>
-                          Addressing users&apos; need for fonts not appearing in the search list, even when they didn&apos;t offer the same weights, but needed to be tested.
+                      Addressing users&apos; need for fonts not appearing in the search list, 
+                      even when they didn&apos;t offer the same weights, but needed to be tested.
+                      </h4>
+                  </div>
+                  <div className="description_tab2">
+                      <h4 style={{fontWeight: "350"}}>
+                      Placing the GIF tutorial to help users get started, which Figma&apos;s API didn&apos;t allow directly.
+                      </h4>
+                  </div>
+                  <div className="description_tab2">
+                      <h4 style={{fontWeight: "350"}}>
+                      Creating an equation for the plugin to understand different font styles/weights with various 
+                      naming conventions like Roman vs. Regular or Medium vs. Medium Italic.
+                      </h4>
+                  </div>
+                  <div className="description_tab2">
+                      <h4 style={{fontWeight: "350"}}>
+                      Developing a system where the plugin suggests alternative fonts when certain weights are 
+                      missing, e.g., suggesting Medium weight when Regular is unavailable.
                       </h4>
                   </div>
 
-                  Development challenges included issue like:
+                  <b style={{fontWeight:"500", marginBottom:"2rem", marginTop:"2rem"}}>What were we solving? 🧠</b>
+
                   <div className="description_tab2">
                       <h4 style={{fontWeight: "350"}}>
-                          Placing the GIF tutorial to help users get started, which Figma&apos;s API didn&apos;t allow directly.
+                      Refining font replacement through multiple iterations, with the final UI effectively 
+                      matching and replacing all font styles seamlessly.
                       </h4>
                   </div>
                   <div className="description_tab2">
                       <h4 style={{fontWeight: "350"}}>
-                          Creating an equation for the plugin to understand different font styles/weights with various naming conventions like Roman vs. Regular or Medium vs. Medium Italic.
+                      Improving heuristics to ensure users don&apos;t make mistakes while using the plugin.
                       </h4>
                   </div>
                   <div className="description_tab2">
                       <h4 style={{fontWeight: "350"}}>
-                          Developing a system where the plugin suggests alternative fonts when certain weights are missing, e.g., suggesting Medium weight when Regular is unavailable.
+                      Applying Jacob&apos;s Law of Similarity by keeping the plugin design similar to popular 
+                      plugins like Font Replacer in the font replacement category.
                       </h4>
                   </div>
-              </div>
+                  <div className="description_tab2">
+                      <h4 style={{fontWeight: "350"}}>
+                      Reducing information overload by maintaining a minimal, condensed design.
+                      </h4>
+                  </div>
+                  <div className="description_tab2">
+                      <h4 style={{fontWeight: "350"}}>
+                      Ensuring the plugin offers solutions at every stage, including offering a Google search 
+                      option when fonts are not in the search list.
+                      </h4>
+                  </div>
+                  <div className="description_tab2">
+                      <h4 style={{fontWeight: "350"}}>
+                      Making the sign-in/sign-out option visible but not intrusive to the main font change process.
+                      </h4>
+                  </div>
           </div>
-
-          {/* Solutions */}
-          <div style={{width:"70%"}}>
-              <ArrowHeading heading = "💡 Solution & Learnings"/>
-              <div className='grid mb-4 gap-4'>
-
-              The solution focused on the following:
-                  <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                          Refining font replacement through multiple iterations, with the final UI effectively matching and replacing all font styles seamlessly.
-                      </h4>
-                  </div>
-                  <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                          Improving heuristics to ensure users don&apos;t make mistakes while using the plugin.
-                      </h4>
-                  </div>
-                  <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                          Applying Jacob&apos;s Law of Similarity by keeping the plugin design similar to popular plugins like Font Replacer in the font replacement category.
-                      </h4>
-                  </div>
-                  <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                          Reducing information overload by maintaining a minimal, condensed design.
-                      </h4>
-                  </div>
-                  <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                          Ensuring the plugin offers solutions at every stage, including offering a Google search option when fonts are not in the search list.
-                      </h4>
-                  </div>
-                  <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                          Making the sign-in/sign-out option visible but not intrusive to the main font change process.
-                      </h4>
-                  </div>
-              </div>
-          </div>
-            
         </div>
+
 
 
 
@@ -468,15 +451,16 @@ export default function FontSwapResearch() {
         {/* ---------- Final thoughts & conclusion ---------- */}
 
 
-        <div className='content_grid_two gap-24 body_width mt-24'>
-          
-          <div style={{width:"70%"}}>
-              <ArrowHeading heading = "🧘 Final thoughts & conclusion"/>
-              <div>
-              New challenges do still arrive, but identifying them is a key. Once they are identified, I know that I&apos;ll eventually find better solutions.
+        <div className='content_grid_two gap-24 body_width mt-24 mb-24'>
+        
+              <ArrowHeading heading = "Key Takeaways" arrow={true}/>
+              <div className="grid">
+              <b style={{fontWeight:"500", marginBottom:"2rem"}}>Reflection on the outcomes</b>
+              New challenges do still arrive, but identifying them is a key. Once they are identified, 
+              I know that I&apos;ll eventually find better solutions.
               </div>
-          </div>
         </div>
+
 
 
         {/* ---------- Footer ---------- */}
