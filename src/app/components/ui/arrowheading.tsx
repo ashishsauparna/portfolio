@@ -1,14 +1,12 @@
 import Image from "next/image";
 import ArrowOurward from '/public/arrow_outward.svg';
-import Button from "./button";
-import LinkButton from "./linkbutton";
 import ButtonSmall from "./button_small";
 
 const ArrowHeading = (data: any) => {
     return (
         <div>
         <span className="flex gap-3 items-center mb-3">
-            <h3>
+            <h3 className=" text-3xl font-recoleta text-slate-800">
             {data.heading}
             </h3>
             { data.number ?

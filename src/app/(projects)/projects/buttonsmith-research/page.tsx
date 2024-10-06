@@ -2,22 +2,19 @@ import ArrowHeading from "@/app/components/ui/arrowheading";
 import Button from "@/app/components/ui/button";
 import Footer from "@/app/components/ui/footer";
 import NavBar from "@/app/components/ui/navbar";
-import YouTubeEmbed from "@/app/components/ui/youtube-embed";
 import Link from "next/link";
 import Script from "next/script";
 import Image from "next/image";
 import ResearchImg from "@/../../public/projects/buttonsmith/research.png";
+import Banner from "@/../../public/projects/buttonsmith/banner.png";
 import Competitors from "@/../../public/projects/buttonsmith/competitor_research.png";
 import Moscow from "@/../../public/projects/buttonsmith/moscow.png";
-import HewAnalysis from "@/../../public/projects/buttonsmith/heuristic_analysis.png";
 import UIFrames from "@/../../public/projects/buttonsmith/uiframes.png";
 import UICollective from "@/../../public/projects/buttonsmith/uicollective.png";
-import MacbookCover from "@/../../public/mackbook_silver_blackbg.png";
 import ArrowBack from "@/../../public/arrow_back.svg";
 import DP from "@/../../public/ashish_sharma.png";
 import LakshyaDP from "@/../../public/lakshya_raj.png";
-import FigmaLogo from "@/../../public/Figma_logo.svg";
-import Logo from "@/../../public/projects/buttonsmith/logo.svg"
+import StarSVG from "@/../../public/star.svg";
 
 export default function ButtonSmithResearch() {
 
@@ -41,114 +38,102 @@ export default function ButtonSmithResearch() {
         </Script>
         <NavBar/>
 
-        <div className="items-left body_width grid gap-24">
 
 
 
         {/* ---------- Back button here ---------- */}
 
 
-        <div className="flex flex-col items-start mt-8 font-medium" style={{color: "#0069E5"}}>
+        <div className="items-left body_width grid gap-24 mt-8 font-medium" style={{color: "#0069E5"}}>
             <Link href={"/"}>
-                <div className="flex item-center justify-center hover:underline gap-2">
+                <div className="inline-flex items-center justify-start hover:underline gap-2 button_small cursor-pointer">
                   <Image
                   src={ArrowBack}
                   alt="back arrow icon"
-                  /> Back
+                  width={20}
+                  className="arrow-back-icon"
+                  /> Go Back
                 </div>
             </Link>
         </div>
 
 
 
+
+        <div className="items-left body_width grid gap-24 mt-24">
+
+
+
         {/* ---------- Title here ---------- */}
 
 
-        <div>
-            <h2>
-              {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
-              Button Smith
-            </h2>
-            <h4 style={{marginTop:"0.3rem", fontWeight:"300"}}>
+        <div className="flex flex-col justify-center items-center w-full mt-24">
+            <h4 className="flex" style={{fontWeight:"500", width:"25%", textAlign:"center"}}>
               One Figma Plugin to generates and documents all your button states
             </h4>
+            <h1 className="flex mt-48 gap-8 font-recoleta justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
+              {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
+              Button Smith 
+              <Image
+              src={StarSVG}
+              alt="Star image"
+              width={32}
+              className="rotating-star"
+              />
+              Button Smith 
+              <Image
+              src={StarSVG}
+              alt="Star image"
+              width={32}
+              className="rotating-star"
+              />
+              Button Smith
+            </h1>
+        </div>
+        
         </div>
 
 
 
 
 
+        {/* ---------- Image ---------- */}
 
-
-        {/* ---------- Impact ---------- */}
-
-
-        <div className="mb-20 content_grid_two">
-          <div>
-            <div>
-                <ArrowHeading heading = "Impact" arrow = {true}/>
-                <div className='grid grid-row-3 mb-4 gap-2'>
-                    {descriptionItems.map((item, index) => (
-                        <div className="description_tab" key={index}>
-                            <h4 style={{fontWeight: "350"}}>
-                                {item.text}
-                            </h4>
-                        </div>
-                    ))}
-                </div>
-                <Button href={"https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=529-7&t=hcDzdTGFhRkszfsj-1"} name={"View detailed research"}/>
-            </div>
-          </div>
-          <div>
-          <div className="relative">
-            {/* <div className="relative z-10 pointer-events-none">
-              <Image src={MacbookCover} 
-              alt={"Mackbook background cover"}
-            />
-            </div> */}
-
-            <iframe className="relative z-10 w-full bg-gray-100" style={{"border": "1px solid rgba(0, 0, 0, 0.1);"}} height={"450"} src="https://embed.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=654-7&embed-host=share" allowFullScreen></iframe>
-
-
-
-            <div className="absolute top-[18.2%] left-[20%] z-0">
-            {/* <YouTubeEmbed videoId={"FfLtALrdE0I"}/> */}
-            </div>
-
-          </div>
-          
-
-            </div>
-        </div>
+        <Image
+        src={Banner}
+        alt="how might we questions"
+        className="w-full"
+        />
 
 
 
 
 
-
+        <div className="items-left body_width grid gap-24 mt-24">
 
 
         {/* ---------- Objective ---------- */}
 
 
         <div className='content_grid_two w-full gap-24'>
-            <div style={{width:"70%"}}>
-                <ArrowHeading heading = "💭 Objective"/>
-                <div>
-                To enhance design efficiency by creating a customised and fully <b style={{fontWeight:"600"}}>documented</b> component set with a <b style={{fontWeight:"600"}}>least decision making efforts</b> which can be reused and updated as per user&apos;s needs.
+          <div style={{width:"70%"}}></div>
+          <div className="flex flex-col gap-24">
+            <div>
+                <ArrowHeading heading = "Story worth talking about"/>
+                <div style={{width:"80%"}}>
+                To enhance design efficiency by creating a customised and fully <b style={{fontWeight:"500"}}>documented</b> component set with a <b style={{fontWeight:"500"}}>least decision making efforts</b> which can be reused and updated as per user&apos;s needs.
                 </div>
             </div>
-            <div className='flex gap-24'>
 
                 <div>
-                    <ArrowHeading heading = "⏳ Duration"/>
+                    <ArrowHeading heading = "Timeline"/>
                     <div>
-                    1.5 months for first release
+                    May 2024 - Ongoing
                     </div>
                 </div>
                 <div>
                     <ArrowHeading heading = "Panel Size" number = "6"/>
-                      <div className="grid gap-2">
+                      <div className="flex flex-wrap gap-8" style={{width:"80%"}}>
 
                         <div className='flex gap-4'>
                           <div className='w-12 h-12'>
@@ -182,7 +167,6 @@ export default function ButtonSmithResearch() {
                       </div>
 
                 </div>
-
             </div>
             
         </div>
@@ -192,12 +176,13 @@ export default function ButtonSmithResearch() {
 
 
 
-        {/* ---------- Reseach & Inspirations ---------- */}
+        {/* ---------- Research Approach ---------- */}
 
 
-        <div className='max-w-lg'>
-            <ArrowHeading heading = "Research & Inspirations" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=654-7&t=SaIecvX0yD7wvp7I-1"/>
-            <div className='grid grid-cols-2 grid-rows-2 gap-x-1 justify-between gap-y-4'>
+        <div className='content_grid_two gap-24 w-full'>
+          <div style={{width:"70%"}}>
+            <ArrowHeading heading = "Research Approach" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=654-7&t=SaIecvX0yD7wvp7I-1"/>
+            <div className='grid grid-cols-1 grid-rows-2 gap-x-1 justify-between gap-y-2'>
                 <div className="description_tab">
                     <h4 style={{fontWeight: "350"}}>
                       Competitor Analysis
@@ -214,20 +199,24 @@ export default function ButtonSmithResearch() {
                     </h4>
                 </div>
             </div>
-        </div>
-        </div>
-
-        <div className='content_grid_two gap-24 mt-12 body_width'>
-
-          <div style={{width:"70%"}}>
-          During the research it was discovered that the other plugins were doing a good job 
-          and they had very little feedback in case of both positive and negative aspects.
-          <br/><br/>
-          Even though their wider audience was happy it was identified that creating something 
-          that involves pros of all three components could solve the objective that was initially developed.
           </div>
 
-          <div style={{width:"70%"}}>
+
+          <div>
+          <div style={{width:"80%", display:"grid"}}>
+          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 1] </b>
+          My research approach placed a strong emphasis in understanding the existing platforms and 
+          how they are solving for creating a component set. it was discovered that they had very little 
+          feedback in case of both positive and negative aspects.
+          <br/><br/>
+          Even though their wider audience was happy it was identified that creating something that involves 
+          the best functionality of all three components could solve the objective that was initially developed.
+          </div>
+
+          <br/><br/>
+
+          <div style={{width:"80%", display:"grid"}}>
+          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 2] </b>
           Upon conducting heuristics it was discovered that there could be many things that 
           could be used for creating a plugin that can reduce human efforts like, a preview option in 
           Design system generator, styles to explore with a certain theme. and finally figuring out how to document it.
@@ -235,7 +224,10 @@ export default function ButtonSmithResearch() {
           It was discovered that other plugins were just creating a component set but not generating 
           document in order to kick start a project.
           </div>
+          </div>
 
+
+        </div>
         </div>
 
 
@@ -267,18 +259,14 @@ export default function ButtonSmithResearch() {
 
 
 
-        {/* ---------- More Research ---------- */}
+        {/* ---------- Design Approach ---------- */}
 
 
-        <div className='content_grid_two mt-24 body_width'>
+        <div className="content_grid_two gap-24 mt-24 body_width">
 
-
-        {/* ---------- Design & Testing ---------- */}
-
-
-        <div className="max-w-lg">
-            <ArrowHeading heading = "Design & Testing" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=656-195&t=SaIecvX0yD7wvp7I-1"/>
-            <div className='grid grid-cols-2 grid-rows-2 mb-4 gap-4'>
+          <div style={{width:"70%"}}>
+            <ArrowHeading heading = "Design Approach" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=656-195&t=SaIecvX0yD7wvp7I-1"/>
+            <div className='grid grid-cols-2 grid-rows-2 mb-4 mt-8 gap-y-2 gap-x-0'>
                 <div className="description_tab">
                     <h4 style={{fontWeight: "350"}}>
                       MoSCoW Prioritization
@@ -300,28 +288,34 @@ export default function ButtonSmithResearch() {
                     </h4>
                 </div>
             </div>
-        </div>
+          </div>
+
+          <div>
+
+          <div style={{width:"80%", display:"grid"}}>
+          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 1] </b>
+          After understanding the how might we questions it became clear to distinguish the features that might be most required vs least required when creating the plugin design. 
+          <br/><br/>
+          This also later helped in creating the visual hierarchy of the components displayed when creating the plugin.
+          </div>
+
+          <br/><br/>
+
+          <div style={{width:"80%", display:"grid"}}>
+          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 2] </b>
+          The decision work as per trial and error method was taken as we did not have much data in terms 
+          of how the users would feel when using the newly developed iteration.
+          <br/><br/>
+          Hence usability test was conducted with 3 participants in order to understand if the target was met. 
+          This also needed the design to be developed asap.
+          </div>
+
+
+          </div>
+
         </div>
 
-        <div className='content_grid_two gap-24 mt-12 body_width'>
-
-        <div style={{width:"70%"}}>
-        After understanding the how might we questions it became clear to distinguish the 
-        features that might be most required vs least required when creating the plugin design. 
-        <br/><br/>
-        This also later helped in creating the visual hierarchy of the components displayed when creating the plugin.
-        </div>
-
-        <div style={{width:"70%"}}>
-        The decision work as per trial and error method was taken as we did not have much data in terms 
-        of how the users would feel when using the newly developed iteration.
-        <br/><br/>
-        Hence usability test was conducted with 3 participants in order to understand if the target was met. 
-        This also needed the design to be developed asap.
-        </div>
-
-
-        </div>
+        
 
 
 
@@ -344,10 +338,11 @@ export default function ButtonSmithResearch() {
 
 
         <div className='content_grid_two gap-24 body_width mt-24'>
-          {/* Challenges */}
-          <div style={{width:"70%"}}>
-              <ArrowHeading heading = "🏋️‍♀️ Challenges"/>
+          {/* Challenges & learnings */}
+
+              <ArrowHeading heading = "Challenges & learnings" arrow={true}/>
               <div className='grid mb-4 gap-4'>
+                <b style={{fontWeight:"500", marginBottom:"2rem"}}>What was the Problem?</b>
                   <div className="description_tab2">
                       <h4 style={{fontWeight: "350"}}>
                       The first challenge was as there was limited feedback available from the users for such kind of plugins. 
@@ -369,15 +364,8 @@ export default function ButtonSmithResearch() {
                       the preview section to be as the prominent space.
                       </h4>
                   </div>
-              </div>
-          </div>
 
-          {/* Solutions */}
-          <div style={{width:"70%"}}>
-              <ArrowHeading heading = "💡 Solution & Learnings"/>
-              <div className='grid mb-4 gap-4'>
-
-              The solution focused on the following:
+                  <b style={{fontWeight:"500", marginBottom:"2rem", marginTop:"2rem"}}>What were we solving? 🧠</b>
                   <div className="description_tab2">
                       <h4 style={{fontWeight: "350"}}>
                       The iterations were made to the plugin&apos;s component hierarchy to make sure that user have access to most used components 
@@ -398,7 +386,6 @@ export default function ButtonSmithResearch() {
                       with all input field numbers aligned in multiplication of 2&4.
                       </h4>
                   </div>
-              </div>
           </div>
         </div>
 
@@ -429,16 +416,15 @@ export default function ButtonSmithResearch() {
         {/* ---------- Final thoughts & conclusion ---------- */}
 
 
-        <div className='content_grid_two gap-24 body_width mt-24'>
-          
-          <div style={{width:"70%"}}>
-              <ArrowHeading heading = "Final thoughts & conclusion"/>
-              <div>
+        <div className='content_grid_two gap-24 body_width mt-24 mb-24'>
+        
+              <ArrowHeading heading = "Key Takeaways" arrow={true}/>
+              <div className="grid">
+              <b style={{fontWeight:"500", marginBottom:"2rem"}}>Reflection on the outcomes</b>
               New challenges do still arrive, but identifying them is a key. 
               For instance, right now bringing new button designs to the plugin is what I&apos;m trying to pull of in such a way that 
               I can also develop a code for it as well. Next is finding time to test the design one more time.
               </div>
-          </div>
         </div>
 
 

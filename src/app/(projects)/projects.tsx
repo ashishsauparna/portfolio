@@ -30,7 +30,7 @@ export default function ProjectsData() {
       href: "/projects/fontswap-research",
       new: "Jun 23",
       heading: "Font Swap | Figma Plugin",
-      subHeading:"A Figma plugin addressing multitask",
+      subHeading:"A Figma plugin to help switch multiple font styles in 3 steps",
       large: true,
       shortImage: false
     },
@@ -63,7 +63,7 @@ export default function ProjectsData() {
       href: "/projects/rozgar-research",
       new: "Jan 22",
       heading: "Rozgar | Mobile Application",
-      subHeading:"Understanding the online/offline market of Blue collar workers.",
+      subHeading:"Understanding the market of blue collar workers.",
       large: false,
       shortImage: true
     }
@@ -145,8 +145,8 @@ export default function ProjectsData() {
           : ""
         }
           <div className='mt-4 flex justify-between text-gray-600'>
-            <h3 className='mr-16 whitespace-pre-line text-lg'>{image.subHeading}</h3>
-            <h3 className='text-right whitespace-nowrap text-lg'>{image.new}</h3>
+            <h3 className='mr-16 whitespace-pre-line text-xl'>{image.subHeading}</h3>
+            <h3 className='text-right whitespace-nowrap text-xl font-offbit'>{image.new}</h3>
           </div>
         </div>
       </Link>

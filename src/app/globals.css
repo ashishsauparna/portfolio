@@ -17,8 +17,8 @@
 } */
 
 body {
-  font-size: 1.2rem;
-  font-weight: 360;
+  font-size: 1.1rem;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   font-family: var(--font-albert-sans);
@@ -92,7 +92,7 @@ body {
 
 /*Defining headings*/
 h1{
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-family: var(--font-space-gothic);
   margin-bottom: 1rem;
   letter-spacing: -0.5px;
@@ -101,9 +101,9 @@ h1{
 }
 
 h2{
-  font-size: 1.6rem;
-  font-family: var(--font-space-gothic);
-  letter-spacing: -0.5px;
+  font-size: 2rem;
+  font-family: var(--font-offbit);
+  opacity: 0.8;
   font-weight: 500;
 }
 
@@ -136,6 +136,20 @@ h5{
 
 .background_bypass{
   background: linear-gradient(135deg, #0091ea, #66b2ff, #0091ea);
+}
+
+/* In your CSS file */
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating-star {
+  display: inline-block;
+  animation: rotate 8s linear infinite;
+  transform-origin: center center;
+  vertical-align: middle;
 }
 
 .para-width{
@@ -313,6 +327,15 @@ li .mobile_ui:hover{
   text-decoration: underline;
   background-color: #0069E5;
   color: #fefefe;
+}
+
+.arrow-back-icon {
+  transition: filter 0.1s ease;
+  margin-top: -2px;
+}
+
+.button_small:hover .arrow-back-icon {
+  filter: brightness(0) invert(1);
 }
 
 .arrow_icon {
@@ -650,7 +673,7 @@ footer{
 .content_grid_two{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem; /* Equivalent to gap-4, adjust as needed */
+  gap: 4rem; /* Equivalent to gap-4, adjust as needed */
   align-items: start;
 }
 

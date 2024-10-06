@@ -30,6 +30,6 @@ export const OffBit = localFont({
 })
 
 export const Recoleta = localFont({
-  src: './fonts/Recoleta-Regular.otf',
+  src: './fonts/Recoleta-Regular.ttf',
   variable: '--font-recoleta',
 })

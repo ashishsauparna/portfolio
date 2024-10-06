@@ -60,23 +60,28 @@ export default function FontSwapResearch() {
         </Script>
         <NavBar/>
 
-        <div className="items-left body_width grid gap-24">
-
-
 
         {/* ---------- Back button here ---------- */}
 
 
-        <div className="flex flex-col items-start mt-8 font-medium" style={{color: "#0069E5"}}>
+        <div className="sticky top-10 items-left body_width grid gap-24 mt-8 font-medium" style={{color: "#0069E5"}}>
             <Link href={"/"}>
-                <div className="flex item-center justify-center hover:underline gap-2">
+                <div className="inline-flex items-center justify-start hover:underline gap-2 button_small cursor-pointer">
                   <Image
                   src={ArrowBack}
                   alt="back arrow icon"
-                  /> Back
+                  width={20}
+                  className="arrow-back-icon"
+                  /> Go Back
                 </div>
             </Link>
         </div>
+
+
+
+
+        <div className="items-left body_width grid gap-24 mt-24">
+
 
 
 
