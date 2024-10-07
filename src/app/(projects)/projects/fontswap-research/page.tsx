@@ -221,9 +221,9 @@ export default function FontSwapResearch() {
           <div style={{width:"80%", display:"grid", gap:"1rem"}}>
             <b style={{fontWeight:"500"}}>[Approach 1] </b>
             <div>
-            We initially used a tool called <span style={{fontWeight:"500"}}>Font Replacer</span>, but I searched for alternatives to find a 
-            better fit. Although <b style={{fontWeight:"500"}}>Easy Font Swap</b> had some potential, it didn&apos;t fully meet our needs. To 
-            better understand the landscape, I conducted a <b style={{fontWeight:"500"}}>competitor analysis</b>, focusing on 
+            We initially used a tool called Font Replacer, but I searched for alternatives to find a 
+            better fit. Although Easy Font Swap had some potential, it didn&apos;t fully meet our needs. To 
+            better understand the landscape, I conducted a competitor analysis, focusing on 
             features, interface designs, documentation, unique selling points.
             </div>
           </div>
@@ -311,18 +311,25 @@ export default function FontSwapResearch() {
 
           <div style={{width:"80%", display:"grid"}}>
           <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 1] </b>
-            After identifying user motivations and needs, I gained a clear understanding of the 
-            features and accessibility improvements that would elevate the design. The final version went 
-            through 16 iterations to achieve the most adaptable user experience.
+            Facing a creative block, I initially mirrored the frame structure of Font Replacer to get started. 
+            Using MoSCoW prioritization and after 9 iterations, I was able to refine the process, 
+            ensuring that accessability and replace fonts in three simple steps.
           </div>
 
           <br/><br/>
 
           <div style={{width:"80%", display:"grid"}}>
           <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 2] </b>
-            Usability testing revealed the users&apos; need for an improved visual experience, 
-            such as clearer guidance on selecting layers, handling cases where no font is found due to 
-            incorrect selection, and addressing situations where the searched font doesn&apos;t exist.
+            Drawing from The Sprint Book, I learned the importance of testing early to avoid delays. 
+            With that in mind, I created a prototype and conducted usability testing with three of my 
+            teammates to gather immediate feedback.
+          </div>
+
+          <div style={{width:"80%", display:"grid"}}>
+          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 3] </b>
+            The feedback resulted in Release 4.1, which improved visual cues for font selection, 
+            visual identification for missing fonts, and status updates on the progress bar when font 
+            switching was delayed.
           </div>
 
 
