@@ -137,8 +137,11 @@ export default function FontSwapResearch() {
             <div>
                 <ArrowHeading heading = "Story worth talking about"/>
                 <div style={{width:"80%"}}>
-                To make sure the use is able to test fonts on Figma as it was becoming a big problem when 
-                within my design team when working on a short deadline projects.
+                The idea sparked when <b style={{fontWeight:"500"}}>my team and I were struggling to test various fonts</b> while 
+                crafting a pitch for a client. This challenge led to the realization that<b style={{fontWeight:"500"}}> we needed a 
+                faster, more aesthetic solution</b> for testing and selecting fonts. From that, I created a 
+                tool to simplify the process, allowing us to quickly experiment with multiple fonts and 
+                pick the one that fits perfectly.
                 </div>
             </div>
 
