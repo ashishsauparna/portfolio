@@ -325,6 +325,8 @@ export default function FontSwapResearch() {
             teammates to gather immediate feedback.
           </div>
 
+          <br/><br/>
+          
           <div style={{width:"80%", display:"grid"}}>
           <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 3] </b>
             The feedback resulted in Release 4.1, which improved visual cues for font selection, 
