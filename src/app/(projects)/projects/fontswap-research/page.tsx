@@ -215,21 +215,26 @@ export default function FontSwapResearch() {
 
 
           <div>
-          <div style={{width:"80%", display:"grid"}}>
-          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 1] </b>
-          Competitor analysis helped gather data regarding features offered, 
-          interface designs, documentation, and unique selling points. 
-          This later contributed to developing a well-defined persona. 
-          After conducting user interviews, a user journey was developed.
+          <div style={{width:"80%", display:"grid", gap:"1rem"}}>
+            <b style={{fontWeight:"500"}}>[Approach 1] </b>
+            <div>
+            We initially used a tool called <span style={{fontWeight:"500"}}>Font Replacer</span>, but I searched for alternatives to find a 
+            better fit. Although <b style={{fontWeight:"500"}}>Easy Font Swap</b> had some potential, it didn&apos;t fully meet our needs. To 
+            better understand the landscape, I conducted a <b style={{fontWeight:"500"}}>competitor analysis</b>, focusing on 
+            features, interface designs, documentation, unique selling points.
+            </div>
           </div>
 
           <br/><br/>
 
-          <div style={{width:"80%", display:"grid"}}>
-          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 2] </b>
-          This process revealed opportunities, such as enabling the plugin to switch mixed 
-          font styles and addressing style detachment. Heuristic analysis, with input from two colleagues, 
-          helped identify improvements for a more user-friendly plugin experience.
+          <div style={{width:"80%", display:"grid", gap:"1rem"}}>
+            <b style={{fontWeight:"500"}}>[Approach 2] </b>
+            <div>
+              <b style={{fontWeight:"500"}}>I leveraged feedback from the comment sections</b> of these plugins to identify what users needed, 
+              which informed the creation of a new solution. This data helped shape a well-defined 
+              persona. Additionally, after conducting <b style={{fontWeight:"500"}}>3 interviews </b> 
+              with my team, the path forward became clearer, <b style={{fontWeight:"500"}}>leading to the development of a detailed user journey</b>.
+            </div>
           </div>
           </div>
 
