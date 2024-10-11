@@ -469,7 +469,7 @@ export default function FontSwapResearch() {
                   <div className="description_tab2">
                       <div style={{fontWeight: "350"}}>
                       A font suggestion system was developed to recommend closest alternatives 
-                      (e.g., Roman for Regular or Bold for Semibold), tagged as "Pro Suggestions" to 
+                      (e.g., Roman for Regular or Bold for Semibold), tagged as &quot;Pro Suggestions&quot; to 
                       differentiate from exact matches. This helped in expanding the search list items.
                       </div>
                   </div>
