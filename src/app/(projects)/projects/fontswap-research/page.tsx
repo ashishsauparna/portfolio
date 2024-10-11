@@ -221,10 +221,10 @@ export default function FontSwapResearch() {
           <div style={{width:"80%", display:"grid", gap:"1rem"}}>
             <b style={{fontWeight:"500"}}>[Approach 1] </b>
             <div>
-            We initially used a tool called Font Replacer, but I searched for alternatives to find a 
-            better fit. Although Easy Font Swap had some potential, it didn&apos;t fully meet our needs. To 
-            better understand the landscape, I conducted a competitor analysis, focusing on 
-            features, interface designs, documentation, unique selling points.
+            We were initially using a plugin called Font Replacer, and Easy Font Swap 
+              which didn&apos;t fully meet our needs. To better understand the landscape, 
+            I <b style={{fontWeight:"500"}}>conducted a competitor analysis, focusing on features, interface designs, documentation, and 
+            unique selling points.</b>
             </div>
           </div>
 
@@ -235,7 +235,7 @@ export default function FontSwapResearch() {
             <div>
               <b style={{fontWeight:"500"}}>I leveraged feedback from the comment sections</b> of these plugins to identify what users needed, 
               which informed the creation of a new solution. This data helped shape a well-defined 
-              persona. Additionally, after conducting <b style={{fontWeight:"500"}}>3 interviews </b> 
+              persona. Additionally, after conducting <b style={{fontWeight:"500"}}>3 user interviews </b> 
               with my team, the path forward became clearer, <b style={{fontWeight:"500"}}>leading to the development of a detailed user journey</b>.
             </div>
           </div>
@@ -309,26 +309,29 @@ export default function FontSwapResearch() {
 
           <div>
 
-          <div style={{width:"80%", display:"grid"}}>
-          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 1] </b>
-            Facing a creative block, I initially mirrored the frame structure of Font Replacer to get started. 
+          <div style={{width:"80%", display:"grid", gap:"0.5rem"}}>
+          <b>[Approach 1] </b>
+            <div>
+            Facing a creative block, I initially <b>mirrored the frame structure of Font Replacer to get started</b>. 
             Using MoSCoW prioritization and after 9 iterations, I was able to refine the process, 
-            ensuring that accessability and replace fonts in three simple steps.
+            <b>ensuring that accessability and replace fonts in three simple steps.</b>
+            </div>
           </div>
 
           <br/><br/>
 
-          <div style={{width:"80%", display:"grid"}}>
-          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 2] </b>
+          <div style={{width:"80%", display:"grid", gap:"0.5rem"}}>
+            <b>[Approach 2] </b>
+            <div>
             Drawing from The Sprint Book, I learned the importance of testing early to avoid delays. 
-            With that in mind, I created a prototype and conducted usability testing with three of my 
-            teammates to gather immediate feedback.
+            With that in mind, I <b>created a prototype and conducted usability testing with three of my 
+            teammates to gather immediate feedback.</b>
+            </div>
           </div>
 
-          <br/><br/>
+          <br/>
           
           <div style={{width:"80%", display:"grid"}}>
-          <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 3] </b>
             The feedback resulted in Release 4.1, which improved visual cues for font selection, 
             visual identification for missing fonts, and status updates on the progress bar when font 
             switching was delayed.
@@ -360,73 +363,58 @@ export default function FontSwapResearch() {
         <div className='content_grid_two gap-24 body_width mt-24'>
           {/* Challenges & learnings */}
 
-              <ArrowHeading heading = "Challenges & learnings" arrow={true}/>
-              <div className='grid mb-4 gap-4'>
-                <b style={{fontWeight:"500", marginBottom:"2rem"}}>What was the Problem?</b>
+              <ArrowHeading heading = "Challenges & learnings (1)" arrow={true}/>
+              <div className='grid mb-4 gap-4 w-[80%]'>
+                <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>What was the Problem? (hmw method)</b>
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      Continuous iterations to optimize for mixed fonts and address login access, while ensuring the 
-                      login link is evident but not disruptive to the overall UI.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      How to get started with the design while also making sure that we don&apos;t 
+                      start with scratch by saving initial time?
+                      </div>
                   </div>
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      Addressing users&apos; need for fonts not appearing in the search list, 
-                      even when they didn&apos;t offer the same weights, but needed to be tested.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      What method can be used to make sure that we keep the steps minimal whole also 
+                      user has to take care of one task at a time?
+                      </div>
                   </div>
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      Placing the GIF tutorial to help users get started, which Figma&apos;s API didn&apos;t allow directly.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      It takes about 1-2 seconds for the plugin to load all font styles even on an average data speed. 
+                      How can we optimize the user flow so that the user doesn&apos;t have to wait for the time being.
+                      </div>
                   </div>
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      Creating an equation for the plugin to understand different font styles/weights with various 
-                      naming conventions like Roman vs. Regular or Medium vs. Medium Italic.
-                      </h4>
-                  </div>
-                  <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      Developing a system where the plugin suggests alternative fonts when certain weights are 
-                      missing, e.g., suggesting Medium weight when Regular is unavailable.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      The 404 screen is usually a blank screen with font not found. How can we make it helpful to users?
+                      </div>
                   </div>
 
-                  <b style={{fontWeight:"500", marginBottom:"2rem", marginTop:"2rem"}}>What were we solving? 🧠</b>
+                  <b style={{fontWeight:"500", marginBottom:"0.5rem", marginTop:"2rem"}}>How was I solving? 🧠</b>
 
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      Refining font replacement through multiple iterations, with the final UI effectively 
-                      matching and replacing all font styles seamlessly.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      Used the Jacob&apos;s law of similarity by keeping the plugin design similar 
+                      to popular plugin (Font Replacer) in the font replacement category.
+                      </div>
                   </div>
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      Improving heuristics to ensure users don&apos;t make mistakes while using the plugin.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      The plugin presents one task at a time, reducing the information overload, 
+                      starting by populating fonts from a selected node, allowing the user to choose which font to change.
+                      </div>
                   </div>
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      Applying Jacob&apos;s Law of Similarity by keeping the plugin design similar to popular 
-                      plugins like Font Replacer in the font replacement category.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      It pre-loads matching font styles to ensure the process remains intuitive and quick 
+                      before the user makes their first decision.
+                      </div>
                   </div>
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      Reducing information overload by maintaining a minimal, condensed design.
-                      </h4>
-                  </div>
-                  <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      Ensuring the plugin offers solutions at every stage, including offering a Google search 
-                      option when fonts are not in the search list.
-                      </h4>
-                  </div>
-                  <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      Making the sign-in/sign-out option visible but not intrusive to the main font change process.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      Made sure the plugin provides solution at every stage of the process like offering a 
+                      direct Google search link pre-filled with the font name in case the font is not in the search list.
+                      </div>
                   </div>
           </div>
         </div>
@@ -445,6 +433,62 @@ export default function FontSwapResearch() {
         className="w-full mt-24"
         />
 
+
+
+{/* ---------- Solution and Challenges ---------- */}
+
+
+<div className='content_grid_two gap-24 body_width mt-24'>
+          {/* Challenges & learnings */}
+
+              <ArrowHeading heading = "Challenges & learnings (2)" arrow={true}/>
+              <div className='grid mb-4 gap-4 w-[80%]'>
+                <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>What was the Problem? (hmw method)</b>
+                  <div className="description_tab2">
+                      <div style={{fontWeight: "350"}}>
+                      How can we solve for the cases of the font&apos;s that don&apos;t have a matching 
+                      style or offer a limited style variation? This should help in reduced number of cases 404 screens.
+                      </div>
+                  </div>
+                  <div className="description_tab2">
+                      <div style={{fontWeight: "350"}}>
+                      As the plugin users are growing, how can we find out the geographical impact 
+                      the plugin has made, even though figma doesn&apos;t directly allows to track usage.
+                      </div>
+                  </div>
+                  <div className="description_tab2">
+                      <div style={{fontWeight: "350"}}>
+                      What placement is better for a sign-in method that it is visible since the plugin 
+                      loads also how can we integrate it with pro suggestions and earn money in a future case?
+                      </div>
+                  </div>
+
+
+                  <b style={{fontWeight:"500", marginBottom:"0.5rem", marginTop:"2rem"}}>How was I solving? 🧠</b>
+
+                  <div className="description_tab2">
+                      <div style={{fontWeight: "350"}}>
+                      A font suggestion system was developed to recommend closest alternatives 
+                      (e.g., Roman for Regular or Bold for Semibold), tagged as "Pro Suggestions" to 
+                      differentiate from exact matches. This helped in expanding the search list items.
+                      </div>
+                  </div>
+                  <div className="description_tab2">
+                      <div style={{fontWeight: "350"}}>
+                      To track plugin usage, a sign in link was introduced for pro suggestions 
+                      which helped in knowing geographical location of users.
+                      </div>
+                  </div>
+                  <div className="description_tab2">
+                      <div style={{fontWeight: "350"}}>
+                      The sign in link is kept on the first fold of plugin making it visible throughout 
+                      the process but separate from the main task, it is designed as tertiary button 
+                      ensuring users user doesn&apos;t think of it as a primary button and it functions 
+                      as a status if user signed in or not.
+                      </div>
+                  </div>
+          </div>
+        </div>
 
 
 
