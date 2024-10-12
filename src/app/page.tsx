@@ -46,8 +46,8 @@ export default function Home() {
             </div>
           </div>
           <div className='flex items-start justify-center text-center w-full'>
-          <h1 className='text-slate-800 tracking-tight leading-none text-7xl'>
-          <span className='font-offbit text-slate-600'>Crafting solutions</span><br/>
+          <h1 className='text-slate-800 tracking-tight leading-none text-6xl'>
+          <span className='font-recoleta text-slate-800'>Crafting solutions</span><br/>
           <span className='font-recoleta'>for a better experience</span>
             {/* <span className='inline-flex ml-4'>
             <svg width="42" height="42" viewBox="0 0 58 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,15 +64,11 @@ export default function Home() {
 
         
         {/* <LottieAnimation width={35} height={35} /> */}
-          <h4 className='flex justify-center mt-4 font-normal'>
-            {/* <Image
-            src={OutwardArrow}
-            alt='Outward arrow icon'
-            className='rotate-90'
-            /> */}
-          <Image src={OutwardArrowDown} alt={'Outwoard arrow down icon'} width={14}/> &nbsp;
-          (Scroll to view projects)
-          </h4>
+          <div className='flex items-center justify-center mt-4 gap-2'>
+          <span>
+          <b>Open to</b> <span className='font-recoleta'>new job offers</span></span>
+          <div style={{backgroundColor:"mediumseagreen", width:"12px", height:"12px", borderRadius:"100%"}}></div>
+          </div>
         </div>
         <div>
           <ProjectsData/>
