@@ -340,51 +340,48 @@ export default function ButtonSmithResearch() {
         <div className='content_grid_two gap-24 body_width mt-24'>
           {/* Challenges & learnings */}
 
-              <ArrowHeading heading = "Challenges & learnings" arrow={true}/>
-              <div className='grid mb-4 gap-4'>
+              <ArrowHeading heading = "Challenges & learnings (1)" arrow={true}/>
+              <div className='grid mb-4 gap-4 w-[80%]'>
                 <b style={{fontWeight:"500", marginBottom:"2rem"}}>What was the Problem?</b>
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      The first challenge was as there was limited feedback available from the users for such kind of plugins. 
-                      This was taken care if with user interviews and usability testings.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      With a limited feedback available for competitive plugins what could be an other way to figure 
+                      out our user needs?
+                      </div>
                   </div>
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      Initially there was an idea to put suggestions in order to avoid errors and improve efficiency 
-                      of use which was later becoming like a redundant need and a difficult to implement in ase of development 
-                      as I didn&apos;t have much knowledge on how to implement it.  and finally the decision was taken to remove it 
-                      and update the design as such that the need for suggestions can be avoided.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      How can we make sure the user doesn&apos;t get overwhelmed in the process of creating a component 
+                      set? What solutions can help?
+                      </div>
                   </div>
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      As the iterations  were being made the preview section was expanding with added states and a new button 
-                      styles section. This was challenge initially on how to make amends in the UI such that the plugin still holds 
-                      the preview section to be as the prominent space.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      Should the preview section be the prominent part of the plugin? if so how can we implement it 
+                      in such a way that user benefits from it the most?
+                      </div>
                   </div>
 
-                  <b style={{fontWeight:"500", marginBottom:"2rem", marginTop:"2rem"}}>What were we solving? 🧠</b>
+                  <b style={{fontWeight:"500", marginBottom:"2rem", marginTop:"2rem"}}>How was I solving? 🧠</b>
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      The iterations were made to the plugin&apos;s component hierarchy to make sure that user have access to most used components 
-                      first and then they can use the others if needed.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      The main challenge was limited user feedback, which was addressed through interviews and 
+                      usability testing.
+                      </div>
                   </div>
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      Finding the perfect sync in how the equation would work when deciding teh whole pallet based on just one primary color. 
-                      This took ideation from Material design color tool. And then figuring out how to implement it by using combination of Hue, 
-                      Saturation and brightness.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      User interviews revealed the need for basic features like font search, border radius, and padding, 
+                      as seen in competitor heuristics. A preview section was also confirmed to be beneficial before 
+                      generating the button set.
+                      </div>
                   </div>
                   <div className="description_tab2">
-                      <h4 style={{fontWeight: "350"}}>
-                      After removing suggestions it was important to find a synergy to a first fold button design that appeals to a user in order 
-                      to make least amount of changes and before generating document. This involved a basics like it should look aesthetically perfect 
-                      with all input field numbers aligned in multiplication of 2&4.
-                      </h4>
+                      <div style={{fontWeight: "350"}}>
+                      The preview section evolved from showing just 3 button states to including secondary and 
+                      tertiary variations. It became integral to the plugin, addressing both user needs and marketing by 
+                      showcasing the generated output in the first fold.
+                      </div>
                   </div>
           </div>
         </div>
@@ -402,6 +399,48 @@ export default function ButtonSmithResearch() {
         alt="how might we questions"
         className="w-full mt-24"
         />
+
+
+        {/* ---------- Solution and Challenges ---------- */}
+
+
+        <div className='content_grid_two gap-24 body_width mt-24'>
+                  {/* Challenges & learnings */}
+
+              <ArrowHeading heading = "Challenges & learnings (2)" arrow={true}/>
+              <div className='grid mb-4 gap-4 w-[80%]'>
+                <b style={{fontWeight:"500", marginBottom:"2rem"}}>What was the Problem?</b>
+                  <div className="description_tab2">
+                      <div style={{fontWeight: "350"}}>
+                      Can we use only the primary button to create a set of button states? If so, how can we 
+                      implement an algorithm making sure the it helps during development as well?
+                      </div>
+                  </div>
+                  <div className="description_tab2">
+                      <div style={{fontWeight: "350"}}>
+                      Is there a need for editing the plugin? What components can be the most useful for a user when edits are made within the 
+                      plugin? What hierarchy could be the best heuristically?
+                      </div>
+                  </div>
+
+                  <b style={{fontWeight:"500", marginBottom:"2rem", marginTop:"2rem"}}>How was I solving? 🧠</b>
+                  <div className="description_tab2">
+                      <div style={{fontWeight: "350"}}>
+                      The decision to pick just primary button was initiated to keep the minimal design, reducing 
+                      decision making efforts, and designing an algorithm based on color hierarchy and altering saturation 
+                      & brightness of primary hue.
+                      </div>
+                  </div>
+                  <div className="description_tab2">
+                      <div style={{fontWeight: "350"}}>
+                      By Usability testing and trial and error method the components hierarchy was tested.
+                      </div>
+                  </div>
+          </div>
+        </div>
+
+
+
         <Image
         src={UICollective}
         alt="how might we questions"
