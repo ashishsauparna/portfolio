@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Script from 'next/script';
 import OutwardArrowDown from '/public/arrow_outward.svg'
 import { Metadata } from 'next';
+import Link from 'next/link';
+import AshishSharmaImg from '/public/ashish_sharma.png';
 
 export const metadata: Metadata = {
   title: 'Ashish Sharma UX Designer',
@@ -27,16 +29,18 @@ export default function Home() {
       </Script>
       <NavBar/>
       <div className='items-left body_width'>
-        <div className='mt-4 mb-24'>
+        <div className='mt-4 mb-4'>
           <div className='relative mb-40'>
             <div className='flex gap-4 items-start relative'>
-                <div className='w-11 h-11 bg-zinc-900' style={{transform:"translateY(4px)"}}>
+                <div className='w-11 h-11 bg-slate-900 overflow-hidden' style={{transform:"translateY(4px)"}}>
+                  <Image src={AshishSharmaImg} alt="Arrow Down"
+                  />
                 </div>
                 {/* <Image src={BlueSpectrum} alt={'a blue color spectrum'} width={45}
                 className='absolute -z-10 top-1'/> */}
               <div>
                 <h4>Ashish Sharma</h4>
-                <h5 className='text-xl'>UX designer - since 2019</h5>
+                <h5 className='text-xl'>UX designer - since 2020</h5>
               </div>
             </div>
             <div className='absolute right-0 top-0'>
@@ -46,7 +50,7 @@ export default function Home() {
             </div>
           </div>
           <div className='flex items-start justify-center text-center w-full'>
-          <h1 className='text-slate-800 tracking-tight leading-none text-6xl'>
+          <h1 className='text-slate-800 tracking-tight leading-none text-7xl'>
           <span className='font-recoleta text-slate-800'>Crafting solutions</span><br/>
           <span className='font-recoleta'>for a better experience</span>
             {/* <span className='inline-flex ml-4'>
@@ -60,15 +64,18 @@ export default function Home() {
           {/* <Image src={AshishSharmaImg} alt={''} height={700} className='ml-12 relative bottom-[35px]'/> */}
           </div>
         </div>
-        <div className='grid justify-center place-items-center overflow-visible'>
+        <div className='grid mb-48 justify-center place-items-center overflow-visible'>
 
         
         {/* <LottieAnimation width={35} height={35} /> */}
+        <Link href={'mailto:ashishsauparna@gmail.com'}>
+        
           <div className='flex items-center justify-center mt-4 gap-2'>
           <span>
           <b>Open to</b> <span className='font-recoleta'>new job offers</span></span>
-          <div style={{backgroundColor:"mediumseagreen", width:"14px", height:"14px", borderRadius:"100%"}}></div>
+          <div style={{backgroundColor:"mediumseagreen", width:"12px", height:"12px", borderRadius:"100%"}}></div>
           </div>
+        </Link>
         </div>
         <div>
           <ProjectsData/>

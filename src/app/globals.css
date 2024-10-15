@@ -45,7 +45,7 @@ b{
   margin-left: auto;
   margin-right: auto;
   row-gap: 8rem;
-  column-gap: 20rem;
+  column-gap: 12rem;
   grid-template-columns: repeat(2, 1fr); /* Adjust columns as needed */
   margin-top: 8rem; /* Sets top margin to 8 units */
   margin-bottom: 24px; /* Sets bottom margin to 24 units */
