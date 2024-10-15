@@ -119,7 +119,7 @@ h3{
 }
 
 h4{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: var(--font-space-gothic);
   font-weight: 450;
   line-height: 1.6rem;
@@ -229,7 +229,7 @@ ul {
   list-style: none;
   display: flex; /* Use flexbox to align items horizontally */
   justify-content: right; /* Right side align the items horizontally */
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 li{
@@ -238,7 +238,7 @@ li{
 
 .nav_links{
   gap: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: var(--font-space-gothic);
 }
 
@@ -544,7 +544,7 @@ footer{
   justify-content: left;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10rem;
+  margin-top: 16rem;
   padding-top: 3rem;
   padding-bottom: 1rem;
 }

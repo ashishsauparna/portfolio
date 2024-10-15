@@ -24,7 +24,7 @@ export default function Footer() {
 
         <div className="flex items-center justify-between w-full py-4">
 
-        <div className='flex-shrink-0 mr-auto text-xl font-normal items-center'>
+        <div className='flex-shrink-0 mr-auto text-lg font-normal items-center'>
         <div className='mb-4'>Interested in working together?</div>
         <SmallButton name="Contact me 📝"
         href="mailto:ashishsauparna@gmail.com"/>
