@@ -67,7 +67,7 @@ export default function Home() {
           <div className='flex items-center justify-center mt-4 gap-2'>
           <span>
           <b>Open to</b> <span className='font-recoleta'>new job offers</span></span>
-          <div style={{backgroundColor:"mediumseagreen", width:"12px", height:"12px", borderRadius:"100%"}}></div>
+          <div style={{backgroundColor:"mediumseagreen", width:"14px", height:"14px", borderRadius:"100%"}}></div>
           </div>
         </div>
         <div>
