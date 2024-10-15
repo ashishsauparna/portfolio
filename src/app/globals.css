@@ -114,7 +114,7 @@ h2{
 h3{
   font-size: 22px;
   font-family: var(--font-space-gothic);
-  font-weight: 430;
+  font-weight: 350;
   margin-bottom: 0.2rem;
 }
 
@@ -127,7 +127,8 @@ h4{
 
 
 h5{
-  font-family: var(--font-recoleta);
+  font-family: var(--font-noto-serif);
+  font-weight: 350;
   font-size: 1.2rem;
   color: #0069E5;
 }
@@ -228,7 +229,7 @@ ul {
   list-style: none;
   display: flex; /* Use flexbox to align items horizontally */
   justify-content: right; /* Right side align the items horizontally */
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 li{
@@ -237,7 +238,7 @@ li{
 
 .nav_links{
   gap: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-family: var(--font-space-gothic);
 }
 
@@ -298,7 +299,7 @@ li .mobile_ui:hover{
   color: #ffffff;
   background-color: #0069E5;
   /* border: 1.5px solid #0069E5; */
-  padding: 0.6rem 1.2rem;
+  padding: 0.6rem 1.5rem;
   font-weight: 450;
   text-align: center;
   margin-top: 1.2rem;
@@ -531,9 +532,10 @@ li .mobile_ui:hover{
 /* Footer */
 
 ul.footer_links{
-  display: grid;
-  justify-content: left;
-  gap: 16px;
+  position: absolute;
+  width: 100%;
+  gap: 2rem;
+  transform: translateY(6px);
 }
 
 footer{

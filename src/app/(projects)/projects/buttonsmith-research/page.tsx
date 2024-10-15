@@ -71,9 +71,9 @@ export default function ButtonSmithResearch() {
             <h4 className="flex" style={{fontWeight:"500", width:"25%", textAlign:"center"}}>
               One Figma Plugin to generates and documents all your button states
             </h4>
-            <h1 className="flex mt-48 gap-8 font-recoleta justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
+            <h1 className="flex mt-48 gap-8 font-light font-noto-serif justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
               {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
-              Button Smith 
+              -
               <Image
               src={StarSVG}
               alt="Star image"
@@ -87,7 +87,7 @@ export default function ButtonSmithResearch() {
               width={32}
               className="rotating-star"
               />
-              Button Smith
+              -
             </h1>
         </div>
         

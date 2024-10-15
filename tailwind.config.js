@@ -19,6 +19,7 @@ module.exports = {
         'abc-whyte': ['var(--font-abc-whyte)', 'sans-serif'],
         'offbit': ['var(--font-offbit)', 'monospace'],
         'recoleta': ['var(--font-recoleta)', 'serif'],
+        'noto-serif': ['var(--font-noto-serif)', 'serif'],
       },
     },
   },

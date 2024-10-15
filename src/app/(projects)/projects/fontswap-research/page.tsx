@@ -92,7 +92,7 @@ export default function FontSwapResearch() {
             <h4 className="flex" style={{fontWeight:"500", width:"25%", textAlign:"center"}}>
                 A Figma Plugin addressing to replace all font styles with 3 clicks
             </h4>
-            <h1 className="flex mt-48 gap-8 font-recoleta justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
+            <h1 className="flex mt-48 gap-8 font-light font-noto-serif justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
               {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
               Font Swap
               <Image

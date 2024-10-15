@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { AlbertSans, AlegreyaFont, SpaceGothic, ABCFont, OffBit, Recoleta } from './fonts'
+import { AlbertSans, AlegreyaFont, SpaceGothic, ABCFont, OffBit, Recoleta, NotoSerif } from './fonts'
 
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${AlbertSans.variable} ${SpaceGothic.variable} ${AlegreyaFont.variable} ${ABCFont.variable} ${OffBit.variable} ${Recoleta.variable}`}>
+    <html lang="en" className={`${AlbertSans.variable} ${SpaceGothic.variable} ${AlegreyaFont.variable} ${ABCFont.variable} ${OffBit.variable} ${Recoleta.variable} ${NotoSerif.variable}`}>
       <body>
         {children}
       </body>

@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link';
  
-export default function Button(link: any) {
+export default function SmallButton(link: any) {
 
   // const time = useTime();
   // const transforme = useTransform(

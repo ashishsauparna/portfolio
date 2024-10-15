@@ -1,10 +1,16 @@
-import { Albert_Sans, Alegreya, Space_Grotesk} from 'next/font/google';
+import { Albert_Sans, Alegreya, Noto_Serif, Space_Grotesk} from 'next/font/google';
 import localFont from 'next/font/local';
 
  
 export const AlbertSans = Albert_Sans({
   subsets: ['latin'],
   variable: '--font-albert-sans',
+  display: 'swap',
+})
+
+export const NotoSerif = Noto_Serif({
+  subsets: ['latin'],
+  variable: '--font-noto-serif',
   display: 'swap',
 })
 
