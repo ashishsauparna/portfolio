@@ -25,28 +25,7 @@ export default function FontSwapResearch() {
   ]
 
   return (
-    // <ProjectPage
-    //   title="Font Swap"
-    //   year="May 23"
-    //   subtitle="A Figma Plugin addressing multitasks"
-    //   buttonHref="https://medium.com/ux-planet/ux-case-study-font-swap-building-a-figma-plugin-e9ec6905f2e3"
-    //   buttonText="View detailed research"
-    //   progress={100}
-    //   descriptionItems={[
-    //     { text: 'Switch fonts in one selection', note: '[1]' },
-    //     { text: 'Replace mixed text', note: '[2]' },
-    //     { text: 'Find and replace missing fonts', note: '[3]' },
-    //     { text: 'Suggestions fonts with different weight styles', note: '[4]' },
-    //   ]}
-    //   youtubeVideoIdOrMiroLink="uJtddv6lGhY"
-    //   stakeholdersTitle="Stakeholders"
-    //   stakeholdersSubtitle="UI Designers"
-    //   scoreTitle2 = "Overall Users"
-    //   usersEarned="+18k"
-    //   usersText="users"
-    //   peopleInvolved="🙋🏻"
-    //   useiframe = {false}
-    // />
+
     <main className="flex min-h-screen flex-col items-center">
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-2N9F9N8KHK" />
         <Script id="google-analytics">
