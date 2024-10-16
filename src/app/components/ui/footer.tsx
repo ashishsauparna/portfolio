@@ -23,14 +23,14 @@ export default function Footer() {
         </div>
         
         <div className='w-[90%] footer_frame'>
-        <div className="flex items-center justify-between w-full py-4">
+          
+        <div className="footer_grid items-center justify-between w-full py-4">
 
-        <div className='flex-shrink-0 mr-auto text-lg font-normal items-center'>
-        <div className='mb-4'>Interested in working together?</div>
-        <SmallButton name="Contact me 📝"
-        href="mailto:ashishsauparna@gmail.com"/>
-        {/* <Navigation target="_blank" name="ashishsauparna@gmail.com" href="mailto:ashishsauparna@gmail.com" status="mobile_ui"/> */}
-        </div>
+          <div className='flex-shrink-0 mr-auto text-lg font-normal items-center'>
+            <div className='mb-4'>Interested in working together?</div>
+            <SmallButton name="Contact me 📝"
+            href="mailto:ashishsauparna@gmail.com"/>
+          </div>
         
 
         {/* Centered links */}

@@ -78,9 +78,14 @@ export default function MotionCV(){
             </div>
             <div>
               <h5 className='mb-4 text-2xl text-slate-900'>Projects &  Contribution</h5>
-                    <p className='leading-7 mb-12'>
-                    <span style={{fontWeight:"460"}}>Figma Plugin - Font Swap (+20K users)</span><br/>
+                    <p className='leading-7 mb-4'>
+                    <span style={{fontWeight:"460"}}>Figma - Font Swap Plugin (+20K users)</span><br/>
                     <p className='text-gray-500 text-lg font-medium'>UX Designer + Developer | July 2023 - Present</p>
+                    </p>
+
+                    <p className='leading-7 mb-4'>
+                    <span style={{fontWeight:"460"}}>Figma - Button Smith Plugin (+600 users)</span><br/>
+                    <p className='text-gray-500 text-lg font-medium'>UX Designer + Developer | May 2024 - Present</p>
                     </p>
               </div>
             <div>

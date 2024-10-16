@@ -30,19 +30,19 @@ export default function Home() {
         `}
       </Script>
       <NavBar/>
+
       <Image
       src={Banner}
       alt='background banner'
       className='-z-10 absolute top-0 w-full'
       />
+
       {/* <MoveImage path={Banner}/> */}
       <div className='items-left body_width'>
         <div className='mt-8 mb-4'>
-          <div className='relative mb-48'>
+          <div className='relative mb-48 short_intro'>
             <div className='flex gap-4 items-start relative'>
                 <div className='w-10 h-10 overflow-hidden bg-gray-900' style={{transform:"translateY(4px)"}}>
-                  {/* <Image src={AshishSharmaImg} alt="Arrow Down"
-                  /> */}
                 </div>
               <div>
                 <h4>Ashish Sharma</h4>
@@ -55,7 +55,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='flex items-start justify-center text-center w-full'>
+
+          <div className='flex items-start justify-center text-center w-full large_intro'>
 
           <h1 className='text-slate-800 tracking-tight leading-none text-6xl'>
           <span className='font-noto-serif font-light text-slate-800'>Crafting solutions</span><br/>

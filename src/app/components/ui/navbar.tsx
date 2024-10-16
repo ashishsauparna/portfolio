@@ -83,7 +83,6 @@ export default function NavBar() {
             alt="A Logo of the website in white text and blue background. The logo says AS short for Ashish Sharma"
             sizes="60vw"
             className='icon' />
-            Ashish
             </div>
         </Link>
           <div className='z-10'>
