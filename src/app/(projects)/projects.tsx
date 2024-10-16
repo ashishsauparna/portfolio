@@ -5,38 +5,41 @@ import fontSwapImg from '/public/fontswap_2.jpg';
 import delhiveryPoster from '/public/Outside_in_poster.jpg'
 import rozgarImg from '/public/case_study_rozgar.jpg';
 import buttonSmithImg from '/public/button_smith_banner.jpg'
+import Sanskriti from '/public/sanskriti_2.jpg'
+import Salhakar from '/public/salahkar_3.png'
 import Link from 'next/link';
 import { animate, motion } from 'framer-motion';
-import OutwardArrow from '/public/outward_arrow.svg';
-import Marquee from 'react-fast-marquee';
 
 export default function ProjectsData() {
 
   const imageInfo = [
-    
+
     {
       src: fontSwapImg,
       srcBlur:"",
       alt: "Picture of a man using font swap plugin on his MacBook",
       href: "/projects/fontswap-research",
+      blank:"_self",
       readTime: '👀 5 mins read',
       new: "Jun 23",
       headingP1: "Font Swap: ",
-      headingP2: "Case Study - June 23",
+      headingP2: "Case Study - June 2023",
       subHeading:"A plugin to help switch multiple fonts in three steps.",
       large: false,
-      shortImage: true,
+      shortImage: false,
       css: 'readtime_marqee'
-    },    
+    }, 
+     
     {
       src: buttonSmithImg,
       srcBlur:"",
       alt: "Picture of an man wokring on construction site",
       href: "/projects/buttonsmith-research",
+      blank:"_self",
       readTime: '👀 6 mins read',
       new: "May 24",
       headingP1: "Button Smith: ",
-      headingP2: "Case Study - May 24",
+      headingP2: "Case Study - May 2024",
       subHeading:"A plugin to create button components set",
       large: false,
       shortImage: true,
@@ -47,37 +50,42 @@ export default function ProjectsData() {
       srcBlur:"", 
       alt: "Vector image of 2 folders with the label of outside-in analysis",
       href: "/projects/delhivery-research",
+      blank:"_self",
       readTime: '🎨 Work in Progress',
       new: "Dec 23",
       headingP1: "Outside In Analysis: ",
-      headingP2: "UX Research - Dec 23",
+      headingP2: "UX Research - Dec 2023",
       subHeading:"Understanding the logistics trend and innovations",
       large: false,
       shortImage: true,
       css: 'readtime_marqee'
     },
-    // {
-    //   src: "",
-    //   srcBlur:"",
-    //   alt: "",
-    //   href: "",
-    //   new: "",
-    //   headingP1: "",
-    //   subHeading:"",
-    //   large: false,
-    //   shortImage: false,
-    //   css: ''
-    // },
     {
       src: rozgarImg,
       srcBlur:"",
       alt: "Picture of an man wokring on construction site",
       href: "/projects/rozgar-research",
+      blank:"_self",
       readTime: '👀 4 mins read',
       new: "Jan 22",
       headingP1: "Rozgar App: ",
-      headingP2: "Short Study - Mar 22",
+      headingP2: "Short Study - Mar 2022",
       subHeading:"Finding digital solution for blue collar workers.",
+      large: false,
+      shortImage: false,
+      css: 'readtime_marqee'
+    },
+    {
+      src: Sanskriti,
+      srcBlur:"",
+      alt: "Picture of an man wokring on construction site",
+      href: "https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94",
+      blank:"_blank",
+      readTime: '👀 5 mins read',
+      new: "Mar 21",
+      headingP1: "Sanskriti App: ",
+      headingP2: "Case Study - Mar 2021",
+      subHeading:"Learning about artifacts and the museums they belong to",
       large: false,
       shortImage: true,
       css: 'readtime_marqee'
@@ -117,7 +125,7 @@ export default function ProjectsData() {
       }}
       className={image.large ? 'cell large' : 'cell'} // Conditionally apply 'large' class
       >
-      <Link href={image.href}>
+      <Link href={image.href} target={image.blank}>
         <div className='cell'>
           <div className={`flex justify-between ${image.css}`}>
             {/* <div className='flex gap-2'>
