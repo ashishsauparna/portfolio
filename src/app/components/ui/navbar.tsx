@@ -64,7 +64,7 @@ export default function NavBar() {
             /
           </li> */}
           <li className='flex'>
-          <Navigation name="Medium" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/> &nbsp;
+          <Navigation name="Articles" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/> &nbsp;
           <Image
           src={OutwardArrow}
           alt='outward arrow icon'
