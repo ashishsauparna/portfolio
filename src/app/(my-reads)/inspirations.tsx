@@ -10,7 +10,6 @@ import Sapta from '/public/inspiration/sapta.jpeg';
 import Jim from '/public/inspiration/jim.jpeg';
 import Ashwini from '/public/inspiration/ashwini.jpeg';
 import { animate, motion } from 'framer-motion';
-import OutwardArrow from '/public/outward_arrow.svg';
 
 export default function Inspirations() {
 
@@ -45,12 +44,12 @@ export default function Inspirations() {
           name:"Saptarshi Prakash",
           href:"https://instagram.com/saptarshiux?igshid=MzRlODBiNWFlZA=="
         },
-        {
-          img: Jim,
-          alt:"",
-          name:"Jim Raptis",
-          href:"https://instagram.com/jim.ux?igshid=MzRlODBiNWFlZA=="
-        },
+        // {
+        //   img: Jim,
+        //   alt:"",
+        //   name:"Jim Raptis",
+        //   href:"https://instagram.com/jim.ux?igshid=MzRlODBiNWFlZA=="
+        // },
         {
           img: Ashwini,
           alt:"",
@@ -89,19 +88,16 @@ export default function Inspirations() {
                 once:true
               }}>
               <Link key={index} href={data.href} target='_blank'>
-                  <div className='cell_two'>
-                    <Image src={data.img} alt={data.alt} className='avatar_images'/>
-                    <div>
-                      <span className='flex'><h3>{data.name}</h3>
-                      <Image
-                        src={OutwardArrow}
-                        alt='outward arrow icon'
-                        width={20}
-                      /></span>
-                      <h5>Instagram</h5>
-                    </div>
-                    
-                  </div>
+
+              <div className='flex gap-4 mb-6'>
+                <div className='w-12 h-12'>
+                  <Image src={data.img} alt={data.alt} className='object-cover w-full h-full'/>
+                </div>
+                <div>
+                  <h3>{data.name}</h3>
+                  <p className='text-base -mt-2'>Instagram</p>
+                </div>
+              </div>
               </Link>
               </motion.div>
             ))}

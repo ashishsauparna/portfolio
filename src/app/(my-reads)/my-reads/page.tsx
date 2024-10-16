@@ -58,27 +58,24 @@ export default function MyReads() {
       `}
     </Script>
         <NavBar/>
-          <div className='intro_content_three mt-24'>
+        <div className="items-left body_width grid gap-24 mt-24">
+          <div className='content_grid_two w-full gap-24'>
               <div>
                 <Image src={IgStory} alt={'Book holding'}
-                style={{width:"80%", height:"auto"}}/>
+                style={{width:"60%", height:"auto"}}/>
               </div>
-            <div>
-              <div className='flex gap-4 items-start'>
-                <div className='w-3 h-3 bg-zinc-900 absolute -ml-8'>
-                </div>
+            <div className='flex flex-col gap-24'>
+              <div className='flex flex-col gap-2 items-start w-[60%]'>
                 <h5 className='text-2xl text-slate-900 -mt-2'>What am I reading and listening to?</h5>
+                <p className='mb-4 mt-4'>Its a space of all my favourite books, podcasts, articles, people I am inspired by and things that I enjoy and love, that I hope you might like as well.</p>
               </div>
-              <p className='mb-4 mt-4'>Its a space of all my favourite books, podcasts, articles, people I am inspired by and things that I enjoy and love, that I hope you might like as well.</p>
-            </div>
-            <div className='w-full'>
-              <div className='flex gap-4 items-start'>
-                <div className='w-3 h-3 bg-zinc-900 absolute -ml-8'>
-                </div>
+
+              <div className='flex flex-col gap-2 items-start'>
                 <h5 className='text-2xl text-slate-900 -mt-2'>People that inspire me</h5>
+                <Inspirations/>
               </div>
-              <Inspirations/>
             </div>
+          </div>
           </div>
 
         {/* <div className='recomendation_content mt-24 !items-start'>

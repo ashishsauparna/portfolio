@@ -1,9 +1,9 @@
 'use client'
 
-import Button from './button';
 import Navigation from './navigation';
 import Image from 'next/image';
 import OutwardArrow from '/public/outward_arrow.svg';
+import FooterImg from '/public/footer_image.png';
 import Marquee from 'react-fast-marquee';
 import SmallButton from './button_small';
 
@@ -15,13 +15,14 @@ export default function Footer() {
   return (
       <footer>
 
+        <Image className='absolute bottom-0 -z-10 w-full' src={FooterImg} alt={'footer image'}/>
         <div className='absolute font-space-gothic left-0 -mt-20 bg-blue-600 text-white py-2'>
         <Marquee autoFill pauseOnHover speed={30}>
           &nbsp;&nbsp;{tickerString}
         </Marquee>
         </div>
         
-
+        <div className='w-[90%] footer_frame'>
         <div className="flex items-center justify-between w-full py-4">
 
         <div className='flex-shrink-0 mr-auto text-lg font-normal items-center'>
@@ -72,8 +73,9 @@ export default function Footer() {
         
         
         <p className='mt-12 pt-2 leading-[2rem] text-base mt-20 border-t border-slate-300'>
-        © Assembled with pixels by Ashish. Last updated May 2024
+        © Assembled with pixels by Ashish. Last updated Oct 2024
         </p>
+        </div>
       </footer>
   )
 }
