@@ -26,7 +26,7 @@ export default function ProjectsData() {
       headingP2: "Case Study - June 2023",
       subHeading:"A plugin to help switch multiple fonts in three steps.",
       large: false,
-      shortImage: false,
+      shortImage: true,
       css: 'readtime_marqee'
     }, 
      
@@ -72,7 +72,7 @@ export default function ProjectsData() {
       headingP2: "Short Study - Mar 2022",
       subHeading:"Finding digital solution for blue collar workers.",
       large: false,
-      shortImage: false,
+      shortImage: true,
       css: 'readtime_marqee'
     },
     {
