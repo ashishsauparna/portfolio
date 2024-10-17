@@ -39,7 +39,7 @@ export default function Home() {
 
       {/* <MoveImage path={Banner}/> */}
       <div className='items-left body_width'>
-        <div className='mt-8 mb-2'>
+        <div className='mt-8 mb-56'>
           <div className='relative mb-40 short_intro'>
             <div className='flex gap-4 items-start relative'>
                 <div className='w-10 h-10 overflow-hidden bg-gray-900' style={{transform:"translateY(4px)"}}>
@@ -58,7 +58,7 @@ export default function Home() {
 
           <div className='flex items-start justify-center text-center w-full large_intro'>
 
-          <h1 className='font-extralight text-slate-800 w-[75%]'>
+          <h1 className='font-extralight text-slate-800 w-[78%]'>
           <span>
           Designing digital solutions for startups and enterprise since 2020. 
           Sharing design insights on Medium & Linkedin.
@@ -67,19 +67,19 @@ export default function Home() {
 
           </div>
         </div>
-        <div className='grid mb-56 justify-center place-items-center overflow-visible'>
 
-        
-        {/* <LottieAnimation width={35} height={35} /> */}
+        {/* <div className='grid mb-56 justify-center place-items-center overflow-visible'>
         <Link href={'mailto:ashishsauparna@gmail.com'}>
         
-          <div className='flex items-center font-noto-serif justify-center gap-2'>
+          <div className='flex items-center justify-center gap-2'>
           <div style={{backgroundColor:"mediumseagreen", width:"12px", height:"12px", borderRadius:"100%"}}></div>
-          <span>Open to <span>new job offers</span></span>
+          Open to new job offers
           
           </div>
         </Link>
-        </div>
+        </div> */}
+
+
         <div>
           <ProjectsData/>
         </div>
