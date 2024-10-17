@@ -39,13 +39,13 @@ export default function Home() {
 
       {/* <MoveImage path={Banner}/> */}
       <div className='items-left body_width'>
-        <div className='mt-8 mb-56'>
+        <div className='mt-8 mb-64'>
           <div className='relative mb-40 short_intro'>
             <div className='flex gap-4 items-start relative'>
                 <div className='w-10 h-10 overflow-hidden bg-gray-900' style={{transform:"translateY(4px)"}}>
                 </div>
               <div>
-                <h4>Ashish Sharma</h4>
+                <h4 className='opacity-80'>Ashish Sharma</h4>
                 <h4 className='text-blue-700 -mt-[1.5px]'>UX designer at EY</h4>
               </div>
             </div>
@@ -56,14 +56,25 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='flex items-start justify-center text-center w-full large_intro'>
+          <div className='flex flex-col gap-4 items-center justify-center text-center w-full large_intro'>
 
-          <h1 className='font-light font-noto-serif text-slate-800 w-[73%]'>
+          <h1 className='font-noto-serif text-slate-800 w-[50%] mb-0'>
           <span>
-          Designing digital solutions for startups and enterprise since 2020.
-          Sharing design insights on Medium & Linkedin.
-          </span><br/>
+          Crafting digital solutions for <br/> startups and enterprises since 2020.
+          </span>
           </h1>
+
+          <h4 className='w-[50%] opacity-80'>
+            Sharing design insights on&nbsp;
+            <Link className='link_button' href={'https://medium.com/@ashishsauparna'}>
+              Medium
+            </Link>
+            &nbsp;&&nbsp;
+            <Link className='link_button' href={'https://www.linkedin.com/in/ashishsauparna/'}>
+              Linkedin
+            </Link>
+            .
+          </h4>
 
           </div>
         </div>
