@@ -7,6 +7,8 @@ import ArrowHeading from "@/app/components/ui/arrowheading";
 import HeuristicsImg from "@/../../public/projects/fontswap/heuristics.png";
 import MoscowImg from "@/../../public/projects/fontswap/moscow.png";
 import UIFrames from "@/../../public/projects/fontswap/uiframes.png";
+import UsabilityTesting from "@/../../public/projects/fontswap/usability_testing.png";
+import UIAnatomy from "@/../../public/projects/fontswap/anatomy.png";
 import UserbaseImg from "@/../../public/projects/fontswap/userbase.png";
 import ResearchImg from "@/../../public/projects/fontswap/research.png";
 import ArrowBack from "@/../../public/arrow_back.svg";
@@ -328,8 +330,18 @@ export default function FontSwapResearch() {
         {/* ---------- Image ---------- */}
 
 
-                <Image
+        <Image
         src={MoscowImg}
+        alt="how might we questions"
+        className="w-full mt-24"
+        />
+
+
+        {/* ---------- Images ---------- */}
+
+
+        <Image
+        src={UsabilityTesting}
         alt="how might we questions"
         className="w-full mt-24"
         />
@@ -411,6 +423,18 @@ export default function FontSwapResearch() {
         alt="how might we questions"
         className="w-full mt-24"
         />
+
+
+
+        {/* ---------- Images ---------- */}
+
+
+        <Image
+        src={UIAnatomy}
+        alt="how might we questions"
+        className="w-full mt-24"
+        />
+        
 
 
 

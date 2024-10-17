@@ -10,6 +10,8 @@ import Banner from "@/../../public/projects/buttonsmith/banner.png";
 import Competitors from "@/../../public/projects/buttonsmith/competitor_research.png";
 import Moscow from "@/../../public/projects/buttonsmith/moscow.png";
 import UIFrames from "@/../../public/projects/buttonsmith/uiframes.png";
+import ColorGuide from "@/../../public/projects/buttonsmith/colorequation.png";
+import UIAnatomy from "@/../../public/projects/buttonsmith/anatomy.png";
 import UICollective from "@/../../public/projects/buttonsmith/uicollective.png";
 import ArrowBack from "@/../../public/arrow_back.svg";
 import DP from "@/../../public/ashish_sharma.png";
@@ -396,6 +398,26 @@ export default function ButtonSmithResearch() {
 
         <Image
         src={UIFrames}
+        alt="how might we questions"
+        className="w-full mt-24"
+        />
+
+
+        {/* ---------- Images ---------- */}
+        
+
+        <Image
+        src={ColorGuide}
+        alt="how might we questions"
+        className="w-full mt-24"
+        />
+
+
+        {/* ---------- Images ---------- */}
+        
+
+        <Image
+        src={UIAnatomy}
         alt="how might we questions"
         className="w-full mt-24"
         />
