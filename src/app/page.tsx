@@ -39,14 +39,14 @@ export default function Home() {
 
       {/* <MoveImage path={Banner}/> */}
       <div className='items-left body_width'>
-        <div className='mt-8 mb-4'>
-          <div className='relative mb-48 short_intro'>
+        <div className='mt-8 mb-2'>
+          <div className='relative mb-40 short_intro'>
             <div className='flex gap-4 items-start relative'>
                 <div className='w-10 h-10 overflow-hidden bg-gray-900' style={{transform:"translateY(4px)"}}>
                 </div>
               <div>
                 <h4>Ashish Sharma</h4>
-                <h4 className='text-blue-700 -mt-[1.5px]'>UX designer - since 2020</h4>
+                <h4 className='text-blue-700 -mt-[1.5px]'>UX designer at EY</h4>
               </div>
             </div>
             <div className='absolute right-0 top-0'>
@@ -58,20 +58,22 @@ export default function Home() {
 
           <div className='flex items-start justify-center text-center w-full large_intro'>
 
-          <h1 className='text-slate-800 tracking-tight leading-none text-6xl'>
-          <span className='font-noto-serif font-light text-slate-800'>Crafting solutions</span><br/>
-          <span className='font-noto-serif font-light'>for a better experience</span>
+          <h1 className='font-extralight text-slate-800 w-[75%]'>
+          <span>
+          Designing digital solutions for startups and enterprise since 2020. 
+          Sharing design insights on Medium & Linkedin.
+          </span><br/>
           </h1>
 
           </div>
         </div>
-        <div className='grid mb-64 justify-center place-items-center overflow-visible'>
+        <div className='grid mb-56 justify-center place-items-center overflow-visible'>
 
         
         {/* <LottieAnimation width={35} height={35} /> */}
         <Link href={'mailto:ashishsauparna@gmail.com'}>
         
-          <div className='flex items-center justify-center gap-2'>
+          <div className='flex items-center font-noto-serif justify-center gap-2'>
           <div style={{backgroundColor:"mediumseagreen", width:"12px", height:"12px", borderRadius:"100%"}}></div>
           <span>Open to <span>new job offers</span></span>
           
