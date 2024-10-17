@@ -27,7 +27,11 @@ export default function ProjectsData() {
       subHeading:"A plugin to help switch multiple fonts in three steps.",
       large: false,
       shortImage: true,
-      css: 'readtime_marqee'
+      css: 'readtime_marqee',
+      impact: true,
+      impactcss: 'bg-[rgba(234,234,234,0.7)] bottom-24 left-12',
+      impactData1:'<b>20K+</b> Users in an year',
+      impactData2:'Positive user feedback',
     }, 
      
     {
@@ -43,7 +47,10 @@ export default function ProjectsData() {
       subHeading:"A plugin to create button components set",
       large: false,
       shortImage: true,
-      css: 'readtime_marqee'
+      css: 'readtime_marqee',
+      impact: true,
+      impactcss: 'bg-[rgba(191,191,191,0.7)] top-24 left-12',
+      impactData1:'<b>600+</b> users in 5 months',
     },
     {
       src: delhiveryPoster,
@@ -58,7 +65,8 @@ export default function ProjectsData() {
       subHeading:"Understanding the logistics trend and innovations",
       large: false,
       shortImage: true,
-      css: 'readtime_marqee'
+      css: 'readtime_marqee',
+      impact: false,
     },
     {
       src: rozgarImg,
@@ -73,7 +81,8 @@ export default function ProjectsData() {
       subHeading:"Finding digital solution for blue collar workers.",
       large: false,
       shortImage: true,
-      css: 'readtime_marqee'
+      css: 'readtime_marqee',
+      impact: false,
     },
     {
       src: Sanskriti,
@@ -88,7 +97,8 @@ export default function ProjectsData() {
       subHeading:"Learning about artifacts and the museums they belong to",
       large: false,
       shortImage: true,
-      css: 'readtime_marqee'
+      css: 'readtime_marqee',
+      impact: false,
     }
     // Add more objects as needed
   ];
@@ -128,22 +138,7 @@ export default function ProjectsData() {
       <Link href={image.href} target={image.blank}>
         <div className='cell'>
           <div className={`flex justify-between ${image.css}`}>
-            {/* <div className='flex gap-2'>
-              <h4 className='text-xl'>{image.headingP1}</h4>
-              <h4 className='text-xl'>{image.headingP2}</h4>
-            </div>
-            {
-          image.src ? 
-          <div>
-            <Image
-            src={OutwardArrow}
-            width={28}
-            alt='outward arrow icon'
-            className='arrowrotate'
-            />
-          </div>
-          : ""
-          } */}
+
           <div className='marqee_content'>
             
           <p>
@@ -154,19 +149,10 @@ export default function ProjectsData() {
           image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;
           {image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;
           {image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}
-          &nbsp;&nbsp;&nbsp;{image.readTime} &nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;
-          {image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;
-          {image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;
-          {image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{
-          image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;
-          {image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;
-          {image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}
+          &nbsp;&nbsp;&nbsp;{image.readTime}
           </p>
 
           </div>
-          {/* <Marquee autoFill pauseOnHover speed={20}>
-          &nbsp;&nbsp;&nbsp;{image.readTime}
-          </Marquee> */}
           
           </div>
         {
@@ -191,6 +177,18 @@ export default function ProjectsData() {
             alt={image.alt}
             sizes="100vw"
             className={image.shortImage ? 'project_image small' : 'project_image'}/>
+            {
+              image.impact ?
+              <div className={`impact_on_image ${image.impactcss}`}>
+                <b className={`uppercase text-xs opacity-50 ${image.impactColor}`}>Impact</b>
+                <div className='flex flex-col gap-0'>
+                  <div dangerouslySetInnerHTML={{ __html: image.impactData1 || '' }} />
+                  <div dangerouslySetInnerHTML={{ __html: image.impactData2 || '' }} />
+                </div>
+                
+              </div>
+                : null
+            }
           </div>
           : ""
         }

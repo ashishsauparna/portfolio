@@ -440,6 +440,17 @@ li .mobile_ui:hover{
 
 }
 
+.impact_on_image{
+  position: absolute;
+  /* background: rgba(232, 219, 147, 0.2); */
+  backdrop-filter: blur(50px); /* Frosted glass effect */
+  padding: 8px 80px 12px 16px;
+  z-index: 100;
+  /* bottom: 24px;
+  left: 24px; */
+  border-radius: 4px;
+}
+
 
 .readtime_marqee p{
   display: inline;
