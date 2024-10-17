@@ -140,7 +140,7 @@ export default function FontSwapResearch() {
                     </div>
                 </div>
                 <div>
-                    <ArrowHeading heading = "Panel Size" number = "6"/>
+                    <ArrowHeading heading = "Panel Size" number = "4"/>
                       <div className="flex flex-wrap gap-8" style={{width:"80%"}}>
 
                         <div className='flex gap-4'>
