@@ -58,28 +58,15 @@ export default function Home() {
 
           <div className='flex items-start justify-center text-center w-full large_intro'>
 
-          <h1 className='font-extralight text-slate-800 w-[78%]'>
+          <h1 className='font-light font-noto-serif text-slate-800 w-[73%]'>
           <span>
-          Designing digital solutions for startups and enterprise since 2020. 
+          Designing digital solutions for startups and enterprise since 2020.
           Sharing design insights on Medium & Linkedin.
           </span><br/>
           </h1>
 
           </div>
         </div>
-
-        {/* <div className='grid mb-56 justify-center place-items-center overflow-visible'>
-        <Link href={'mailto:ashishsauparna@gmail.com'}>
-        
-          <div className='flex items-center justify-center gap-2'>
-          <div style={{backgroundColor:"mediumseagreen", width:"12px", height:"12px", borderRadius:"100%"}}></div>
-          Open to new job offers
-          
-          </div>
-        </Link>
-        </div> */}
-
-
         <div>
           <ProjectsData/>
         </div>

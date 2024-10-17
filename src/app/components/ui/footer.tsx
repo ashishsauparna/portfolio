@@ -16,7 +16,7 @@ export default function Footer() {
       <footer>
 
         <Image className='absolute bottom-0 -z-10 w-full' src={FooterImg} alt={'footer image'}/>
-        <div className='absolute font-space-gothic left-0 -mt-20 bg-blue-600 text-white py-2'>
+        <div className='absolute font-noto-serif w-full -mt-20 bg-blue-600 text-base text-white py-2'>
         <Marquee autoFill pauseOnHover speed={30}>
           &nbsp;&nbsp;{tickerString}
         </Marquee>
