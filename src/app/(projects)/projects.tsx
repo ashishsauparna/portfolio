@@ -20,7 +20,7 @@ export default function ProjectsData() {
       alt: "Picture of a man using font swap plugin on his MacBook",
       href: "/projects/fontswap-research",
       blank:"_self",
-      readTime: '👀 5 mins read',
+      readTime: '5 mins read',
       new: "Jun 23",
       headingP1: "Font Swap: ",
       headingP2: "Case Study - June 2023",
@@ -29,7 +29,7 @@ export default function ProjectsData() {
       shortImage: true,
       css: 'readtime_marqee',
       impact: true,
-      impactcss: 'bg-[rgba(234,234,234,0.7)] bottom-24 left-12',
+      impactcss: 'bg-[rgba(0,81,255,0.8)] bottom-24 left-12',
       impactData1:'<b>20K+</b> Users in an year',
       impactData2:'Positive user feedback',
     }, 
@@ -40,7 +40,7 @@ export default function ProjectsData() {
       alt: "Picture of an man wokring on construction site",
       href: "/projects/buttonsmith-research",
       blank:"_self",
-      readTime: '👀 6 mins read',
+      readTime: '6 mins read',
       new: "May 24",
       headingP1: "Button Smith: ",
       headingP2: "Case Study - May 2024",
@@ -49,7 +49,7 @@ export default function ProjectsData() {
       shortImage: true,
       css: 'readtime_marqee',
       impact: true,
-      impactcss: 'bg-[rgba(191,191,191,0.7)] top-24 left-12',
+      impactcss: 'bg-[rgba(0,81,255,0.8)] top-24 left-12',
       impactData1:'<b>600+</b> users in 5 months',
     },
     // {
@@ -74,7 +74,7 @@ export default function ProjectsData() {
       alt: "Picture of an man wokring on construction site",
       href: "/projects/rozgar-research",
       blank:"_self",
-      readTime: '👀 4 mins read',
+      readTime: '4 mins read',
       new: "Jan 22",
       headingP1: "Rozgar App: ",
       headingP2: "Short Study - Mar 2022",
@@ -90,7 +90,7 @@ export default function ProjectsData() {
       alt: "Picture of an man wokring on construction site",
       href: "https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94",
       blank:"_blank",
-      readTime: '👀 5 mins read',
+      readTime: '8 mins read',
       new: "Mar 21",
       headingP1: "Sanskriti App: ",
       headingP2: "Case Study - Mar 2021",
@@ -179,7 +179,7 @@ export default function ProjectsData() {
             className={image.shortImage ? 'project_image small' : 'project_image'}/>
             {
               image.impact ?
-              <div className={`impact_on_image ${image.impactcss}`}>
+              <div style={{color:"white"}} className={`impact_on_image ${image.impactcss}`}>
                 <b className={`uppercase text-xs opacity-50`}>Impact</b>
                 <div className='flex flex-col gap-0'>
                   <div dangerouslySetInnerHTML={{ __html: image.impactData1 || '' }} />
