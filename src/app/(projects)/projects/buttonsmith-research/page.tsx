@@ -141,7 +141,7 @@ export default function ButtonSmithResearch() {
                           </div>
                           <div>
                             <h3>Ashish Sharma</h3>
-                            <p className='text-base -mt-2'>UX Designer</p>
+                            <p className='text-base -mt-2'>UX Designer + Developer</p>
                           </div>
                         </div>
 
