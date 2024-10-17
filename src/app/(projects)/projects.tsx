@@ -180,7 +180,7 @@ export default function ProjectsData() {
             {
               image.impact ?
               <div className={`impact_on_image ${image.impactcss}`}>
-                <b className={`uppercase text-xs opacity-50 ${image.impactColor}`}>Impact</b>
+                <b className={`uppercase text-xs opacity-50`}>Impact</b>
                 <div className='flex flex-col gap-0'>
                   <div dangerouslySetInnerHTML={{ __html: image.impactData1 || '' }} />
                   <div dangerouslySetInnerHTML={{ __html: image.impactData2 || '' }} />
