@@ -15,6 +15,7 @@ import ArrowBack from "@/../../public/arrow_back.svg";
 import DP from "@/../../public/ashish_sharma.png";
 import StarSVG from "@/../../public/star.svg";
 import Banner from "@/../../public/projects/fontswap/banner.png";
+import SelectLayerGif from "@/../../public/projects/fontswap/select_layer.gif";
 
 
 export default function FontSwapResearch() {
@@ -47,7 +48,7 @@ export default function FontSwapResearch() {
 
         <div className="sticky top-10 items-left body_width grid gap-24 mt-8 font-medium" style={{color: "#0069E5"}}>
             <Link href={"/"}>
-                <div className="inline-flex items-center justify-start hover:underline gap-2 button_small cursor-pointer">
+                <div className="goback_button button_small">
                   <Image
                   src={ArrowBack}
                   alt="back arrow icon"
@@ -73,7 +74,7 @@ export default function FontSwapResearch() {
             <h4 className="flex" style={{fontWeight:"500", width:"25%", textAlign:"center"}}>
                 A Figma Plugin addressing to replace all font styles with 3 clicks
             </h4>
-            <h1 className="flex mt-48 gap-8 font-light font-noto-serif justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
+            <h1 className="flex text-6xl mt-48 gap-8 font-light font-noto-serif justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
               {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
               Font Swap
               <Image
@@ -96,12 +97,18 @@ export default function FontSwapResearch() {
 
 
         {/* ---------- Image ---------- */}
-
+        <div className="flex justify-center items-center w-full relative -z-10">
         <Image
         src={Banner}
         alt="how might we questions"
         className="w-full"
         />
+        <Image
+        src={SelectLayerGif}
+        alt="how might we questions"
+        className="w-[14.2%] absolute left-[9.1rem] top-[16rem]"
+        />
+        </div>
 
 
 
@@ -335,17 +342,6 @@ export default function FontSwapResearch() {
         alt="how might we questions"
         className="w-full mt-24"
         />
-
-
-        {/* ---------- Images ---------- */}
-
-
-        <Image
-        src={UsabilityTesting}
-        alt="how might we questions"
-        className="w-full mt-24"
-        />
-
 
 
         {/* ---------- Solution and Challenges ---------- */}

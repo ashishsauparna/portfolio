@@ -44,30 +44,35 @@ export default function NavBar() {
           </div>
         </Link>
         <ul className='nav_links'>
+
           <li>
             <Navigation name="Home" href="/" status="default" />
           </li>
-          {/* <li className='text-slate-300'>
-            /
-          </li> */}
+
           <li>
           {/* 😇&nbsp; */}
           <Navigation name="About" href="/about-me" status="default" />
           </li>
-          {/* <li className='text-slate-300'>
-            /
-          </li> */}
-          <li>
-          <Navigation name="Inspirations" href="/my-reads" status="default" />
-          </li>
-          {/* <li className='text-slate-300'>
-            /
-          </li> */}
-          <li className='flex'>
-          <Navigation name="Articles" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/> &nbsp;
+
+          <li className='flex gap-1'>
+          <Navigation name="Resume" href="https://drive.google.com/file/d/1ZSNwRmH_NFad1FuJxVxoCsSnlrOGHxR5/view?usp=share_link" status="default" target="_blank"/>
           <Image
           src={OutwardArrow}
           alt='outward arrow icon'
+          width={20}
+          />
+          </li>
+
+          <li>
+          <Navigation name="Inspirations" href="/my-reads" status="default" />
+          </li>
+
+          <li className='flex gap-1'>
+          <Navigation name="Articles" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/>
+          <Image
+          src={OutwardArrow}
+          alt='outward arrow icon'
+          width={20}
           />
           </li>
           {/* <li>

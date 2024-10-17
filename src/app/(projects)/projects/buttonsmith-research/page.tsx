@@ -48,7 +48,7 @@ export default function ButtonSmithResearch() {
 
         <div className="sticky top-10 items-left body_width grid gap-24 mt-8 font-medium" style={{color: "#0069E5"}}>
             <Link href={"/"}>
-                <div className="inline-flex items-center justify-start hover:underline gap-2 button_small cursor-pointer">
+                <div className="goback_button button_small">
                   <Image
                   src={ArrowBack}
                   alt="back arrow icon"
@@ -73,7 +73,7 @@ export default function ButtonSmithResearch() {
             <h4 className="flex" style={{fontWeight:"500", width:"25%", textAlign:"center"}}>
               One Figma Plugin to generates and documents all your button states
             </h4>
-            <h1 className="flex mt-48 gap-8 font-light font-noto-serif justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
+            <h1 className="flex text-6xl mt-48 gap-8 font-light font-noto-serif justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
               {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
               -
               <Image

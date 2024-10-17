@@ -342,9 +342,28 @@ li .mobile_ui:hover{
   color: #fefefe;
 }
 
+.goback_button {
+  backdrop-filter: none; /* No blur initially */
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #0069E5;
+  gap: 0.5rem; /* 8px gap between items */
+  cursor: pointer;
+  z-index: 1000;
+  border: none;
+  color: #fefefe;
+}
+
+.goback_button:hover {
+  text-decoration: underline;
+}
+
+
 .arrow-back-icon {
   transition: filter 0.1s ease;
   margin-top: -2px;
+  filter: brightness(0) invert(1);
 }
 
 .button_small:hover .arrow-back-icon {
