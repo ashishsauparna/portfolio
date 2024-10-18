@@ -40,7 +40,7 @@ export default function Home() {
       {/* <MoveImage path={Banner}/> */}
       <div className='items-left body_width'>
         <div className='mt-8'>
-          <div className='relative mb-40 short_intro'>
+          <div className='relative mb-36 short_intro'>
             <div className='flex gap-4 items-start relative'>
                 <div className='w-10 h-10 overflow-hidden bg-gray-900' style={{transform:"translateY(4px)"}}>
                 </div>
@@ -76,7 +76,7 @@ export default function Home() {
             .
           </h4>
 
-          <h3 className='font-noto-serif mt-24 font-extralight'>My Skills</h3>
+          <h3 className='font-noto-serif mt-24 font-light'>My Skills</h3>
 
           <div className='flex flex-wrap gap-4 items-center justify-center w-[65%]'>
             <span className='px-4 py-1 bg-gray-900 text-white rounded'>User research</span>
