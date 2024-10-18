@@ -39,7 +39,7 @@ export default function Home() {
 
       {/* <MoveImage path={Banner}/> */}
       <div className='items-left body_width'>
-        <div className='mt-8 mb-64'>
+        <div className='mt-8'>
           <div className='relative mb-40 short_intro'>
             <div className='flex gap-4 items-start relative'>
                 <div className='w-10 h-10 overflow-hidden bg-gray-900' style={{transform:"translateY(4px)"}}>
@@ -75,6 +75,24 @@ export default function Home() {
             </Link>
             .
           </h4>
+
+          <h3 className='font-noto-serif mt-24 font-extralight'>My Skills</h3>
+
+          <div className='flex flex-wrap gap-4 items-center justify-center w-[65%]'>
+            <span className='px-4 py-1 bg-gray-900 text-white rounded'>User research</span>
+            <span className='px-4 py-1 border border-gray-900 rounded'>Persona development</span>
+            <span className='px-4 py-1 border border-gray-900 rounded'>Customer journey mapping</span>
+            <span className='px-4 py-1 border border-gray-900 rounded'>Information architecture</span>
+            <span className='px-4 py-1 bg-gray-900 text-white rounded'>Usability testing</span>
+            <span className='px-4 py-1 border border-gray-900 rounded'>Prototyping</span>
+            <span className='px-4 py-1 bg-gray-900 text-white rounded'>Heuristics analysis</span>
+          </div>
+
+          {/* <div className="flex items-center my-6 w-full mt-36 gap-12">
+            <div className="flex-grow border-t border-black bg-gray-900 w-full"></div>
+            <h3 className="mx-4 font-noto-serif font-normal font-extralight whitespace-nowrap">Featured Projects</h3>
+            <div className="flex-grow border-t border-black bg-gray-900 w-full"></div>
+          </div> */}
 
           </div>
         </div>

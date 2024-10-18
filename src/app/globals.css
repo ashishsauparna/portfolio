@@ -55,7 +55,7 @@ b{
   row-gap: 8rem;
   column-gap: 12rem;
   grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
-  margin-top: 8rem; /* Sets top margin to 8 units */
+  margin-top: 12rem; /* Sets top margin to 8 units */
   margin-bottom: 24px; /* Sets bottom margin to 24 units */
   box-sizing: border-box; /* Ensure padding/margin don't mess with the total width */
 }
