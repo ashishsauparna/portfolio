@@ -58,7 +58,7 @@ export default function Home() {
 
           <div className='flex flex-col gap-4 items-center justify-center text-center w-full large_intro'>
 
-          <h1 className='font-noto-serif text-slate-800 w-[50%] mb-0'>
+          <h1 className='font-noto-serif text-slate-800 w-[65%] mb-0'>
           <span>
           Crafting digital solutions for <br/> startups and enterprises since 2020.
           </span>
