@@ -103,11 +103,11 @@ export default function FontSwapResearch() {
         alt="how might we questions"
         className="w-full"
         />
-        <Image
+        {/* <Image
         src={SelectLayerGif}
         alt="how might we questions"
         className="w-[14.2%] absolute left-[9.1rem] top-[16rem]"
-        />
+        /> */}
         </div>
 
 
