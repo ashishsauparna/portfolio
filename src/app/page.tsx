@@ -64,8 +64,8 @@ export default function Home() {
           </span>
           </h1>
 
-          <h4 className='w-[50%] opacity-80'>
-            Sharing design insights on&nbsp;
+          <h4 className='w-[50%] opacity-80 inline'>
+            Sharing design insights on &nbsp;
             <Link className='link_button' href={'https://medium.com/@ashishsauparna'}>
               Medium
             </Link>
