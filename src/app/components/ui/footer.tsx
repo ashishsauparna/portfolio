@@ -16,7 +16,7 @@ export default function Footer() {
       <footer>
 
         <Image className='absolute bottom-0 -z-10 w-full' src={FooterImg} alt={'footer image'}/>
-        <div className='absolute font-noto-serif w-full -mt-20 bg-blue-600 text-base text-white py-2'>
+        <div className='absolute font-noto-serif w-full -mt-20 bg-blue-600 text-sm text-white py-2'>
         <Marquee autoFill pauseOnHover speed={30}>
           &nbsp;&nbsp;{tickerString}
         </Marquee>
@@ -26,7 +26,7 @@ export default function Footer() {
           
         <div className="footer_grid items-center justify-between w-full py-4">
 
-          <div className='flex-shrink-0 mr-auto text-lg font-normal items-center'>
+          <div className='flex-shrink-0 mr-auto font-normal items-center'>
             <div className='mb-4'>Interested in working together?</div>
             <SmallButton name="Contact me 📝"
             href="mailto:ashishsauparna@gmail.com"/>
@@ -81,7 +81,7 @@ export default function Footer() {
         </div>
         
         
-        <p className='mt-12 pt-2 leading-[2rem] text-base mt-20 border-t border-slate-300'>
+        <p className='mt-12 pt-2 leading-[2rem] mt-20 border-t border-slate-300'>
         © Assembled with pixels by Ashish. Last updated Oct 2024
         </p>
         </div>

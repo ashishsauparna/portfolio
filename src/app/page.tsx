@@ -60,7 +60,7 @@ export default function Home() {
 
           <h1 className='font-noto-serif text-slate-800 w-[65%] mb-0'>
           <span>
-          Crafting digital solutions for <br/> startups and enterprises since 2020.
+          Designing digital solutions for <br/> enterprises and startups since 2020.
           </span>
           </h1>
 
@@ -76,16 +76,16 @@ export default function Home() {
             .
           </h4>
 
-          <h3 className='font-noto-serif mt-24 font-light'>My Skills</h3>
+          <h3 className='font-noto-serif mt-24 font-light text-lg'>My Skills</h3>
 
-          <div className='flex flex-wrap gap-4 items-center justify-center w-[65%]'>
-            <span className='px-4 py-1 bg-gray-900 text-white rounded'>User research</span>
-            <span className='px-4 py-1 border border-gray-900 rounded'>Persona development</span>
-            <span className='px-4 py-1 border border-gray-900 rounded'>Customer journey mapping</span>
-            <span className='px-4 py-1 border border-gray-900 rounded'>Information architecture</span>
-            <span className='px-4 py-1 bg-gray-900 text-white rounded'>Usability testing</span>
-            <span className='px-4 py-1 border border-gray-900 rounded'>Prototyping</span>
-            <span className='px-4 py-1 bg-gray-900 text-white rounded'>Heuristics analysis</span>
+          <div className='flex flex-wrap gap-2 items-center justify-center w-[65%]'>
+            <span className='px-3 py-[2px] bg-gray-900 text-white rounded-full'>User research</span>
+            <span className='px-3 py-[2px] border border-gray-900 rounded-full'>Persona development</span>
+            <span className='px-3 py-[2px] border border-gray-900 rounded-full'>Customer journey mapping</span>
+            <span className='px-3 py-[2px] border border-gray-900 rounded-full'>Information architecture</span>
+            <span className='px-3 py-[2px] bg-gray-900 text-white rounded-full'>Usability testing</span>
+            <span className='px-3 py-[2px] border border-gray-900 rounded-full'>Prototyping</span>
+            <span className='px-3 py-[2px] bg-gray-900 text-white rounded-full'>Heuristics analysis</span>
           </div>
 
           {/* <div className="flex items-center my-6 w-full mt-36 gap-12">
