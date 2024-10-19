@@ -308,8 +308,7 @@ li .mobile_ui:hover{
   font-size: var(--default-font-size);
   color: #ffffff;
   background-color: #0069E5;
-  /* border: 1.5px solid #0069E5; */
-  padding: 0.6rem 1.5rem;
+  padding: 4px 16px;
   font-weight: 450;
   text-align: center;
   margin-top: 1.2rem;
@@ -330,7 +329,7 @@ li .mobile_ui:hover{
   color: #0069E5;
   background-color: #fafcfd;
   border: 1.5px solid #0069E5;
-  padding: 0.3rem 0.8rem;
+  padding: 2px 12px;
   font-weight: 450;
   text-align: center;
   display: inline-flex;
@@ -348,6 +347,7 @@ li .mobile_ui:hover{
   backdrop-filter: none; /* No blur initially */
   display: inline-flex;
   align-items: center;
+  padding: 4px 16px 4px 12px;
   justify-content: flex-start;
   background-color: #0069E5;
   gap: 0.5rem; /* 8px gap between items */
@@ -461,13 +461,10 @@ li .mobile_ui:hover{
 
 .impact_on_image{
   position: absolute;
-  /* background: rgba(232, 219, 147, 0.2); */
   backdrop-filter: blur(50px); /* Frosted glass effect */
   padding: 8px 80px 12px 16px;
   z-index: 100;
-  /* bottom: 24px;
-  left: 24px; */
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 

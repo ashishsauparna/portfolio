@@ -37,7 +37,7 @@ export default function AboutMe() {
 
           <div>
             <div className='flex gap-4 items-start'>
-              <div className='w-3 h-3 bg-zinc-900 absolute -ml-8'>
+              <div className='w-2 h-2 bg-zinc-900 absolute -ml-6 mt-1'>
               </div>
               <h5 className='text-2xl text-slate-900 -mt-2'>Pronounced: Aa - shee - sh</h5>
             </div>
@@ -48,8 +48,6 @@ export default function AboutMe() {
           </div>
 
           <div className='-mt-2'>
-            <div className='w-3 h-3 bg-zinc-900 absolute -ml-8 mt-2'>
-            </div>
               Outside of my 9-to-5 grind, you&apos;ll find me developing 👨🏻‍💻 <LinkButton name="Figma plugin" href="https://www.figma.com/@ashishsauparna"/> to make my work easy. I&apos;m all about expanding my skillset, and currently, I&apos;m obsessed with completing&nbsp;<LinkButton name="Last of us part II" href="https://www.youtube.com/watch?v=vhII1qlcZ4E"/>
               <br/><br/>
               Currently, I&apos;m in a battle to stay faithful to my satvic 🧘 lifestyle and daily Gym routine – believe me, it&apos;s a real struggle!

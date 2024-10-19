@@ -2,11 +2,9 @@
 
 import Image from 'next/image';
 import fontSwapImg from '/public/fontswap_2.jpg';
-import delhiveryPoster from '/public/Outside_in_poster.jpg'
 import rozgarImg from '/public/case_study_rozgar.jpg';
 import buttonSmithImg from '/public/button_smith_banner.jpg'
 import Sanskriti from '/public/sanskriti_2.jpg'
-import Salhakar from '/public/salahkar_3.png'
 import Link from 'next/link';
 import { animate, motion } from 'framer-motion';
 
@@ -29,7 +27,7 @@ export default function ProjectsData() {
       shortImage: true,
       css: 'readtime_marqee',
       impact: true,
-      impactcss: 'bg-[rgba(0,81,255,0.8)] bottom-24 left-12',
+      impactcss: 'bg-[rgba(0,81,255,0.8)] bottom-24 left-12 rotate-3',
       impactData1:'<b>20K+</b> Users in an year',
       impactData2:'Positive user feedback',
     }, 

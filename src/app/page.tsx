@@ -79,13 +79,13 @@ export default function Home() {
           <h3 className='font-noto-serif mt-24 font-light text-lg'>My Skills</h3>
 
           <div className='flex flex-wrap gap-2 items-center justify-center w-[65%]'>
-            <span className='px-3 py-[2px] bg-gray-900 text-white rounded-full'>User research</span>
-            <span className='px-3 py-[2px] border border-gray-900 rounded-full'>Persona development</span>
-            <span className='px-3 py-[2px] border border-gray-900 rounded-full'>Customer journey mapping</span>
-            <span className='px-3 py-[2px] border border-gray-900 rounded-full'>Information architecture</span>
-            <span className='px-3 py-[2px] bg-gray-900 text-white rounded-full'>Usability testing</span>
-            <span className='px-3 py-[2px] border border-gray-900 rounded-full'>Prototyping</span>
-            <span className='px-3 py-[2px] bg-gray-900 text-white rounded-full'>Heuristics analysis</span>
+            <span className='px-3 py-[2px] bg-gray-800 text-slate-100'>User research</span>
+            <span className='px-3 py-[2px] border border-gray-800'>Persona development</span>
+            <span className='px-3 py-[2px] border border-gray-800'>Customer journey mapping</span>
+            <span className='px-3 py-[2px] border border-gray-800'>Information architecture</span>
+            <span className='px-3 py-[2px] bg-gray-800 text-slate-100'>Usability testing</span>
+            <span className='px-3 py-[2px] border border-gray-800'>Prototyping</span>
+            <span className='px-3 py-[2px] bg-gray-800 text-slate-100'>Heuristics analysis</span>
           </div>
 
           {/* <div className="flex items-center my-6 w-full mt-36 gap-12">
