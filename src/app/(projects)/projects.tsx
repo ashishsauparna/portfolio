@@ -27,7 +27,7 @@ export default function ProjectsData() {
       shortImage: true,
       css: 'readtime_marqee',
       impact: true,
-      impactcss: 'bg-[rgba(0,81,255,0.8)] bottom-24 left-12 rotate-3',
+      impactcss: 'bg-[rgba(0,81,255,0.8)] bottom-24 left-12',
       impactData1:'<b>20K+</b> Users in an year',
       impactData2:'Positive user feedback',
     }, 
