@@ -27,7 +27,7 @@ export default function ProjectsData() {
       shortImage: true,
       css: 'readtime_marqee',
       impact: true,
-      impactcss: 'bg-[rgba(0,81,255,0.8)] bottom-24 left-12',
+      impactcss: 'bg-[rgba(0,81,255,0.8)] bottom-8 left-8',
       impactData1:'<b>20K+</b> Users in an year',
       impactData2:'Positive user feedback',
     }, 
@@ -47,7 +47,7 @@ export default function ProjectsData() {
       shortImage: true,
       css: 'readtime_marqee',
       impact: true,
-      impactcss: 'bg-[rgba(0,81,255,0.8)] top-24 left-12',
+      impactcss: 'bg-[rgba(0,81,255,0.8)] top-12 left-8',
       impactData1:'<b>600+</b> users in 5 months',
     },
     // {

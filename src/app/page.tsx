@@ -87,7 +87,6 @@ export default function Home() {
 
           <h4 className='flex flex-wrap gap-2 items-center justify-center w-[55%] mt-24 font-[350]'>
             My Skills:
-            <span>Empathy</span> |
             <span>User research</span> |
             <span>User journey mapping</span> |
             <span>Critical thinking</span> |

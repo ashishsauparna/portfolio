@@ -1,5 +1,6 @@
+"use client"
+
 import ArrowHeading from "@/app/components/ui/arrowheading";
-import Button from "@/app/components/ui/button";
 import Footer from "@/app/components/ui/footer";
 import NavBar from "@/app/components/ui/navbar";
 import Link from "next/link";
@@ -17,13 +18,52 @@ import ArrowBack from "@/../../public/arrow_back.svg";
 import DP from "@/../../public/ashish_sharma.png";
 import LakshyaDP from "@/../../public/lakshya_raj.png";
 import StarSVG from "@/../../public/star.svg";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function ButtonSmithResearch() {
 
-  const descriptionItems = [
-    { text: 'Reduced human effort with one click'},
-    { text: 'Has raised over 255+ users in 2 months'}
-  ]
+  const [activeSection, setActiveSection] = useState('story');
+  const router = useRouter();
+
+  // Handle scrolling with an offset
+  const handleScroll = (e: React.MouseEvent<HTMLDivElement>, id: string) => {
+    e.preventDefault();
+
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+
+      // Adjust the scroll position slightly above the section
+      setTimeout(() => {
+        window.scrollBy({ top: -150, behavior: 'smooth' }); // Adjust -80 as needed
+      }, 300); // Adjust the delay if necessary
+
+      // Update URL without reloading the page
+      router.push(`#${id}`);
+    }
+  };
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('div[data-section]');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjust the threshold as needed
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
 
   return (
 
@@ -43,37 +83,62 @@ export default function ButtonSmithResearch() {
 
 
 
-        {/* ---------- Back button here ---------- */}
+        {/* ---------- Back button and Navigation Menu Here ---------- */}
 
 
-        <div className="sticky top-10 items-left body_width grid gap-24 mt-8 font-medium" style={{color: "#0069E5"}}>
+        <div className="flex sticky top-10 body_width font-medium z-50 gap-4 mt-8 justify-center">
+
+          <div className="left-0 flex items-center">
             <Link href={"/"}>
-                <div className="goback_button button_small">
-                  <Image
-                  src={ArrowBack}
-                  alt="back arrow icon"
-                  width={20}
-                  className="arrow-back-icon"
-                  /> Go Back
-                </div>
+              <div className="goback_button">
+                <Image src={ArrowBack} alt="back arrow icon" width={20} className="arrow-back-icon" />
+                <span className="go_back_text">
+                  Go Back
+                </span>
+              </div>
             </Link>
+          </div>
+
+          <div className="sticky_navigation flex gap-1 justify-center">
+            <Link href="#story" passHref>
+              <div onClick={(e) => handleScroll(e, 'story')} 
+              className={`nav_link ${activeSection === 'story' ? 'active' : ''}`}>Story</div>
+            </Link>
+            <Link href="#research" passHref>
+              <div onClick={(e) => handleScroll(e, 'research')} 
+              className={`nav_link ${activeSection === 'research' ? 'active' : ''}`}>Research Approach</div>
+            </Link>
+            <Link href="#design" passHref>
+              <div onClick={(e) => handleScroll(e, 'design')}
+              className={`nav_link ${activeSection === 'design' ? 'active' : ''}`}>Design Approach</div>
+            </Link>
+            <Link href="#learnings" passHref>
+              <div onClick={(e) => handleScroll(e, 'learnings')}
+              className={`nav_link ${activeSection === 'learnings' ? 'active' : ''}`}>Learnings & Challenges</div>
+            </Link>
+            <Link href="#takeaways" passHref>
+              <div onClick={(e) => handleScroll(e, 'takeaways')}
+              className={`nav_link ${activeSection === 'takeaways' ? 'active' : ''}`}>Key Takeaways</div>
+            </Link>
+          </div>
+
         </div>
 
 
 
 
-        <div className="items-left body_width grid gap-24 mt-24">
+        <div className="items-left body_width grid gap-24 mt-48">
 
 
 
         {/* ---------- Title here ---------- */}
 
 
-        <div className="flex flex-col justify-center items-center w-full mt-24">
-            <h4 className="flex" style={{fontWeight:"500", width:"25%", textAlign:"center"}}>
+        <div className="flex flex-col justify-center items-center w-full">
+            <h4 className="flex" style={{fontWeight:"300", width:"25%", textAlign:"center"}}>
               One Figma Plugin to generates and documents all your button states
             </h4>
-            <h1 className="flex text-6xl mt-48 gap-8 font-light font-noto-serif justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
+            <h1 className="flex mt-48 gap-8 font-light font-noto-serif justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
               {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
               -
               <Image
@@ -117,9 +182,9 @@ export default function ButtonSmithResearch() {
         {/* ---------- Objective ---------- */}
 
 
-        <div className='content_grid_two w-full gap-24'>
+        <div id="story" className='content_grid_two w-full gap-24' data-section>
           <div style={{width:"70%"}}></div>
-          <div className="flex flex-col gap-24">
+          <div className="flex flex-col gap-16">
             <div>
                 <ArrowHeading heading = "Story worth talking about"/>
                 <div style={{width:"80%"}}>
@@ -142,8 +207,8 @@ export default function ButtonSmithResearch() {
                             <Image src={DP} alt={"Ashish Sharma Profile picture"} className='object-cover w-full h-full'/>
                           </div>
                           <div>
-                            <h3>Ashish Sharma</h3>
-                            <p className='text-base -mt-2'>UX Designer + Developer</p>
+                            <h4>Ashish Sharma</h4>
+                            <p className='text-base'>UX Designer + Developer</p>
                           </div>
                         </div>
 
@@ -152,8 +217,8 @@ export default function ButtonSmithResearch() {
                             <Image src={LakshyaDP} alt={"Ashish Sharma Profile picture"} className='object-cover w-full h-full'/>
                           </div>
                           <div>
-                            <h3>Lakshya Raj</h3>
-                            <p className='text-base -mt-2'>Ideation</p>
+                            <h4>Lakshya Raj</h4>
+                            <p className='text-base'>Ideation</p>
                           </div>
                         </div>
 
@@ -162,8 +227,8 @@ export default function ButtonSmithResearch() {
                             👥
                           </div>
                           <div>
-                            <h3>Design Colleagues</h3>
-                            <p className='text-base -mt-2'>Product Testing</p>
+                            <h4>Design Colleagues</h4>
+                            <p className='text-base'>Product Testing</p>
                           </div>
                         </div>
                       </div>
@@ -181,7 +246,7 @@ export default function ButtonSmithResearch() {
         {/* ---------- Research Approach ---------- */}
 
 
-        <div className='content_grid_two gap-24 w-full'>
+        <div id="research" className='content_grid_two gap-24 w-full' data-section>
           <div style={{width:"70%"}}>
             <ArrowHeading heading = "Research Approach" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=654-7&t=SaIecvX0yD7wvp7I-1"/>
             <div className='grid grid-cols-1 grid-rows-2 gap-x-1 justify-between gap-y-2'>
@@ -264,7 +329,7 @@ export default function ButtonSmithResearch() {
         {/* ---------- Design Approach ---------- */}
 
 
-        <div className="content_grid_two gap-24 mt-24 body_width">
+        <div id="design" className="content_grid_two gap-24 mt-24 body_width" data-section>
 
           <div style={{width:"70%"}}>
             <ArrowHeading heading = "Design Approach" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=656-195&t=SaIecvX0yD7wvp7I-1"/>
@@ -339,7 +404,7 @@ export default function ButtonSmithResearch() {
         {/* ---------- Solution and Challenges ---------- */}
 
 
-        <div className='content_grid_two gap-24 body_width mt-24'>
+        <div id="learnings" className='content_grid_two gap-24 body_width mt-24' data-section>
           {/* Challenges & learnings */}
 
               <ArrowHeading heading = "Challenges & learnings (1)" arrow={true}/>
@@ -477,7 +542,7 @@ export default function ButtonSmithResearch() {
         {/* ---------- Final thoughts & conclusion ---------- */}
 
 
-        <div className='content_grid_two gap-24 body_width mt-24 mb-24'>
+        <div id="takeaways" className='content_grid_two gap-24 body_width mt-24 mb-24' data-section>
         
               <ArrowHeading heading = "Key Takeaways" arrow={true}/>
               <div className="grid">

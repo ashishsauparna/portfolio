@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Script from 'next/script';
 import NavBar from '@/app/components/ui/navbar';
@@ -17,11 +19,54 @@ import ArrowBack from "@/../../public/arrow_back.svg"
 import DP from "@/../../public/ashish_sharma.png";
 import StarSVG from "@/../../public/star.svg";
 import Banner from "@/../../public/projects/rozgar/banner.png";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 
 export default function RozgarResearch() {
-
   
+
+  const [activeSection, setActiveSection] = useState('story');
+  const router = useRouter();
+
+  // Handle scrolling with an offset
+  const handleScroll = (e: React.MouseEvent<HTMLDivElement>, id: string) => {
+    e.preventDefault();
+
+    const target = document.getElementById(id);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+
+      // Adjust the scroll position slightly above the section
+      setTimeout(() => {
+        window.scrollBy({ top: -150, behavior: 'smooth' }); // Adjust -80 as needed
+      }, 300); // Adjust the delay if necessary
+
+      // Update URL without reloading the page
+      router.push(`#${id}`);
+    }
+  };
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('div[data-section]');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjust the threshold as needed
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
 
   return (
   <main className="flex min-h-screen flex-col items-center">
@@ -38,26 +83,51 @@ export default function RozgarResearch() {
         <NavBar/>
 
 
-        {/* ---------- Back button here ---------- */}
+        {/* ---------- Back button and Navigation Menu Here ---------- */}
 
 
-        <div className="sticky top-10 items-left body_width grid gap-24 mt-8 font-medium" style={{color: "#0069E5"}}>
+        <div className="flex sticky top-10 body_width font-medium z-50 gap-4 mt-8 justify-center">
+
+          <div className="left-0 flex items-center">
             <Link href={"/"}>
-                <div className="goback_button button_small">
-                  <Image
-                  src={ArrowBack}
-                  alt="back arrow icon"
-                  width={20}
-                  className="arrow-back-icon"
-                  /> Go Back
-                </div>
+              <div className="goback_button">
+                <Image src={ArrowBack} alt="back arrow icon" width={20} className="arrow-back-icon" />
+                <span className="go_back_text">
+                  Go Back
+                </span>
+              </div>
             </Link>
+          </div>
+
+          <div className="sticky_navigation flex gap-1 justify-center">
+            <Link href="#story" passHref>
+              <div onClick={(e) => handleScroll(e, 'story')} 
+              className={`nav_link ${activeSection === 'story' ? 'active' : ''}`}>Story</div>
+            </Link>
+            <Link href="#research" passHref>
+              <div onClick={(e) => handleScroll(e, 'research')} 
+              className={`nav_link ${activeSection === 'research' ? 'active' : ''}`}>Research Approach</div>
+            </Link>
+            <Link href="#design" passHref>
+              <div onClick={(e) => handleScroll(e, 'design')}
+              className={`nav_link ${activeSection === 'design' ? 'active' : ''}`}>Design Approach</div>
+            </Link>
+            <Link href="#learnings" passHref>
+              <div onClick={(e) => handleScroll(e, 'learnings')}
+              className={`nav_link ${activeSection === 'learnings' ? 'active' : ''}`}>Learnings & Challenges</div>
+            </Link>
+            <Link href="#takeaways" passHref>
+              <div onClick={(e) => handleScroll(e, 'takeaways')}
+              className={`nav_link ${activeSection === 'takeaways' ? 'active' : ''}`}>Key Takeaways</div>
+            </Link>
+          </div>
+
         </div>
 
 
 
 
-        <div className="items-left body_width grid gap-24 mt-24">
+        <div className="items-left body_width grid gap-24 mt-48">
 
 
 
@@ -65,13 +135,13 @@ export default function RozgarResearch() {
         {/* ---------- Title here ---------- */}
 
 
-        <div className="flex flex-col justify-center items-center w-full mt-24">
-            <h4 className="flex" style={{fontWeight:"500", width:"40%", textAlign:"center"}}>
+        <div className="flex flex-col justify-center items-center w-full">
+            <h4 className="flex" style={{fontWeight:"300", width:"40%", textAlign:"center"}}>
               This small case study includes research and understanding of the online and offline market of Blue collar workers
             </h4>
             <h1 className="flex mt-48 gap-8 font-light font-noto-serif justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
               {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
-              Rozgar
+              -
               <Image
               src={StarSVG}
               alt="Star image"
@@ -85,7 +155,7 @@ export default function RozgarResearch() {
               width={32}
               className="rotating-star"
               />
-              Rozgar
+              -
             </h1>
         </div>
         </div>
@@ -108,7 +178,7 @@ export default function RozgarResearch() {
         {/* ---------- Objective ---------- */}
 
 
-        <div className='content_grid_two w-full gap-24'>
+        <div id="story" className='content_grid_two w-full gap-24' data-section>
           <div style={{width:"70%"}}></div>
           <div className="flex flex-col gap-24">
             <div>
@@ -155,7 +225,7 @@ export default function RozgarResearch() {
         {/* ---------- Research Approach ---------- */}
 
 
-        <div className='content_grid_two gap-24 w-full'>
+        <div id="research" className='content_grid_two gap-24 w-full' data-section>
           <div style={{width:"70%"}}>
             <ArrowHeading heading = "Research Approach" arrow={true}/>
             <div className='grid grid-cols-1 grid-rows-2 gap-x-1 justify-between gap-y-2'>
@@ -258,7 +328,7 @@ export default function RozgarResearch() {
         {/* ---------- Design Approach ---------- */}
 
 
-        <div className="content_grid_two gap-24 mt-24 body_width">
+        <div id="design" className="content_grid_two gap-24 mt-24 body_width" data-section>
 
           <div style={{width:"70%"}}>
             <ArrowHeading heading = "Design Approach" arrow={true}/>
@@ -360,7 +430,7 @@ export default function RozgarResearch() {
         {/* ---------- Solution and Challenges ---------- */}
 
 
-        <div className='content_grid_two gap-24 body_width mt-24'>
+        <div id="learnings" className='content_grid_two gap-24 body_width mt-24' data-section>
           {/* Challenges & learnings */}
 
               <ArrowHeading heading = "Challenges & learnings" arrow={true}/>
@@ -420,7 +490,7 @@ export default function RozgarResearch() {
         {/* ---------- Final thoughts & conclusion ---------- */}
 
 
-        <div className='content_grid_two gap-24 body_width mt-24 mb-24'>
+        <div id="takeaways" className='content_grid_two gap-24 body_width mt-24 mb-24' data-section>
         
               <ArrowHeading heading = "Key Takeaways" arrow={true}/>
               <div className="grid w-[80%]">

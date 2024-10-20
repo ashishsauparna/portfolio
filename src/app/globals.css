@@ -7,7 +7,12 @@
   --background-start-rgb: 254, 254, 254;
   --background-end-rgb: 255, 255, 255;
   --default-font-size: 1rem;
+  --small-font-size: 0.9rem;
   --large-screen-font-size: 4.1rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* @media (prefers-color-scheme:light) {
@@ -131,7 +136,7 @@ h3{
 h4{
   font-size: var(--default-font-size);
   font-family: var(--font-space-gothic);
-  font-weight: 450;
+  font-weight: 400;
   line-height: 1.6rem;
 }
 
@@ -325,7 +330,7 @@ li .mobile_ui:hover{
 
 .button_small{
   font-family: var(--font-space-gothic);
-  font-size: var(--default-font-size);
+  font-size: var(--small-font-size);
   color: #0069E5;
   background-color: #fafcfd;
   border: 1.5px solid #0069E5;
@@ -343,22 +348,39 @@ li .mobile_ui:hover{
   color: #fefefe;
 }
 
-.goback_button {
+.goback_button{
   backdrop-filter: none; /* No blur initially */
   display: inline-flex;
   align-items: center;
-  padding: 4px 16px 4px 12px;
+  font-weight: 400;
+  height: 36px;
+  padding: 4px 16px 4px 12px; /* Change padding on hover */
   justify-content: flex-start;
   background-color: #0069E5;
-  gap: 0.5rem; /* 8px gap between items */
+  gap: 0px; /* 8px gap between items */
+  border-radius: 2px;
   cursor: pointer;
   z-index: 1000;
   border: none;
   color: #fefefe;
+  transition: all 0.3s ease;
 }
 
 .goback_button:hover {
+  border-radius: 0px; /* Remove rounding on hover */
+  padding: 4px 16px 4px 12px; /* Change padding on hover */
   text-decoration: underline;
+}
+
+.go_back_text{
+  font-size: var(--small-font-size);
+  margin-left: 8px;
+  display: inline; /* Hidden by default */
+  transition: all 0.3s ease;
+}
+
+.goback_button:hover .go_back_text{
+  display: inline; /* Show text on hover */
 }
 
 
@@ -366,6 +388,7 @@ li .mobile_ui:hover{
   transition: filter 0.1s ease;
   margin-top: -2px;
   filter: brightness(0) invert(1);
+  transition: ease-in-out 0.2s;
 }
 
 .button_small:hover .arrow-back-icon {
@@ -460,6 +483,7 @@ li .mobile_ui:hover{
   align-content: center;
 
 }
+
 
 .impact_on_image{
   position: absolute;
@@ -769,6 +793,33 @@ footer{
   align-items: start;
 }
 
+.sticky_navigation {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  backdrop-filter: blur(10px); /* Blurring effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  padding: 4px 4px; /* Adjust padding for better appearance */
+  color: #E0E0E0; /* Light text color for contrast */
+  font-size: var(--small-font-size);
+  font-family: var(--font-space-gothic);
+  font-weight: 400;
+  border-radius: 4px; /* No rounded corners */
+}
+
+.nav_link {
+  padding: 4px 12px; /* Padding for each link */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Pointer cursor for links */
+  border-radius: 2px;
+}
+
+.nav_link:hover {
+  background-color: #9d9d9d;
+}
+
+.nav_link.active {
+  background-color: #fefefe !important; /* Active link background */
+  color: #232122;
+}
 
 /* When the screen width is 90% or smaller */
 @media (max-width: 90vw) {
