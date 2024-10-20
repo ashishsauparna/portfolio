@@ -140,7 +140,8 @@ export default function ProjectsData() {
           <div className='marqee_content'>
             
           <p>
-          &nbsp;&nbsp;&nbsp;{image.readTime} &nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;{image.readTime} 
+          &nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;
           {image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;
           {image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;
           {image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{image.readTime}&nbsp;&nbsp;&nbsp;{

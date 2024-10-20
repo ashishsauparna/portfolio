@@ -55,8 +55,8 @@ b{
   margin-left: auto;
   margin-right: auto;
   row-gap: 8rem;
-  column-gap: 12rem;
-  grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+  column-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
   margin-top: 12rem; /* Sets top margin to 8 units */
   margin-bottom: 24px; /* Sets bottom margin to 24 units */
   box-sizing: border-box; /* Ensure padding/margin don't mess with the total width */
@@ -386,7 +386,7 @@ li .mobile_ui:hover{
 .link_button{
   font-family: var(--font-space-gothic);
   font-size: var(--default-font-size);
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 2px;
 }
 .link_button:hover{
@@ -456,6 +456,8 @@ li .mobile_ui:hover{
 .marqee_content{
   display: inline-block;
   white-space: nowrap;
+  font-size: 14px;
+  align-content: center;
 
 }
 
@@ -491,7 +493,7 @@ li .mobile_ui:hover{
 }
 
 .project_image.small{
-  height: 520px;
+  height: 420px;
 }
 
 /* .project_image_blur{

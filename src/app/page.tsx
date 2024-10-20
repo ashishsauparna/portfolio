@@ -8,6 +8,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import AshishSharmaImg from '/public/ashish_sharma.png';
 import Banner from '/public/banner.png';
+import MediumIcon from '/public/medium_icon.svg';
+import LinkedinIcon from '/public/linkedin_icon.svg';
 import MoveImage from './components/ui/movebanner';
 
 export const metadata: Metadata = {
@@ -64,30 +66,36 @@ export default function Home() {
           </span>
           </h1>
 
-          <h4 className='w-[50%] opacity-80 inline'>
+          <h4 className='w-[50%] opacity-80 inline font-[350]'>
             Sharing design insights on &nbsp;
             <Link className='link_button' href={'https://medium.com/@ashishsauparna'}>
+            <span className='relative mr-2'>
               Medium
+              <Image src={MediumIcon} alt={'Medium icon'} className='inline absolute top-0'/>
+            </span>
             </Link>
             &nbsp;&&nbsp;
             <Link className='link_button' href={'https://www.linkedin.com/in/ashishsauparna/'}>
+            <span className='relative mr-2'>
               Linkedin
+              <Image src={LinkedinIcon} alt={'Medium icon'} className='inline absolute top-0'/>
+            </span>
             </Link>
-            .
           </h4>
 
-          <h3 className='font-noto-serif mt-24 font-light text-lg'>My Skills 💪</h3>
+          {/* <h3 className='font-noto-serif mt-24 font-light text-lg'>My Skills 💪</h3> */}
 
-          <div className='flex flex-wrap gap-2 items-center justify-center w-[55%]'>
-          <span className='px-3 py-[2px] bg-gray-800 text-slate-100'>Empathy</span>
-            <span className='px-3 py-[2px] border border-gray-800'>User research</span>
-            <span className='px-3 py-[2px] border border-gray-800'>User journey mapping</span>
-            <span className='px-3 py-[2px] bg-gray-800 text-slate-100'>Critical thinking</span>
-            <span className='px-3 py-[2px] border border-gray-800'>Heuristics analysis</span>
-            <span className='px-3 py-[2px] bg-gray-800 text-slate-100'>Collaboration</span>
-            <span className='px-3 py-[2px] border border-gray-800'>Wireframing & Prototyping</span>
-            <span className='px-3 py-[2px] border border-gray-800'>Usability testing</span>
-          </div>
+          <h4 className='flex flex-wrap gap-2 items-center justify-center w-[55%] mt-24 font-[350]'>
+            My Skills:
+            <span>Empathy</span> |
+            <span>User research</span> |
+            <span>User journey mapping</span> |
+            <span>Critical thinking</span> |
+            <span>Heuristics analysis</span> |
+            <span>Collaboration</span> |
+            <span>Wireframing & Prototyping</span> |
+            <span>Usability testing</span>
+          </h4>
 
           {/* <div className="flex items-center my-6 w-full mt-36 gap-12">
             <div className="flex-grow border-t border-black bg-gray-900 w-full"></div>
