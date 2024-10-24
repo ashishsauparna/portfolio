@@ -102,7 +102,7 @@ export default function Home() {
 
           <h4 className='flex flex-wrap gap-8 items-center justify-center w-[55%] mt-2 font-[350]'>
             <span className='flex flex-col gap-2 w-[150px]'>
-              <span className='text-xl'>🧐</span>
+              <span className='text-xl'>🎙️</span>
               <span>User research</span>
             </span>
             <div className='h-12 w-[1px] bg-gray-300'>
