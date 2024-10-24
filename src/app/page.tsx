@@ -3,14 +3,11 @@ import Footer from './components/ui/footer';
 import ProjectsData from './(projects)/projects';
 import Image from 'next/image';
 import Script from 'next/script';
-import OutwardArrowDown from '/public/arrow_outward.svg'
 import { Metadata } from 'next';
 import Link from 'next/link';
-import AshishSharmaImg from '/public/ashish_sharma.png';
 import Banner from '/public/banner.png';
 import MediumIcon from '/public/medium_icon.svg';
 import LinkedinIcon from '/public/linkedin_icon.svg';
-import MoveImage from './components/ui/movebanner';
 
 export const metadata: Metadata = {
   title: 'Ashish Sharma UX Designer',
@@ -42,12 +39,17 @@ export default function Home() {
       {/* <MoveImage path={Banner}/> */}
       <div className='items-left body_width'>
         <div className='mt-8'>
-          <div className='relative mb-28 short_intro'>
+          <div className='relative mb-24 short_intro'>
             <div className='flex gap-4 items-start relative'>
                 <div className='w-10 h-10 overflow-hidden bg-gray-900' style={{transform:"translateY(4px)"}}>
                 </div>
               <div>
-                <h4 className='opacity-80'>Ashish Sharma</h4>
+                {/* <h4 className='opacity-80'>Ashish Sharma</h4> */}
+                <Link className='link_button' href={'/about-me'}>
+                <h4 className='relative mr-2'>
+                  Ashish Sharma
+                </h4>
+                </Link>
                 <h4 className='text-blue-700 -mt-[1.5px]'>UX designer at EY</h4>
               </div>
             </div>
@@ -83,17 +85,38 @@ export default function Home() {
             </Link>
           </h4>
 
-          {/* <h3 className='font-noto-serif mt-24 font-light text-lg'>My Skills 💪</h3> */}
+          <h3 className='mt-16 flex gap-2 font-light text-base opacity-60'>
+            {/* <Image
+            src={ArrowDownward}
+            alt='Arrow Downward'
+            width={20}
+            /> */}
+            ✦ &nbsp;&nbsp;My Core Skills&nbsp;&nbsp; ✦
+            {/* <Image
+            src={ArrowDownward}
+            alt='Arrow Downward'
+            width={20}
+            /> */}
+          </h3>
 
-          <h4 className='flex flex-wrap gap-2 items-center justify-center w-[55%] mt-24 font-[350]'>
-            My Skills:
-            <span>User research</span> |
-            <span>User journey mapping</span> |
-            <span>Critical thinking</span> |
-            <span>Heuristics analysis</span> |
-            <span>Collaboration</span> |
-            <span>Wireframing & Prototyping</span> |
-            <span>Usability testing</span>
+
+          <h4 className='flex flex-wrap gap-8 items-center justify-center w-[55%] mt-2 font-[350]'>
+            <span className='flex flex-col gap-2 w-[150px]'>
+              <span className='text-xl'>🧐</span>
+              <span>User research</span>
+            </span>
+            <div className='h-12 w-[1px] bg-gray-300'>
+            </div>
+            <span className='flex flex-col gap-2 w-[150px]'>
+              <span className='text-xl'>👩🏻‍💻</span>
+              <span>Usability testing</span>
+            </span>
+            <div className='h-12 w-[1px] bg-gray-300'>
+            </div>
+            <span className='flex flex-col gap-2 w-[150px]'>
+              <span className='text-xl'>📝</span>
+              <span>Heuristics analysis</span>
+            </span>
           </h4>
 
           {/* <div className="flex items-center my-6 w-full mt-36 gap-12">
