@@ -55,7 +55,7 @@ export default function NavBar() {
           </li>
 
           <li className='flex gap-1'>
-          <Navigation name="Resume" href="https://drive.google.com/file/d/1ZSNwRmH_NFad1FuJxVxoCsSnlrOGHxR5/view?usp=share_link" status="default" target="_blank"/>
+          <Navigation name="Resume" href="https://drive.google.com/file/d/1_Cqagdp5cQbY4ePvsdsGrYchT-B541uW/view?usp=share_link" status="default" target="_blank"/>
           <Image
           src={OutwardArrow}
           alt='outward arrow icon'
