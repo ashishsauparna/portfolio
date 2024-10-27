@@ -4,21 +4,19 @@ import Image from "next/image";
 import Script from 'next/script';
 import NavBar from '@/app/components/ui/navbar';
 import Footer from '@/app/components/ui/footer';
-import Button from '@/app/components/ui/button';
 import ArrowHeading from "@/app/components/ui/arrowheading";
 import Link from "next/link";
-import UserInterview from "@/../../public/projects/rozgar/user_interview.png";
-import CompAnalysis from "@/../../public/projects/rozgar/competitor_analysis.png";
-import CustomerJourney from "@/../../public/projects/rozgar/customer_journey.png";
-import Prototype from "@/../../public/projects/rozgar/prototype.png";
-import Sketch from "@/../../public/projects/rozgar/sketch.png";
-import FinalUI from "@/../../public/projects/rozgar/finalui.png";
-import UsabilityTesting from "@/../../public/projects/rozgar/usabilitytesting.png";
-import MacbookCover from "@/../../public/mackbook_silver_blackbg.png";
-import ArrowBack from "@/../../public/arrow_back.svg"
-import DP from "@/../../public/ashish_sharma.png";
-import StarSVG from "@/../../public/star.svg";
-import Banner from "@/../../public/projects/rozgar/banner.png";
+// import UserInterview from "@/../../public/projects/rozgar/user_interview.png";
+// import CompAnalysis from "@/../../public/projects/rozgar/competitor_analysis.png";
+// import CustomerJourney from "@/../../public/projects/rozgar/customer_journey.png";
+// import Prototype from "@/../../public/projects/rozgar/prototype.png";
+// import Sketch from "@/../../public/projects/rozgar/sketch.png";
+// import FinalUI from "@/../../public/projects/rozgar/finalui.png";
+// import UsabilityTesting from "@/../../public/projects/rozgar/usabilitytesting.png";
+// import ArrowBack from "@/../../public/arrow_back.svg"
+// import DP from "@/../../public/ashish_sharma.png";
+// import StarSVG from "@/../../public/star.svg";
+// import Banner from "@/../../public/projects/rozgar/banner.png";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -91,7 +89,10 @@ export default function RozgarResearch() {
           <div className="left-0 flex items-center">
             <Link href={"/"}>
               <div className="goback_button">
-                <Image src={ArrowBack} alt="back arrow icon" width={20} className="arrow-back-icon" />
+                <Image src={"/arrow_back.svg"} alt="back arrow icon" 
+                width={20} 
+                height={20}
+                className="arrow-back-icon" />
                 <span className="go_back_text">
                   Go Back
                 </span>
@@ -143,16 +144,18 @@ export default function RozgarResearch() {
               {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
               -
               <Image
-              src={StarSVG}
+              src={"/star.svg"}
               alt="Star image"
               width={32}
+              height={32}
               className="rotating-star"
               />
               Rozgar
               <Image
-              src={StarSVG}
+              src={"/star.svg"}
               alt="Star image"
               width={32}
+              height={32}
               className="rotating-star"
               />
               -
@@ -164,8 +167,10 @@ export default function RozgarResearch() {
         {/* ---------- Image ---------- */}
 
         <Image
-        src={Banner}
-        alt="how might we questions"
+        src={"/projects/rozgar/banner.png"}
+        alt="Rozgar Banner"
+        width={1920}
+        height={1080}
         className="w-full"
         />
 
@@ -202,7 +207,11 @@ export default function RozgarResearch() {
 
                         <div className='flex gap-4'>
                           <div className='w-12 h-12'>
-                            <Image src={DP} alt={"Ashish Sharma Profile picture"} className='object-cover w-full h-full'/>
+                            <Image src={"/ashish_sharma.png"} 
+                            width={42}
+                            height={42}
+                            alt={"Ashish Sharma Profile picture"} 
+                            className='object-cover w-full h-full'/>
                           </div>
                           <div>
                             <h3>Ashish Sharma</h3>
@@ -294,8 +303,11 @@ export default function RozgarResearch() {
 
 
         <Image
-        src={UserInterview}
-        alt="how might we questions"
+        src={"/projects/rozgar/user_interview.png"}
+        sizes="100vw"
+        width={500}
+        height={500}
+        alt="User Interview"
         className="w-full mt-24"
         />
 
@@ -306,7 +318,10 @@ export default function RozgarResearch() {
 
 
         <Image
-        src={CompAnalysis}
+        src={"/projects/rozgar/competitor_analysis.png"}
+        sizes="100vw"
+        width={500}
+        height={500}
         alt="how might we questions"
         className="w-full mt-24"
         />
@@ -316,7 +331,10 @@ export default function RozgarResearch() {
 
 
         <Image
-        src={CustomerJourney}
+        src={"/projects/rozgar/customer_journey.png"}
+        sizes="100vw"
+        width={500}
+        height={500}
         alt="how might we questions"
         className="w-full mt-24"
         />
@@ -397,7 +415,10 @@ export default function RozgarResearch() {
 
 
         <Image
-        src={Prototype}
+        src={"/projects/rozgar/prototype.png"}
+        sizes="100vw"
+        width={500}
+        height={500}
         alt="how might we questions"
         className="w-full mt-24"
         />
@@ -408,7 +429,10 @@ export default function RozgarResearch() {
 
 
         <Image
-        src={Sketch}
+        src={"/projects/rozgar/sketch.png"}
+        sizes="100vw"
+        width={500}
+        height={500}
         alt="how might we questions"
         className="w-full mt-24"
         />
@@ -419,7 +443,10 @@ export default function RozgarResearch() {
 
 
         <Image
-        src={UsabilityTesting}
+        src={"/projects/rozgar/usabilitytesting.png"}
+        sizes="100vw"
+        width={500}
+        height={500}
         alt="how might we questions"
         className="w-full mt-24"
         />
@@ -478,7 +505,10 @@ export default function RozgarResearch() {
 
 
         <Image
-        src={FinalUI}
+        src={"/projects/rozgar/finalui.png"}
+        sizes="100vw"
+        width={500}
+        height={500}
         alt="how might we questions"
         className="w-full mt-24"
         />

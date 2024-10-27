@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from "framer-motion";
-import AshishSharmaImg from '/public/ashish_sharma.png';
+// import AshishSharmaImg from '/public/ashish_sharma.png';
 import Image from 'next/image';
 
 export default function MotionImage(){
@@ -32,9 +32,11 @@ export default function MotionImage(){
         }}
         >
         <Image
-          src={AshishSharmaImg}
+          src={"/ashish_sharma.png"}
           alt="Black and white portait of Ashish Sharma"
-          sizes="60vw"
+          sizes="100vh"
+          width={100}
+          height={100}
           className='ashish_image'/>
         {/* <Button name="Connect on LinkedIn" href="https://www.linkedin.com/in/ashishsauparna/"/> */}
         </motion.div>

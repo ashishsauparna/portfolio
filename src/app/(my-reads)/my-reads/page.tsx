@@ -1,11 +1,9 @@
 import { Metadata } from 'next';
-import Books from '../books';
 import NavBar from '../../components/ui/navbar';
 import Footer from '../../components/ui/footer';
 import Image from 'next/image';
-import IgStory from '/public/books_story.jpg';
+// import IgStory from '/public/books_story.jpg';
 import Inspirations from '../inspirations';
-import Link from 'next/link';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
@@ -61,7 +59,8 @@ export default function MyReads() {
         <div className="items-left body_width grid gap-24 mt-24">
           <div className='content_grid_two w-full gap-24'>
               <div>
-                <Image src={IgStory} alt={'Book holding'}
+                <Image src={"/books_story.jpg"} alt={'Book holding'}
+                width={400} height={400}
                 style={{width:"60%", height:"auto"}}/>
               </div>
             <div className='flex flex-col gap-24'>

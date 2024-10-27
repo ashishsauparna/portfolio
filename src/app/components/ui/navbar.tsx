@@ -2,13 +2,13 @@
 
 import { useEffect, useState } from 'react';
 import Navigation from './navigation';
-import Icon from '/public/as_logo.svg';
-import IconGif from '/public/as_logo_closed.svg';
+// import Icon from '/public/as_logo.svg';
+// import IconGif from '/public/as_logo_closed.svg';
 import Image from 'next/image';
 import { Twirl as Hamburger } from 'hamburger-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import OutwardArrow from '/public/outward_arrow.svg';
+// import OutwardArrow from '/public/outward_arrow.svg';
 
 export default function NavBar() {
 
@@ -32,14 +32,18 @@ export default function NavBar() {
         <Link href={'/'}>
           <div className='logo_container'>
         {showGif && <Image
-          src={IconGif}
+          src={"/as_logo_closed.svg"}
           alt="A Logo of the website in white text and blue background. The logo says AS short for Ashish Sharma"
           sizes="60vw"
+          width={32}
+          height={32}
           className='icon_gif' />}
         <Image
-          src={Icon}
+          src={"/as_logo.svg"}
           alt="A Logo of the website in white text and blue background. The logo says AS short for Ashish Sharma"
           sizes="60vw"
+          width={32}
+          height={32}
           className='icon' />
           </div>
         </Link>
@@ -57,9 +61,10 @@ export default function NavBar() {
           <li className='flex gap-1'>
           <Navigation name="Resume" href="https://drive.google.com/file/d/1_Cqagdp5cQbY4ePvsdsGrYchT-B541uW/view?usp=share_link" status="default" target="_blank"/>
           <Image
-          src={OutwardArrow}
+          src={"/outward_arrow.svg"}
           alt='outward arrow icon'
           width={20}
+          height={20}
           />
           </li>
 
@@ -70,9 +75,10 @@ export default function NavBar() {
           <li className='flex gap-1'>
           <Navigation name="Articles" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/>
           <Image
-          src={OutwardArrow}
+          src={"/outward_arrow.svg"}
           alt='outward arrow icon'
           width={20}
+          height={20}
           />
           </li>
           {/* <li>
@@ -84,9 +90,11 @@ export default function NavBar() {
         <Link href={'/'}>
             <div className='logo_container'>
           <Image
-            src={Icon}
+            src={"/as_logo.svg"}
             alt="A Logo of the website in white text and blue background. The logo says AS short for Ashish Sharma"
             sizes="60vw"
+            width={60}
+            height={60}
             className='icon' />
             </div>
         </Link>
@@ -96,9 +104,9 @@ export default function NavBar() {
             <motion.div
               initial={{ y: '100%' }}
               animate={{ y: isOpen ? '0%' : '100%' }}
-              transition={{ type: 'ease-in', duration: 0.3 }}
-              className='mobile_nav_view'>
+              transition={{ type: 'ease-in', duration: 0.3 }}>
               {/* Content of the animated container */}
+              <div className='mobile_nav_view'>
               <div className='absolute bottom-0 justify-between'>
               <ul className='grid gap-8 mb-28 text-3xl'>
                 <li>
@@ -121,6 +129,7 @@ export default function NavBar() {
                   <p className='text-2xl mt-2 text-gray-500'>Connect with my UX journey</p>
                 </li>
               </ul>
+              </div>
               </div>
             </motion.div>
       </nav>

@@ -1,10 +1,10 @@
 'use client'
 
 import Image from 'next/image';
-import fontSwapImg from '/public/fontswap_2.jpg';
-import rozgarImg from '/public/case_study_rozgar.jpg';
-import buttonSmithImg from '/public/button_smith_banner.jpg'
-import Sanskriti from '/public/sanskriti_2.jpg'
+// import fontSwapImg from '/public/fontswap_2.jpg';
+// import rozgarImg from '/public/case_study_rozgar.jpg';
+// import buttonSmithImg from '/public/button_smith_banner.jpg'
+// import Sanskriti from '/public/sanskriti_2.jpg'
 import Link from 'next/link';
 import { animate, motion } from 'framer-motion';
 
@@ -13,7 +13,7 @@ export default function ProjectsData() {
   const imageInfo = [
 
     {
-      src: fontSwapImg,
+      src: "/fontswap_2.jpg",
       srcBlur:"",
       alt: "Picture of a man using font swap plugin on his MacBook",
       href: "/projects/fontswap-research",
@@ -33,7 +33,7 @@ export default function ProjectsData() {
     }, 
      
     {
-      src: buttonSmithImg,
+      src: "/button_smith_banner.jpg",
       srcBlur:"",
       alt: "Picture of an man wokring on construction site",
       href: "/projects/buttonsmith-research",
@@ -68,7 +68,7 @@ export default function ProjectsData() {
     //   impact: false,
     // },
     {
-      src: rozgarImg,
+      src: "/case_study_rozgar.jpg",
       srcBlur:"",
       alt: "Picture of an man wokring on construction site",
       href: "/projects/rozgar-research",
@@ -84,7 +84,7 @@ export default function ProjectsData() {
       impact: false,
     },
     {
-      src: Sanskriti,
+      src: "/sanskriti_2.jpg",
       srcBlur:"",
       alt: "Picture of an man wokring on construction site",
       href: "https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94",
@@ -132,8 +132,9 @@ export default function ProjectsData() {
       viewport={{
         once:true
       }}
-      className={image.large ? 'cell large' : 'cell'} // Conditionally apply 'large' class
       >
+      <div className={image.large ? 'cell large' : 'cell'} // Conditionally apply 'large' class
+        >
       <Link href={image.href} target={image.blank}>
         <div className='cell'>
           <div className={`flex justify-between ${image.css}`}>
@@ -176,6 +177,8 @@ export default function ProjectsData() {
             src={image.src}
             alt={image.alt}
             sizes="100vw"
+            width={100}
+            height={100}
             className={image.shortImage ? 'project_image small' : 'project_image'}/>
             {
               image.impact ?
@@ -205,6 +208,7 @@ export default function ProjectsData() {
           </div>
         </div>
       </Link>
+      </div>
       </motion.div>
     ))}
   </div>

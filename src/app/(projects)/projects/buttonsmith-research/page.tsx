@@ -6,18 +6,18 @@ import NavBar from "@/app/components/ui/navbar";
 import Link from "next/link";
 import Script from "next/script";
 import Image from "next/image";
-import ResearchImg from "@/../../public/projects/buttonsmith/research.png";
-import Banner from "@/../../public/projects/buttonsmith/banner.png";
-import Competitors from "@/../../public/projects/buttonsmith/competitor_research.png";
-import Moscow from "@/../../public/projects/buttonsmith/moscow.png";
-import UIFrames from "@/../../public/projects/buttonsmith/uiframes.png";
-import ColorGuide from "@/../../public/projects/buttonsmith/colorequation.png";
-import UIAnatomy from "@/../../public/projects/buttonsmith/anatomy.png";
-import UICollective from "@/../../public/projects/buttonsmith/uicollective.png";
-import ArrowBack from "@/../../public/arrow_back.svg";
-import DP from "@/../../public/ashish_sharma.png";
-import LakshyaDP from "@/../../public/lakshya_raj.png";
-import StarSVG from "@/../../public/star.svg";
+// import ResearchImg from "@/../../public/projects/buttonsmith/research.png";
+// import Banner from "@/../../public/projects/buttonsmith/banner.png";
+// import Competitors from "@/../../public/projects/buttonsmith/competitor_research.png";
+// import Moscow from "@/../../public/projects/buttonsmith/moscow.png";
+// import UIFrames from "@/../../public/projects/buttonsmith/uiframes.png";
+// import ColorGuide from "@/../../public/projects/buttonsmith/colorequation.png";
+// import UIAnatomy from "@/../../public/projects/buttonsmith/anatomy.png";
+// import UICollective from "@/../../public/projects/buttonsmith/uicollective.png";
+// import ArrowBack from "@/../../public/arrow_back.svg";
+// import DP from "@/../../public/ashish_sharma.png";
+// import LakshyaDP from "@/../../public/lakshya_raj.png";
+// import StarSVG from "@/../../public/star.svg";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -91,7 +91,11 @@ export default function ButtonSmithResearch() {
           <div className="left-0 flex items-center">
             <Link href={"/"}>
               <div className="goback_button">
-                <Image src={ArrowBack} alt="back arrow icon" width={20} className="arrow-back-icon" />
+                <Image src={"/arrow_back.svg"} 
+                alt="back arrow icon" 
+                width={20}
+                height={20}
+                className="arrow-back-icon" />
                 <span className="go_back_text">
                   Go Back
                 </span>
@@ -142,16 +146,18 @@ export default function ButtonSmithResearch() {
               {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
               -
               <Image
-              src={StarSVG}
+              src={"/star.svg"}
               alt="Star image"
               width={32}
+              height={32}
               className="rotating-star"
               />
               Button Smith 
               <Image
-              src={StarSVG}
+              src={"/star.svg"}
               alt="Star image"
               width={32}
+              height={32}
               className="rotating-star"
               />
               -
@@ -167,9 +173,12 @@ export default function ButtonSmithResearch() {
         {/* ---------- Image ---------- */}
 
         <Image
-        src={Banner}
+        src={"/projects/buttonsmith/banner.png"}
         alt="how might we questions"
         className="w-full"
+        sizes="100vw"
+        width={500}
+        height={500}
         />
 
 
@@ -204,7 +213,11 @@ export default function ButtonSmithResearch() {
 
                         <div className='flex gap-4'>
                           <div className='w-12 h-12'>
-                            <Image src={DP} alt={"Ashish Sharma Profile picture"} className='object-cover w-full h-full'/>
+                            <Image src={"/ashish_sharma.png"} 
+                            width={42}
+                            height={42}
+                            alt={"Ashish Sharma Profile picture"} 
+                            className='object-cover w-full h-full'/>
                           </div>
                           <div>
                             <h4>Ashish Sharma</h4>
@@ -214,7 +227,11 @@ export default function ButtonSmithResearch() {
 
                         <div className='flex gap-4'>
                           <div className='w-12 h-12'>
-                            <Image src={LakshyaDP} alt={"Ashish Sharma Profile picture"} className='object-cover w-full h-full'/>
+                            <Image src={"/lakshya_raj.png"} 
+                            width={42}
+                            height={42}
+                            alt={"Ashish Sharma Profile picture"} 
+                            className='object-cover w-full h-full'/>
                           </div>
                           <div>
                             <h4>Lakshya Raj</h4>
@@ -306,7 +323,10 @@ export default function ButtonSmithResearch() {
 
 
         <Image
-        src={ResearchImg}
+        src={"/projects/buttonsmith/research.png"}
+        sizes="100vw"
+        width={100}
+        height={100}
         alt="how might we questions"
         className="w-full mt-24"
         />
@@ -317,7 +337,10 @@ export default function ButtonSmithResearch() {
 
 
         <Image
-        src={Competitors}
+        src={"/projects/buttonsmith/competitor_research.png"}
+        sizes="100vw"
+        width={100}
+        height={100}
         alt="how might we questions"
         className="w-full mt-24"
         />
@@ -392,7 +415,10 @@ export default function ButtonSmithResearch() {
 
 
         <Image
-        src={Moscow}
+        src={"/projects/buttonsmith/moscow.png"}
+        sizes="100vw"
+        width={100}
+        height={100}
         alt="how might we questions"
         className="w-full mt-24"
         />
@@ -462,7 +488,10 @@ export default function ButtonSmithResearch() {
         
 
         <Image
-        src={UIFrames}
+        src={"/projects/buttonsmith/uiframes.png"}
+        sizes="100vw"
+        width={100}
+        height={100}
         alt="how might we questions"
         className="w-full mt-24"
         />
@@ -472,7 +501,10 @@ export default function ButtonSmithResearch() {
         
 
         <Image
-        src={ColorGuide}
+        src={"/projects/buttonsmith/colorequation.png"}
+        sizes="100vw"
+        width={100}
+        height={100}
         alt="how might we questions"
         className="w-full mt-24"
         />
@@ -482,7 +514,10 @@ export default function ButtonSmithResearch() {
         
 
         <Image
-        src={UIAnatomy}
+        src={"/projects/buttonsmith/anatomy.png"}
+        sizes="100vw"
+        width={100}
+        height={100}
         alt="how might we questions"
         className="w-full mt-24"
         />
@@ -529,7 +564,10 @@ export default function ButtonSmithResearch() {
 
 
         <Image
-        src={UICollective}
+        src={"/projects/buttonsmith/uicollective.png"}
+        sizes="100vw"
+        width={100}
+        height={100}
         alt="how might we questions"
         className="w-full mt-12"
         />

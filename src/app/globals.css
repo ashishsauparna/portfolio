@@ -652,6 +652,8 @@ footer{
 .intro_content_three{
   display: grid;
   width: 90%;
+  margin-left: auto;
+  margin-right: auto;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5rem; /* Equivalent to gap-4, adjust as needed */
   align-items: start;

@@ -176,6 +176,8 @@ export default function Books() {
                 src={book.src}
                 alt={book.alt}
                 sizes="100vw"
+                width={200}
+                height={300}
                 className='book_image'/>
               </Link>
               </motion.div>

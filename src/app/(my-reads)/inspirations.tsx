@@ -2,44 +2,43 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import ChrisDo from '/public/inspiration/chris_do.jpeg';
-import MatKal from '/public/inspiration/mat_kal.jpeg';
-import Femke from '/public/inspiration/femke.jpeg';
-import Kimya from '/public/inspiration/kimya.jpeg';
-import Sapta from '/public/inspiration/sapta.jpeg';
-import Jim from '/public/inspiration/jim.jpeg';
-import Ashwini from '/public/inspiration/ashwini.jpeg';
+// import ChrisDo from '/public/inspiration/chris_do.jpeg';
+// import MatKal from '/public/inspiration/mat_kal.jpeg';
+// import Femke from '/public/inspiration/femke.jpeg';
+// import Kimya from '/public/inspiration/kimya.jpeg';
+// import Sapta from '/public/inspiration/sapta.jpeg';
+// import Ashwini from '/public/inspiration/ashwini.jpeg';
 import { animate, motion } from 'framer-motion';
 
 export default function Inspirations() {
 
     const people = [
         {
-          img: ChrisDo,
+          img: "/inspiration/chris_do.jpeg",
           alt:"",
           name:"Cris Do",
           href:"https://instagram.com/thechrisdo?igshid=MzRlODBiNWFlZA=="
         },
         {
-          img: MatKal,
+          img: "/inspiration/mat_kal.jpeg",
           alt:"",
           name:"Maitreyee Kalaskar",
           href:"https://instagram.com/maitreyee_kal?igshid=MzRlODBiNWFlZA=="
         },
         {
-          img: Femke,
+          img: "/inspiration/femke.jpeg",
           alt:"",
           name:"Femke",
           href:"https://instagram.com/femkedotdesign?igshid=MzRlODBiNWFlZA=="
         },
         {
-          img: Kimya,
+          img: "/inspiration/kimya.jpeg",
           alt:"",
           name:"Kimya Gandhi",
           href:"https://instagram.com/kimyagandhi?igshid=MzRlODBiNWFlZA=="
         },
         {
-          img: Sapta,
+          img: "/inspiration/sapta.jpeg",
           alt:"",
           name:"Saptarshi Prakash",
           href:"https://instagram.com/saptarshiux?igshid=MzRlODBiNWFlZA=="
@@ -51,7 +50,7 @@ export default function Inspirations() {
         //   href:"https://instagram.com/jim.ux?igshid=MzRlODBiNWFlZA=="
         // },
         {
-          img: Ashwini,
+          img: "/inspiration/ashwini.jpeg",
           alt:"",
           name:"Ashwini Deshpande",
           href:"https://instagram.com/ashwinielephant?igshid=MzRlODBiNWFlZA=="
@@ -91,7 +90,12 @@ export default function Inspirations() {
 
               <div className='flex gap-4 mb-6'>
                 <div className='w-12 h-12'>
-                  <Image src={data.img} alt={data.alt} className='object-cover w-full h-full'/>
+                  <Image src={data.img}
+                  width={40}
+                  height={40} 
+                  alt={data.alt} 
+                  className='object-cover w-full h-full'
+                  />
                 </div>
                 <div>
                   <h3>{data.name}</h3>

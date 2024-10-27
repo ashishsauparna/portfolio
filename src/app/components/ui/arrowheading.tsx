@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ArrowOurward from '/public/arrow_outward.svg';
+// import ArrowOurward from '/public/arrow_outward.svg';
 import ButtonSmall from "./button_small";
 
 const ArrowHeading = (data: any) => {
@@ -27,9 +27,10 @@ const ArrowHeading = (data: any) => {
         {
             data.arrow ?
             <Image
-                src={ArrowOurward}
+                src={"/arrow_outward.svg"}
                 alt="ArrowOurward"
                 width={20}
+                height={20}
                 className='mb-6'
             />:
             

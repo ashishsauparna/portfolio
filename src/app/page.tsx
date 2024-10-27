@@ -5,9 +5,9 @@ import Image from 'next/image';
 import Script from 'next/script';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Banner from '/public/banner.png';
-import MediumIcon from '/public/medium_icon.svg';
-import LinkedinIcon from '/public/linkedin_icon.svg';
+// import Banner from '/banner.png';
+// import MediumIcon from '/medium_icon.svg';
+// import LinkedinIcon from '/linkedin_icon.svg';
 
 export const metadata: Metadata = {
   title: 'Ashish Sharma UX Designer',
@@ -31,7 +31,9 @@ export default function Home() {
       <NavBar/>
 
       <Image
-      src={Banner}
+      src={"/banner.png"}
+      width={100}
+      height={100}
       alt='background banner'
       className='-z-10 absolute top-0 w-full'
       />
@@ -73,14 +75,14 @@ export default function Home() {
             <Link className='link_button' href={'https://medium.com/@ashishsauparna'}>
             <span className='relative mr-2'>
               Medium
-              <Image src={MediumIcon} alt={'Medium icon'} className='inline absolute top-0'/>
+              <Image src={"/medium_icon.svg"} width={12} height={12} alt={'Medium icon'} className='inline absolute top-0'/>
             </span>
             </Link>
             &nbsp;&&nbsp;
             <Link className='link_button' href={'https://www.linkedin.com/in/ashishsauparna/'}>
             <span className='relative mr-2'>
               Linkedin
-              <Image src={LinkedinIcon} alt={'Medium icon'} className='inline absolute top-0'/>
+              <Image src={"/linkedin_icon.svg"} width={12} height={12} alt={'Linkedin icon'} className='inline absolute top-0'/>
             </span>
             </Link>
           </h4>

@@ -6,16 +6,16 @@ import NavBar from '@/app/components/ui/navbar';
 import Footer from '@/app/components/ui/footer';
 import Link from "next/link";
 import ArrowHeading from "@/app/components/ui/arrowheading";
-import HeuristicsImg from "@/../../public/projects/fontswap/heuristics.png";
-import MoscowImg from "@/../../public/projects/fontswap/moscow.png";
-import UIFrames from "@/../../public/projects/fontswap/uiframes.png";
-import UIAnatomy from "@/../../public/projects/fontswap/anatomy.png";
-import UserbaseImg from "@/../../public/projects/fontswap/userbase.png";
-import ResearchImg from "@/../../public/projects/fontswap/research.png";
-import ArrowBack from "@/../../public/arrow_back.svg";
-import DP from "@/../../public/ashish_sharma.png";
-import StarSVG from "@/../../public/star.svg";
-import Banner from "@/../../public/projects/fontswap/banner.png";
+// import HeuristicsImg from "@/../../public/projects/fontswap/heuristics.png";
+// import MoscowImg from "@/../../public/projects/fontswap/moscow.png";
+// import UIFrames from "@/../../public/projects/fontswap/uiframes.png";
+// import UIAnatomy from "@/../../public/projects/fontswap/anatomy.png";
+// import UserbaseImg from "@/../../public/projects/fontswap/userbase.png";
+// import ResearchImg from "@/../../public/projects/fontswap/research.png";
+// import ArrowBack from "@/../../public/arrow_back.svg";
+// import DP from "@/../../public/ashish_sharma.png";
+// import StarSVG from "@/../../public/star.svg";
+// import Banner from "@/../../public/projects/fontswap/banner.png";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -86,7 +86,7 @@ export default function FontSwapResearch() {
           <div className="left-0 flex items-center">
             <Link href={"/"}>
               <div className="goback_button">
-                <Image src={ArrowBack} alt="back arrow icon" width={20} className="arrow-back-icon" />
+                <Image src={"/arrow_back.svg"} alt="back arrow icon" width={20} height={20} className="arrow-back-icon" />
                 <span className="go_back_text">
                   Go Back
                 </span>
@@ -138,16 +138,18 @@ export default function FontSwapResearch() {
               {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
               -
               <Image
-              src={StarSVG}
+              src={"/star.svg"}
               alt="Star image"
               width={32}
+              height={32}
               className="rotating-star"
               />
               Font Swap 
               <Image
-              src={StarSVG}
+              src={"/star.svg"}
               alt="Star image"
               width={32}
+              height={32}
               className="rotating-star"
               />
               -
@@ -159,7 +161,10 @@ export default function FontSwapResearch() {
         {/* ---------- Image ---------- */}
         <div className="flex justify-center items-center w-full relative -z-10">
         <Image
-        src={Banner}
+        src={"/projects/fontswap/banner.png"}
+        sizes="100vw"
+        width={100}
+        height={100}
         alt="how might we questions"
         className="w-full"
         />
@@ -205,7 +210,7 @@ export default function FontSwapResearch() {
 
                         <div className='flex gap-4'>
                           <div className='w-12 h-12'>
-                            <Image src={DP} alt={"Ashish Sharma Profile picture"} className='object-cover w-full h-full'/>
+                            <Image src={"/ashish_sharma.png"} width={32} height={32} alt={"Ashish Sharma Profile picture"} className='object-cover w-full h-full'/>
                           </div>
                           <div>
                             <h3>Ashish Sharma</h3>
@@ -303,9 +308,12 @@ export default function FontSwapResearch() {
 
 
         <Image
-        src={ResearchImg}
+        src={"/projects/fontswap/research.png"}
         alt="how might we questions"
         className="w-full mt-24"
+        sizes="100vw"
+        width={100}
+        height={100}
         />
 
 
@@ -315,7 +323,10 @@ export default function FontSwapResearch() {
 
 
         <Image
-        src={HeuristicsImg}
+        src={"/projects/fontswap/heuristics.png"}
+        sizes="100vw"
+        width={100}
+        height={100}
         alt="how might we questions"
         className="w-full mt-24"
         />
@@ -398,9 +409,12 @@ export default function FontSwapResearch() {
 
 
         <Image
-        src={MoscowImg}
+        src={"/projects/fontswap/moscow.png"}
         alt="how might we questions"
         className="w-full mt-24"
+        sizes="100vw"
+        width={100}
+        height={100}
         />
 
 
@@ -475,9 +489,12 @@ export default function FontSwapResearch() {
 
 
         <Image
-        src={UIFrames}
+        src={"/projects/fontswap/uiframes.png"}
         alt="how might we questions"
         className="w-full mt-24"
+        sizes="100vw"
+        width={1000}
+        height={1000}
         />
 
 
@@ -486,9 +503,12 @@ export default function FontSwapResearch() {
 
 
         <Image
-        src={UIAnatomy}
+        src={"/projects/fontswap/anatomy.png"}
         alt="how might we questions"
         className="w-full mt-24"
+        sizes="100vw"
+        width={100}
+        height={100}
         />
         
 
@@ -558,9 +578,12 @@ export default function FontSwapResearch() {
         
 
         <Image
-        src={UserbaseImg}
+        src={"/projects/fontswap/userbase.png"}
         alt="how might we questions"
         className="w-full mt-12"
+        sizes="100vw"
+        width={100}
+        height={100}
         />
 
 
