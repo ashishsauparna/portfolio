@@ -22,14 +22,14 @@ export default function ProjectsData() {
       new: "Jun 23",
       headingP1: "Font Swap: ",
       headingP2: "Case Study - June 2023",
-      subHeading:"A plugin to help switch multiple fonts in three steps.",
+      subHeading:"A plugin to help switch multiple fonts in three steps",
       large: false,
       shortImage: true,
       css: 'readtime_marqee',
       impact: true,
-      impactcss: 'bg-[rgba(0,81,255,0.8)] bottom-8 left-8',
-      impactData1:'<b>20K+</b> Users in an year',
-      impactData2:'Positive user feedback',
+      impactHeader: '20k+ Users',
+      impactcss: 'bg-[rgba(104,104,104,0.7)] bottom-8 left-8',
+      impactData1:'Global users gained within 1 year of launch',
     }, 
      
     {
@@ -47,8 +47,9 @@ export default function ProjectsData() {
       shortImage: true,
       css: 'readtime_marqee',
       impact: true,
-      impactcss: 'bg-[rgba(0,81,255,0.8)] top-12 left-8',
-      impactData1:'<b>600+</b> users in 5 months',
+      impactHeader: 'Over 600',
+      impactcss: 'bg-[rgba(65,65,65,0.7)] bottom-8 left-8',
+      impactData1:'Global users gained in 7 months of first launch',
     },
     // {
     //   src: delhiveryPoster,
@@ -76,7 +77,7 @@ export default function ProjectsData() {
       new: "Jan 22",
       headingP1: "Rozgar App: ",
       headingP2: "Short Study - Mar 2022",
-      subHeading:"Finding digital solution for blue collar workers.",
+      subHeading:"Finding digital solution for blue collar workers",
       large: false,
       shortImage: true,
       css: 'readtime_marqee',
@@ -178,11 +179,11 @@ export default function ProjectsData() {
             className={image.shortImage ? 'project_image small' : 'project_image'}/>
             {
               image.impact ?
-              <div style={{color:"white"}} className={`impact_on_image ${image.impactcss}`}>
-                <b className={`uppercase text-xs opacity-50`}>Impact</b>
+              <div style={{color:"#E9E9E9"}} className={`impact_on_image ${image.impactcss}`}>
+                <b className={`font-space-gothic uppercase text-base font-semibold`}>{image.impactHeader}</b>
                 <div className='flex flex-col gap-0'>
                   <div dangerouslySetInnerHTML={{ __html: image.impactData1 || '' }} />
-                  <div dangerouslySetInnerHTML={{ __html: image.impactData2 || '' }} />
+                  {/* <div dangerouslySetInnerHTML={{ __html: image.impactData2 || '' }} /> */}
                 </div>
                 
               </div>
