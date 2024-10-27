@@ -78,7 +78,7 @@ export default function Home() {
               <Image src={"/medium_icon.svg"} width={12} height={12} alt={'Medium icon'} className='inline absolute top-0'/>
             </span>
             </Link>
-            &nbsp;&&nbsp;
+            &nbsp;&nbsp;&&nbsp;
             <Link className='link_button' href={'https://www.linkedin.com/in/ashishsauparna/'}>
             <span className='relative mr-2'>
               Linkedin
