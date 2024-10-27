@@ -159,26 +159,12 @@ export default function ProjectsData() {
         {
           image.src ? 
           <div className="image-container">
-            <motion.div
-            whileHover={{
-              opacity:0,
-            }}
-            transition={{
-              type:"keyframes",
-              ease: "easeInOut"
-            }}>
-            {/* <Image
-            src={image.srcBlur}
-            alt={image.alt}
-            sizes="100vw"
-            className='project_image_blur'/> */}
-            </motion.div>
             <Image
             src={image.src}
             alt={image.alt}
             sizes="100vw"
-            width={100}
-            height={100}
+            width={500}
+            height={500}
             className={image.shortImage ? 'project_image small' : 'project_image'}/>
             {
               image.impact ?

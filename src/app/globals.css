@@ -11,9 +11,9 @@
   --large-screen-font-size: 4.1rem;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 /* @media (prefers-color-scheme:light) {
   :root {
@@ -511,24 +511,15 @@ li .mobile_ui:hover{
 }
 
 .project_image{
-  object-fit: cover;
   width: 100%;
+  object-fit: cover;
   height: 680px;
-  overflow: hidden;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .project_image.small{
   height: 480px;
 }
-
-/* .project_image_blur{
-  object-fit: cover;
-  width: 100%;
-  height: 420px;
-  border-radius: 4px;
-  position: absolute;
-} */
 
 .project_banner_1{
   width: 100%;

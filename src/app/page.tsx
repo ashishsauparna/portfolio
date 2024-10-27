@@ -73,16 +73,16 @@ export default function Home() {
           <h4 className='w-[50%] opacity-80 inline font-[350]'>
             Sharing design insights on &nbsp;
             <Link className='link_button' href={'https://medium.com/@ashishsauparna'}>
-            <span className='relative mr-2'>
+            <span className='relative mr-4'>
               Medium
-              <Image src={"/medium_icon.svg"} width={12} height={12} alt={'Medium icon'} className='inline absolute top-0'/>
+              <Image src={"/medium_icon.svg"} width={12} height={12} alt={'Medium icon'} className='ml-1 inline absolute top-0'/>
             </span>
             </Link>
-            &nbsp;&nbsp;&&nbsp;
+            &nbsp;&nbsp;&&nbsp;&nbsp;
             <Link className='link_button' href={'https://www.linkedin.com/in/ashishsauparna/'}>
-            <span className='relative mr-2'>
+            <span className='relative mr-4'>
               Linkedin
-              <Image src={"/linkedin_icon.svg"} width={12} height={12} alt={'Linkedin icon'} className='inline absolute top-0'/>
+              <Image src={"/linkedin_icon.svg"} width={12} height={12} alt={'Linkedin icon'} className='ml-1 inline absolute top-0'/>
             </span>
             </Link>
           </h4>
