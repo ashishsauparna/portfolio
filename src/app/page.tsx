@@ -87,38 +87,34 @@ export default function Home() {
             </Link>
           </h4>
 
-          <h3 className='mt-16 flex gap-2 font-light text-base opacity-60'>
-            {/* <Image
-            src={ArrowDownward}
-            alt='Arrow Downward'
-            width={20}
-            /> */}
-            ✦ &nbsp;&nbsp;My Core Skills&nbsp;&nbsp; ✦
-            {/* <Image
-            src={ArrowDownward}
-            alt='Arrow Downward'
-            width={20}
-            /> */}
+          <h3 className='mt-16 flex gap-2 font-light text-gray-500 text-base text-sm'>
+            <span className='text-[12px] inline'>······</span>
+            &nbsp;My Skills&nbsp;
+            <span className='text-[12px] inline'>······</span>
           </h3>
 
 
-          <h4 className='flex flex-wrap gap-8 items-center justify-center w-[55%] mt-2 font-[350]'>
-            <span className='flex flex-col gap-2 w-[150px]'>
-              <span className='text-xl'>🎙️</span>
+          <h4 className='flex flex-wrap gap-x-4 gap-y-4 items-center justify-center w-[55%] font-[350] text-sm'>
+            <span className='flex gap-2 bg-[rgba(104,104,104,0.04)] px-2 py-1'>
+              <span>💬</span>
               <span>User research</span>
             </span>
-            <div className='h-12 w-[1px] bg-gray-300'>
-            </div>
-            <span className='flex flex-col gap-2 w-[150px]'>
-              <span className='text-xl'>👩🏻‍💻</span>
-              <span>Usability testing</span>
-            </span>
-            <div className='h-12 w-[1px] bg-gray-300'>
-            </div>
-            <span className='flex flex-col gap-2 w-[150px]'>
-              <span className='text-xl'>📝</span>
+            <span className='flex gap-2 bg-[rgba(104,104,104,0.04)] px-2 py-1'>
+              <span>📝</span>
               <span>Heuristics analysis</span>
             </span>
+            <span className='flex gap-2 bg-[rgba(104,104,104,0.04)] px-2 py-1'>
+              <span>🧠</span>
+              <span>Critical thinking</span>
+            </span>
+            {/* <div className='h-12 w-[1px] bg-gray-300'>
+            </div> */}
+            <span className='flex gap-2 bg-[rgba(104,104,104,0.04)] px-2 py-1'>
+              <span>👩🏻‍💻</span>
+              <span>Prototyping & Usability testing</span>
+            </span>
+            {/* <div className='h-12 w-[1px] bg-gray-300'>
+            </div> */}
           </h4>
 
           {/* <div className="flex items-center my-6 w-full mt-36 gap-12">
