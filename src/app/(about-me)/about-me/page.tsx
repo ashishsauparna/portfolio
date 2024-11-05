@@ -29,7 +29,6 @@ export default function AboutMe() {
         gtag('config', 'G-2N9F9N8KHK');
       `}
     </Script>
-      <NavBar/>
       <div className='intro_content_first mt-40'>
         <MotionImage/>
 

@@ -55,7 +55,6 @@ export default function MyReads() {
         gtag('config', 'G-2N9F9N8KHK');
       `}
     </Script>
-        <NavBar/>
         <div className="items-left body_width grid gap-24 mt-24">
           <div className='content_grid_two w-full gap-24'>
               <div>

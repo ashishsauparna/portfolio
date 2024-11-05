@@ -28,7 +28,6 @@ export default function Home() {
           gtag('config', 'G-2N9F9N8KHK');
         `}
       </Script>
-      <NavBar/>
 
       <Image
       src={"/banner.png"}

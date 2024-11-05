@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { AlbertSans, AlegreyaFont, SpaceGothic, ABCFont, OffBit, Recoleta, NotoSerif } from './fonts'
+import NavBar from './components/ui/navbar'
 
 
 export const metadata: Metadata = {
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${AlbertSans.variable} ${SpaceGothic.variable} ${AlegreyaFont.variable} ${ABCFont.variable} ${OffBit.variable} ${Recoleta.variable} ${NotoSerif.variable}`}>
       <body>
+        <NavBar />
         {children}
       </body>
     </html>

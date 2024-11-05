@@ -34,7 +34,6 @@ export default function DelhiveryResearch() {
             gtag('config', 'G-2N9F9N8KHK');
             `}
         </Script>
-        <NavBar/>
 
 
         {/* ---------- Back button here ---------- */}

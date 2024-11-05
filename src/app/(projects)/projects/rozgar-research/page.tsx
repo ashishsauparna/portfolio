@@ -78,7 +78,6 @@ export default function RozgarResearch() {
             gtag('config', 'G-2N9F9N8KHK');
             `}
         </Script>
-        <NavBar/>
 
 
         {/* ---------- Back button and Navigation Menu Here ---------- */}
