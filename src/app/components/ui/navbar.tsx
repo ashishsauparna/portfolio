@@ -88,7 +88,7 @@ export default function NavBar() {
             <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" />
           </li> */}
         </ul>
-        <SmallButton name="Hire Me 📝" href=""/>
+        <SmallButton name="Hire Me 📝" href="mailto:ashishsauparna@gmail.com"/>
       </nav>
       <nav className='mobile_nav w-full pt-2 pb-2'>
         <Link href={'/'}>
