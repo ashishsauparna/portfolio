@@ -69,14 +69,19 @@ export default function Home() {
             </Link>
           </h4>
 
-          {/* <h3 className='mt-16 flex gap-2 font-light text-gray-500 text-base text-sm'>
-            <span className='text-[12px] inline'>······</span>
-            &nbsp;My Skills&nbsp;
-            <span className='text-[12px] inline'>······</span>
-          </h3> */}
+          <h3 className='flex gap-1 text-gray-500 text-sm mt-28'>
+            Scroll Down
+            <Image
+            src={'/arrow_downward.svg'}
+            alt='arrow'
+            width={16}
+            height={16}
+            className='opacity-50'
+            />
+          </h3>
 
 
-          <h4 className='skills_list flex flex-wrap gap-12 items-center justify-center w-[100%] font-[350] text-gray-700 text-sm mt-40'>
+          <h4 className='skills_list flex flex-wrap gap-12 items-center justify-center w-[100%] font-[350] text-gray-700 text-sm mt-4'>
             <span className='flex gap-2'>
               <span>💬</span>
               <span>User research</span>
