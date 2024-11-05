@@ -39,7 +39,7 @@ export default function Home() {
 
       {/* <MoveImage path={Banner}/> */}
       <div className='items-left body_width'>
-        <div className='mt-48'>
+        <div className='mt-40'>
 
           <div className='flex flex-col gap-4 items-center justify-center text-center w-full large_intro'>
 
