@@ -40,34 +40,16 @@ export default function Home() {
 
       {/* <MoveImage path={Banner}/> */}
       <div className='items-left body_width'>
-        <div className='mt-8'>
-          <div className='relative mb-24 short_intro'>
-            <div className='flex gap-4 items-start relative'>
-                <div className='w-10 h-10 overflow-hidden bg-gray-900' style={{transform:"translateY(4px)"}}>
-                </div>
-              <div>
-                {/* <h4 className='opacity-80'>Ashish Sharma</h4> */}
-                <Link className='link_button' href={'/about-me'}>
-                <h4 className='relative mr-2'>
-                  Ashish Sharma
-                </h4>
-                </Link>
-                <h4 className='text-blue-700 -mt-[1.5px]'>UX designer at EY</h4>
-              </div>
-            </div>
-            <div className='absolute right-0 top-0'>
-              <div>
-                <h4>Welcome to my <br/>portfolio 2024</h4>
-              </div>
-            </div>
-          </div>
+        <div className='mt-48'>
 
           <div className='flex flex-col gap-4 items-center justify-center text-center w-full large_intro'>
 
-          <h1 className='font-noto-serif text-slate-800 w-[65%] mb-0'>
-          <span>
-          Designing digital solutions for <br/> enterprises and startups since 2020.
-          </span>
+          <h1 className='font-noto-serif text-slate-800 w-[65%] mb-0' 
+          style={{ letterSpacing: '-0.02em' }}
+          >
+            <span>
+              Designing digital solutions for <br/> enterprises and startups since 2020.
+            </span>
           </h1>
 
           <h4 className='w-[50%] opacity-80 inline font-[350]'>
@@ -87,34 +69,34 @@ export default function Home() {
             </Link>
           </h4>
 
-          <h3 className='mt-16 flex gap-2 font-light text-gray-500 text-base text-sm'>
+          {/* <h3 className='mt-16 flex gap-2 font-light text-gray-500 text-base text-sm'>
             <span className='text-[12px] inline'>······</span>
             &nbsp;My Skills&nbsp;
             <span className='text-[12px] inline'>······</span>
-          </h3>
+          </h3> */}
 
 
-          <h4 className='flex flex-wrap gap-x-4 gap-y-4 items-center justify-center w-[55%] font-[350] text-sm'>
-            <span className='flex gap-2 bg-[rgba(104,104,104,0.04)] px-2 py-1'>
+          <h4 className='skills_list flex flex-wrap gap-12 items-center justify-center w-[100%] font-[350] text-gray-700 text-sm mt-40'>
+            <span className='flex gap-2'>
               <span>💬</span>
               <span>User research</span>
             </span>
-            <span className='flex gap-2 bg-[rgba(104,104,104,0.04)] px-2 py-1'>
+            <span className='flex gap-2'>
               <span>📝</span>
               <span>Heuristics analysis</span>
             </span>
-            <span className='flex gap-2 bg-[rgba(104,104,104,0.04)] px-2 py-1'>
+            <span className='flex gap-2'>
               <span>🧠</span>
               <span>Critical thinking</span>
             </span>
-            {/* <div className='h-12 w-[1px] bg-gray-300'>
-            </div> */}
-            <span className='flex gap-2 bg-[rgba(104,104,104,0.04)] px-2 py-1'>
+            <span className='flex gap-2'>
               <span>👩🏻‍💻</span>
-              <span>Prototyping & Usability testing</span>
+              <span>Prototyping</span>
             </span>
-            {/* <div className='h-12 w-[1px] bg-gray-300'>
-            </div> */}
+            <span className='flex gap-2'>
+              <span>👩🏻‍💻</span>
+              <span>Usability testing</span>
+            </span>
           </h4>
 
           {/* <div className="flex items-center my-6 w-full mt-36 gap-12">

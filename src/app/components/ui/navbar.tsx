@@ -8,6 +8,8 @@ import Image from 'next/image';
 import { Twirl as Hamburger } from 'hamburger-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Button from './button';
+import SmallButton from './button_small';
 // import OutwardArrow from '/public/outward_arrow.svg';
 
 export default function NavBar() {
@@ -45,6 +47,7 @@ export default function NavBar() {
           width={32}
           height={32}
           className='icon' />
+          &nbsp; &nbsp;Ashish Sharma
           </div>
         </Link>
         <ul className='nav_links'>
@@ -58,13 +61,13 @@ export default function NavBar() {
           <Navigation name="About" href="/about-me" status="default" />
           </li>
 
-          <li className='flex gap-1'>
+          <li className='flex gap-[2px] -mb-[2px]'>
           <Navigation name="Resume" href="https://drive.google.com/file/d/1_Cqagdp5cQbY4ePvsdsGrYchT-B541uW/view?usp=share_link" status="default" target="_blank"/>
           <Image
           src={"/outward_arrow.svg"}
           alt='outward arrow icon'
-          width={20}
-          height={20}
+          width={16}
+          height={16}
           />
           </li>
 
@@ -72,19 +75,20 @@ export default function NavBar() {
           <Navigation name="Inspirations" href="/my-reads" status="default" />
           </li>
 
-          <li className='flex gap-1'>
+          <li className='flex gap-[2px] -mb-[2px]'>
           <Navigation name="Articles" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/>
           <Image
           src={"/outward_arrow.svg"}
           alt='outward arrow icon'
-          width={20}
-          height={20}
+          width={16}
+          height={16}
           />
           </li>
           {/* <li>
             <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" />
           </li> */}
         </ul>
+        <SmallButton name="Hire Me 📝" href=""/>
       </nav>
       <nav className='mobile_nav w-full pt-2 pb-2'>
         <Link href={'/'}>

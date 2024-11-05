@@ -6,8 +6,8 @@ export default function Navigation(link: any) {
   const isActive = usePathname().endsWith(link.href)
  
   return (
-    <div className='flex gap-1'>
-      {isActive ? <div className='w-[10px] h-[10px] bg-blue-600 mt-[7px]'></div> : <div className='w-[10px] h-[10px] bg-blue-600 mt-[7px] bg-transparent'></div>}
+    <div className='flex gap-2'>
+      {isActive ? <div className='w-[6px] h-[6px] bg-blue-600 mt-[9px]'></div> : <div className='w-[6px] h-[6px] bg-blue-600 mt-[7px] bg-transparent'></div>}
       <Link
       target={link.target}
       className={isActive ? 'active' : link.status}
