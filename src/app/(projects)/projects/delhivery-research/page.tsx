@@ -39,18 +39,17 @@ export default function DelhiveryResearch() {
         {/* ---------- Back button here ---------- */}
 
 
-        <div className="sticky top-10 items-left body_width grid gap-24 mt-8 font-medium" style={{color: "#0069E5"}}>
+        <div className="left-0 flex items-center">
             <Link href={"/"}>
-                <div className="inline-flex items-center justify-start hover:underline gap-2 button_small cursor-pointer">
-                  <Image
-                  src={ArrowBack}
-                  alt="back arrow icon"
-                  width={20}
-                  className="arrow-back-icon"
-                  /> Go Back
-                </div>
+              <div className="goback_button">
+                <Image src={"/arrow_back.svg"} 
+                alt="back arrow icon" 
+                width={20}
+                height={20}
+                className="arrow-back-icon" />
+              </div>
             </Link>
-        </div>
+          </div>
 
 
 

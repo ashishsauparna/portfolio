@@ -2,31 +2,19 @@
 
 import ArrowHeading from "@/app/components/ui/arrowheading";
 import Footer from "@/app/components/ui/footer";
-import NavBar from "@/app/components/ui/navbar";
 import Link from "next/link";
 import Script from "next/script";
 import Image from "next/image";
-// import ResearchImg from "@/../../public/projects/buttonsmith/research.png";
-// import Banner from "@/../../public/projects/buttonsmith/banner.png";
-// import Competitors from "@/../../public/projects/buttonsmith/competitor_research.png";
-// import Moscow from "@/../../public/projects/buttonsmith/moscow.png";
-// import UIFrames from "@/../../public/projects/buttonsmith/uiframes.png";
-// import ColorGuide from "@/../../public/projects/buttonsmith/colorequation.png";
-// import UIAnatomy from "@/../../public/projects/buttonsmith/anatomy.png";
-// import UICollective from "@/../../public/projects/buttonsmith/uicollective.png";
-// import ArrowBack from "@/../../public/arrow_back.svg";
-// import DP from "@/../../public/ashish_sharma.png";
-// import LakshyaDP from "@/../../public/lakshya_raj.png";
-// import StarSVG from "@/../../public/star.svg";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function ButtonSmithResearch() {
 
   const [activeSection, setActiveSection] = useState('story');
+  const [showBackArrow, setShowBackArrow] = useState(false);
   const router = useRouter();
 
-  // Handle scrolling with an offset
   const handleScroll = (e: React.MouseEvent<HTMLDivElement>, id: string) => {
     e.preventDefault();
 
@@ -36,11 +24,11 @@ export default function ButtonSmithResearch() {
 
       // Adjust the scroll position slightly above the section
       setTimeout(() => {
-        window.scrollBy({ top: -150, behavior: 'smooth' }); // Adjust -80 as needed
-      }, 300); // Adjust the delay if necessary
+        window.scrollBy({ top: 1, behavior: 'smooth' });
+      }, 300);
 
       // Update URL without reloading the page
-      router.push(`#${id}`);
+      router.replace(`#${id}`);
     }
   };
 
@@ -51,10 +39,17 @@ export default function ButtonSmithResearch() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
+
+            // Show back arrow if we've scrolled past 'story'
+            if (entry.target.id === 'story') {
+              setShowBackArrow(false);
+            } else {
+              setShowBackArrow(true);
+            }
           }
         });
       },
-      { threshold: 0.5 } // Adjust the threshold as needed
+      { threshold: 0.5 }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -67,7 +62,7 @@ export default function ButtonSmithResearch() {
 
   return (
 
-    <main className="flex min-h-screen flex-col items-center">
+    <main id="top" className="flex min-h-screen flex-col items-center">
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-2N9F9N8KHK" />
         <Script id="google-analytics">
             {`
@@ -85,22 +80,30 @@ export default function ButtonSmithResearch() {
         {/* ---------- Back button and Navigation Menu Here ---------- */}
 
 
-        <div className="flex sticky top-10 body_width font-medium z-50 gap-4 mt-8 justify-center">
+        <div className="flex sticky top-4 body_width font-medium z-50 gap-4 justify-center">
 
-          <div className="left-0 flex items-center">
-            <Link href={"/"}>
-              <div className="goback_button">
-                <Image src={"/arrow_back.svg"} 
-                alt="back arrow icon" 
-                width={20}
-                height={20}
-                className="arrow-back-icon" />
-                <span className="go_back_text">
-                  Go Back
-                </span>
-              </div>
-            </Link>
-          </div>
+        <AnimatePresence>
+          {showBackArrow && (
+            <div className={`left-0 flex items-center ${activeSection === 'story' ? 'active' : ''}`} onClick={(e) => handleScroll(e, 'top')}>
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="goback_button">
+                  <Image
+                    src="/arrow_back.svg"
+                    alt="back arrow icon"
+                    width={20}
+                    height={20}
+                    className="arrow-back-icon"
+                  />
+                </div>
+              </motion.div>
+            </div>
+          )}
+        </AnimatePresence>
 
           <div className="sticky_navigation flex gap-1 justify-center">
             <Link href="#story" passHref>
@@ -130,7 +133,7 @@ export default function ButtonSmithResearch() {
 
 
 
-        <div className="items-left body_width grid gap-24 mt-48">
+        <div className="items-left body_width grid mt-48">
 
 
 
@@ -178,19 +181,20 @@ export default function ButtonSmithResearch() {
         sizes="100vw"
         width={500}
         height={500}
+        id="banner"
         />
 
 
 
 
 
-        <div className="items-left body_width grid gap-24 mt-24">
+        <div className="items-left body_width grid">
 
 
         {/* ---------- Objective ---------- */}
 
 
-        <div id="story" className='content_grid_two w-full gap-24' data-section>
+        <div id="story" className='content_grid_two w-full gap-24 pt-24' data-section>
           <div style={{width:"70%"}}></div>
           <div className="flex flex-col gap-16">
             <div>
@@ -262,7 +266,7 @@ export default function ButtonSmithResearch() {
         {/* ---------- Research Approach ---------- */}
 
 
-        <div id="research" className='content_grid_two gap-24 w-full' data-section>
+        <div id="research" className='content_grid_two gap-24 w-full pt-24' data-section>
           <div style={{width:"70%"}}>
             <ArrowHeading heading = "Research Approach" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=654-7&t=SaIecvX0yD7wvp7I-1"/>
             <div className='grid grid-cols-1 grid-rows-2 gap-x-1 justify-between gap-y-2'>
@@ -351,7 +355,7 @@ export default function ButtonSmithResearch() {
         {/* ---------- Design Approach ---------- */}
 
 
-        <div id="design" className="content_grid_two gap-24 mt-24 body_width" data-section>
+        <div id="design" className="content_grid_two pt-24 body_width" data-section>
 
           <div style={{width:"70%"}}>
             <ArrowHeading heading = "Design Approach" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=656-195&t=SaIecvX0yD7wvp7I-1"/>
@@ -429,7 +433,7 @@ export default function ButtonSmithResearch() {
         {/* ---------- Solution and Challenges ---------- */}
 
 
-        <div id="learnings" className='content_grid_two gap-24 body_width mt-24' data-section>
+        <div id="learnings" className='content_grid_two body_width pt-24' data-section>
           {/* Challenges & learnings */}
 
               <ArrowHeading heading = "Challenges & learnings (1)" arrow={true}/>
@@ -525,7 +529,7 @@ export default function ButtonSmithResearch() {
         {/* ---------- Solution and Challenges ---------- */}
 
 
-        <div className='content_grid_two gap-24 body_width mt-24'>
+        <div className='content_grid_two body_width pt-24'>
                   {/* Challenges & learnings */}
 
               <ArrowHeading heading = "Challenges & learnings (2)" arrow={true}/>
@@ -579,7 +583,7 @@ export default function ButtonSmithResearch() {
         {/* ---------- Final thoughts & conclusion ---------- */}
 
 
-        <div id="takeaways" className='content_grid_two gap-24 body_width mt-24 mb-24' data-section>
+        <div id="takeaways" className='content_grid_two gap-24 body_width pt-24 mb-24' data-section>
         
               <ArrowHeading heading = "Key Takeaways" arrow={true}/>
               <div className="grid">

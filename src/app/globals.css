@@ -206,7 +206,8 @@ main{
   justify-content: space-between; /* Center the navigation items */
   align-items: center;
   padding-bottom: 24px;
-  margin: 2rem auto; /* shorthand to combine top and horizontal centering */
+  padding: 2rem 0rem;
+  margin: 0rem auto; /* shorthand to combine top and horizontal centering */
   width: 90%;
   z-index: 100;
 }
@@ -367,7 +368,7 @@ li .mobile_ui:hover{
   align-items: center;
   font-weight: 400;
   height: 36px;
-  padding: 4px 16px 4px 12px; /* Change padding on hover */
+  padding: 4px 12px 4px 12px; /* Change padding on hover */
   justify-content: flex-start;
   background-color: #0069E5;
   gap: 0px; /* 8px gap between items */
@@ -376,13 +377,12 @@ li .mobile_ui:hover{
   z-index: 1000;
   border: none;
   color: #fefefe;
-  transition: all 0.3s ease;
 }
 
 .goback_button:hover {
-  border-radius: 0px; /* Remove rounding on hover */
-  padding: 4px 16px 4px 12px; /* Change padding on hover */
+  padding: 4px 12px 4px 12px; /* Change padding on hover */
   text-decoration: underline;
+  background-color: #0b5ab4;
 }
 
 .go_back_text{
@@ -400,6 +400,7 @@ li .mobile_ui:hover{
 .arrow-back-icon {
   transition: filter 0.1s ease;
   margin-top: -2px;
+  transform: rotate(90deg);
   filter: brightness(0) invert(1);
   transition: ease-in-out 0.2s;
 }
@@ -806,22 +807,23 @@ footer{
   backdrop-filter: blur(10px); /* Blurring effect */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   padding: 4px 4px; /* Adjust padding for better appearance */
-  color: #E0E0E0; /* Light text color for contrast */
+  color: #fefefe; /* Light text color for contrast */
   font-size: var(--small-font-size);
   font-family: var(--font-space-gothic);
-  font-weight: 400;
-  border-radius: 4px; /* No rounded corners */
+  font-weight: 360;
+  border-radius: 2px; /* No rounded corners */
+  transition: 0.3s ease-in-out;
 }
 
 .nav_link {
   padding: 4px 12px; /* Padding for each link */
   text-decoration: none; /* Remove underline */
   cursor: pointer; /* Pointer cursor for links */
-  border-radius: 2px;
+  border-radius: 1px;
 }
 
 .nav_link:hover {
-  background-color: #9d9d9d;
+  background-color: #949494;
 }
 
 .nav_link.active {
