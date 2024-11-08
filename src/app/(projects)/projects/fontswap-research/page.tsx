@@ -596,6 +596,20 @@ export default function FontSwapResearch() {
 
 
 
+        {/* ---------- Images ---------- */}
+
+
+        <Image
+        src={"/projects/fontswap/feedback.png"}
+        alt="how might we questions"
+        className="w-full mt-24"
+        sizes="100vw"
+        width={100}
+        height={100}
+        />
+
+
+
 
 
 
