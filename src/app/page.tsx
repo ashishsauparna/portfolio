@@ -39,7 +39,7 @@ export default function Home() {
 
       {/* <MoveImage path={Banner}/> */}
       <div className='items-left body_width'>
-        <div className='mt-40'>
+        <div className='mt-48'>
 
           <div className='flex flex-col gap-4 items-center justify-center text-center w-full large_intro'>
 
@@ -68,7 +68,7 @@ export default function Home() {
             </Link>
           </h4>
 
-          <h3 className='flex gap-1 text-gray-500 text-sm mt-28'>
+          <h3 className='flex gap-1 text-gray-500 text-sm mt-48'>
             Scroll Down
             <Image
             src={'/arrow_downward.svg'}
