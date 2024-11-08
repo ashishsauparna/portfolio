@@ -124,11 +124,11 @@ b{
 
 /*Defining headings*/
 h1{
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-family: var(--font-space-gothic);
   margin-bottom: 1rem;
   font-weight: 250;
-  line-height: 3rem;
+  line-height: 3.4rem;
 }
 
 h2{
@@ -202,6 +202,7 @@ main{
 /* components/Navbar.module.css */
 
 .web_nav {
+  position: relative;
   display: flex;
   justify-content: space-between; /* Center the navigation items */
   align-items: center;
@@ -209,7 +210,7 @@ main{
   padding: 2rem 0rem;
   margin: 0rem auto; /* shorthand to combine top and horizontal centering */
   width: 90%;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .mobile_nav{

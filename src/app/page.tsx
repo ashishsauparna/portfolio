@@ -5,9 +5,6 @@ import Image from 'next/image';
 import Script from 'next/script';
 import { Metadata } from 'next';
 import Link from 'next/link';
-// import Banner from '/banner.png';
-// import MediumIcon from '/medium_icon.svg';
-// import LinkedinIcon from '/linkedin_icon.svg';
 
 export const metadata: Metadata = {
   title: 'Ashish Sharma UX Designer',
@@ -34,14 +31,16 @@ export default function Home() {
       width={100}
       height={100}
       alt='background banner'
-      className='-z-10 absolute top-0 w-full'
+      className='z-0 absolute top-0 w-full'
       />
 
       {/* <MoveImage path={Banner}/> */}
-      <div className='items-left body_width'>
-        <div className='mt-48'>
+      <div className='items-left body_width z-10 relative'>
+        <div>
 
-          <div className='flex flex-col gap-4 items-center justify-center text-center w-full large_intro'>
+          <div className='flex flex-col items-center justify-center text-center w-full large_intro'>
+
+          <div className="flex flex-col gap-4 items-center justify-center h-screen w-full -mt-24">
 
           <h1 className='font-noto-serif text-slate-800 w-[65%] mb-0' 
           style={{ letterSpacing: '-0.02em' }}
@@ -51,7 +50,7 @@ export default function Home() {
             </span>
           </h1>
 
-          <h4 className='w-[50%] opacity-80 inline font-[350]'>
+          <h4 className='w-[50%] opacity-80 inline font-[350] z-50'>
             Sharing design insights on &nbsp;
             <Link className='link_button' href={'https://medium.com/@ashishsauparna'}>
             <span className='relative mr-4'>
@@ -68,19 +67,25 @@ export default function Home() {
             </Link>
           </h4>
 
-          <h3 className='flex gap-1 text-gray-500 text-sm mt-48'>
+          </div>
+
+          <div className="flex flex-col justify-between">
+          {/* Other content above */}
+
+          <h3 className='flex gap-1 text-gray-500 text-sm self-center -mt-24'>
             Scroll Down
             <Image
-            src={'/arrow_downward.svg'}
-            alt='arrow'
-            width={16}
-            height={16}
-            className='opacity-50'
+              src={'/arrow_downward.svg'}
+              alt='arrow'
+              width={16}
+              height={16}
+              className='opacity-50'
             />
           </h3>
+          </div>
 
 
-          <h4 className='skills_list flex flex-wrap gap-12 items-center justify-center w-[100%] font-[350] text-gray-700 text-sm mt-4'>
+          <h4 className='skills_list flex flex-wrap gap-12 items-center justify-center w-[100%] font-[350] text-gray-700 text-sm'>
             <span className='flex gap-2'>
               <span>💬</span>
               <span>User research</span>
