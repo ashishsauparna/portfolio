@@ -497,7 +497,7 @@ export default function FontSwapResearch() {
 
 
         <Image
-        src={"/projects/fontswap/uiframes.png"}
+        src={"/projects/fontswap/uiframes.jpg"}
         alt="how might we questions"
         className="w-full mt-24"
         sizes="100vw"
