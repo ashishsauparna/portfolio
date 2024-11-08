@@ -463,7 +463,7 @@ export default function FontSwapResearch() {
 
                   <div className="description_tab2">
                       <div style={{fontWeight: "350"}}>
-                      Used the Jacob&apos;s law of similarity by keeping the plugin design similar 
+                      Just like the Jacob&apos;s law of similarity by keeping the plugin design similar 
                       to popular plugin (Font Replacer) in the font replacement category.
                       </div>
                   </div>
