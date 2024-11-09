@@ -72,30 +72,29 @@ export default function MotionCV(){
                 <h5 className='mb-4 text-2xl text-slate-900'>Education</h5>
                 {education.map((data, index) => (
                     <div key={index} className='leading-7 mb-4'>
-                    <span style={{fontWeight:"460"}}>{data.study}</span>
-                    <br/><p className='text-gray-500 text-lg font-medium'>{data.school}</p>
+                    <p className='font-medium'>{data.study}</p>
+                    <p>{data.school}</p>
                     </div>
                 ))}
             </div>
             <div>
               <h5 className='mb-4 text-2xl text-slate-900'>Projects &  Contribution</h5>
                     <div className='leading-7 mb-4'>
-                    <span style={{fontWeight:"460"}}>Figma - Font Swap Plugin (+20K users)</span><br/>
-                    <p className='text-gray-500 text-lg font-medium'>UX Designer + Developer | July 2023 - Present</p>
+                    <p className="font-medium">Figma - Font Swap Plugin (25,000+ users)</p>
+                    <p>UX Designer + Developer | July 2023 - Present</p>
                     </div>
 
                     <div className='leading-7 mb-4'>
-                    <span style={{fontWeight:"460"}}>Figma - Button Smith Plugin (+600 users)</span><br/>
-                    <p className='text-gray-500 text-lg font-medium'>UX Designer + Developer | May 2024 - Present</p>
+                    <p className="font-medium">Figma - Button Smith Plugin (600+ users)</p>
+                    <p>UX Designer + Developer | May 2024 - Present</p>
                     </div>
               </div>
             <div>
-                <h5 className='mb-y4  text-2xl text-slate-900'>Experience</h5>
+                <h5 className='mb-4  text-2xl text-slate-900'>Experience</h5>
                 {experience.map((data, index) => (
                     <div key={index} className='leading-7 mb-4'>
-                    
-                    <span style={{fontWeight:"460"}}>{data.company}</span><br/>
-                    <p className='text-gray-500 text-lg font-medium'>{data.position}</p>
+                    <p className="font-medium">{data.company}</p>
+                    <p>{data.position}</p>
                     </div>
                 ))}
             </div>

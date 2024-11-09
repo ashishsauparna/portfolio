@@ -2,15 +2,12 @@
 
 import { useEffect, useState } from 'react';
 import Navigation from './navigation';
-// import Icon from '/public/as_logo.svg';
-// import IconGif from '/public/as_logo_closed.svg';
 import Image from 'next/image';
 import { Twirl as Hamburger } from 'hamburger-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Button from './button';
 import SmallButton from './button_small';
-// import OutwardArrow from '/public/outward_arrow.svg';
 
 export default function NavBar() {
 

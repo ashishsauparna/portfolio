@@ -5,6 +5,7 @@ import Image from 'next/image';
 // import IgStory from '/public/books_story.jpg';
 import Inspirations from '../inspirations';
 import Script from 'next/script';
+import Books from '../books';
 
 export const metadata: Metadata = {
   title: 'My Reads',
@@ -72,26 +73,14 @@ export default function MyReads() {
                 <h5 className='text-2xl text-slate-900 -mt-2'>People that inspire me</h5>
                 <Inspirations/>
               </div>
-            </div>
-          </div>
-          </div>
 
-        {/* <div className='recomendation_content mt-24 !items-start'>
-          <div>
-            <h1 className='mb-4'>My design inspiration</h1>
-            <div style={{display:"flex", alignItems:"flex-start", gap:"16px", flexWrap:"wrap"}}>
-              {
-                designInsp.map((data, index) => (
-                  <Link key={index} href={data.href} style={{padding:"4px 16px", border:"1px solid #383838", fontSize:"1rem"}}>{data.name}</Link>
-                ))
-              }
+              <div className='flex flex-col gap-2 items-start'>
+                <h5 className='text-2xl text-slate-900 -mt-2'>My Reads</h5>
+                <Books/>
+              </div>
             </div>
           </div>
-          <div>
-          <h1 className='mb-4'>People that inspire me</h1>
-          <Inspirations/>
           </div>
-        </div> */}
         <Footer/>
       </main>    
   )

@@ -2,12 +2,6 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-// import ChrisDo from '/public/inspiration/chris_do.jpeg';
-// import MatKal from '/public/inspiration/mat_kal.jpeg';
-// import Femke from '/public/inspiration/femke.jpeg';
-// import Kimya from '/public/inspiration/kimya.jpeg';
-// import Sapta from '/public/inspiration/sapta.jpeg';
-// import Ashwini from '/public/inspiration/ashwini.jpeg';
 import { animate, motion } from 'framer-motion';
 
 export default function Inspirations() {
