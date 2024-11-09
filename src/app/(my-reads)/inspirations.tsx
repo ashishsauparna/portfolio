@@ -17,30 +17,35 @@ export default function Inspirations() {
           img: "/inspiration/chris_do.jpeg",
           alt:"",
           name:"Cris Do",
+          social: "Instagram",
           href:"https://instagram.com/thechrisdo?igshid=MzRlODBiNWFlZA=="
         },
         {
           img: "/inspiration/mat_kal.jpeg",
           alt:"",
           name:"Maitreyee Kalaskar",
+          social: "Instagram",
           href:"https://instagram.com/maitreyee_kal?igshid=MzRlODBiNWFlZA=="
         },
         {
           img: "/inspiration/femke.jpeg",
           alt:"",
           name:"Femke",
+          social: "Instagram",
           href:"https://instagram.com/femkedotdesign?igshid=MzRlODBiNWFlZA=="
         },
         {
           img: "/inspiration/kimya.jpeg",
           alt:"",
           name:"Kimya Gandhi",
+          social: "Instagram",
           href:"https://instagram.com/kimyagandhi?igshid=MzRlODBiNWFlZA=="
         },
         {
           img: "/inspiration/sapta.jpeg",
           alt:"",
           name:"Saptarshi Prakash",
+          social: "Instagram",
           href:"https://instagram.com/saptarshiux?igshid=MzRlODBiNWFlZA=="
         },
         // {
@@ -53,7 +58,15 @@ export default function Inspirations() {
           img: "/inspiration/ashwini.jpeg",
           alt:"",
           name:"Ashwini Deshpande",
+          social: "Instagram",
           href:"https://instagram.com/ashwinielephant?igshid=MzRlODBiNWFlZA=="
+        },
+        {
+          img: "/inspiration/Phoebe_Yu.jpg",
+          alt:"",
+          name:"Phoebe Yu",
+          social: "Youtube",
+          href:"https://www.youtube.com/@phoebeyutbt"
         },
       ]
 
@@ -99,7 +112,7 @@ export default function Inspirations() {
                 </div>
                 <div>
                   <h3>{data.name}</h3>
-                  <p className='text-base -mt-2'>Instagram</p>
+                  <p className='text-base -mt-2 link_button'>{data.social}</p>
                 </div>
               </div>
               </Link>

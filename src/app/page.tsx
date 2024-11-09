@@ -108,12 +108,6 @@ export default function Home() {
             </span>
           </h4>
 
-          {/* <div className="flex items-center my-6 w-full mt-36 gap-12">
-            <div className="flex-grow border-t border-black bg-gray-900 w-full"></div>
-            <h3 className="mx-4 font-noto-serif font-normal font-extralight whitespace-nowrap">Featured Projects</h3>
-            <div className="flex-grow border-t border-black bg-gray-900 w-full"></div>
-          </div> */}
-
           </div>
         </div>
         <div>
