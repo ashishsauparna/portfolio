@@ -62,7 +62,7 @@ b{
   row-gap: 8rem;
   column-gap: 8rem;
   grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
-  margin-top: 8rem; /* Sets top margin to 8 units */
+  margin-top: 4rem; /* Sets top margin to 8 units */
   margin-bottom: 24px; /* Sets bottom margin to 24 units */
   box-sizing: border-box; /* Ensure padding/margin don't mess with the total width */
 }
@@ -84,14 +84,6 @@ b{
 
 .skills_list{
   padding: 12px;
-  background: linear-gradient(
-    90deg, /* Horizontal gradient */
-    rgba(51, 51, 51, 0.01) 0%,          /* Dark gray (#333333) at 0% with 1% opacity */
-    rgba(35, 35, 35, 0.01) 20%,         /* Darker gray (#232323) at 20% with 1% opacity */
-    rgba(0, 0, 0, 0.02) 48%,            /* Black (#000000) at 48% with 2% opacity */
-    rgba(55, 55, 55, 0.01) 76%,         /* Gray (#373737) at 76% with 1% opacity */
-    rgba(102, 102, 102, 0.01) 100%      /* Light gray (#666666) at 100% with 1% opacity */
-  );
 }
 
 .articles_grid {

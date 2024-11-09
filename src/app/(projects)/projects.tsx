@@ -1,10 +1,6 @@
 'use client'
 
 import Image from 'next/image';
-// import fontSwapImg from '/public/fontswap_2.jpg';
-// import rozgarImg from '/public/case_study_rozgar.jpg';
-// import buttonSmithImg from '/public/button_smith_banner.jpg'
-// import Sanskriti from '/public/sanskriti_2.jpg'
 import Link from 'next/link';
 import { animate, motion } from 'framer-motion';
 
@@ -51,22 +47,6 @@ export default function ProjectsData() {
       impactcss: 'bg-[rgba(65,65,65,0.7)] bottom-8 left-8',
       impactData1:'Global users gained in 7 months of first launch',
     },
-    // {
-    //   src: delhiveryPoster,
-    //   srcBlur:"", 
-    //   alt: "Vector image of 2 folders with the label of outside-in analysis",
-    //   href: "/projects/delhivery-research",
-    //   blank:"_self",
-    //   readTime: '🎨 Work in Progress',
-    //   new: "Dec 23",
-    //   headingP1: "Outside In Analysis: ",
-    //   headingP2: "UX Research - Dec 2023",
-    //   subHeading:"Understanding the logistics trend and innovations",
-    //   large: false,
-    //   shortImage: true,
-    //   css: 'readtime_marqee',
-    //   impact: false,
-    // },
     {
       src: "/case_study_rozgar.jpg",
       srcBlur:"",
@@ -172,7 +152,6 @@ export default function ProjectsData() {
                 <b className={`font-space-gothic uppercase text-base font-semibold`}>{image.impactHeader}</b>
                 <div className='flex flex-col gap-0'>
                   <div dangerouslySetInnerHTML={{ __html: image.impactData1 || '' }} />
-                  {/* <div dangerouslySetInnerHTML={{ __html: image.impactData2 || '' }} /> */}
                 </div>
                 
               </div>

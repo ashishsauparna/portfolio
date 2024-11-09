@@ -36,8 +36,8 @@ export default function Home() {
 
       {/* <MoveImage path={Banner}/> */}
       <div className='items-left body_width z-10 relative'>
+        
         <div>
-
           <div className='flex flex-col items-center justify-center text-center w-full large_intro'>
 
           <div className="flex flex-col gap-4 items-center justify-center h-screen w-full -mt-24">
@@ -73,7 +73,7 @@ export default function Home() {
           {/* Other content above */}
 
           <h3 className='flex gap-1 text-gray-500 text-sm self-center -mt-24'>
-            Scroll Down
+            Scroll down to view work
             <Image
               src={'/arrow_downward.svg'}
               alt='arrow'
