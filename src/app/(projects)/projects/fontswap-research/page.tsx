@@ -622,6 +622,7 @@ export default function FontSwapResearch() {
               <div className="grid">
               <b style={{fontWeight:"500", marginBottom:"2rem"}}>Reflection on the outcomes</b>
               New challenges continue to arise, but identifying them is key. For instance, the current issue is:
+              <br/>
               Users are facing a problem with &quot;text-style&quot; becoming detached when changing the font.
               To understand the issue better, I&apos;ve sent a survey to actual users via email.
               Once I receive satisfactory feedback, I will start working on the solution.
