@@ -621,8 +621,10 @@ export default function FontSwapResearch() {
               <ArrowHeading heading = "Key Takeaways" arrow={true}/>
               <div className="grid">
               <b style={{fontWeight:"500", marginBottom:"2rem"}}>Reflection on the outcomes</b>
-              New challenges do still arrive, but identifying them is a key. Once they are identified, 
-              I know that I&apos;ll eventually find better solutions.
+              New challenges continue to arise, but identifying them is key. For instance, the current issue is:
+              Users are facing a problem with &quot;text-style&quot; becoming detached when changing the font.
+              To understand the issue better, I&apos;ve sent a survey to actual users via email.
+              Once I receive satisfactory feedback, I will start working on the solution.
               </div>
         </div>
 
