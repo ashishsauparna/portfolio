@@ -23,9 +23,8 @@ export default function ProjectsData() {
       shortImage: true,
       css: 'readtime_marqee',
       impact: true,
-      impactHeader: '20k+ Users',
+      impactHeader: 'Over 25k users',
       impactcss: 'bg-[rgba(104,104,104,0.7)] bottom-8 left-8',
-      impactData1:'Global users gained within 1 year of launch',
     }, 
      
     {
@@ -43,9 +42,8 @@ export default function ProjectsData() {
       shortImage: true,
       css: 'readtime_marqee',
       impact: true,
-      impactHeader: 'Over 600',
+      impactHeader: 'Over 700 users in 8 months of launch',
       impactcss: 'bg-[rgba(65,65,65,0.7)] bottom-8 left-8',
-      impactData1:'Global users gained in 7 months of first launch',
     },
     {
       src: "/case_study_rozgar.jpg",
@@ -150,9 +148,6 @@ export default function ProjectsData() {
               image.impact ?
               <div style={{color:"#E9E9E9"}} className={`impact_on_image ${image.impactcss}`}>
                 <b className={`font-space-gothic uppercase text-base font-semibold`}>{image.impactHeader}</b>
-                <div className='flex flex-col gap-0'>
-                  <div dangerouslySetInnerHTML={{ __html: image.impactData1 || '' }} />
-                </div>
                 
               </div>
                 : null

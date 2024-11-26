@@ -1,4 +1,4 @@
-import { Albert_Sans, Alegreya, Noto_Serif, Space_Grotesk} from 'next/font/google';
+import { Albert_Sans, Noto_Serif, Space_Grotesk} from 'next/font/google';
 import localFont from 'next/font/local';
 
  
@@ -14,28 +14,30 @@ export const NotoSerif = Noto_Serif({
   display: 'swap',
 })
 
-export const AlegreyaFont = Alegreya({
-  subsets: ['latin'],
-  variable: '--font-alegreya',
-})
-
 export const SpaceGothic = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-space-gothic',
   display: 'swap'
 })
 
-export const ABCFont = localFont({
-  src: './fonts/ABCWhyteInktrap.woff2',
-  variable: '--font-abc-whyte',
-})
 
-export const OffBit = localFont({
-  src: './fonts/OffBit.woff2',
-  variable: '--font-offbit',
-})
-
-export const Recoleta = localFont({
-  src: './fonts/Recoleta-Regular.ttf',
-  variable: '--font-recoleta',
-})
+export const RecklessNeue = localFont({
+  src: [
+    {
+      path: './fonts/RecklessNeue-Book.ttf',
+      weight: '300', // Book weight is typically light
+      style: 'normal',
+    },
+    {
+      path: './fonts/RecklessNeue-Regular.ttf',
+      weight: '400', // Regular weight
+      style: 'normal',
+    },
+    {
+      path: './fonts/RecklessNeue-SemiBold.ttf',
+      weight: '600', // SemiBold weight
+      style: 'normal',
+    },
+  ],
+  variable: '--font-recklessneue',
+});

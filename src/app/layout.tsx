@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { AlbertSans, AlegreyaFont, SpaceGothic, ABCFont, OffBit, Recoleta, NotoSerif } from './fonts'
+import { AlbertSans, SpaceGothic, NotoSerif, RecklessNeue } from './fonts'
 import NavBar from './components/ui/navbar'
 
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${AlbertSans.variable} ${SpaceGothic.variable} ${AlegreyaFont.variable} ${ABCFont.variable} ${OffBit.variable} ${Recoleta.variable} ${NotoSerif.variable}`}>
+    <html lang="en" className={`${AlbertSans.variable} ${SpaceGothic.variable} ${RecklessNeue.variable} ${NotoSerif.variable}`}>
       <body>
         <NavBar />
         {children}

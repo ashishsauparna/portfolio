@@ -14,15 +14,9 @@ export default function Footer() {
 
   return (
       <footer>
-
-        <Image className='absolute bottom-0 -z-10 w-full' 
-        width={42}
-        height={42}
-        src={"/footer_image.png"} 
-        alt={'footer image'}/>
-        <div className='absolute font-noto-serif w-full -mt-20 bg-blue-600 text-sm text-white py-2'>
+        <div className='absolute w-full -mt-20 bg-blue-600 text-sm text-white py-2'>
         <Marquee autoFill pauseOnHover speed={30}>
-          &nbsp;&nbsp;{tickerString}
+          &nbsp;&nbsp;
         </Marquee>
         </div>
         
@@ -31,7 +25,9 @@ export default function Footer() {
         <div className="footer_grid items-center justify-between w-full py-4">
 
           <div className='flex-shrink-0 mr-auto font-normal items-center'>
-            <div className='mb-4'>Interested in working together?</div>
+            <h1 className='mb-8' style={{fontSize:"2.2rem", lineHeight:"2.6rem", fontWeight:"300"}}>Do you want to start
+              <br/>
+               a project together?</h1>
             <SmallButton name="Contact me 📝"
             href="mailto:ashishsauparna@gmail.com"/>
           </div>
@@ -44,52 +40,52 @@ export default function Footer() {
 
         <li className='flex'>
           <Navigation target="_blank" name="Resume" href="https://drive.google.com/file/d/1ZSNwRmH_NFad1FuJxVxoCsSnlrOGHxR5/view?usp=share_link" status="mobile_ui"/> &nbsp;
-          <Image
+          {/* <Image
           src={"/outward_arrow.svg"}
           alt='outward arrow icon'
           width={20}
           height={20}
-          />
+          /> */}
         </li> 
 
         <li className='flex'>
           <Navigation target="_blank" name="Figma Community" href="https://www.figma.com/@ashishsauparna" status="mobile_ui"/> &nbsp;
-          <Image
+          {/* <Image
           src={"/outward_arrow.svg"}
           alt='outward arrow icon'
           width={20}
           height={20}
-          />
+          /> */}
         </li>
 
 
         <li className='flex'>
           <Navigation target="_blank" name="Linkedin" href="https://www.linkedin.com/in/ashishsauparna/" status="mobile_ui"/> &nbsp;
-          <Image
+          {/* <Image
           src={"/outward_arrow.svg"}
           alt='outward arrow icon'
           width={20}
           height={20}
-        />
+        /> */}
         </li>
 
 
         
         <li className='flex'>
           <Navigation target="_blank" name="Medium" href="https://medium.com/@ashishsauparna" status="mobile_ui"/> &nbsp;
-          <Image
+          {/* <Image
           src={"/outward_arrow.svg"}
           alt='outward arrow icon'
           width={20}
           height={20}
-        />
+        /> */}
           </li>
         </ul>
         </div>
         </div>
         
         
-        <p className='mt-12 pt-2 leading-[2rem] mt-20 border-t border-slate-300'>
+        <p className='mt-36 pt-2 leading-[2rem] mt-20 border-t border-slate-300'>
         © Assembled with pixels by Ashish. Last updated Oct 2024
         </p>
         </div>
