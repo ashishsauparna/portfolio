@@ -3,10 +3,9 @@
 import { useEffect, useState } from 'react';
 import Navigation from './navigation';
 import Image from 'next/image';
-import { Twirl as Hamburger } from 'hamburger-react';
+import { Pivot as Hamburger } from 'hamburger-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Button from './button';
 import SmallButton from './button_small';
 
 export default function NavBar() {
@@ -81,13 +80,15 @@ export default function NavBar() {
           height={16}
           />
           </li>
-          {/* <li>
-            <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" />
-          </li> */}
         </ul>
         <SmallButton name="Hire Me 📝" href="mailto:ashishsauparna@gmail.com"/>
       </nav>
-      <nav className='mobile_nav w-full pt-2 pb-2'>
+
+
+      
+      <nav className='mobile_nav'>
+
+        {/* Logo Section */}
         <Link href={'/'}>
             <div className='logo_container'>
           <Image
@@ -97,43 +98,43 @@ export default function NavBar() {
             width={60}
             height={60}
             className='icon' />
+
+            &nbsp;Ashish
             </div>
         </Link>
-          <div className='z-10'>
-          <Hamburger size={30} duration={0.3} easing="ease-in" toggled={isOpen} toggle={setOpen} />
-          </div>
-            <motion.div
-              initial={{ y: '100%' }}
-              animate={{ y: isOpen ? '0%' : '100%' }}
-              transition={{ type: 'ease-in', duration: 0.3 }}>
-              {/* Content of the animated container */}
-              <div className='mobile_nav_view'>
-              <div className='absolute bottom-0 justify-between'>
-              <ul className='grid gap-8 mb-28 text-3xl'>
-                <li>
-                  <Navigation name="Home" href="/" status="mobile_ui" />
-                </li>
-                <li>
-                  <Navigation name="About Me" href="/about-me" status="mobile_ui" />
-                </li>
-                <li>
-                  <Navigation name="My Reads" href="/my-reads" status="mobile_ui" />
-                </li>
-                <li>
-                  <Navigation name="Figma Page" href="https://www.figma.com/@ashishsauparna" status="mobile_ui" />
-                </li>
-                <li>
-                  <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" status="mobile_ui" />
-                </li>
-                <li>
-                  <Navigation name="LinkedIn" href="https://www.linkedin.com/in/ashishsauparna/" status="mobile_ui" />
-                  <p className='text-2xl mt-2 text-gray-500'>Connect with my UX journey</p>
-                </li>
-              </ul>
-              </div>
-              </div>
-            </motion.div>
+
+        {/* Hamburger Section */}
+        <div className='z-10'>
+        <Hamburger size={30} duration={0.3} easing="ease-in" toggled={isOpen} toggle={setOpen} />
+        </div>
       </nav>
+
+      {/* Motion Div for Menu */}
+      <motion.div
+          initial={{ y: '100%' }}
+          animate={{ y: isOpen ? '0%' : '100%' }}
+          transition={{ type: 'ease-in', duration: 0.2 }}>
+
+          {/* Content of the animated container */}
+          <div className='mobile_nav_view'>
+          <div className='absolute bottom-0 justify-between'>
+          <ul className='grid gap-8 mb-28 text-3xl'>
+            <li>
+              <Navigation name="Home" href="/" status="mobile_ui" />
+            </li>
+            <li>
+              <Navigation name="About Me" href="/about-me" status="mobile_ui" />
+            </li>
+            <li>
+              <Navigation name="Inspirations" href="/my-reads" status="mobile_ui" />
+            </li>
+            <li>
+              <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" status="mobile_ui" />
+            </li>
+          </ul>
+          </div>
+          </div>
+        </motion.div>
       </>
   )
 }

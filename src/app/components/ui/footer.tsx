@@ -40,45 +40,21 @@ export default function Footer() {
 
         <li className='flex'>
           <Navigation target="_blank" name="Resume" href="https://drive.google.com/file/d/1ZSNwRmH_NFad1FuJxVxoCsSnlrOGHxR5/view?usp=share_link" status="mobile_ui"/> &nbsp;
-          {/* <Image
-          src={"/outward_arrow.svg"}
-          alt='outward arrow icon'
-          width={20}
-          height={20}
-          /> */}
         </li> 
 
         <li className='flex'>
           <Navigation target="_blank" name="Figma Community" href="https://www.figma.com/@ashishsauparna" status="mobile_ui"/> &nbsp;
-          {/* <Image
-          src={"/outward_arrow.svg"}
-          alt='outward arrow icon'
-          width={20}
-          height={20}
-          /> */}
         </li>
 
 
         <li className='flex'>
           <Navigation target="_blank" name="Linkedin" href="https://www.linkedin.com/in/ashishsauparna/" status="mobile_ui"/> &nbsp;
-          {/* <Image
-          src={"/outward_arrow.svg"}
-          alt='outward arrow icon'
-          width={20}
-          height={20}
-        /> */}
         </li>
 
 
         
         <li className='flex'>
           <Navigation target="_blank" name="Medium" href="https://medium.com/@ashishsauparna" status="mobile_ui"/> &nbsp;
-          {/* <Image
-          src={"/outward_arrow.svg"}
-          alt='outward arrow icon'
-          width={20}
-          height={20}
-        /> */}
           </li>
         </ul>
         </div>

@@ -1,4 +1,3 @@
-import NavBar from './components/ui/navbar';
 import Footer from './components/ui/footer';
 import ProjectsData from './(projects)/projects';
 import Image from 'next/image';
@@ -89,7 +88,7 @@ export default function Home() {
           height={100}
           sizes='100'
           alt='background banner'
-          className='-z-10 absolute bottom-10 w-full'
+          className='-z-10 absolute bottom-0 md:bottom-10 w-full'
           />
 
       </div>
@@ -115,15 +114,15 @@ export default function Home() {
             Available for work
           </h4>
 
-          <h1 className='font-recklessneue text-slate-800 w-[65%] mb-0' 
-          style={{ letterSpacing: '-0.02em', fontWeight:"400" }}
-          >
-            <span>
-              Designing digital solutions for <br/> enterprises and startups since 2020.
-            </span>
-          </h1>
+          <h1 className="font-recklessneue text-slate-800 w-[65%] mb-0" 
+            style={{ letterSpacing: '-0.02em', fontWeight: "400" }}>
+          <span>
+            Designing digital solutions for <br className="conditional_break" />enterprises
+            and startups since 2020.
+          </span>
+        </h1>
 
-          <h4 className='w-[50%] opacity-80 inline font-[350] z-50'>
+          <h4 className='opacity-80 inline font-[350] z-50'>
             Sharing design insights on &nbsp;
             <Link className='link_button' href={'https://medium.com/@ashishsauparna'}>
             <span className='relative mr-4'>
@@ -142,48 +141,10 @@ export default function Home() {
 
           </div>
 
-          {/* <div className="flex flex-col justify-between">
-
-          <h3 className='flex gap-1 text-gray-500 text-sm self-center -mt-24'>
-            Scroll down to view work
-            <Image
-              src={'/arrow_downward.svg'}
-              alt='arrow'
-              width={16}
-              height={16}
-              className='opacity-50'
-            />
-          </h3>
-          </div> */}
-
-
-          {/* <h4 className='skills_list flex flex-wrap gap-12 items-center justify-center w-[100%] font-[350] text-gray-700 text-sm'>
-            <span className='flex gap-2'>
-              <span>💬</span>
-              <span>User research</span>
-            </span>
-            <span className='flex gap-2'>
-              <span>📝</span>
-              <span>Heuristics analysis</span>
-            </span>
-            <span className='flex gap-2'>
-              <span>🧠</span>
-              <span>Critical thinking</span>
-            </span>
-            <span className='flex gap-2'>
-              <span>👩🏻‍💻</span>
-              <span>Prototyping</span>
-            </span>
-            <span className='flex gap-2'>
-              <span>👩🏻‍💻</span>
-              <span>Usability testing</span>
-            </span>
-          </h4> */}
-
           </div>
         </div>
       </div>
-      <div className="flex relative flex-col items-center justify-between bg-black mt-24 text-center w-full py-72">
+      <div className="flex relative flex-col items-center justify-between bg-black mt-24 text-center w-full py-36 md:py-72">
 
         <Link href={'/about-me'}>
         <Image 
@@ -195,18 +156,18 @@ export default function Home() {
         className='absolute -mt-1 -ml-10 transform transition-transform duration-300 hover:scale-125'/>
         </Link>
 
-      <h1 className='font-recklessneue text-white w-[65%] mb-0' 
-      style={{ letterSpacing: '0.02rem', fontSize:"2.2rem", lineHeight:"3.4rem" }}
+      <h1 className='font-recklessneue text-white mb-0 text-3xl md:text-3xl lg:text-4xl !w-[90%] !leading-relaxed' 
+      style={{ letterSpacing: '0.02rem'}}
       >
         <span>
-        Hi! I&apos;m Ashish  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, UX Designer <br/> from India. I craft intuitive designs <br/>for websites and mobile apps.
+        Hi! I&apos;m Ashish  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, UX Designer <br className="conditional_break"/> from India. I craft intuitive designs <br className="conditional_break"/>for websites and mobile apps.
         </span>
       </h1>
 
       </div>
       <div>
         <div className="flex flex-col items-center justify-center text-center w-full mt-48">
-        <h1 className='font-recklessneue w-[65%] mb-0' 
+        <h1 className='font-recklessneue mb-0 texxt-black' 
           style={{ letterSpacing: '-0.02em', fontSize:"2.2rem", lineHeight:"3rem" }}
           >
           <span>
@@ -217,7 +178,7 @@ export default function Home() {
           <ProjectsData/>
       </div>
 
-      <div className="flex relative flex-col items-center justify-between mt-56 text-center w-full">
+      <div className="flex relative flex-col items-center justify-between mt-24 md:mt-56 text-center w-full">
         <h1 className='font-recklessneue w-[65%] mb-16' 
           style={{ letterSpacing: '-0.02em', fontSize:"2.2rem", lineHeight:"3rem" }}
           >
@@ -226,7 +187,7 @@ export default function Home() {
           </span>
         </h1>
 
-        <div className='flex gap-16'>
+        <div className='flex flex-wrap gap-12 px-4 justify-center items-center'>
 
           {company_logos.map((logo, index) => (
             <Image 
@@ -243,7 +204,8 @@ export default function Home() {
 
       </div>
 
-      <div className="flex relative flex-col items-center justify-between bg-black mt-36 text-center w-full py-48">
+      <div className="flex relative flex-col items-center justify-between bg-black mt-36 text-center w-full py-24 md:py-48">
+
         <h1 className='font-recklessneue text-white w-[65%] mb-12' 
           style={{ letterSpacing: '-0.02em', fontSize:"2.2rem", lineHeight:"3rem", fontWeight:"300" }}
           >
@@ -252,11 +214,11 @@ export default function Home() {
           </span>
         </h1>
 
-        <div className='grid grid-cols-2 gap-x-16 gap-y-16 w-[85%] mt-12'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 md:gap-y-16 w-[90%] md:w-[85%] mt-12'>
         {skills.map((skill, index) => (
           <div
             key={index}
-            className='bg-[#212121] p-12 text-white shadow-md grid gap-4 text-left'
+            className='bg-[#212121] py-8 px-6 md:p-12 text-white shadow-md grid gap-4 text-left'
           >
             <h5 className='text-white text-[24px]'>{skill.heading}</h5>
             <p className='opacity-60'>{skill.description}</p>
