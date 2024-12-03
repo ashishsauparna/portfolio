@@ -26,16 +26,11 @@
 body {
   font-size: var(--default-font-size);
   font-weight: 300;
+  background-color: #fefefe;
   margin: 0;
   padding: 0;
   font-family: var(--font-albert-sans);
   color: var(--foreground-rgb); /* Text color based on light/dark mode */
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); /* Background color based on light/dark mode */
 }
 
 .body_width{
@@ -126,7 +121,7 @@ h1{
 h2{
   font-size: 2rem;
   font-family: var(--font-recklessneue);
-  opacity: 0.8;
+  opacity: 0.9;
   font-weight: 300;
 }
 
@@ -503,9 +498,9 @@ li .mobile_ui:hover{
 .impact_on_image{
   position: absolute;
   backdrop-filter: blur(100px); /* Frosted glass effect */
-  padding: 12px 16px 12px 16px;
+  padding: 8px 12px 8px 12px;
   z-index: 100;
-  border-radius: 4px;
+  border-radius: 2px;
   z-index: 10;
 }
 

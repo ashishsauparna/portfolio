@@ -23,7 +23,7 @@ export default function ProjectsData() {
       shortImage: true,
       css: 'readtime_marqee',
       impact: true,
-      impactHeader: 'Over 25k users',
+      impactHeader: 'Over 26,000 users',
       impactcss: 'bg-[rgba(104,104,104,0.7)] bottom-8 left-8',
     }, 
      
@@ -147,7 +147,7 @@ export default function ProjectsData() {
             {
               image.impact ?
               <div style={{color:"#E9E9E9"}} className={`impact_on_image ${image.impactcss}`}>
-                <b className={`font-space-gothic uppercase text-base font-semibold`}>{image.impactHeader}</b>
+                <b className={`font-space-gothic`}>{image.impactHeader}</b>
                 
               </div>
                 : null

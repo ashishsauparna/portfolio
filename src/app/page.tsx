@@ -76,7 +76,7 @@ export default function Home() {
         `}
       </Script>
 
-      <div className='absolute h-screen w-screen'>
+      {/* <div className='absolute h-screen w-screen'>
 
       <Image
           src={"/banner.png"}
@@ -87,7 +87,7 @@ export default function Home() {
           className='-z-10 absolute bottom-0 md:bottom-10 w-full'
           />
 
-      </div>
+      </div> */}
 
       {/* <MoveImage path={Banner}/> */}
       <div className='items-left body_width z-10 relative'>
@@ -140,7 +140,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex gap-36 relative flex-col items-center justify-between bg-black mt-24 text-center w-full py-36 md:pt-48 md:py-36">
+      <div className="flex gap-36 relative flex-col items-center justify-between bg-black -mt-12 text-center w-full py-36 md:pt-48 md:py-36">
 
         <div className='flex flex-col text-center !w-[90%] relative'>
 
@@ -163,7 +163,7 @@ export default function Home() {
 
 
           <h2 className='font-recklessneue text-white mb-0' 
-          style={{ letterSpacing: '-0.2px'}}
+          style={{lineHeight:"3.2rem", fontWeight:"300"}}
           >
             <span>
             Hi! I&apos;m Ashish  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, UX Designer <br className="conditional_break"/> from India. I craft intuitive designs <br className="conditional_break"/>for websites and mobile apps.
