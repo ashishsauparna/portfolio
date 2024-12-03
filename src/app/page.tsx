@@ -162,29 +162,22 @@ export default function Home() {
 
         <div className='flex flex-col text-center !w-[90%] relative'>
 
-          <Link href={'/about-me'}>
-          <Image 
-          src={'/profile_cropped.png'} 
-          alt={'cropped image of ashish sharma'}
-          width={70}
-          height={70}
-          sizes='100'
-          className='absolute mt-[0rem] ml-[60%] md:ml-[47.5%] transform transition-transform duration-300 hover:scale-125 z-10'/>
-          </Link>
-
-          {/* <h4 className='mb-8 text-gray-400'
-          >
-          <span>
-          Hi, welcome to my portfolio!
-          </span>
-          </h4> */}
-
-
           <h2 className='font-recklessneue text-white mb-0' 
           style={{lineHeight:"3.2rem", fontWeight:"300"}}
           >
-            <span>
-            Hi! I&apos;m Ashish  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, UX Designer <br className="conditional_break"/> from India. I craft intuitive designs <br className="conditional_break"/>for websites and mobile apps.
+            <span className='inline'>
+            Hi! I&apos;m Ashish &nbsp;
+            <Link href={'/about-me'} className="inline">
+              <Image 
+              src={'/profile_cropped.png'} 
+              alt={'cropped image of ashish sharma'}
+              width={70}
+              height={70}
+              sizes='100'
+              style={{borderRadius:"24px"}}
+              className='transform duration-300 hover:scale-125 z-10 inline -translate-y-1'/>
+            </Link>&nbsp;, UX Designer <br className="conditional_break"/> from India. I craft intuitive designs <br className="conditional_break"/>for websites and mobile apps.
+            
             </span>
           </h2>
 
