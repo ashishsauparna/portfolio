@@ -16,20 +16,38 @@ export default function Home() {
   const skills = [
     {
       heading: "User Research",
-      description:"Through structured research, I maximize session value by addressing biases, uncovering assumptions, and fostering a friendly, comfortable environment."
+      color: "bg-[#212121]",
+      placement: "-translate-y-20"
+      // description:"Through structured research, I maximize session value by addressing biases, uncovering assumptions, and fostering a friendly, comfortable environment."
     },
     {
       heading: "Heuristics analysis",
-      description:"By analyzing heuristics, I identify usability issues, challenge assumptions, and ensure designs align with user expectations effectively and efficiently."
+      color: "bg-[#212121]",
+      placement: "-translate-y-20"
+      // description:"By analyzing heuristics, I identify usability issues, challenge assumptions, and ensure designs align with user expectations effectively and efficiently."
     },
     {
       heading: "Critical Thinking",
-      description:"Drawing from experience, I evaluate options critically, balancing user growth, engagement, brand impact, and product value to guide decisions."
+      color: "bg-[#212121]",
+      placement: "-translate-y-20"
+      // description:"Drawing from experience, I evaluate options critically, balancing user growth, engagement, brand impact, and product value to guide decisions."
     },
     {
-      heading: "Creating wireframes & Prototyping",
-      description:"Over four years of experience, I’ve refined a process of identifying problems, sketching wireframes, and testing prototypes to deliver effective solutions."
-    }
+      heading: "Creating wireframes",
+      color: "bg-[#212121]",
+      placement: "-translate-y-20"
+      // description:"Over four years of experience, I’ve refined a process of identifying problems, sketching wireframes, and testing prototypes to deliver effective solutions."
+    },
+    {
+      heading: "Prototyping",
+      color: "bg-[#212121]",
+      placement: "-translate-y-20"
+    },
+    {
+      heading: "Usability Testing",
+      color: "bg-[#2C2C2C]",
+      placement: "translate-y-4"
+    },
   ]
 
   const company_logos = [
@@ -212,23 +230,25 @@ export default function Home() {
       </div>
 
 
-      <div className="flex relative flex-col items-center justify-between bg-black mt-36 text-center w-full py-24 md:py-48">
+      <div className="flex relative flex-col items-center justify-between bg-black mt-36 text-center w-full py-24 md:pt-36 md:pb-12">
 
-        <h2 className='font-recklessneue text-white w-[65%] mb-12'
+        <h2 className='font-recklessneue text-white w-[65%] mb-36'
           >
           <span>
           Skills & Services
           </span>
         </h2>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 md:gap-y-16 w-[90%] md:w-[85%] mt-12'>
+
+        <div className='grid grid-cols-1 md:grid-cols-6 w-[90%] md:w-[85%]'>
         {skills.map((skill, index) => (
           <div
             key={index}
-            className='bg-[#212121] py-8 px-6 md:p-12 text-white shadow-md grid gap-4 text-left'
+            className={`${skill.color} h-56 w-56 text-white rounded-full flex flex-col items-center justify-center text-center ${
+              index % 2 === 0 ? 'translate-y-4' : `${skill.placement}` // Zigzag effect
+            }`}
           >
-            <h5 className='text-white text-[24px]'>{skill.heading}</h5>
-            <p className='opacity-60'>{skill.description}</p>
+            <h4 className='text-white'>{skill.heading}</h4>
           </div>
         ))}
        </div>
