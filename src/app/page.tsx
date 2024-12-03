@@ -22,7 +22,7 @@ export default function Home() {
     },
     {
       heading: "Heuristics analysis",
-      color: "bg-[#212121]",
+      color: "bg-[#2C2C2C]",
       placement: "-translate-y-20"
       // description:"By analyzing heuristics, I identify usability issues, challenge assumptions, and ensure designs align with user expectations effectively and efficiently."
     },
@@ -34,7 +34,7 @@ export default function Home() {
     },
     {
       heading: "Creating wireframes",
-      color: "bg-[#212121]",
+      color: "bg-[#2C2C2C]",
       placement: "-translate-y-20"
       // description:"Over four years of experience, I’ve refined a process of identifying problems, sketching wireframes, and testing prototypes to deliver effective solutions."
     },
