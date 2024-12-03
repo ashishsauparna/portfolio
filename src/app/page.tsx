@@ -41,7 +41,7 @@ export default function Home() {
     {
       heading: "Prototyping",
       color: "bg-[#212121]",
-      placement: "-translate-y-20"
+      placement: "translate-y-4"
     },
     {
       heading: "Usability Testing",
@@ -113,7 +113,7 @@ export default function Home() {
         <div>
           <div className='flex flex-col items-center justify-center text-center w-full large_intro'>
 
-          <div className="relative flex flex-col gap-8 items-center justify-center h-screen w-full -mt-24">
+          <div className="relative flex flex-col gap-8 items-center justify-center h-screen w-full -mt-36 md:-mt-24">
 
           <h4 className="inline font-normal z-50 items-center flex">
           <span
@@ -169,7 +169,7 @@ export default function Home() {
           width={70}
           height={70}
           sizes='100'
-          className='absolute mt-[0rem] ml-[47.5%] transform transition-transform duration-300 hover:scale-125 z-10'/>
+          className='absolute mt-[0rem] ml-[60%] md:ml-[47.5%] transform transition-transform duration-300 hover:scale-125 z-10'/>
           </Link>
 
           {/* <h4 className='mb-8 text-gray-400'
@@ -240,11 +240,11 @@ export default function Home() {
         </h2>
 
 
-        <div className='grid grid-cols-1 md:grid-cols-6 w-[90%] md:w-[85%]'>
+        <div className='grid grid-cols-2 gap-y-4 md:gap-0 md:grid-cols-6 w-[90%] md:w-[85%] justify-items-center'>
         {skills.map((skill, index) => (
           <div
             key={index}
-            className={`${skill.color} h-56 w-56 text-white rounded-full flex flex-col items-center justify-center text-center ${
+            className={`${skill.color} h-40 w-40 md:h-56 md:w-56 p-4 md:p-0 text-white md:rounded-full flex flex-col items-center justify-center text-center ${
               index % 2 === 0 ? 'translate-y-4' : `${skill.placement}` // Zigzag effect
             }`}
           >
