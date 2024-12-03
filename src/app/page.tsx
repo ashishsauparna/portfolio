@@ -111,7 +111,7 @@ export default function Home() {
           </h4>
 
           <h1 className="font-recklessneue text-slate-800 w-[65%] mb-0" 
-            style={{ letterSpacing: '-0.02em', fontWeight: "400" }}>
+            style={{ letterSpacing: '-0.02em', fontWeight: "500" }}>
           <span>
             Designing digital solutions for <br className="conditional_break" />enterprises
             and startups since 2020.
@@ -140,7 +140,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex gap-48 relative flex-col items-center justify-between bg-black mt-24 text-center w-full py-36 md:pt-56 md:py-36">
+      <div className="flex gap-36 relative flex-col items-center justify-between bg-black mt-24 text-center w-full py-36 md:pt-48 md:py-36">
 
         <div className='flex flex-col text-center !w-[90%] relative'>
 
@@ -151,7 +151,7 @@ export default function Home() {
           width={90}
           height={90}
           sizes='100'
-          className='absolute mt-[0rem] ml-[47.3%] transform transition-transform duration-300 hover:scale-125'/>
+          className='absolute mt-[0rem] ml-[47%] transform transition-transform duration-300 hover:scale-125'/>
           </Link>
 
           {/* <h4 className='mb-8 text-gray-400'

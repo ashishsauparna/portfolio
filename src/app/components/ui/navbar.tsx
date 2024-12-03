@@ -71,15 +71,6 @@ export default function NavBar() {
           <Navigation name="Inspirations" href="/my-reads" status="default" />
           </li>
 
-          <li className='flex gap-[2px] -mb-[2px]'>
-          <Navigation name="Articles" href="https://medium.com/@ashishsauparna" status="default"  target="_blank"/>
-          <Image
-          src={"/outward_arrow.svg"}
-          alt='outward arrow icon'
-          width={16}
-          height={16}
-          />
-          </li>
         </ul>
         <SmallButton name="Hire Me 📝" href="mailto:ashishsauparna@gmail.com"/>
       </nav>
