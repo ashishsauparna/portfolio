@@ -111,7 +111,7 @@ export default function Home() {
           </h4>
 
           <h1 className="font-recklessneue text-slate-800 w-[65%] mb-0" 
-            style={{ letterSpacing: '-0.02em', fontWeight: "500" }}>
+            style={{ letterSpacing: '-0.02em', fontWeight: "600" }}>
           <span>
             Designing digital solutions for <br className="conditional_break" />enterprises
             and startups since 2020.
@@ -148,10 +148,10 @@ export default function Home() {
           <Image 
           src={'/profile_cropped.png'} 
           alt={'cropped image of ashish sharma'}
-          width={90}
-          height={90}
+          width={70}
+          height={70}
           sizes='100'
-          className='absolute mt-[0rem] ml-[47%] transform transition-transform duration-300 hover:scale-125'/>
+          className='absolute mt-[0rem] ml-[47.5%] transform transition-transform duration-300 hover:scale-125 z-10'/>
           </Link>
 
           {/* <h4 className='mb-8 text-gray-400'
@@ -162,13 +162,13 @@ export default function Home() {
           </h4> */}
 
 
-          <h1 className='font-recklessneue text-white mb-0 text-3xl md:text-3xl lg:text-4xl !leading-relaxed' 
-          style={{ letterSpacing: '0.02rem'}}
+          <h2 className='font-recklessneue text-white mb-0' 
+          style={{ letterSpacing: '-0.2px'}}
           >
             <span>
             Hi! I&apos;m Ashish  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, UX Designer <br className="conditional_break"/> from India. I craft intuitive designs <br className="conditional_break"/>for websites and mobile apps.
             </span>
-          </h1>
+          </h2>
 
         </div>
 
@@ -201,13 +201,12 @@ export default function Home() {
       </div>
       <div>
         <div className="flex flex-col items-center justify-center text-center w-full mt-48">
-        <h1 className='font-recklessneue mb-0 texxt-black' 
-          style={{ letterSpacing: '-0.02em', fontSize:"2.2rem", lineHeight:"3rem" }}
+        <h2 className='font-recklessneue mb-0 text-black'
           >
           <span>
           Special Projects
           </span>
-        </h1>
+        </h2>
         </div>
           <ProjectsData/>
       </div>
@@ -215,13 +214,12 @@ export default function Home() {
 
       <div className="flex relative flex-col items-center justify-between bg-black mt-36 text-center w-full py-24 md:py-48">
 
-        <h1 className='font-recklessneue text-white w-[65%] mb-12' 
-          style={{ letterSpacing: '-0.02em', fontSize:"2.2rem", lineHeight:"3rem", fontWeight:"300" }}
+        <h2 className='font-recklessneue text-white w-[65%] mb-12'
           >
           <span>
           Skills & Services
           </span>
-        </h1>
+        </h2>
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 md:gap-y-16 w-[90%] md:w-[85%] mt-12'>
         {skills.map((skill, index) => (

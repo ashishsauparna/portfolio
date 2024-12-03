@@ -25,9 +25,10 @@ export default function Footer() {
         <div className="footer_grid items-center justify-between w-full py-4">
 
           <div className='flex-shrink-0 mr-auto font-normal items-center'>
-            <h1 className='mb-8' style={{fontSize:"2.2rem", lineHeight:"2.6rem", fontWeight:"300"}}>Do you want to start
+            <h2 className='mb-8'
+            style={{lineHeight:"2.6rem", fontWeight:"400"}}>Do you want to start
               <br/>
-               a project together?</h1>
+               a project together?</h2>
             <SmallButton name="Contact me 📝"
             href="mailto:ashishsauparna@gmail.com"/>
           </div>

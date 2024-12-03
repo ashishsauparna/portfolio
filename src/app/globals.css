@@ -116,7 +116,7 @@ b{
 
 /*Defining headings*/
 h1{
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-family: var(--font-recklessneue);
   margin-bottom: 1rem;
   font-weight: 250;
@@ -125,9 +125,9 @@ h1{
 
 h2{
   font-size: 2rem;
-  font-family: var(--font-offbit);
+  font-family: var(--font-recklessneue);
   opacity: 0.8;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 h3{
@@ -236,7 +236,6 @@ main{
 }
 
 .logo_container{
-  margin-top: -8px;
   font-family: var(--font-space-gothic);
   font-size: 1.0rem;
   display: inline-flex;
@@ -244,7 +243,6 @@ main{
   font-weight: 400;
   letter-spacing: -0.2px;
   color: #0e1320;
-  transform: translateY(6.2px);
 }
 
 .menu_icon{
@@ -605,8 +603,9 @@ li .mobile_ui:hover{
 ul.footer_links{
   position: absolute;
   width: 100%;
-  gap: 2rem;
-  transform: translateY(6px);
+  gap: 1rem;
+  display: grid;
+  transform: translateY(-4rem) translateX(-2rem);
 }
 
 .footer_grid{
