@@ -34,36 +34,32 @@ export default function Home() {
 
   const company_logos = [
     {
-      src:"/company_logos/figma.svg",
-      size:100
-    },
-    {
-      src:"/company_logos/google.svg",
-      size:100
-    },
-    {
       src:"/company_logos/reddit.svg",
-      size:100
-    },
-    {
-      src:"/company_logos/chatgpt.svg",
-      size:122
+      size:80
     },
     {
       src:"/company_logos/miro.svg",
-      size:100
-    },
-    // {
-    //   src:"/company_logos/salesforce.svg",
-    //   size:100
-    // },
-    {
-      src:"/company_logos/adobe.svg",
-      size:100
+      size:75
     },
     {
       src:"/company_logos/loom.svg",
+      size:80
+    },
+    {
+      src:"/company_logos/google.svg",
+      size:80
+    },
+    {
+      src:"/company_logos/figma.svg",
+      size:80
+    },
+    {
+      src:"/company_logos/chatgpt.svg",
       size:100
+    },
+    {
+      src:"/company_logos/adobe.svg",
+      size:90
     },
   ]
 
@@ -144,48 +140,46 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex relative flex-col items-center justify-between bg-black mt-24 text-center w-full py-36 md:py-72">
+      <div className="flex gap-48 relative flex-col items-center justify-between bg-black mt-24 text-center w-full py-36 md:pt-56 md:py-36">
 
-        <Link href={'/about-me'}>
-        <Image 
-        src={'/profile_cropped.png'} 
-        alt={'cropped image of ashish sharma'}
-        width={90}
-        height={90}
-        sizes='100'
-        className='absolute -mt-1 -ml-10 transform transition-transform duration-300 hover:scale-125'/>
-        </Link>
+        <div className='flex flex-col text-center !w-[90%] relative'>
 
-      <h1 className='font-recklessneue text-white mb-0 text-3xl md:text-3xl lg:text-4xl !w-[90%] !leading-relaxed' 
-      style={{ letterSpacing: '0.02rem'}}
-      >
-        <span>
-        Hi! I&apos;m Ashish  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, UX Designer <br className="conditional_break"/> from India. I craft intuitive designs <br className="conditional_break"/>for websites and mobile apps.
-        </span>
-      </h1>
+          <Link href={'/about-me'}>
+          <Image 
+          src={'/profile_cropped.png'} 
+          alt={'cropped image of ashish sharma'}
+          width={90}
+          height={90}
+          sizes='100'
+          className='absolute mt-[0rem] ml-[47.3%] transform transition-transform duration-300 hover:scale-125'/>
+          </Link>
 
-      </div>
-      <div>
-        <div className="flex flex-col items-center justify-center text-center w-full mt-48">
-        <h1 className='font-recklessneue mb-0 texxt-black' 
-          style={{ letterSpacing: '-0.02em', fontSize:"2.2rem", lineHeight:"3rem" }}
+          {/* <h4 className='mb-8 text-gray-400'
           >
           <span>
-          Special Projects
+          Hi, welcome to my portfolio!
           </span>
-        </h1>
+          </h4> */}
+
+
+          <h1 className='font-recklessneue text-white mb-0 text-3xl md:text-3xl lg:text-4xl !leading-relaxed' 
+          style={{ letterSpacing: '0.02rem'}}
+          >
+            <span>
+            Hi! I&apos;m Ashish  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, UX Designer <br className="conditional_break"/> from India. I craft intuitive designs <br className="conditional_break"/>for websites and mobile apps.
+            </span>
+          </h1>
+
         </div>
-          <ProjectsData/>
-      </div>
 
-      <div className="flex relative flex-col items-center justify-between mt-24 md:mt-56 text-center w-full">
-        <h1 className='font-recklessneue w-[65%] mb-16' 
-          style={{ letterSpacing: '-0.02em', fontSize:"2.2rem", lineHeight:"3rem" }}
+      <div className="flex relative flex-col items-center justify-between text-center w-full">
+
+        <h4 className='mb-8 text-gray-400'
           >
           <span>
-          Frequently used in 2024
+          Frequently used tools in 2024
           </span>
-        </h1>
+        </h4>
 
         <div className='flex flex-wrap gap-12 px-4 justify-center items-center'>
 
@@ -203,6 +197,21 @@ export default function Home() {
         </div>
 
       </div>
+
+      </div>
+      <div>
+        <div className="flex flex-col items-center justify-center text-center w-full mt-48">
+        <h1 className='font-recklessneue mb-0 texxt-black' 
+          style={{ letterSpacing: '-0.02em', fontSize:"2.2rem", lineHeight:"3rem" }}
+          >
+          <span>
+          Special Projects
+          </span>
+        </h1>
+        </div>
+          <ProjectsData/>
+      </div>
+
 
       <div className="flex relative flex-col items-center justify-between bg-black mt-36 text-center w-full py-24 md:py-48">
 
