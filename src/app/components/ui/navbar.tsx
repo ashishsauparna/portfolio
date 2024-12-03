@@ -29,13 +29,13 @@ export default function NavBar() {
       <nav className='web_nav'>
         <Link href={'/'}>
           <div className='logo_container'>
-        {showGif && <Image
+        {/* {showGif && <Image
           src={"/as_logo_closed.svg"}
           alt="A Logo of the website in white text and blue background. The logo says AS short for Ashish Sharma"
           sizes="60vw"
           width={32}
           height={32}
-          className='icon_gif' />}
+          className='icon_gif' />} */}
         <Image
           src={"/as_logo.svg"}
           alt="A Logo of the website in white text and blue background. The logo says AS short for Ashish Sharma"
@@ -43,7 +43,7 @@ export default function NavBar() {
           width={32}
           height={32}
           className='icon' />
-          &nbsp; &nbsp;Ashish Sharma
+          &nbsp;&nbsp;Ashish Sharma
           </div>
         </Link>
         <ul className='nav_links'>
@@ -54,8 +54,13 @@ export default function NavBar() {
 
           <li>
           {/* 😇&nbsp; */}
-          <Navigation name="About" href="/about-me" status="default" />
+          <Navigation name="About Me" href="/about-me" status="default" />
           </li>
+
+          <li>
+          <Navigation name="Inspirations" href="/my-reads" status="default" />
+          </li>
+
 
           <li className='flex gap-[2px] -mb-[2px]'>
           <Navigation name="Resume" href="https://drive.google.com/file/d/1_Cqagdp5cQbY4ePvsdsGrYchT-B541uW/view?usp=share_link" status="default" target="_blank"/>
@@ -67,12 +72,10 @@ export default function NavBar() {
           />
           </li>
 
-          <li>
-          <Navigation name="Inspirations" href="/my-reads" status="default" />
-          </li>
-
         </ul>
-        <SmallButton name="Hire Me 📝" href="mailto:ashishsauparna@gmail.com"/>
+        <div style={{transform:"translateY(0px)"}}>
+        <SmallButton name="Hire Me" href="mailto:ashishsauparna@gmail.com"/>
+        </div>
       </nav>
 
 

@@ -237,12 +237,14 @@ main{
 
 .logo_container{
   margin-top: -8px;
-  font-family: var(--font-recklessneue);
-  font-size: 1.2rem;
+  font-family: var(--font-space-gothic);
+  font-size: 1.0rem;
   display: inline-flex;
   align-items: center;
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: -0.2px;
   color: #0e1320;
+  transform: translateY(6.2px);
 }
 
 .menu_icon{
@@ -264,8 +266,9 @@ li{
 }
 
 .nav_links{
-  gap: 2rem;
-  font-size: var(--default-font-size);
+  gap: 1rem;
+  font-size: 1.0rem;
+  letter-spacing: -0.2px;
   font-family: var(--font-space-gothic);
 }
 
@@ -289,7 +292,7 @@ a:hover {
 }
 
 li .active{
-  font-weight: 350;
+  font-weight: 400;
 }
 
 
