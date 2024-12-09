@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { animate, motion} from 'framer-motion';
+import { motion, animate } from "motion/react";
 
 export default function Books() {
 
@@ -103,7 +103,7 @@ export default function Books() {
       }
 
       return (
-        <div className='items-left w-full'>
+        <div className='items-left w-full mb-24'>
             <div className='avatar_grid'>
               {books.map((data, index) => (
                 <motion.div

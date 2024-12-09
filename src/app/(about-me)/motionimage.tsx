@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 // import AshishSharmaImg from '/public/ashish_sharma.png';
 import Image from 'next/image';
 

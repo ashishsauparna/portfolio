@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import NavBar from '../../components/ui/navbar';
 import Footer from '../../components/ui/footer';
 import Image from 'next/image';
 // import IgStory from '/public/books_story.jpg';

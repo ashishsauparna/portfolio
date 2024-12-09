@@ -14,7 +14,7 @@ export default function Footer() {
 
   return (
       <footer>
-        <div className='absolute w-full -mt-20 bg-blue-600 text-sm text-white py-2'>
+        <div className='absolute w-full top-0 bg-blue-600 text-sm text-white py-2'>
         <Marquee autoFill pauseOnHover speed={30}>
           &nbsp;&nbsp;
         </Marquee>

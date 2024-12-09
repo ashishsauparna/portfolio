@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Script from 'next/script';
 import { Metadata } from 'next';
 import Link from 'next/link';
+import BouncingImage from './components/ui/motion_tag';
 
 export const metadata: Metadata = {
   title: 'Ashish Sharma UX Designer',
@@ -115,7 +116,12 @@ export default function Home() {
 
           <div className="relative flex flex-col gap-8 items-center justify-center h-screen w-full -mt-36 md:-mt-24">
 
-          <h4 className="inline font-normal z-50 items-center flex">
+          <h4 className="inline font-normal z-50 items-center flex"
+          style={{
+            border: "1px solid #D0D0D0",
+            padding:"2px 12px",
+            borderRadius:"1000px"
+          }}>
           <span
             style={{
               backgroundColor: "#289562",
@@ -153,6 +159,8 @@ export default function Home() {
             </Link>
           </h4>
 
+          <BouncingImage/>
+
           </div>
 
           </div>
@@ -176,7 +184,7 @@ export default function Home() {
               sizes='100'
               style={{borderRadius:"24px"}}
               className='transform duration-300 hover:scale-125 z-10 inline -translate-y-1'/>
-            </Link>&nbsp;, UX Designer <br className="conditional_break"/> from India. I craft intuitive designs <br className="conditional_break"/>for websites and mobile apps.
+            </Link>&nbsp;, UX Designer <br className="conditional_break"/>and Researcher from India with 4+ years<br className="conditional_break"/> of expereince in user-centric design.
             
             </span>
           </h2>

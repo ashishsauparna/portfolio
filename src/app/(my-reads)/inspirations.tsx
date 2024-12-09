@@ -2,7 +2,8 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { animate, motion } from 'framer-motion';
+import { motion, animate } from "motion/react";
+
 
 export default function Inspirations() {
 

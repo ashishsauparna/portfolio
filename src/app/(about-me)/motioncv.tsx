@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from "framer-motion"
+import { motion, animate } from "motion/react";
 
 export default function MotionCV(){
 
@@ -67,7 +67,7 @@ export default function MotionCV(){
             viewport={{
                 once:true
             }}>
-            <div className={`intro_content_three mt-48 !items-start`}>
+            <div className={`intro_content_three mt-48 mb-24 !items-start`}>
             <div>
                 <h5 className='mb-4 text-2xl text-slate-900'>Education</h5>
                 {education.map((data, index) => (

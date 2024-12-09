@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { animate, motion } from 'framer-motion';
+import { motion, animate } from "motion/react";
 
 export default function ProjectsData() {
 
@@ -17,14 +17,14 @@ export default function ProjectsData() {
       readTime: '5 mins read',
       new: "Jun 23",
       headingP1: "Font Swap: ",
-      headingP2: "Case Study - June 2023",
-      subHeading:"A plugin to help switch multiple fonts in three steps",
+      headingP2: "Font Swap Case Study . June 2023",
+      subHeading:"A Figma plugin to help switch multiple fonts in three steps",
       large: false,
       shortImage: true,
       css: 'readtime_marqee',
       impact: true,
       impactHeader: 'Over 26,000 users',
-      impactcss: 'bg-[rgba(104,104,104,0.7)] bottom-8 left-8',
+      impactcss: 'bg-[rgba(104,104,104,0.7)] bottom-6 left-6',
     }, 
      
     {
@@ -36,14 +36,14 @@ export default function ProjectsData() {
       readTime: '6 mins read',
       new: "May 24",
       headingP1: "Button Smith: ",
-      headingP2: "Case Study - May 2024",
-      subHeading:"A plugin to create button components set",
+      headingP2: "Button Smith Case Study . May 2024",
+      subHeading:"A Figma plugin to create button components set",
       large: false,
       shortImage: true,
       css: 'readtime_marqee',
       impact: true,
       impactHeader: 'Over 700 users in 8 months of launch',
-      impactcss: 'bg-[rgba(65,65,65,0.7)] bottom-8 left-8',
+      impactcss: 'bg-[rgba(65,65,65,0.7)] bottom-6 left-6',
     },
     {
       src: "/case_study_rozgar.jpg",
@@ -54,7 +54,7 @@ export default function ProjectsData() {
       readTime: '4 mins read',
       new: "Jan 22",
       headingP1: "Rozgar App: ",
-      headingP2: "Short Study - Mar 2022",
+      headingP2: "Rozgar App Short Study . Mar 2022",
       subHeading:"Finding digital solution for blue collar workers",
       large: false,
       shortImage: true,
@@ -70,7 +70,7 @@ export default function ProjectsData() {
       readTime: '8 mins read',
       new: "Mar 21",
       headingP1: "Sanskriti App: ",
-      headingP2: "Case Study - Mar 2021",
+      headingP2: "Sanskriti App Case Study . Mar 2021",
       subHeading:"Learning about artifacts and the museums they belong to",
       large: false,
       shortImage: true,
@@ -117,7 +117,7 @@ export default function ProjectsData() {
         <div className='cell'>
           <div className={`flex justify-between ${image.css}`}>
 
-          <div className='marqee_content'>
+          {/* <div className='marqee_content'>
             
           <p>
           &nbsp;&nbsp;&nbsp;{image.readTime} 
@@ -131,7 +131,7 @@ export default function ProjectsData() {
           &nbsp;&nbsp;&nbsp;{image.readTime}
           </p>
 
-          </div>
+          </div> */}
           
           </div>
         {
@@ -157,12 +157,12 @@ export default function ProjectsData() {
         }
           <div className={`grid gap-2 justify-between project_details`}>
             <div className='flex gap-2'>
-                <h4 className='text-base font-normal'>{image.headingP2}</h4>
+                <h4 className='text-sm font-albert-sans uppercase font-normal'>{image.headingP2}</h4>
             </div>
-            <div className='mr-16 font-noto-serif font-light whitespace-pre-line text-xl text-gray-900'>
-              <span className='font-space-gothic font-normal'>
+            <div className='mr-16 font-recklessneue font-light whitespace-pre-line text-2xl text-gray-900'>
+              {/* <span className='font-space-gothic font-normal'>
               {image.headingP1}
-              </span>
+              </span> */}
               {image.subHeading}
             </div>
           </div>

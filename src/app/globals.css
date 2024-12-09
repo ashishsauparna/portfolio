@@ -498,10 +498,9 @@ li .mobile_ui:hover{
 .impact_on_image{
   position: absolute;
   backdrop-filter: blur(100px); /* Frosted glass effect */
-  padding: 8px 12px 8px 12px;
+  padding: 6px 16px 6px 16px;
   z-index: 100;
-  border-radius: 2px;
-  z-index: 10;
+  border-radius: 0px;
 }
 
 
@@ -614,7 +613,7 @@ footer{
   justify-content: left;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 1rem;
 }
 
