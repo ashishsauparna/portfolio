@@ -370,9 +370,9 @@ li .mobile_ui:hover{
   font-size: var(--default-font-size);
   background:#289562;
   border:2px solid #ffffff;
-  border-top-left-radius: 1000px;
+  border-top-left-radius: 16px;
   border-top-right-radius: 1000px;
-  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 1000px;
   border-bottom-right-radius: 1000px;
   color: #89C5A9;
   padding:6px 16px;
@@ -383,9 +383,9 @@ li .mobile_ui:hover{
   font-size: var(--default-font-size);
   background:#289562;
   border:2px solid #ffffff;
-  border-top-left-radius: 1000px;
+  border-top-left-radius: 16px;
   border-top-right-radius: 1000px;
-  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 1000px;
   border-bottom-right-radius: 1000px;
   color: #ffffff;
   padding:6px 16px;
