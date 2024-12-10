@@ -98,7 +98,7 @@ export default function NavBar() {
         </Link>
 
         {/* Hamburger Section */}
-        <div className='z-10'>
+        <div className='z-10' style={{transform:"translateY(4px)"}}>
         <Hamburger size={30} duration={0.3} easing="ease-in" toggled={isOpen} toggle={setOpen} />
         </div>
       </nav>

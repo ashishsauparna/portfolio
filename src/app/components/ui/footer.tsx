@@ -14,7 +14,7 @@ export default function Footer() {
 
   return (
       <footer>
-        <div className='absolute w-full top-0 bg-blue-600 text-sm text-white py-2'>
+        <div className='absolute w-full top-0 bg-blue-600 text-sm text-white py-1'>
         <Marquee autoFill pauseOnHover speed={30}>
           &nbsp;&nbsp;
         </Marquee>
@@ -35,7 +35,7 @@ export default function Footer() {
         
 
         {/* Centered links */}
-        <div className="flex justify-center w-full relative">
+        <div className="flex w-full">
 
         <ul className='footer_links'>
 

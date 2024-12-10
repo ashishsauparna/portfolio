@@ -101,7 +101,7 @@ export default function Home() {
         <div>
           <div className='flex flex-col items-center justify-center text-center w-full large_intro'>
 
-          <div className="relative flex flex-col gap-8 items-center justify-center h-screen w-full -mt-36 md:-mt-24">
+          <div className="relative flex flex-col gap-8 items-center justify-center h-screen w-full -mt-48 md:-mt-24">
 
           {/* <h4 className="inline font-normal z-50 items-center flex"
           style={{
@@ -131,13 +131,13 @@ export default function Home() {
 
           <h4 className='opacity-80 inline font-[350] z-50'>
             Sharing design insights on &nbsp;
-            <Link className='link_button' href={'https://medium.com/@ashishsauparna'}>
+            <Link className='link_button md:mr-2 mr-2' href={'https://medium.com/@ashishsauparna'}>
             <span className='relative mr-4'>
               Medium
               <Image src={"/medium_icon.svg"} width={12} height={12} alt={'Medium icon'} className='ml-1 inline absolute top-0'/>
             </span>
             </Link>
-            &nbsp;&nbsp;&&nbsp;&nbsp;
+            &&nbsp;
             <Link className='link_button' href={'https://www.linkedin.com/in/ashishsauparna/'}>
             <span className='relative mr-4'>
               Linkedin
@@ -146,18 +146,17 @@ export default function Home() {
             </Link>
           </h4>
 
-          <div className="hidden lg:block w-full">
-            <BouncingImage />
-          </div>
+         
+          <BouncingImage />
 
           </div>
 
           </div>
         </div>
       </div>
-      <div className="flex gap-36 relative flex-col items-center justify-between bg-black -mt-12 text-center w-full py-36 md:pt-48 md:py-36">
+      <div className="flex md:gap-36 gap-24 relative flex-col items-center justify-between bg-black md:-mt-12 -mt-24 text-center w-full py-16 md:pt-48 md:py-36">
 
-        <div className='flex flex-col text-center !w-[90%] relative'>
+        <div className='flex flex-col md:text-center text-left !w-[90%] relative'>
 
           <h2 className='font-recklessneue text-white mb-0' 
           style={{lineHeight:"3.2rem", fontWeight:"300"}}
@@ -173,23 +172,23 @@ export default function Home() {
               sizes='100'
               style={{borderRadius:"24px"}}
               className='transform duration-300 hover:scale-125 z-10 inline -translate-y-1'/>
-            </Link>&nbsp;, UX Designer <br className="conditional_break"/>and Researcher from India with 4+ years<br className="conditional_break"/> of expereince in user-centric design.
+            </Link>&nbsp;&nbsp;, UX Designer <br className="conditional_break"/>and Researcher from India with 4+ years<br className="conditional_break"/> of expereince in user-centric design.
             
             </span>
           </h2>
 
         </div>
 
-      <div className="flex relative flex-col items-center justify-between text-center w-full">
+      <div className="flex relative flex-col md:items-center items-left w-[90%] justify-between md:text-center w-full md:mb-0 mb-8">
 
-        <h4 className='mb-8 text-gray-400'
+        <h4 className='mb-8 text-gray-400 md:ml-0 ml-4'
           >
           <span>
           Frequently used tools in 2024
           </span>
         </h4>
 
-        <div className='flex flex-wrap gap-12 px-4 justify-center items-center'>
+        <div className='flex flex-wrap md:gap-12 gap-8 px-4 md:justify-center justify-left items-center'>
 
           {company_logos.map((logo, index) => (
             <Image 
@@ -208,9 +207,8 @@ export default function Home() {
 
       </div>
       <div>
-        <div className="flex flex-col items-center justify-center text-center w-full mt-48">
-        <h2 className='font-recklessneue mb-0 text-black'
-          >
+        <div className="flex flex-col items-center justify-center text-center w-full md:mt-48 mt-24">
+        <h2 className='font-recklessneue text-black'>
           <span>
           Special Projects
           </span>
