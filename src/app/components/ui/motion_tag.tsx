@@ -67,7 +67,7 @@ export default function BouncingImage() {
       zIndex: 100,
     }}
     >
-      <div className="absolute left-[45%] top-0">
+      <div className="absolute left-[45%] top-10">
 
         <div
         // initial={{rotate:0, y:0, x:0}}
