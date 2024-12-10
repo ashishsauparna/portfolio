@@ -18,36 +18,36 @@ export default function Home() {
     {
       heading: "User Research",
       color: "bg-[#212121]",
-      placement: "-translate-y-20"
+      placement: "-translate-y-40"
       // description:"Through structured research, I maximize session value by addressing biases, uncovering assumptions, and fostering a friendly, comfortable environment."
     },
     {
       heading: "Heuristics analysis",
       color: "bg-[#2C2C2C]",
-      placement: "-translate-y-20"
+      placement: "-translate-y-40"
       // description:"By analyzing heuristics, I identify usability issues, challenge assumptions, and ensure designs align with user expectations effectively and efficiently."
     },
     {
       heading: "Critical Thinking",
       color: "bg-[#212121]",
-      placement: "-translate-y-20"
+      placement: "-translate-y-40"
       // description:"Drawing from experience, I evaluate options critically, balancing user growth, engagement, brand impact, and product value to guide decisions."
     },
     {
       heading: "Creating wireframes",
       color: "bg-[#2C2C2C]",
-      placement: "-translate-y-20"
+      placement: "-translate-y-40"
       // description:"Over four years of experience, I’ve refined a process of identifying problems, sketching wireframes, and testing prototypes to deliver effective solutions."
     },
     {
       heading: "Prototyping",
       color: "bg-[#212121]",
-      placement: "translate-y-4"
+      placement: "-translate-y-40"
     },
     {
       heading: "Usability Testing",
       color: "bg-[#2C2C2C]",
-      placement: "translate-y-4"
+      placement: "-translate-y-40"
     },
   ]
 
@@ -218,9 +218,9 @@ export default function Home() {
       </div>
 
 
-      <div className="flex relative flex-col items-center justify-between bg-black mt-36 text-center w-full py-24 md:pt-36 md:pb-12">
+      <div className="flex relative flex-col items-center justify-between bg-black mt-36 text-center w-full py-24">
 
-        <h2 className='font-recklessneue text-white w-[65%] mb-36'
+        <h2 className='font-recklessneue text-white w-[65%] mb-56'
           >
           <span>
           Skills & Services
@@ -233,7 +233,7 @@ export default function Home() {
           <div
             key={index}
             className={`${skill.color} h-40 w-40 md:h-56 md:w-56 p-4 md:p-0 text-white md:rounded-full flex flex-col items-center justify-center text-center ${
-              index % 2 === 0 ? 'translate-y-4' : `${skill.placement}` // Zigzag effect
+              index % 2 === 0 ? '-translate-y-4' : `${skill.placement}` // Zigzag effect
             }`}
           >
             <h4 className='text-white'>{skill.heading}</h4>
