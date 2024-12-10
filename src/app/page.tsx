@@ -103,7 +103,7 @@ export default function Home() {
 
           <div className="relative flex flex-col gap-8 items-center justify-center h-screen w-full -mt-48 md:-mt-24">
 
-          {/* <h4 className="inline font-normal z-50 items-center flex"
+          <h4 className="inline font-normal z-50 items-center flex"
           style={{
             border: "1px solid #D0D0D0",
             padding:"2px 12px",
@@ -119,7 +119,7 @@ export default function Home() {
             }}
           ></span>
             Available for work
-          </h4> */}
+          </h4>
 
           <h1 className="text-slate-800 w-[65%] mb-0" 
             style={{ fontWeight: "500", position: "relative",}}>

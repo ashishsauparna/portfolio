@@ -884,8 +884,8 @@ footer{
   }
   h1{
     width: 100% !important;
-    font-size: 2.4rem;
-    line-height: 3.2rem;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
     letter-spacing: -2px !important;
     text-align: left;
   }
@@ -1008,6 +1008,32 @@ footer{
   }
   .conditional_break {
     display: none; /* Hide the line break on smaller screens */
+  }
+
+  .intro_content_first{
+    width: 90%;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .intro_content_sec{
+    margin-top: 4rem;
+    width: 100%;
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .intro_content_three{
+    margin-top: 4rem;
+    width: 90%;
+    margin-left: 16px;
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .button{
+    text-align: center;
+    padding: 8px 40px;
   }
 
 
