@@ -113,16 +113,16 @@ export default function NavBar() {
           <div className='mobile_nav_view'>
           <div className='absolute bottom-0 justify-between'>
           <ul className='grid gap-8 mb-28 text-3xl'>
-            <li>
-              <Navigation name="Home" href="/" status="mobile_ui" />
+            <li onClick={() => setOpen(false)}>
+              <Navigation name="Home" href="/" status="mobile_ui"/>
             </li>
-            <li>
+            <li onClick={() => setOpen(false)}>
               <Navigation name="About Me" href="/about-me" status="mobile_ui" />
             </li>
-            <li>
+            <li onClick={() => setOpen(false)}>
               <Navigation name="Inspirations" href="/my-reads" status="mobile_ui" />
             </li>
-            <li>
+            <li onClick={() => setOpen(false)}>
               <Navigation name="📫 Hire me!" target="_blank" href="mailto:ashishsauparna@gmail.com" status="mobile_ui" />
             </li>
           </ul>

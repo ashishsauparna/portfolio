@@ -101,9 +101,9 @@ export default function Home() {
         <div>
           <div className='flex flex-col items-center justify-center text-center w-full large_intro'>
 
-          <div className="relative flex flex-col gap-8 items-center justify-center h-screen w-full -mt-48 md:-mt-24">
+          <div className="relative flex flex-col md:gap-8 gap-6 md:items-center justify-center h-screen w-full -mt-48 md:-mt-24">
 
-          <h4 className="inline font-normal z-50 items-center flex"
+          <h4 className="inline font-normal z-50 items-center flex max-w-max"
           style={{
             border: "1px solid #D0D0D0",
             padding:"2px 12px",
@@ -121,8 +121,8 @@ export default function Home() {
             Available for work
           </h4>
 
-          <h1 className="text-slate-800 w-[65%] mb-0" 
-            style={{ fontWeight: "500", position: "relative",}}>
+          <h1 className="text-slate-800 w-[65%] mb-0 md:font-medium font-light" 
+            style={{ position: "relative",}}>
           <span>
             Designing digital solutions <br className="conditional_break" />for enterprises since 2020
           </span>
@@ -153,7 +153,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex md:gap-36 gap-24 relative flex-col items-center justify-between bg-black -mt-12 text-center w-full py-16 md:pt-48 md:py-36">
+      <div className="flex md:gap-36 gap-16 relative flex-col items-center justify-between bg-black -mt-12 text-center w-full py-16 md:pt-48 md:py-36">
 
         <div className='flex flex-col md:text-center text-left !w-[90%] relative'>
 
