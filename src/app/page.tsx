@@ -154,7 +154,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex md:gap-36 gap-24 relative flex-col items-center justify-between bg-black md:-mt-12 -mt-24 text-center w-full py-16 md:pt-48 md:py-36">
+      <div className="flex md:gap-36 gap-24 relative flex-col items-center justify-between bg-black -mt-12 text-center w-full py-16 md:pt-48 md:py-36">
 
         <div className='flex flex-col md:text-center text-left !w-[90%] relative'>
 

@@ -934,8 +934,8 @@ footer{
     position: relative;
     gap: 2rem;
     grid-template-columns: repeat(2, auto);
-    margin-bottom: 2rem;
-    transform: translateY(3rem);
+    transform: translateY(3rem) translateX(-1.4rem);
+    margin-top: 2rem;
   }
   .footer_grid{
     display: grid;
