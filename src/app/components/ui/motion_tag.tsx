@@ -6,46 +6,51 @@ import { useEffect, useState } from "react";
 
 export default function BouncingImage() {
   
-  const [isIdle, setIsIdle] = useState(false);
+  const [displayedText, setDisplayedText] = useState("Ashish Sharma"); // Initial text
+  const [typedText, setTypedText] = useState(""); // Holds the typing text for "Scroll to view work"
+  const [cssClass, setCssClass] = useState("arrow-text-default"); // Default CSS class
 
   useEffect(() => {
-    let scrollTimeout: NodeJS.Timeout; // Type for the timeout variable
+    // Step 1: Replace "Ashish Sharma" with "Say Something"
+    const replaceTimeout = setTimeout(() => {
+      setDisplayedText("Say Something");
+      setCssClass("arrow-text-highlight"); // Change CSS class for "Say Something"
 
-    // Function to execute when no scroll is detected for 5 seconds
-    const onIdle = () => {
-      console.log('User has not scrolled for 5 seconds');
-      setIsIdle(true);
-    };
+      // Step 2: Replace "Say Something" with "Scroll to view work"
+      const typingTimeout = setTimeout(() => {
+        setDisplayedText(""); // Clear direct text for the typing effect
+        setCssClass("arrow-text-final"); // Change CSS class for "Scroll to view work"
+        startTypingEffect(" 👋 Hi! Scroll down to see my work");
+      }, 1000); // 2-second delay before typing starts
 
-    // Event listener for scroll event
-    const handleScroll = () => {
-      // Clear the previous timeout
-      clearTimeout(scrollTimeout);
+      return () => clearTimeout(typingTimeout);
+    }, 5000); // 3 seconds to show "Say Something"
 
-      // Set a new timeout for 5 seconds
-      scrollTimeout = setTimeout(onIdle, 5000);
-    };
+    return () => clearTimeout(replaceTimeout);
+  }, []);
 
-    // Add the event listener
-    window.addEventListener('scroll', handleScroll);
+  // Typing effect function
+  const startTypingEffect = (text: string) => {
+    let charIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (charIndex < text.length-1) {
+        setTypedText((prev) => prev + text[charIndex]);
+        charIndex++;
+      } else {
+        clearInterval(typingInterval); // Stop typing when done
+      }
+    }, 100); // Typing speed (in milliseconds)
+  };
 
-    // Initial timeout setup in case the user doesn't scroll at all initially
-    scrollTimeout = setTimeout(onIdle, 5000);
-
-    // Cleanup function to remove the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      clearTimeout(scrollTimeout);
-    };
-  }, []); // Empty dependency array ensures this runs only once when the component mounts
 
   return (
     <motion.div
     initial={{ y: 500, x: 200 }} // Start from below the viewport
-    animate={{ y: [500, 0, 0], x: [200, 0, 0] }} // Move up first, then bounce
+    animate={{ y: [500, 0, 0, -290], x: [200, 0, 0, -150] }} // Move up first, then bounce
     transition={{
-      duration: 2.5,
-      ease:'easeInOut'
+        duration: 4,
+        ease:'easeInOut',
+        times: [0, 0.4, 0.6, 0.9], // Timing for each keyframe
     }}
     style={{
       position: "relative",
@@ -54,24 +59,40 @@ export default function BouncingImage() {
       zIndex: 100,
     }}
     >
-    <motion.div
-    initial={{ y: 0, x: 0 }} // Start from below the viewport
-    animate={{ y: [0, -6, 0], x: [0, -2, 0] }} // Move up first, then bounce
-      transition={{
-        duration: 2.5,
-        repeat: Infinity,
-        ease: ['easeIn', 'easeOut'],
-      }}
-    >
+      <div className="absolute left-[70%] -top-16">
+
+        <motion.div
+        initial={{rotate:0, y:0, x:0}}
+        animate={{rotate:-90, y:50, x:-10}}
+        transition={{
+          delay:2.5,
+          ease:'easeInOut',
+          duration:1
+        }}
+        style={{
+          transformOrigin: "center",
+          width: "30px", // Set image container width
+          height: "30px",
+        }}
+        >
         <Image
-          src="/arrow_ashish.png"
-          alt="Name tag with arrow"
-          width={150}
-          height={150}
-          quality={100}
-          className="absolute right-[16%] -top-16"
+            src="/arrow_ashish.png"
+            alt="Name tag with arrow"
+            width={30}
+            height={30}
+            quality={100}
         />
-    </motion.div>
+        </motion.div>
+        <div 
+        style={{
+          transform:"translateX(20px)",
+          boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.15)",
+        }}
+        className={`transition-all duration-500 ${cssClass}`}>
+          {displayedText || typedText}
+        </div>
+
+      </div>
     </motion.div>
   );
 }

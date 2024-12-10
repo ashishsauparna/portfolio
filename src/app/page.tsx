@@ -95,19 +95,6 @@ export default function Home() {
         `}
       </Script>
 
-      {/* <div className='absolute h-screen w-screen'>
-
-      <Image
-          src={"/banner.png"}
-          width={100}
-          height={100}
-          sizes='100'
-          alt='background banner'
-          className='-z-10 absolute bottom-0 md:bottom-10 w-full'
-          />
-
-      </div> */}
-
       {/* <MoveImage path={Banner}/> */}
       <div className='items-left body_width z-10 relative'>
         
@@ -135,7 +122,7 @@ export default function Home() {
           </h4>
 
           <h1 className="font-recklessneue text-slate-800 w-[65%] mb-0" 
-            style={{ letterSpacing: '-0.02em', fontWeight: "600" }}>
+            style={{ letterSpacing: '-0.03em', fontWeight: "600" }}>
           <span>
             Designing digital solutions for <br className="conditional_break" />enterprises
             and startups since 2020.
@@ -159,7 +146,9 @@ export default function Home() {
             </Link>
           </h4>
 
-          <BouncingImage/>
+          <div className="hidden lg:block w-full">
+            <BouncingImage />
+          </div>
 
           </div>
 

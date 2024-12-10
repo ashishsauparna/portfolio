@@ -342,7 +342,7 @@ li .mobile_ui:hover{
   color: #0069E5;
   background-color: #fafcfd;
   border: 1px solid #0069E5;
-  padding: 2px 12px;
+  padding: 2px 16px;
   font-weight: 400;
   font-size: 14px;
   text-align: center;
@@ -355,6 +355,41 @@ li .mobile_ui:hover{
   text-decoration: underline;
   background-color: #0069E5;
   color: #fefefe;
+}
+
+.arrow-text-default{
+  font-size: var(--default-font-size);
+  background:#289562;
+  border:2px solid #ffffff;
+  color:#ffffff;
+  padding:4px 16px;
+  font-weight: 500;
+}
+
+.arrow-text-highlight{
+  font-size: var(--default-font-size);
+  background:#289562;
+  border:2px solid #ffffff;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 1000px;
+  color: #89C5A9;
+  padding:6px 16px;
+  font-weight: 500;
+}
+
+.arrow-text-final{
+  font-size: var(--default-font-size);
+  background:#289562;
+  border:2px solid #ffffff;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 1000px;
+  color: #ffffff;
+  padding:6px 16px;
+  font-weight: 500;
 }
 
 .goback_button{
