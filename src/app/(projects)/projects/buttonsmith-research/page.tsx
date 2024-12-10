@@ -84,7 +84,7 @@ export default function ButtonSmithResearch() {
 
         <AnimatePresence>
           {showBackArrow && (
-            <div className={`left-0 flex items-center ${activeSection === 'story' ? 'active' : ''}`} onClick={(e) => handleScroll(e, 'top')}>
+            <div className={`left-0 flex items-center ${activeSection === 'story' ? 'active' : ''}`} onClick={() => router.back()}>
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}

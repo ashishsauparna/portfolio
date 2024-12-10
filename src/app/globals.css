@@ -11,18 +11,6 @@
   --large-screen-font-size: 4.1rem;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
-
-/* @media (prefers-color-scheme:light) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 28, 28, 28; 
-    --background-end-rgb: 0, 0, 0;   
-  }
-} */
-
 body {
   font-size: var(--default-font-size);
   font-weight: 300;
@@ -111,7 +99,7 @@ b{
 
 /*Defining headings*/
 h1{
-  font-size: 2.6rem;
+  font-size: 3.2rem;
   font-family: var(--font-recklessneue);
   margin-bottom: 1rem;
   font-weight: 250;
@@ -317,7 +305,7 @@ li .mobile_ui:hover{
 }
 
 .button{
-  font-family: var(--font-space-gothic);
+  font-family: var(--font-alegreya);
   font-size: var(--default-font-size);
   color: #ffffff;
   background-color: #0069E5;
@@ -337,7 +325,7 @@ li .mobile_ui:hover{
 }
 
 .button_small{
-  font-family: var(--font-space-gothic);
+  font-family: var(--font-albert-sans);
   font-size: var(--small-font-size);
   color: #0069E5;
   background-color: #fafcfd;
@@ -360,7 +348,7 @@ li .mobile_ui:hover{
 .arrow-text-default{
   font-size: var(--default-font-size);
   background:#289562;
-  border:2px solid #ffffff;
+  border:2px solid #458b54;
   color:#ffffff;
   padding:6px 16px;
   font-weight: 500;
@@ -369,7 +357,7 @@ li .mobile_ui:hover{
 .arrow-text-highlight{
   font-size: var(--default-font-size);
   background:#289562;
-  border:2px solid #ffffff;
+  border:2px solid #458b54;
   border-top-left-radius: 16px;
   border-top-right-radius: 1000px;
   border-bottom-left-radius: 1000px;
@@ -382,7 +370,7 @@ li .mobile_ui:hover{
 .arrow-text-final{
   font-size: var(--default-font-size);
   background:#289562;
-  border:2px solid #ffffff;
+  border:2px solid #458b54;
   border-top-left-radius: 16px;
   border-top-right-radius: 1000px;
   border-bottom-left-radius: 1000px;
@@ -430,7 +418,6 @@ li .mobile_ui:hover{
 .arrow-back-icon {
   transition: filter 0.1s ease;
   margin-top: -2px;
-  transform: rotate(90deg);
   filter: brightness(0) invert(1);
   transition: ease-in-out 0.2s;
 }
@@ -579,7 +566,6 @@ li .mobile_ui:hover{
 
 .project_details{
   position: relative;
-  border-top: none;
   padding-top: 1rem;
 }
 
@@ -634,7 +620,7 @@ ul.footer_links{
   width: 100%;
   gap: 1rem;
   display: grid;
-  transform: translateY(-4rem) translateX(-28rem);
+  transform: translateY(-4rem) translateX(-32rem);
 }
 
 .footer_grid{

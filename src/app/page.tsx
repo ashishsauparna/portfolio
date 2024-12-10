@@ -122,10 +122,9 @@ export default function Home() {
           </h4> */}
 
           <h1 className="font-recklessneue text-slate-800 w-[65%] mb-0" 
-            style={{ letterSpacing: '-0.03em', fontWeight: "600" }}>
+            style={{ fontWeight: "600", position: "relative",}}>
           <span>
-            Designing digital solutions for <br className="conditional_break" />enterprises
-            and startups since 2020.
+            Designing digital solutions <br className="conditional_break" />for enterprises since 2020
           </span>
         </h1>
 

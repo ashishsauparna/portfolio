@@ -25,14 +25,14 @@ export default function BouncingImage() {
         // Step 3: Replace the first typing effect with the second message after a delay
         const secondTypingTimeout = setTimeout(() => {
           setTypedText(""); // Clear the current typing text
-          startTypingEffect(" Scroll down to see my work");
+          startTypingEffect(" Please scroll down to see my work");
         }, 6000); // Wait for the first typing to complete (assuming ~4 seconds duration)
   
         return () => clearTimeout(secondTypingTimeout);
       }, 1000); // Delay before starting the first typing effect
   
       return () => clearTimeout(typingTimeout);
-    }, 3000); // 3 seconds to show "Typing.."
+    }, 4000); // 4 seconds to show "Typing.."
   
     return () => clearTimeout(replaceTimeout);
   }, []);
@@ -56,7 +56,7 @@ export default function BouncingImage() {
     initial={{ y: 500, x: 200 }} // Start from below the viewport
     animate={{ y: [500, 0, 0], x: [200, 0, 0] }} // Move up first, then bounce
     transition={{
-        duration: 4,
+        duration: 3,
         ease:'easeInOut',
         // times: [0, 0.4, 0.6, 0.9], // Timing for each keyframe
     }}

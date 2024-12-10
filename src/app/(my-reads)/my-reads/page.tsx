@@ -64,17 +64,17 @@ export default function MyReads() {
               </div>
             <div className='flex flex-col gap-24'>
               <div className='flex flex-col gap-2 items-start w-[60%]'>
-                <h5 className='text-2xl text-slate-900 -mt-2'>What am I reading and listening to?</h5>
+                <h2>What am I reading and listening to?</h2>
                 <p className='mb-4 mt-4'>Its a space of all my favourite books, podcasts, articles, people I am inspired by and things that I enjoy and love, that I hope you might like as well.</p>
               </div>
 
               <div className='flex flex-col gap-2 items-start'>
-                <h5 className='text-2xl text-slate-900 -mt-2'>People that inspire me</h5>
+                <h2>People that inspire me</h2>
                 <Inspirations/>
               </div>
 
               <div className='flex flex-col gap-2 items-start'>
-                <h5 className='text-2xl text-slate-900 -mt-2'>My Reads</h5>
+                <h2>My Reads</h2>
                 <Books/>
               </div>
             </div>

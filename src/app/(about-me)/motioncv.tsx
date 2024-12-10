@@ -69,7 +69,7 @@ export default function MotionCV(){
             }}>
             <div className={`intro_content_three mt-48 mb-24 !items-start`}>
             <div>
-                <h5 className='mb-4 text-2xl text-slate-900'>Education</h5>
+                <h2 className='mb-4 text-slate-900'>Education</h2>
                 {education.map((data, index) => (
                     <div key={index} className='leading-7 mb-4'>
                     <p className='font-medium'>{data.study}</p>
@@ -78,7 +78,7 @@ export default function MotionCV(){
                 ))}
             </div>
             <div>
-              <h5 className='mb-4 text-2xl text-slate-900'>Projects &  Contribution</h5>
+              <h2 className='mb-4 text-slate-900'>Projects &  Contribution</h2>
                     <div className='leading-7 mb-4'>
                     <p className="font-medium">Figma - Font Swap Plugin (25,000+ users)</p>
                     <p>UX Designer + Developer | July 2023 - Present</p>
@@ -90,7 +90,7 @@ export default function MotionCV(){
                     </div>
               </div>
             <div>
-                <h5 className='mb-4  text-2xl text-slate-900'>Experience</h5>
+                <h2 className='mb-4 text-slate-900'>Experience</h2>
                 {experience.map((data, index) => (
                     <div key={index} className='leading-7 mb-4'>
                     <p className="font-medium">{data.company}</p>

@@ -17,7 +17,7 @@ export default function ProjectsData() {
       readTime: '5 mins read',
       new: "Jun 23",
       headingP1: "Font Swap: ",
-      headingP2: "Font Swap Case Study . June 2023",
+      headingP2: "Font Swap Case Study • June 2023",
       subHeading:"A Figma plugin to help switch multiple fonts in three steps",
       large: false,
       shortImage: true,
@@ -36,7 +36,7 @@ export default function ProjectsData() {
       readTime: '6 mins read',
       new: "May 24",
       headingP1: "Button Smith: ",
-      headingP2: "Button Smith Case Study . May 2024",
+      headingP2: "Button Smith Case Study • May 2024",
       subHeading:"A Figma plugin to create button components set",
       large: false,
       shortImage: true,
@@ -54,7 +54,7 @@ export default function ProjectsData() {
       readTime: '4 mins read',
       new: "Jan 22",
       headingP1: "Rozgar App: ",
-      headingP2: "Rozgar App Short Study . Mar 2022",
+      headingP2: "Rozgar App Short Study • Mar 2022",
       subHeading:"Finding digital solution for blue collar workers",
       large: false,
       shortImage: true,
@@ -70,7 +70,7 @@ export default function ProjectsData() {
       readTime: '8 mins read',
       new: "Mar 21",
       headingP1: "Sanskriti App: ",
-      headingP2: "Sanskriti App Case Study . Mar 2021",
+      headingP2: "Sanskriti App Case Study • Mar 2021",
       subHeading:"Learning about artifacts and the museums they belong to",
       large: false,
       shortImage: true,
@@ -157,7 +157,7 @@ export default function ProjectsData() {
         }
           <div className={`grid gap-1 justify-between project_details`}>
             <div className='flex'>
-                <h4 className='text-xs font-albert-sans uppercase text-blue-600 font-semibold'>{image.headingP2}</h4>
+                <h4 className='text-sm font-albert-sans uppercase text-blue-600 font-semibold'>{image.headingP2}</h4>
             </div>
             <div className='mr-16 font-recklessneue font-normal whitespace-pre-line text-2xl text-gray-900'>
               {/* <span className='font-space-gothic font-normal'>
