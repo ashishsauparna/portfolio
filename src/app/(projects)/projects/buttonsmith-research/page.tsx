@@ -141,12 +141,11 @@ export default function ButtonSmithResearch() {
 
 
         <div className="flex flex-col justify-center items-center w-full">
-            <h4 className="flex" style={{fontWeight:"300", width:"25%", textAlign:"center"}}>
+            <h4 className="project_intro_text" style={{fontWeight:"300", textAlign:"center"}}>
               One Figma Plugin to generates and documents all your button states
             </h4>
-            <h1 className="flex mt-48 gap-8 font-light font-noto-serif justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
+            <h1 className="project_intro_heading">
               {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
-              -
               <Image
               src={"/star.svg"}
               alt="Star image"
@@ -162,7 +161,6 @@ export default function ButtonSmithResearch() {
               height={32}
               className="rotating-star"
               />
-              -
             </h1>
         </div>
         
@@ -195,11 +193,10 @@ export default function ButtonSmithResearch() {
 
 
         <div id="story" className='content_grid_two w-full gap-24 pt-24' data-section>
-          <div style={{width:"70%"}}></div>
           <div className="flex flex-col gap-16">
             <div>
                 <ArrowHeading heading = "Story worth talking about"/>
-                <div style={{width:"80%"}}>
+                <div className="md:w-[70%] w-full">
                 To enhance design efficiency by creating a customised and fully <b style={{fontWeight:"500"}}>documented</b> component set with a <b style={{fontWeight:"500"}}>least decision making efforts</b> which can be reused and updated as per user&apos;s needs.
                 </div>
             </div>
@@ -267,7 +264,7 @@ export default function ButtonSmithResearch() {
 
 
         <div id="research" className='content_grid_two gap-24 w-full pt-24' data-section>
-          <div style={{width:"70%"}}>
+          <div className="md:w-[70%] w-full">
             <ArrowHeading heading = "Research Approach" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=654-7&t=SaIecvX0yD7wvp7I-1"/>
             <div className='grid grid-cols-1 grid-rows-2 gap-x-1 justify-between gap-y-2'>
                 <div className="description_tab">
@@ -290,7 +287,7 @@ export default function ButtonSmithResearch() {
 
 
           <div>
-          <div style={{width:"80%", display:"grid"}}>
+          <div className="md:w-[80%] w-full" style={{display:"grid"}}>
           <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 1] </b>
           My research approach placed a strong emphasis in understanding the existing platforms and 
           how they are solving for creating a component set. it was discovered that they had very little 
@@ -302,7 +299,7 @@ export default function ButtonSmithResearch() {
 
           <br/><br/>
 
-          <div style={{width:"80%", display:"grid"}}>
+          <div className="md:w-[80%] w-full" style={{display:"grid"}}>
           <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 2] </b>
           Upon conducting heuristics it was discovered that there could be many things that 
           could be used for creating a plugin that can reduce human efforts like, a preview option in 
@@ -357,9 +354,9 @@ export default function ButtonSmithResearch() {
 
         <div id="design" className="content_grid_two pt-24 body_width" data-section>
 
-          <div style={{width:"70%"}}>
+          <div className="md:w-[70%] w-full">
             <ArrowHeading heading = "Design Approach" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=656-195&t=SaIecvX0yD7wvp7I-1"/>
-            <div className='grid grid-cols-2 grid-rows-2 mb-4 mt-8 gap-y-2 gap-x-0'>
+            <div className='grid md:grid-cols-2 grid-rows-2 mb-4 mt-8 gap-y-2 gap-x-0'>
                 <div className="description_tab">
                     <h4 style={{fontWeight: "350"}}>
                       MoSCoW Prioritization
@@ -385,7 +382,7 @@ export default function ButtonSmithResearch() {
 
           <div>
 
-          <div style={{width:"80%", display:"grid"}}>
+          <div className="md:w-[70%] w-full grid">
           <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 1] </b>
           After understanding the how might we questions it became clear to distinguish the features that might be most required vs least required when creating the plugin design. 
           <br/><br/>
@@ -394,7 +391,7 @@ export default function ButtonSmithResearch() {
 
           <br/><br/>
 
-          <div style={{width:"80%", display:"grid"}}>
+          <div className="md:w-[70%] w-full grid">
           <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>[Approach 2] </b>
           The decision work as per trial and error method was taken as we did not have much data in terms 
           of how the users would feel when using the newly developed iteration.
@@ -437,7 +434,7 @@ export default function ButtonSmithResearch() {
           {/* Challenges & learnings */}
 
               <ArrowHeading heading = "Challenges & learnings (1)" arrow={true}/>
-              <div className='grid mb-4 gap-4 w-[80%]'>
+              <div className='grid mb-4 gap-4 md:w-[80%] w-full'>
                 <b style={{fontWeight:"500", marginBottom:"2rem"}}>What was the Problem?</b>
                   <div className="description_tab2">
                       <div style={{fontWeight: "350"}}>
@@ -533,7 +530,7 @@ export default function ButtonSmithResearch() {
                   {/* Challenges & learnings */}
 
               <ArrowHeading heading = "Challenges & learnings (2)" arrow={true}/>
-              <div className='grid mb-4 gap-4 w-[80%]'>
+              <div className='grid mb-4 gap-4 md:w-[80%] w-full'>
                 <b style={{fontWeight:"500", marginBottom:"2rem"}}>What was the Problem?</b>
                   <div className="description_tab2">
                       <div style={{fontWeight: "350"}}>

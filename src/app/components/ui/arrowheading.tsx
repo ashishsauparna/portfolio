@@ -5,7 +5,7 @@ import ButtonSmall from "./button_small";
 const ArrowHeading = (data: any) => {
     return (
         <div>
-        <span className="flex gap-3 items-center mb-3">
+        <span className="flex flex-wrap gap-3 items-center mb-3">
             <h3 className="text-3xl font-light font-noto-serif text-slate-800">
             {data.heading}
             </h3>

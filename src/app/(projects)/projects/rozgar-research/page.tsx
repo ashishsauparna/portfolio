@@ -141,12 +141,10 @@ export default function RozgarResearch() {
 
 
         <div className="flex flex-col justify-center items-center w-full">
-            <h4 className="flex" style={{fontWeight:"300", width:"40%", textAlign:"center"}}>
+            <h4 className="project_intro_text" style={{fontWeight:"300", textAlign:"center"}}>
               This small case study includes research and understanding of the online and offline market of Blue collar workers
             </h4>
-            <h1 className="flex mt-48 gap-8 font-light font-noto-serif justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
-              {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
-              -
+            <h1 className="project_intro_heading">
               <Image
               src={"/star.svg"}
               alt="Star image"
@@ -162,7 +160,6 @@ export default function RozgarResearch() {
               height={32}
               className="rotating-star"
               />
-              -
             </h1>
         </div>
         </div>
@@ -188,11 +185,10 @@ export default function RozgarResearch() {
 
 
         <div id="story" className='content_grid_two w-full gap-24 pt-24' data-section>
-          <div style={{width:"70%"}}></div>
           <div className="flex flex-col gap-24">
             <div>
                 <ArrowHeading heading = "Story worth talking about"/>
-                <div style={{width:"80%"}}>
+                <div className="md:w-[70%] w-full">
                 It was a test done for a company interview which involved 3 days and I had to 
                 come up a first iteration of how blue collar workers could benefit from an application 
                 to find daily gigs or any job if possible.
@@ -239,7 +235,7 @@ export default function RozgarResearch() {
 
 
         <div id="research" className='content_grid_two gap-24 w-full pt-24' data-section>
-          <div style={{width:"70%"}}>
+          <div className="md:w-[70%] w-full">
             <ArrowHeading heading = "Research Approach" arrow={true}/>
             <div className='grid grid-cols-1 grid-rows-2 gap-x-1 justify-between gap-y-2'>
             <div className="description_tab">
@@ -272,7 +268,7 @@ export default function RozgarResearch() {
 
 
           <div>
-          <div style={{width:"80%", display:"grid", gap:"1rem"}}>
+          <div className="md:w-[80%] w-full" style={{display:"grid", gap:"1rem"}}>
             <b style={{fontWeight:"500"}}>[Approach 1] </b>
             <div>
             I Interviewed three participants working in different backgrounds. It was an in-person interviews that 
@@ -283,7 +279,7 @@ export default function RozgarResearch() {
 
           <br/><br/>
 
-          <div style={{width:"80%", display:"grid", gap:"1rem"}}>
+          <div className="md:w-[80%] w-full" style={{display:"grid", gap:"1rem"}}>
             <b style={{fontWeight:"500"}}>[Approach 2] </b>
             <div>
             Next, I conducted a competitor analysis of existing blue-collar job platforms, focusing on feature gaps 
@@ -354,7 +350,7 @@ export default function RozgarResearch() {
 
           <div style={{width:"70%"}}>
             <ArrowHeading heading = "Design Approach" arrow={true}/>
-            <div className='grid grid-cols-2 grid-rows-2 mb-4 mt-8 gap-y-2 gap-x-0'>
+            <div className='grid md:grid-cols-2 grid-rows-2 mb-4 mt-8 gap-y-2 gap-x-0'>
                 <div className="description_tab">
                     <h4 style={{fontWeight: "350"}}>
                       Low-fi Wireframes
@@ -380,7 +376,7 @@ export default function RozgarResearch() {
 
           <div>
 
-          <div style={{width:"80%", display:"grid", gap:"0.5rem"}}>
+          <div className="md:w-[80%] w-full" style={{display:"grid", gap:"0.5rem"}}>
           <b>[Approach 1] </b>
             <div>
             To overcome initial design challenges, I sketched wireframes using the Crazy 8 technique, 
@@ -391,7 +387,7 @@ export default function RozgarResearch() {
 
           <br/><br/>
 
-          <div style={{width:"80%", display:"grid", gap:"0.5rem"}}>
+          <div className="md:w-[80%] w-full" style={{display:"grid", gap:"0.5rem"}}>
             <b>[Approach 2] </b>
             <div>
             Following early feedback, I created a clickable prototype in Figma and tested it with participants. 
@@ -401,7 +397,7 @@ export default function RozgarResearch() {
 
           <br/>
           
-          <div style={{width:"80%", display:"grid"}}>
+          <div className="md:w-[80%] w-full" style={{display:"grid"}}>
             Feedback led to enhancements in UI, reducing button intensity and providing more upfront information for 
             smoother job applications.
           </div>
@@ -465,7 +461,7 @@ export default function RozgarResearch() {
           {/* Challenges & learnings */}
 
               <ArrowHeading heading = "Challenges & learnings" arrow={true}/>
-              <div className='grid mb-4 gap-4 w-[80%]'>
+              <div className='grid mb-4 gap-4 md:w-[80%] w-full'>
                 <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>What was the Problem? (hmw method)</b>
                   <div className="description_tab2">
                       <div style={{fontWeight: "350"}}>
@@ -527,7 +523,7 @@ export default function RozgarResearch() {
         <div id="takeaways" className='content_grid_two gap-24 body_width pt-24 mb-24' data-section>
         
               <ArrowHeading heading = "Key Takeaways" arrow={true}/>
-              <div className="grid w-[80%]">
+              <div className="grid md:w-[80%] w-full">
               <b style={{fontWeight:"500", marginBottom:"2rem"}}>Reflection on the outcomes</b>
               The project emphasized the importance of building trust and simplifying the interface to meet 
               the needs of users unfamiliar with technology. While initial challenges are significant, the 

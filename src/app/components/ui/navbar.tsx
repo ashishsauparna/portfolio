@@ -74,7 +74,7 @@ export default function NavBar() {
 
         </ul>
         <div style={{transform:"translateY(0px)"}}>
-        <SmallButton name="Hire Me" href="mailto:ashishsauparna@gmail.com"/>
+        <SmallButton name="Contact Me 📝" href="mailto:ashishsauparna@gmail.com"/>
         </div>
       </nav>
 

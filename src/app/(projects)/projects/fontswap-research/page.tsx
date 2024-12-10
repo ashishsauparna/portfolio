@@ -139,12 +139,10 @@ export default function FontSwapResearch() {
 
 
         <div className="flex flex-col justify-center items-center w-full">
-            <h4 className="flex" style={{fontWeight:"300", width:"25%", textAlign:"center"}}>
+            <h4 className="project_intro_text" style={{fontWeight:"300", textAlign:"center"}}>
                 A Figma Plugin addressing to replace all font styles with 3 clicks
             </h4>
-            <h1 className="flex mt-48 gap-8 font-light font-recklessneue justify-center overflow-hidden whitespace-nowrap text-clip text-gray-800">
-              {/* <Image width={72} src={Logo} alt="Figma Logo"/> */}
-              -
+            <h1 className="project_intro_heading">
               <Image
               src={"/star.svg"}
               alt="Star image"
@@ -160,7 +158,6 @@ export default function FontSwapResearch() {
               height={32}
               className="rotating-star"
               />
-              -
             </h1>
         </div>
         </div>
@@ -176,11 +173,6 @@ export default function FontSwapResearch() {
         alt="how might we questions"
         className="w-full"
         />
-        {/* <Image
-        src={SelectLayerGif}
-        alt="how might we questions"
-        className="w-[14.2%] absolute left-[9.1rem] top-[16rem]"
-        /> */}
         </div>
 
 
@@ -193,11 +185,10 @@ export default function FontSwapResearch() {
 
 
         <div id="story" className='content_grid_two w-full pt-24 gap-24' data-section>
-          <div style={{width:"70%"}}></div>
           <div className="flex flex-col gap-24">
             <div>
                 <ArrowHeading heading = "Story worth talking about"/>
-                <div style={{width:"80%"}}>
+                <div className="md:w-[80%] w-full">
                 The idea sparked when <b style={{fontWeight:"500"}}>my team and I were struggling to test various fonts</b> while 
                 crafting a pitch for a client. This challenge led to the realization that<b style={{fontWeight:"500"}}> we needed a 
                 faster, more aesthetic solution</b> for testing and selecting fonts. From that, I created a 
@@ -251,7 +242,7 @@ export default function FontSwapResearch() {
 
 
         <div id="research" className='content_grid_two gap-24 w-full pt-24' data-section>
-          <div style={{width:"70%"}}>
+          <div className="md:w-[70%] w-full">
             <ArrowHeading heading = "Research Approach" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=654-7&t=SaIecvX0yD7wvp7I-1"/>
             <div className='grid grid-cols-1 grid-rows-2 gap-x-1 justify-between gap-y-2'>
             <div className="description_tab">
@@ -279,7 +270,7 @@ export default function FontSwapResearch() {
 
 
           <div>
-          <div style={{width:"80%", display:"grid", gap:"1rem"}}>
+          <div className="md:w-[80%] w-full" style={{display:"grid", gap:"1rem"}}>
             <b style={{fontWeight:"500"}}>[Approach 1] </b>
             <div>
             We were initially using a plugin called Font Replacer, and Easy Font Swap 
@@ -291,7 +282,7 @@ export default function FontSwapResearch() {
 
           <br/><br/>
 
-          <div style={{width:"80%", display:"grid", gap:"1rem"}}>
+          <div className="md:w-[80%] w-full" style={{display:"grid", gap:"1rem"}}>
             <b style={{fontWeight:"500"}}>[Approach 2] </b>
             <div>
               <b style={{fontWeight:"500"}}>I leveraged feedback from the comment sections</b> of these plugins to identify what users needed, 
@@ -350,7 +341,7 @@ export default function FontSwapResearch() {
 
           <div style={{width:"70%"}}>
             <ArrowHeading heading = "Design Approach" arrow={true} buttonName="View More" buttonHref="https://www.figma.com/design/7Mis5cfCTNKKmJeyesqT9C/Button-Smith-Plugin?node-id=656-195&t=SaIecvX0yD7wvp7I-1"/>
-            <div className='grid grid-cols-2 grid-rows-2 mb-4 mt-8 gap-y-2 gap-x-0'>
+            <div className='grid md:grid-cols-2 grid-rows-2 mb-4 mt-8 gap-y-2 gap-x-0'>
                 <div className="description_tab">
                     <h4 style={{fontWeight: "350"}}>
                       MoSCoW Prioritization
@@ -376,7 +367,7 @@ export default function FontSwapResearch() {
 
           <div>
 
-          <div style={{width:"80%", display:"grid", gap:"0.5rem"}}>
+          <div className="md:w-[80%] w-full" style={{display:"grid", gap:"0.5rem"}}>
           <b>[Approach 1] </b>
             <div>
             Facing a creative block, I initially <b>mirrored the frame structure of Font Replacer to get started</b>. 
@@ -387,7 +378,7 @@ export default function FontSwapResearch() {
 
           <br/><br/>
 
-          <div style={{width:"80%", display:"grid", gap:"0.5rem"}}>
+          <div className="md:w-[80%] w-full" style={{display:"grid", gap:"0.5rem"}}>
             <b>[Approach 2] </b>
             <div>
             Drawing from The Sprint Book, I learned the importance of testing early to avoid delays. 
@@ -398,7 +389,7 @@ export default function FontSwapResearch() {
 
           <br/>
           
-          <div style={{width:"80%", display:"grid"}}>
+          <div className="md:w-[80%] w-full" style={{display:"grid"}}>
             The feedback resulted in Release 4.1, which improved visual cues for font selection, 
             visual identification for missing fonts, and status updates on the progress bar when font 
             switching was delayed.
@@ -433,7 +424,7 @@ export default function FontSwapResearch() {
           {/* Challenges & learnings */}
 
               <ArrowHeading heading = "Challenges & learnings (1)" arrow={true}/>
-              <div className='grid mb-4 gap-4 w-[80%]'>
+              <div className='grid mb-4 gap-4 md:w-[80%] w-full'>
                 <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>What was the Problem? (hmw method)</b>
                   <div className="description_tab2">
                       <div style={{fontWeight: "350"}}>
@@ -529,7 +520,7 @@ export default function FontSwapResearch() {
           {/* Challenges & learnings */}
 
               <ArrowHeading heading = "Challenges & learnings (2)" arrow={true}/>
-              <div className='grid mb-4 gap-4 w-[80%]'>
+              <div className='grid mb-4 gap-4 md:w-[80%] w-full'>
                 <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>What was the Problem? (hmw method)</b>
                   <div className="description_tab2">
                       <div style={{fontWeight: "350"}}>

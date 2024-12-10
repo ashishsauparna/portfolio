@@ -99,10 +99,8 @@ b{
 
 /*Defining headings*/
 h1{
-  font-size: 3.2rem;
+  font-size: 3.0rem;
   font-family: var(--font-recklessneue);
-  margin-bottom: 1rem;
-  font-weight: 250;
   line-height: 3.4rem;
 }
 
@@ -803,6 +801,7 @@ footer{
 }
 
 .sticky_navigation {
+  display: flex;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
   backdrop-filter: blur(10px); /* Blurring effect */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
@@ -834,6 +833,32 @@ footer{
 .conditional_break {
   display: inline;
 }
+
+
+/* Project Design Desktop */
+
+.project_intro_text{
+  display: flex;
+  width: 100%; /* Full width for smaller screens */
+}
+
+.project_intro_heading{
+  display: flex;
+  margin-top: 12rem;
+  gap: 2rem;
+  font-weight: 300;
+  font-family: var(--font-recklessneue);
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: clip;
+  color: #1f2937;
+}
+
+
+
+
+
 
 /* When the screen width is 90% or smaller */
 @media (max-width: 90vw) {
@@ -984,4 +1009,26 @@ footer{
   .conditional_break {
     display: none; /* Hide the line break on smaller screens */
   }
+
+
+
+  /* Projects Design Mobile*/
+
+  .sticky_navigation{
+    display: none;
+  }
+
+  .content_grid_two{
+    grid-template-columns: 1fr;
+  }
+
+  .project_intro_text{
+    width: 80%;
+  }
+
+  .project_intro_heading{
+    gap: 1rem;
+    margin-top: 6rem;
+  }
+
 }

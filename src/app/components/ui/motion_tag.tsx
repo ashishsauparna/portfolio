@@ -95,6 +95,7 @@ export default function BouncingImage() {
         style={{
           transform:"translateX(18px) translateY(-6px)",
           boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.15)",
+          textAlign: "start"
         }}
         className={`transition-all duration-500 ${cssClass}`}>
           {displayedText || typedText}

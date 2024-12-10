@@ -121,8 +121,8 @@ export default function Home() {
             Available for work
           </h4> */}
 
-          <h1 className="font-recklessneue text-slate-800 w-[65%] mb-0" 
-            style={{ fontWeight: "600", position: "relative",}}>
+          <h1 className="text-slate-800 w-[65%] mb-0" 
+            style={{ fontWeight: "500", position: "relative",}}>
           <span>
             Designing digital solutions <br className="conditional_break" />for enterprises since 2020
           </span>
