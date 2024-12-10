@@ -157,7 +157,7 @@ export default function ProjectsData() {
         }
           <div className={`grid gap-1 justify-between project_details`}>
             <div className='flex'>
-                <h4 className='text-sm font-albert-sans uppercase text-blue-600 font-semibold'>{image.headingP2}</h4>
+                <h4 className='text-sm font-albert-sans uppercase text-blue-700 font-medium'>{image.headingP2}</h4>
             </div>
             <div className='mr-16 font-recklessneue font-normal whitespace-pre-line text-2xl text-gray-900'>
               {/* <span className='font-space-gothic font-normal'>

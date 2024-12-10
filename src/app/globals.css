@@ -102,6 +102,7 @@ h1{
   font-size: 3.0rem;
   font-family: var(--font-recklessneue);
   line-height: 3.4rem;
+  letter-spacing: -0.8px;
 }
 
 h2{

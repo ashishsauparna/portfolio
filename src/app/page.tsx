@@ -103,10 +103,10 @@ export default function Home() {
 
           <div className="relative flex flex-col md:gap-8 gap-6 md:items-center justify-center h-screen w-full -mt-48 md:-mt-24">
 
-          <h4 className="inline font-normal z-50 items-center flex max-w-max"
+          <h4 className="inline font-normal items-center flex max-w-max"
           style={{
             border: "1px solid #D0D0D0",
-            padding:"2px 12px",
+            padding:"1px 12px",
             borderRadius:"1000px"
           }}>
           <span
@@ -118,18 +118,18 @@ export default function Home() {
               marginRight: "8px",
             }}
           ></span>
-            Available for work
+          <span className='opacity-70 text-[14px]'>Available for work</span>
           </h4>
 
           <h1 className="text-slate-800 w-[65%] mb-0 md:font-medium font-light" 
-            style={{ position: "relative",}}>
+            style={{ position: "relative"}}>
           <span>
             Designing digital solutions <br className="conditional_break" />for enterprises since 2020
           </span>
         </h1>
 
-          <h4 className='opacity-80 inline font-[350] z-50'>
-            Sharing design insights on &nbsp;
+          <h4 className='inline font-[500] z-50'>
+            <span className='opacity-70'>Sharing design insights on &nbsp;</span>
             <Link className='link_button md:mr-2 mr-2' href={'https://medium.com/@ashishsauparna'}>
             <span className='relative mr-4'>
               Medium
