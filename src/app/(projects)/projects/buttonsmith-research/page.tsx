@@ -193,6 +193,7 @@ export default function ButtonSmithResearch() {
 
 
         <div id="story" className='content_grid_two w-full gap-24 pt-24' data-section>
+        <div className="md:w-[70%] w-full"></div>
           <div className="flex flex-col gap-16">
             <div>
                 <ArrowHeading heading = "Story worth talking about"/>

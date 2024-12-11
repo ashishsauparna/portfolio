@@ -840,7 +840,9 @@ footer{
 
 .project_intro_text{
   display: flex;
-  width: 100%; /* Full width for smaller screens */
+  width: 25%; /* Full width for smaller screens */
+  text-align: center;
+  justify-content: center;
 }
 
 .project_intro_heading{
@@ -854,6 +856,7 @@ footer{
   white-space: nowrap;
   text-overflow: clip;
   color: #1f2937;
+  margin-bottom: 2rem;
 }
 
 

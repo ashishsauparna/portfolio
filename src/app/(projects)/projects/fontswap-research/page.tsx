@@ -185,6 +185,7 @@ export default function FontSwapResearch() {
 
 
         <div id="story" className='content_grid_two w-full pt-24 gap-24' data-section>
+        <div className="md:w-[70%] w-full"></div>
           <div className="flex flex-col gap-24">
             <div>
                 <ArrowHeading heading = "Story worth talking about"/>
