@@ -38,6 +38,11 @@ export const RecklessNeue = localFont({
       weight: '600', // SemiBold weight
       style: 'normal',
     },
+    {
+      path:'./fonts/RecklessNeue-RegularItalic.ttf',
+      weight: '400',
+      style: 'italic'
+    },
   ],
   variable: '--font-recklessneue',
 });

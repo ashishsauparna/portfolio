@@ -101,7 +101,7 @@ b{
 h1{
   font-size: 3.0rem;
   font-family: var(--font-recklessneue);
-  line-height: 3.4rem;
+  line-height: 3.6rem;
   letter-spacing: -0.8px;
 }
 
@@ -114,14 +114,14 @@ h2{
 
 h3{
   font-size: 22px;
-  font-family: var(--font-space-gothic);
+  font-family: var(--font-albert-sans);
   font-weight: 350;
   margin-bottom: 0.2rem;
 }
 
 h4{
   font-size: var(--default-font-size);
-  font-family: var(--font-space-gothic);
+  font-family: var(--font-albert-sans);
   font-weight: 400;
   line-height: 1.6rem;
 }
@@ -218,12 +218,11 @@ main{
 }
 
 .logo_container{
-  font-family: var(--font-space-gothic);
+  font-family: var(--font-albert-sans);
   font-size: 1.0rem;
   display: inline-flex;
   align-items: center;
   font-weight: 400;
-  letter-spacing: -0.2px;
   color: #0e1320;
 }
 
@@ -248,8 +247,7 @@ li{
 .nav_links{
   gap: 1rem;
   font-size: 1.0rem;
-  letter-spacing: -0.2px;
-  font-family: var(--font-space-gothic);
+  font-family: var(--font-albert-sans);
 }
 
 li .default{
@@ -278,7 +276,7 @@ li .active{
 
 li .mobile_ui{
   font-weight: 400; 
-  font-family: var(--font-space-gothic);
+  font-family: var(--font-albert-sans);
   text-decoration: none;
   margin-left: -1.3rem;
   border-bottom: 1.5px solid transparent;
@@ -437,7 +435,7 @@ li .mobile_ui:hover{
 }
 
 .link_button{
-  font-family: var(--font-space-gothic);
+  font-family: var(--font-albert-sans);
   font-size: var(--default-font-size);
   text-decoration: none;
   font-weight: 500;
@@ -809,7 +807,7 @@ footer{
   padding: 4px 4px; /* Adjust padding for better appearance */
   color: #fefefe; /* Light text color for contrast */
   font-size: var(--small-font-size);
-  font-family: var(--font-space-gothic);
+  font-family: var(--font-albert-sans);
   font-weight: 360;
   border-radius: 2px; /* No rounded corners */
   transition: 0.3s ease-in-out;

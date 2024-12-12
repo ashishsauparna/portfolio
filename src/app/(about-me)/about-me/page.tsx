@@ -35,7 +35,7 @@ export default function AboutMe() {
         <div className='intro_content_sec'>
 
           <div>
-            <div className='flex items-start'>
+            <div className='text-slate-800 flex items-start'>
               {/* <div className='w-2 h-2 bg-zinc-900 absolute -ml-6'>
               </div> */}
               <h1>Pronounced: <br/>Aa - shee - sh</h1>
