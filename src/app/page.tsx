@@ -123,7 +123,7 @@ export default function Home() {
 
           <h1 className="text-slate-800 w-[65%] mb-0 md:font-medium font-light" 
             style={{ position: "relative"}}>
-          <span className='italic'>
+          <span className='md:italic non-italic'>
             Designing digital solutions <br className="conditional_break" />
             <span>for enterprises since 2020</span>
           </span>
