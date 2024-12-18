@@ -121,7 +121,7 @@ export default function Home() {
           <span className='opacity-70 text-[14px]'>Available for work</span>
           </h4>
 
-          <h1 className="text-slate-800 w-[65%] mb-0 md:font-medium font-light" 
+          <h1 className="text-slate-800 w-[65%] mb-0 font-medium" 
             style={{ position: "relative"}}>
           <span className='md:italic non-italic'>
             Designing digital solutions <br className="conditional_break" />
