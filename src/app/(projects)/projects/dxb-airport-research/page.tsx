@@ -415,7 +415,7 @@ const heuristicsImageList = [
           <div className="md:w-[80%] w-full" style={{display:"grid", gap:"1rem"}}>
             <b style={{fontWeight:"500"}}>[Approach 2: User Interviews]</b>
             <h5 className="italic text-gray-900">
-            "Conducted User interview to get better understanding on services offered by DXB"
+            &quot;Conducted User interview to get better understanding on services offered by DXB&quot;
             </h5>
             <div>These interviews revealed:
               <br /><br />
@@ -584,7 +584,7 @@ const heuristicsImageList = [
               <ArrowHeading heading = "Key Takeaways" arrow={true}/>
               <div className="grid w-[80%]">
                 <h5 className="italic text-gray-900">
-                "Evolving Through Digital Service Mapping"
+                &quot;Evolving Through Digital Service Mapping&quot;
                 </h5>
                 Creating a digital service map was a transformative experience. It taught me how to identify and represent both existing and potential 
                 digital services comprehensively. Watching the map evolve during execution reinforced the importance of adaptability in designing dynamic solutions.
@@ -592,7 +592,7 @@ const heuristicsImageList = [
                 <br /><br />
 
                 <h5 className="italic text-gray-900">
-                "Innovating as a UX Researcher"
+                &quot;Innovating as a UX Researcher&quot;
                 </h5>
                 This project also enhanced my skills as a UX researcher, pushing me to innovate beyond familiar heuristic analysis by incorporating expressive techniques 
                 like emojis and actionable recommendations. Competitor analysis deepened my understanding of benchmarking website experiences effectively.
