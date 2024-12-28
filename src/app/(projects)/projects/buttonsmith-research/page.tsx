@@ -82,15 +82,9 @@ export default function ButtonSmithResearch() {
 
         <div className="flex sticky top-4 body_width font-medium z-50 gap-4 justify-center">
 
-        <AnimatePresence>
-          {showBackArrow && (
+        {/* <AnimatePresence> */}
+          {/* {showBackArrow && ( */}
             <div className={`left-0 flex items-center ${activeSection === 'story' ? 'active' : ''}`} onClick={() => router.back()}>
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.3 }}
-              >
                 <div className="goback_button">
                   <Image
                     src="/arrow_back.svg"
@@ -100,10 +94,9 @@ export default function ButtonSmithResearch() {
                     className="arrow-back-icon"
                   />
                 </div>
-              </motion.div>
             </div>
-          )}
-        </AnimatePresence>
+          {/* )} */}
+        {/* </AnimatePresence> */}
 
           <div className="sticky_navigation flex gap-1 justify-center">
             <Link href="#story" passHref>

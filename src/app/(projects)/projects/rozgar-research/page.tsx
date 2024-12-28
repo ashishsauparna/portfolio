@@ -79,30 +79,19 @@ export default function RozgarResearch() {
         {/* ---------- Back button and Navigation Menu Here ---------- */}
 
 
-        <div className="flex sticky top-4 body_width font-medium z-50 gap-2 justify-center">
+        <div className="flex sticky top-4 body_width font-medium z-50 gap-4 justify-center">
 
-        <AnimatePresence>
-          {showBackArrow && (
-            <div className={`left-0 flex items-center ${activeSection === 'story' ? 'active' : ''}`} onClick={() => router.back()}>
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="goback_button">
-                  <Image
-                    src="/arrow_back.svg"
-                    alt="back arrow icon"
-                    width={20}
-                    height={20}
-                    className="arrow-back-icon"
-                  />
-                </div>
-              </motion.div>
-            </div>
-          )}
-        </AnimatePresence>
+          <div className={`left-0 flex items-center ${activeSection === 'story' ? 'active' : ''}`} onClick={() => router.back()}>
+              <div className="goback_button">
+                <Image
+                  src="/arrow_back.svg"
+                  alt="back arrow icon"
+                  width={20}
+                  height={20}
+                  className="arrow-back-icon"
+                />
+              </div>
+          </div>
 
           <div className="sticky_navigation flex gap-1 justify-center">
             <Link href="#story" passHref>

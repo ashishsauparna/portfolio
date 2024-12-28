@@ -7,12 +7,16 @@ import Link from "next/link";
 import ArrowHeading from "@/app/components/ui/arrowheading";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AnimatePresence, motion } from "framer-motion";
+import Autoplay from "embla-carousel-autoplay";
+import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 export default function FontSwapResearch() {
 
   const [activeSection, setActiveSection] = useState('story');
   const [showBackArrow, setShowBackArrow] = useState(false);
+  const [api, setApi] = useState<CarouselApi>()
+  const [currentImageForResearch, setCurrentImageForResearch] = useState(0);
+  const [countImageForResearch, setcountImageForResearch] = useState(0);
   const router = useRouter();
 
   const handleScroll = (e: React.MouseEvent<HTMLDivElement>, id: string) => {
@@ -59,6 +63,37 @@ export default function FontSwapResearch() {
     };
   }, []);
 
+  useEffect(() =>{
+    
+    if (!api) {
+      return
+    }
+ 
+    // setcountImageForResearch(api.scrollSnapList().length)
+    setCurrentImageForResearch(api.selectedScrollSnap() + 1)
+ 
+    api.on("select", () => {
+      setCurrentImageForResearch(api.selectedScrollSnap() + 1)
+    })
+  }, [api]);
+
+const researchApproachImageList = [
+  {
+    src:"/projects/fontswap/research.png",
+    alt: "",
+    width:100,
+    height:100,
+    sizes: ""
+  },
+  {
+    src:"/projects/fontswap/heuristics.png",
+    alt: "",
+    width:100,
+    height:100,
+    sizes: ""
+  }
+]
+
   return (
 
     <main id="top" className="flex min-h-screen flex-col items-center">
@@ -77,30 +112,19 @@ export default function FontSwapResearch() {
         {/* ---------- Back button and Navigation Menu Here ---------- */}
 
 
-        <div className="flex sticky top-4 body_width font-medium z-50 gap-2 justify-center">
+        <div className="flex sticky top-4 body_width font-medium z-50 gap-4 justify-center">
 
-        <AnimatePresence>
-          {showBackArrow && (
-            <div className={`left-0 flex items-center ${activeSection === 'story' ? 'active' : ''}`}  onClick={() => router.back()}>
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="goback_button">
-                  <Image
-                    src="/arrow_back.svg"
-                    alt="back arrow icon"
-                    width={20}
-                    height={20}
-                    className="arrow-back-icon"
-                  />
-                </div>
-              </motion.div>
-            </div>
-          )}
-        </AnimatePresence>
+          <div className={`left-0 flex items-center ${activeSection === 'story' ? 'active' : ''}`} onClick={() => router.back()}>
+              <div className="goback_button">
+                <Image
+                  src="/arrow_back.svg"
+                  alt="back arrow icon"
+                  width={20}
+                  height={20}
+                  className="arrow-back-icon"
+                />
+              </div>
+          </div>
 
           <div className="sticky_navigation flex gap-1 justify-center">
             <Link href="#story" passHref>
@@ -300,36 +324,42 @@ export default function FontSwapResearch() {
 
 
 
+        <div className="w-full">
+        <Carousel 
+        className="w-full mt-24 justify-center items-center"
+        setApi={setApi}>
+        <CarouselContent className="flex">
+          {
+            researchApproachImageList.map((image, index) => (
+              <CarouselItem key={index} className="w-full">
+                      <Image
+                      src={image.src}
+                      alt="how might we questions"
+                      sizes="100vw"
+                      width={1000}
+                      height={1000}
+                      className="w-full"
+                      loading="eager"
+                      />
+              </CarouselItem>
+            ))
+          }
 
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+        </Carousel>
+        <div className=" mt-4 flex gap-4 justify-center items-center mx-auto">
+          <div className="inline-flex gap-4 bg-[#1E1E1E] px-4 py-3">
+          {
+            researchApproachImageList.map((image, index) => (
+              <div className={`w-[6px] h-[6px] ${index !== (currentImageForResearch-1) ? "bg-gray-500": "bg-white"}`} key={index}></div>
+            ))
+          }
+          </div>
+        </div>
+        </div>
 
-
-
-        {/* ---------- Image ---------- */}
-
-
-        <Image
-        src={"/projects/fontswap/research.png"}
-        alt="how might we questions"
-        className="w-full mt-24"
-        sizes="100vw"
-        width={100}
-        height={100}
-        />
-
-
-
-
-        {/* ---------- Image ---------- */}
-
-
-        <Image
-        src={"/projects/fontswap/heuristics.png"}
-        sizes="100vw"
-        width={100}
-        height={100}
-        alt="how might we questions"
-        className="w-full mt-24"
-        />
 
 
 

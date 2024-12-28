@@ -26,6 +26,24 @@ export default function ProjectsData() {
       impactHeader: 'Over 26,000 users',
       impactcss: 'bg-[rgba(104,104,104,0.7)] bottom-6 left-6',
     }, 
+
+    {
+      src: "/dubai-airport-research.png",
+      srcBlur:"",
+      alt: "Picture of an man wokring on construction site",
+      href: "/projects/dxb-airport-research",
+      // href: "https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94",
+      blank:"_blank",
+      readTime: '8 mins read',
+      new: "Mar 21",
+      headingP1: "Sanskriti App: ",
+      headingP2: "DXB Guest Expereince • Nov 2023",
+      subHeading:"Optimizing digital services through CX and strategy",
+      large: false,
+      shortImage: true,
+      css: 'readtime_marqee',
+      impact: false,
+    },
      
     {
       src: "/button_smith_banner.jpg",
@@ -61,22 +79,6 @@ export default function ProjectsData() {
       css: 'readtime_marqee',
       impact: false,
     },
-    {
-      src: "/sanskriti_2.jpg",
-      srcBlur:"",
-      alt: "Picture of an man wokring on construction site",
-      href: "https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94",
-      blank:"_blank",
-      readTime: '8 mins read',
-      new: "Mar 21",
-      headingP1: "Sanskriti App: ",
-      headingP2: "Sanskriti App Case Study • Mar 2021",
-      subHeading:"Learning about artifacts and the museums they belong to",
-      large: false,
-      shortImage: true,
-      css: 'readtime_marqee',
-      impact: false,
-    }
     // Add more objects as needed
   ];
   
