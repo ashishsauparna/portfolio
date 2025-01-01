@@ -53,6 +53,18 @@ export default function Home() {
 
   const company_logos = [
     {
+      src:"/company_logos/figma.svg",
+      size:80
+    },
+    {
+      src:"/company_logos/adobe.svg",
+      size:90
+    },
+    {
+      src:"/company_logos/loom.svg",
+      size:80
+    },
+    {
       src:"/company_logos/reddit.svg",
       size:80
     },
@@ -61,24 +73,12 @@ export default function Home() {
       size:75
     },
     {
-      src:"/company_logos/loom.svg",
-      size:80
-    },
-    {
       src:"/company_logos/google.svg",
-      size:80
-    },
-    {
-      src:"/company_logos/figma.svg",
       size:80
     },
     {
       src:"/company_logos/chatgpt.svg",
       size:100
-    },
-    {
-      src:"/company_logos/adobe.svg",
-      size:90
     },
   ]
 
@@ -101,7 +101,7 @@ export default function Home() {
         <div>
           <div className='flex flex-col items-center justify-center text-center w-full large_intro'>
 
-          <div className="relative flex flex-col md:gap-8 gap-6 md:items-center justify-center h-screen w-full -mt-48 md:-mt-24">
+          <div className="relative flex flex-col md:gap-6 gap-6 md:items-center justify-center h-screen w-full -mt-48 md:-mt-24">
 
           <h4 className="inline font-normal items-center flex max-w-max"
           style={{
@@ -125,7 +125,7 @@ export default function Home() {
             style={{ position: "relative"}}>
           <span className='md:italic non-italic'>
             Designing digital solutions <br className="conditional_break" />
-            <span>for enterprises since 2020</span>
+            for enterprises since<span> 2020</span>
           </span>
         </h1>
 
@@ -154,7 +154,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex md:gap-36 gap-16 relative flex-col items-center justify-between bg-black -mt-12 text-center w-full py-16 md:pt-48 md:py-36">
+      <div className="flex md:gap-24 gap-16 relative flex-col items-center justify-between bg-black -mt-12 text-center w-full py-16 md:py-40">
 
         <div className='flex flex-col md:text-center text-left !w-[90%] relative'>
 
@@ -179,7 +179,7 @@ export default function Home() {
 
         </div>
 
-      <div className="flex relative flex-col md:items-center items-left w-[90%] justify-between md:text-center w-full md:mb-0 mb-8">
+      <div className="flex relative flex-col md:items-center items-left w-[90%] justify-between md:text-center w-full md:mb-0 mb-6">
 
         <h4 className='mb-8 text-gray-400 md:ml-0 ml-4'
           >
@@ -210,7 +210,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center text-center w-full md:mt-48 mt-24">
         <h2 className='font-recklessneue text-black'>
           <span>
-          Special Projects
+          My Work
           </span>
         </h2>
         </div>

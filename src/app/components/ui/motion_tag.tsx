@@ -32,7 +32,7 @@ export default function BouncingImage() {
       }, 1000); // Delay before starting the first typing effect
   
       return () => clearTimeout(typingTimeout);
-    }, 2000); // 4 seconds to show "Typing.."
+    }, 8000); // 4 seconds to show "Typing.."
   
     return () => clearTimeout(replaceTimeout);
   }, []);
