@@ -20,19 +20,19 @@ export default function BouncingImage() {
       const typingTimeout = setTimeout(() => {
         setDisplayedText(""); // Clear direct text for the typing effect
         setCssClass("arrow-text-final"); // Change CSS class for "Hi! Welcome to my portfolio"
-        startTypingEffect(" 👋 Hi! Welcome to my portfolio");
+        startTypingEffect(" Hi!");
   
         // Step 3: Replace the first typing effect with the second message after a delay
         const secondTypingTimeout = setTimeout(() => {
-          setTypedText(""); // Clear the current typing text
-          startTypingEffect(" Please scroll down to see my work");
-        }, 6000); // Wait for the first typing to complete (assuming ~4 seconds duration)
+          // setTypedText(""); // Clear the current typing text
+          startTypingEffect("  Please scroll to see my work");
+        }, 2000); // Wait for the first typing to complete (assuming ~4 seconds duration)
   
         return () => clearTimeout(secondTypingTimeout);
       }, 1000); // Delay before starting the first typing effect
   
       return () => clearTimeout(typingTimeout);
-    }, 4000); // 4 seconds to show "Typing.."
+    }, 2000); // 4 seconds to show "Typing.."
   
     return () => clearTimeout(replaceTimeout);
   }, []);
@@ -47,7 +47,7 @@ export default function BouncingImage() {
       } else {
         clearInterval(typingInterval); // Stop typing when done
       }
-    }, 70); // Typing speed (in milliseconds)
+    }, 50); // Typing speed (in milliseconds)
   };
 
 
