@@ -33,7 +33,7 @@ export default function ProjectsData() {
       alt: "Picture of an man wokring on construction site",
       href: "/projects/dxb-airport-research",
       // href: "https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94",
-      blank:"_blank",
+      blank:"_self",
       readTime: '8 mins read',
       new: "Mar 21",
       headingP1: "Sanskriti App: ",
