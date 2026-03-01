@@ -1,0 +1,123 @@
+{
+  "framerUrl": "https://YOUR_FRAMER_URL.framer.website/",
+  "rules": [
+    {
+      "name": "About Intro",
+      "sourceKind": "text",
+      "sourceRegex": "Hi!\\s+I['’]m\\s+Ashish\\s*,\\s*UX designer and researcher from India with\\s+\\d+\\s+years of experience in(?:\\s+visual and)?\\s+user-centric design\\.",
+      "targetFile": "src/app/page.tsx",
+      "targetRegex": "Hi! I&apos;m Ashish, UX designer and researcher from India with 5 years of experience in user-centric design\\.",
+      "transforms": ["trim", "collapseWhitespace", "jsxEscape"]
+    },
+    {
+      "name": "Tools Year",
+      "sourceKind": "text",
+      "sourceRegex": "Frequently used tools in\\s+(\\d{4})",
+      "captureGroup": 1,
+      "targetFile": "src/app/page.tsx",
+      "targetRegex": "Frequently used tools in 2025",
+      "targetTemplate": "Frequently used tools in $VALUE",
+      "transforms": ["trim"]
+    },
+    {
+      "name": "Case Study 1 Title",
+      "sourceKind": "text",
+      "sourceRegex": "Case Studies(?:\\s+Case Studies)?\\s+([^\\.]{3,80}-\\s+[A-Za-z]{3}\\s+\\d{2})\\s+Enhancing web experience of an e-commerce distribution company",
+      "captureGroup": 1,
+      "targetFile": "src/app/page.tsx",
+      "targetRegex": "E-commerce Cast Study - Apr 25",
+      "targetTemplate": "$VALUE",
+      "transforms": ["trim", "collapseWhitespace", "jsxEscape"]
+    },
+    {
+      "name": "Case Study 1 Description",
+      "sourceKind": "text",
+      "sourceRegex": "E-commerce\\s+Cast\\s+Study\\s+-\\s+[A-Za-z]{3}\\s+\\d{2}\\s+(.+?)\\s+Font Swap\\s+-",
+      "captureGroup": 1,
+      "targetFile": "src/app/page.tsx",
+      "targetRegex": "Enhancing web experience of an e-commerce distribution company",
+      "targetTemplate": "$VALUE",
+      "transforms": ["trim", "collapseWhitespace", "jsxEscape"]
+    },
+    {
+      "name": "Case Study 2 Title",
+      "sourceKind": "text",
+      "sourceRegex": "Enhancing web experience of an e-commerce distribution company\\s+([^\\.]{3,80}-\\s+[A-Za-z]{3}\\s+\\d{2})\\s+A Figma plugin to help switch multiple fonts in three steps",
+      "captureGroup": 1,
+      "targetFile": "src/app/page.tsx",
+      "targetRegex": "Font Swap - Jun 23",
+      "targetTemplate": "$VALUE",
+      "transforms": ["trim", "collapseWhitespace", "jsxEscape"]
+    },
+    {
+      "name": "Case Study 2 Description",
+      "sourceKind": "text",
+      "sourceRegex": "Font Swap\\s+-\\s+[A-Za-z]{3}\\s+\\d{2}\\s+(.+?)\\s+Airport Experience\\s+-",
+      "captureGroup": 1,
+      "targetFile": "src/app/page.tsx",
+      "targetRegex": "A Figma plugin to help switch multiple fonts in three steps",
+      "targetTemplate": "$VALUE",
+      "transforms": ["trim", "collapseWhitespace", "jsxEscape"]
+    },
+    {
+      "name": "Case Study 3 Title",
+      "sourceKind": "text",
+      "sourceRegex": "A Figma plugin to help switch multiple fonts in three steps\\s+([^\\.]{3,80}-\\s+[A-Za-z]{3}\\s+\\d{2})\\s+Optimizing digital services through CX and strategy",
+      "captureGroup": 1,
+      "targetFile": "src/app/page.tsx",
+      "targetRegex": "Airport Experience - Nov 23",
+      "targetTemplate": "$VALUE",
+      "transforms": ["trim", "collapseWhitespace", "jsxEscape"]
+    },
+    {
+      "name": "Case Study 3 Description",
+      "sourceKind": "text",
+      "sourceRegex": "Airport Experience\\s+-\\s+[A-Za-z]{3}\\s+\\d{2}\\s+(.+?)\\s+Button Smith\\s+-",
+      "captureGroup": 1,
+      "targetFile": "src/app/page.tsx",
+      "targetRegex": "Optimizing digital services through CX and strategy",
+      "targetTemplate": "$VALUE",
+      "transforms": ["trim", "collapseWhitespace", "jsxEscape"]
+    },
+    {
+      "name": "Case Study 4 Title",
+      "sourceKind": "text",
+      "sourceRegex": "Optimizing digital services through CX and strategy\\s+([^\\.]{3,80}-\\s+[A-Za-z]{3}\\s+\\d{2})\\s+A Figma plugin to create button components set and documentation",
+      "captureGroup": 1,
+      "targetFile": "src/app/page.tsx",
+      "targetRegex": "Button Smith - May 24",
+      "targetTemplate": "$VALUE",
+      "transforms": ["trim", "collapseWhitespace", "jsxEscape"]
+    },
+    {
+      "name": "Case Study 4 Description",
+      "sourceKind": "text",
+      "sourceRegex": "Button Smith\\s+-\\s+[A-Za-z]{3}\\s+\\d{2}\\s+(.+?)\\s+Insurance Case Study\\s+-",
+      "captureGroup": 1,
+      "targetFile": "src/app/page.tsx",
+      "targetRegex": "A Figma plugin to create button components set and documentation",
+      "targetTemplate": "$VALUE",
+      "transforms": ["trim", "collapseWhitespace", "jsxEscape"]
+    },
+    {
+      "name": "Case Study 5 Title",
+      "sourceKind": "text",
+      "sourceRegex": "A Figma plugin to create button components set and documentation\\s+([^\\.]{3,80}-\\s+[A-Za-z]{3}\\s+\\d{2})\\s+Mobile-friendly auto insurance registration website for Italy, Spain and France\\.",
+      "captureGroup": 1,
+      "targetFile": "src/app/page.tsx",
+      "targetRegex": "Insurance Case Study - Aug 22",
+      "targetTemplate": "$VALUE",
+      "transforms": ["trim", "collapseWhitespace", "jsxEscape"]
+    },
+    {
+      "name": "Case Study 5 Description",
+      "sourceKind": "text",
+      "sourceRegex": "Insurance Case Study\\s+-\\s+[A-Za-z]{3}\\s+\\d{2}\\s+(.+?)\\s+Skills",
+      "captureGroup": 1,
+      "targetFile": "src/app/page.tsx",
+      "targetRegex": "Mobile-friendly auto insurance registration website for Italy, Spain and France\\.",
+      "targetTemplate": "$VALUE",
+      "transforms": ["trim", "collapseWhitespace", "jsxEscape"]
+    }
+  ]
+}

@@ -74,9 +74,10 @@ export default function Inspirations() {
           opacity: 1,
           y: 0,
           transition:{
-            delay:0.2 * index,
-            duration:0.3,
-            type:"swing"
+            type: "spring",
+            stiffness: 100,
+            damping: 15,
+            delay: 0.1 * index
           },
         })
       }

@@ -13,9 +13,10 @@ export default function HeroImage(){
           opacity:1,
           y:0,
           transition:{
-            delay:0,
-            duration:0.4,
-            type:"swing"
+            type: "spring",
+            stiffness: 100,
+            damping: 15,
+            delay: 0
           }
         }),
       }

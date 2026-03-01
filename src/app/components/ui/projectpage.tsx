@@ -52,7 +52,7 @@ const ProjectPage = ({
         {/* ---------- Back button here ---------- */}
 
 
-        <div className="flex flex-col items-start mt-8 font-medium" style={{color: "#0069E5"}}>
+        <div className="flex flex-col items-start mt-8 token-weight-medium" style={{color: "#0069E5"}}>
             <Link href={"/"}>
                 &lt; Back
             </Link>

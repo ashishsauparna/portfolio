@@ -12,24 +12,24 @@ module.exports = {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
   			'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
   		},
-  		fontFamily: {
-  			'albert-sans': [
-  				'var(--font-albert-sans)',
-  				'sans-serif'
-  			],
-  			'space-gothic': [
-  				'var(--font-space-gothic)',
-  				'sans-serif'
-  			],
-  			recklessneue: [
-  				'var(--font-recklessneue)',
-  				'serif'
-  			],
-  			'noto-serif': [
-  				'var(--font-noto-serif)',
-  				'serif'
-  			]
-  		},
+		fontFamily: {
+			'space-gothic': [
+				'var(--font-space-gothic)',
+				'sans-serif'
+			],
+			recklessneue: [
+				'var(--font-recklessneue)',
+				'serif'
+			],
+			'noto-serif': [
+				'var(--font-noto-serif)',
+				'serif'
+			],
+			'alegreya-sans': [
+				'var(--font-alegreya-sans)',
+				'sans-serif'
+			]
+		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

@@ -86,18 +86,20 @@ export default function Books() {
           opacity: 1,
           y: 0,
           transition:{
-            delay:0.2 * index,
-            duration:0.4,
-            type:"swing"
+            type: "spring",
+            stiffness: 100,
+            damping: 15,
+            delay: 0.1 * index
           },
         }),
         goback: (index: number) => ({
           opacity: 0,
           y: 40,
           transition:{
-            delay:0.2 * index,
-            duration:0.4,
-            type:"swing"
+            type: "spring",
+            stiffness: 100,
+            damping: 15,
+            delay: 0.1 * index
           },
         })
       }

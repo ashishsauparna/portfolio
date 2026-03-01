@@ -1,5 +1,17 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Framer Portfolio Tracking
+
+This repo includes a Framer tracking workflow so you can keep this portfolio synced with your Framer site.
+
+1. Copy `framer-sync.config.example.json` to `framer-sync.config.json`.
+2. Set your real `framerUrl`.
+3. Adjust rules to map Framer text to exact target strings/files in this codebase.
+4. Run `npm run framer:check` to detect changes and generate a report.
+5. Run `npm run framer:sync` to apply mapped updates.
+
+The latest run report is written to `.framer-sync/last-report.md`.
+
 ## Getting Started
 
 First, run the development server:

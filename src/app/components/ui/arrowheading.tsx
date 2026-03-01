@@ -6,12 +6,12 @@ const ArrowHeading = (data: any) => {
     return (
         <div>
         <span className="flex flex-wrap gap-3 items-center mb-3">
-            <h3 className="text-3xl font-light font-noto-serif text-slate-800">
+            <h3 className="text-3xl token-weight-book font-noto-serif text-slate-800">
             {data.heading}
             </h3>
             { data.number ?
 
-            <div className="bg-slate-900 w-6 h-6 text-white font-bold items-center justify-center flex text-base pt-[2px] -mt-2">
+            <div className="bg-slate-900 w-6 h-6 text-white token-weight-bold items-center justify-center flex text-base pt-[2px] -mt-2">
             {data.number}
             </div>:
             ""

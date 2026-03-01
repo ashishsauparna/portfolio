@@ -112,7 +112,7 @@ const researchApproachImageList = [
         {/* ---------- Back button and Navigation Menu Here ---------- */}
 
 
-        <div className="flex sticky top-4 body_width font-medium z-50 gap-4 justify-center">
+        <div className="flex sticky top-4 body_width token-weight-medium z-50 gap-4 justify-center">
 
           <div className={`left-0 flex items-center ${activeSection === 'story' ? 'active' : ''}`} onClick={() => router.back()}>
               <div className="goback_button">
@@ -243,7 +243,7 @@ const researchApproachImageList = [
                         </div>
 
                         <div className='flex gap-4'>
-                          <div className='w-12 h-12 bg-slate-200 text-white font-semibold text-xl content-center text-center'>
+                          <div className='w-12 h-12 bg-slate-200 text-white token-weight-semibold text-xl content-center text-center'>
                             👥
                           </div>
                           <div>

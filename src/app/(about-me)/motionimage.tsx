@@ -15,9 +15,10 @@ export default function MotionImage(){
           opacity:1,
           x:0,
           transition:{
-            delay:0.2,
-            duration:0.4,
-            type:"swing"
+            type: "spring",
+            stiffness: 100,
+            damping: 15,
+            delay: 0.2
           }
         }),
       }

@@ -92,9 +92,10 @@ export default function ProjectsData() {
       opacity:1,
       y:0,
       transition:{
-        delay:0.1 * index,
-        duration:0.2,
-        type:"swing"
+        type: "spring",
+        stiffness: 100,
+        damping: 15,
+        delay: 0.1 * index
       }
     }),
   }
@@ -108,6 +109,11 @@ export default function ProjectsData() {
       variants={fadeInAnimation}
       initial="initial"
       whileInView="animate"
+      whileHover={{ 
+        scale: 1.02,
+        y: -5,
+        transition: { type: 'spring', stiffness: 400, damping: 25 }
+      }}
       custom={index}
       viewport={{
         once:true
@@ -159,10 +165,10 @@ export default function ProjectsData() {
         }
           <div className={`grid gap-1 justify-between project_details`}>
             <div className='flex'>
-                <h4 className='text-sm font-albert-sans uppercase text-blue-700 font-medium'>{image.headingP2}</h4>
+                <h4 className='token-label uppercase text-blue-700'>{image.headingP2}</h4>
             </div>
-            <div className='mr-16 font-recklessneue font-normal whitespace-pre-line text-2xl text-gray-900'>
-              {/* <span className='font-space-gothic font-normal'>
+            <div className='mr-16 token-heading-lg whitespace-pre-line text-gray-900'>
+              {/* <span className='font-space-gothic token-weight-regular'>
               {image.headingP1}
               </span> */}
               {image.subHeading}

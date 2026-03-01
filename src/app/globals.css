@@ -17,7 +17,7 @@ body {
   background-color: #fefefe;
   margin: 0;
   padding: 0;
-  font-family: var(--font-albert-sans);
+  font-family: var(--font-alegreya-sans);
   color: var(--foreground-rgb); /* Text color based on light/dark mode */
 }
 
@@ -114,14 +114,14 @@ h2{
 
 h3{
   font-size: 22px;
-  font-family: var(--font-albert-sans);
+  font-family: var(--font-alegreya-sans);
   font-weight: 350;
   margin-bottom: 0.2rem;
 }
 
 h4{
   font-size: var(--default-font-size);
-  font-family: var(--font-albert-sans);
+  font-family: var(--font-alegreya-sans);
   font-weight: 400;
   line-height: 1.6rem;
 }
@@ -218,7 +218,7 @@ main{
 }
 
 .logo_container{
-  font-family: var(--font-albert-sans);
+  font-family: var(--font-alegreya-sans);
   font-size: 1.0rem;
   display: inline-flex;
   align-items: center;
@@ -247,12 +247,12 @@ li{
 .nav_links{
   gap: 1rem;
   font-size: 1.0rem;
-  font-family: var(--font-albert-sans);
+  font-family: var(--font-alegreya-sans);
 }
 
 li .default{
   border-bottom: 1.5px solid transparent;
-  font-weight: 350;
+  font-weight: 500;
 }
 
 li .default:hover{
@@ -270,13 +270,13 @@ a:hover {
 }
 
 li .active{
-  font-weight: 400;
+  font-weight: 500;
 }
 
 
 li .mobile_ui{
-  font-weight: 400; 
-  font-family: var(--font-albert-sans);
+  font-weight: 500; 
+  font-family: var(--font-alegreya-sans);
   text-decoration: none;
   margin-left: -1.3rem;
   border-bottom: 1.5px solid transparent;
@@ -302,12 +302,12 @@ li .mobile_ui:hover{
 }
 
 .button{
-  font-family: var(--font-alegreya);
+  font-family: var(--font-alegreya-sans);
   font-size: var(--default-font-size);
   color: #ffffff;
   background-color: #0069E5;
   padding: 4px 16px;
-  font-weight: 450;
+  font-weight: 500;
   text-align: center;
   margin-top: 1.2rem;
   display: inline-flex;
@@ -322,13 +322,13 @@ li .mobile_ui:hover{
 }
 
 .button_small{
-  font-family: var(--font-albert-sans);
+  font-family: var(--font-alegreya-sans);
   font-size: var(--small-font-size);
   color: #0069E5;
   background-color: #fafcfd;
   border: 1px solid #0069E5;
   padding: 2px 16px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   text-align: center;
   display: inline-flex;
@@ -435,7 +435,7 @@ li .mobile_ui:hover{
 }
 
 .link_button{
-  font-family: var(--font-albert-sans);
+  font-family: var(--font-alegreya-sans);
   font-size: var(--default-font-size);
   text-decoration: none;
   font-weight: 500;
@@ -729,12 +729,12 @@ footer{
 }
 
 .quote{
-  font-family: var(--font-alegreya);
+  font-family: var(--font-alegreya-sans);
   width: 80%;
 }
 
 .serif{
-  font-family: var(--font-alegreya);
+  font-family: var(--font-alegreya-sans);
 }
 
 .score_grid{
@@ -807,7 +807,7 @@ footer{
   padding: 4px 4px; /* Adjust padding for better appearance */
   color: #fefefe; /* Light text color for contrast */
   font-size: var(--small-font-size);
-  font-family: var(--font-albert-sans);
+  font-family: var(--font-alegreya-sans);
   font-weight: 360;
   border-radius: 2px; /* No rounded corners */
   transition: 0.3s ease-in-out;

@@ -54,11 +54,12 @@ export default function BouncingImage() {
   return (
     <motion.div
     initial={{ y: 500, x: 200 }} // Start from below the viewport
-    animate={{ y: [500, 0, 0], x: [200, 0, 0] }} // Move up first, then bounce
+    animate={{ y: 0, x: 0 }} // Move up first, then bounce
     transition={{
-        duration: 3,
-        ease:'easeInOut',
-        // times: [0, 0.4, 0.6, 0.9], // Timing for each keyframe
+        type: "spring",
+        stiffness: 100,
+        damping: 15,
+        mass: 1
     }}
     style={{
       position: "relative",

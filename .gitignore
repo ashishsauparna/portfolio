@@ -26,6 +26,8 @@ yarn-error.log*
 
 # local env files
 .env*.local
+framer-sync.config.json
+.framer-sync/
 
 # vercel
 .vercel

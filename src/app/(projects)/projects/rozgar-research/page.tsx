@@ -79,7 +79,7 @@ export default function RozgarResearch() {
         {/* ---------- Back button and Navigation Menu Here ---------- */}
 
 
-        <div className="flex sticky top-4 body_width font-medium z-50 gap-4 justify-center">
+        <div className="flex sticky top-4 body_width token-weight-medium z-50 gap-4 justify-center">
 
           <div className={`left-0 flex items-center ${activeSection === 'story' ? 'active' : ''}`} onClick={() => router.back()}>
               <div className="goback_button">

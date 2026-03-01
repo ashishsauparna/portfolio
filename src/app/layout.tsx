@@ -1,6 +1,7 @@
+import './token.css'
 import './globals.css'
 import type { Metadata } from 'next'
-import { AlbertSans, SpaceGothic, NotoSerif, RecklessNeue } from './fonts'
+import { SpaceGothic, NotoSerif, RecklessNeue, AlegreyaSans } from './fonts'
 import NavBar from './components/ui/navbar'
 
 
@@ -19,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${AlbertSans.variable} ${SpaceGothic.variable} ${RecklessNeue.variable} ${NotoSerif.variable}`}>
+    <html lang="en" className={`${SpaceGothic.variable} ${RecklessNeue.variable} ${NotoSerif.variable} ${AlegreyaSans.variable}`}>
       <body>
         <NavBar />
         {children}

@@ -79,7 +79,7 @@ export default function RozgarResearch() {
         {/* ---------- Back button and Navigation Menu Here ---------- */}
 
 
-        <div className="flex sticky top-4 body_width font-medium z-50 gap-4 justify-center">
+        <div className="flex sticky top-4 body_width token-weight-medium z-50 gap-4 justify-center">
 
           <div className={`left-0 flex items-center ${activeSection === 'story' ? 'active' : ''}`} onClick={() => router.back()}>
               <div className="goback_button">
@@ -211,7 +211,7 @@ export default function RozgarResearch() {
                         </div>
 
                         <div className='flex gap-4'>
-                          <div className='w-12 h-12 bg-slate-200 text-white font-semibold text-xl content-center text-center'>
+                          <div className='w-12 h-12 bg-slate-200 text-white token-weight-semibold text-xl content-center text-center'>
                             👥
                           </div>
                           <div>
@@ -221,7 +221,7 @@ export default function RozgarResearch() {
                         </div>
 
                         <div className='flex gap-4'>
-                          <div className='w-12 h-12 bg-slate-200 text-white font-semibold text-xl content-center text-center'>
+                          <div className='w-12 h-12 bg-slate-200 text-white token-weight-semibold text-xl content-center text-center'>
                             👥
                           </div>
                           <div>
@@ -231,7 +231,7 @@ export default function RozgarResearch() {
                         </div>
 
                         <div className='flex gap-4'>
-                          <div className='w-12 h-12 bg-slate-200 text-white font-semibold text-xl content-center text-center'>
+                          <div className='w-12 h-12 bg-slate-200 text-white token-weight-semibold text-xl content-center text-center'>
                             👥
                           </div>
                           <div>
@@ -515,7 +515,7 @@ export default function RozgarResearch() {
               <div className='grid mb-4 gap-8 md:w-[80%] w-full'>
                 {/* <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>What was the Problem?</b> */}
                   <div className="w-full" style={{display:"grid", gap:"0.5rem"}}>
-                      <b className="font-bold">[Problem 1] </b>
+                      <b className="token-weight-bold">[Problem 1] </b>
                       <h5 className="italic text-gray-900">
                       “Organize the questionnaires because we needed them to create IA for all three countries within 3 days 
                       so we could clear doubts and better understand the overall needs.”
@@ -528,7 +528,7 @@ export default function RozgarResearch() {
                       </div>
                   </div>
                   <div className="w-full" style={{display:"grid", gap:"0.5rem"}}>
-                      <b className="font-bold">[Problem 2] </b>
+                      <b className="token-weight-bold">[Problem 2] </b>
                       <h5 className="italic text-gray-900">
                       “Overcome location-based restrictions and unable to get VPN access on time so we can access insurance 
                       websites screens for interface research ideas”
@@ -540,7 +540,7 @@ export default function RozgarResearch() {
                       </div>
                   </div>
                   <div className="w-full" style={{display:"grid", gap:"0.5rem"}}>
-                      <b className="font-bold">[Problem 3] </b>
+                      <b className="token-weight-bold">[Problem 3] </b>
                       <h5 className="italic text-gray-900">
                       “Delivering the final wireframe prototype that also needs to be language tested”
                       </h5>
@@ -550,7 +550,7 @@ export default function RozgarResearch() {
                       </div>
                   </div>
                   <div className="w-full" style={{display:"grid", gap:"0.5rem"}}>
-                      <b className="font-bold">[Problem 4] </b>
+                      <b className="token-weight-bold">[Problem 4] </b>
                       <h5 className="italic text-gray-900">
                       “Understanding industry standards so that we know what is the best possible UI solution in the current market”
                       </h5>

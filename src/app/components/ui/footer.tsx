@@ -1,71 +1,64 @@
 'use client'
 
-import Navigation from './navigation';
-import Image from 'next/image';
-// import OutwardArrow from '/public/outward_arrow.svg';
-// import FooterImg from '/public/footer_image.png';
-import Marquee from 'react-fast-marquee';
-import SmallButton from './button_small';
-
 export default function Footer() {
-
-  const tickerString = "Hi! Interested in woking together? Drop me a text on ashishsauparna@gmail.com";
-
-
   return (
-      <footer>
-        <div className='absolute w-full top-0 bg-blue-600 text-sm text-white py-1'>
-        <Marquee autoFill pauseOnHover speed={30}>
-          &nbsp;&nbsp;
-        </Marquee>
-        </div>
-        
-        <div className='w-[90%] footer_frame'>
-          
-        <div className="footer_grid items-center justify-between w-full py-4">
+    <footer className="w-full bg-[#FAFAFA] flex justify-center py-6">
+      <div className="w-full flex flex-col items-center gap-14 xl:gap-[72px]">
+        <div className="relative token-container pt-12 flex flex-col gap-8 xl:gap-0">
+          <div className="flex flex-col gap-8">
+            <h2 className="token-heading-footer text-black w-[228px]">
+              Interested in working together?
+            </h2>
 
-          <div className='flex-shrink-0 mr-auto font-normal items-center'>
-            <h2 className='mb-8'
-            style={{lineHeight:"2.6rem", fontWeight:"400"}}>Do you want to start
-              <br/>
-               a project together?</h2>
-            <SmallButton name="Contact me 📝"
-            href="mailto:ashishsauparna@gmail.com"/>
+            <div className="flex items-center gap-1">
+              <a
+                href="mailto:ashishsauparna@gmail.com"
+                className="token-link text-black hover:underline"
+              >
+                ashishsauparna@gmail.com
+              </a>
+            </div>
           </div>
-        
 
-        {/* Centered links */}
-        <div className="flex w-full">
+          <div className="flex flex-col sm:flex-row sm:items-start gap-5 sm:gap-[17px] xl:absolute xl:top-1 xl:right-0">
+            <div className="flex flex-col items-start gap-0">
+              <a
+                href="https://www.figma.com/@ashishsauparna"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="token-link text-black hover:underline"
+              >
+                Figma Community
+              </a>
+              <p className="token-caption-md text-black">(Free Plugin &amp; UX resources)</p>
+            </div>
 
-        <ul className='footer_links'>
+            <a
+              href="https://www.linkedin.com/in/ashishsauparna/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="token-link text-black hover:underline"
+            >
+              LinkedIn
+            </a>
 
-        <li className='flex'>
-          <Navigation target="_blank" name="Resume" href="https://drive.google.com/file/d/1ZSNwRmH_NFad1FuJxVxoCsSnlrOGHxR5/view?usp=share_link" status="mobile_ui"/> &nbsp;
-        </li> 
-
-        <li className='flex'>
-          <Navigation target="_blank" name="Figma Community" href="https://www.figma.com/@ashishsauparna" status="mobile_ui"/> &nbsp;
-        </li>
-
-
-        <li className='flex'>
-          <Navigation target="_blank" name="Linkedin" href="https://www.linkedin.com/in/ashishsauparna/" status="mobile_ui"/> &nbsp;
-        </li>
-
-
-        
-        <li className='flex'>
-          <Navigation target="_blank" name="Medium" href="https://medium.com/@ashishsauparna" status="mobile_ui"/> &nbsp;
-          </li>
-        </ul>
+            <a
+              href="https://ashishsauparna.medium.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="token-link text-black hover:underline"
+            >
+              Medium
+            </a>
+          </div>
         </div>
+
+        <div className="token-container py-3">
+          <p className="token-meta text-black">
+            © Assembled with pixels by Ashish. Last updated Jan 2026
+          </p>
         </div>
-        
-        
-        <p className='mt-36 pt-2 leading-[2rem] mt-20 border-t border-slate-300'>
-        © Assembled with pixels by Ashish. Last updated Oct 2024
-        </p>
-        </div>
-      </footer>
+      </div>
+    </footer>
   )
 }

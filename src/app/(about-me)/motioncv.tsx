@@ -52,9 +52,10 @@ export default function MotionCV(){
           opacity:1,
           y:0,
           transition:{
-            delay:0.2 * index,
-            duration:0.4,
-            type:"swing"
+            type: "spring",
+            stiffness: 100,
+            damping: 15,
+            delay: 0.1 * index
           }
         }),
       }
@@ -72,7 +73,7 @@ export default function MotionCV(){
                 <h2 className='mb-4 text-slate-900'>Education</h2>
                 {education.map((data, index) => (
                     <div key={index} className='leading-7 mb-4'>
-                    <p className='font-medium'>{data.study}</p>
+                    <p className='token-weight-medium'>{data.study}</p>
                     <p>{data.school}</p>
                     </div>
                 ))}
@@ -80,12 +81,12 @@ export default function MotionCV(){
             <div>
               <h2 className='mb-4 text-slate-900'>Projects &  Contribution</h2>
                     <div className='leading-7 mb-4'>
-                    <p className="font-medium">Figma - Font Swap Plugin (25,000+ users)</p>
+                    <p className="token-weight-medium">Figma - Font Swap Plugin (25,000+ users)</p>
                     <p>UX Designer + Developer | July 2023 - Present</p>
                     </div>
 
                     <div className='leading-7 mb-4'>
-                    <p className="font-medium">Figma - Button Smith Plugin (600+ users)</p>
+                    <p className="token-weight-medium">Figma - Button Smith Plugin (600+ users)</p>
                     <p>UX Designer + Developer | May 2024 - Present</p>
                     </div>
               </div>
@@ -93,7 +94,7 @@ export default function MotionCV(){
                 <h2 className='mb-4 text-slate-900'>Experience</h2>
                 {experience.map((data, index) => (
                     <div key={index} className='leading-7 mb-4'>
-                    <p className="font-medium">{data.company}</p>
+                    <p className="token-weight-medium">{data.company}</p>
                     <p>{data.position}</p>
                     </div>
                 ))}

@@ -107,7 +107,7 @@ export default function NavBar() {
       <motion.div
           initial={{ y: '100%' }}
           animate={{ y: isOpen ? '0%' : '100%' }}
-          transition={{ type: 'ease-in', duration: 0.2 }}>
+          transition={{ type: 'spring', stiffness: 260, damping: 20 }}>
 
           {/* Content of the animated container */}
           <div className='mobile_nav_view'>
