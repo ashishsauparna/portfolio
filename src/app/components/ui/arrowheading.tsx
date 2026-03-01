@@ -3,12 +3,14 @@ import Image from "next/image";
 import ButtonSmall from "./button_small";
 
 const ArrowHeading = (data: any) => {
+    const headingClassName = data.headingClassName ?? "text-3xl token-weight-book font-recklessneue";
+
     return (
         <div>
         <span className="flex flex-wrap gap-3 items-center mb-3">
-            <h3 className="text-3xl token-weight-book font-noto-serif text-slate-800">
+            <p className={`${headingClassName} text-slate-800`}>
             {data.heading}
-            </h3>
+            </p>
             { data.number ?
 
             <div className="bg-slate-900 w-6 h-6 text-white token-weight-bold items-center justify-center flex text-base pt-[2px] -mt-2">

@@ -7,7 +7,22 @@ import { motion, animate } from "motion/react";
 export default function ProjectsData() {
 
   const imageInfo = [
-
+    {
+      src: "/projects/e-commerce/vH6xvuNSjvWsS1GFxqXBemFrTYQ.jpg",
+      srcBlur:"",
+      alt: "E-Commerce distribution company platform",
+      href: "/projects/e-commerce",
+      blank:"_self",
+      readTime: '6 mins read',
+      new: "Apr 25",
+      headingP1: "E-commerce: ",
+      headingP2: "E-commerce Case Study • Apr 2025",
+      subHeading:"Enhancing web experience of an e-commerce distribution company",
+      large: false,
+      shortImage: true,
+      css: 'readtime_marqee',
+      impact: false,
+    },
     {
       src: "/fontswap_2.jpg",
       srcBlur:"",
@@ -26,13 +41,11 @@ export default function ProjectsData() {
       impactHeader: 'Over 26,000 users',
       impactcss: 'bg-[rgba(104,104,104,0.7)] bottom-6 left-6',
     }, 
-
     {
       src: "/dubai-airport-research.png",
       srcBlur:"",
       alt: "Picture of an man wokring on construction site",
       href: "/projects/dxb-airport-research",
-      // href: "https://ashishsauparna.notion.site/Sanskriti-UX-Case-Study-March-2021-5eeb58ff2e304a36a8a25f80cc630b94",
       blank:"_self",
       readTime: '8 mins read',
       new: "Mar 21",
@@ -44,7 +57,6 @@ export default function ProjectsData() {
       css: 'readtime_marqee',
       impact: false,
     },
-     
     {
       src: "/button_smith_banner.jpg",
       srcBlur:"",
@@ -71,15 +83,14 @@ export default function ProjectsData() {
       blank:"_self",
       readTime: '4 mins read',
       new: "Jan 22",
-      headingP1: "Rozgar App: ",
-      headingP2: "Admiral Insurance case Study • Aug 2022",
+      headingP1: "Admiral Insurance: ",
+      headingP2: "Admiral Insurance Case Study • Aug 2022",
       subHeading:"Design mobile-friendly auto insurance registration website for Italy, Spain and France.",
       large: false,
       shortImage: true,
       css: 'readtime_marqee',
       impact: false,
     },
-    // Add more objects as needed
   ];
   
 

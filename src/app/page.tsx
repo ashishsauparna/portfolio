@@ -71,7 +71,7 @@ export default function Home() {
           <p className="token-body text-black text-center opacity-80">
             Frequently used tools in 2024
           </p>
-          <div className="flex gap-8 md:gap-[47px] items-center justify-center w-full flex-wrap grayscale opacity-80">
+          <div className="flex gap-8 md:gap-[47px] items-center justify-center w-full flex-wrap opacity-95">
             {toolLogos.map((logo) => (
               <Image
                 key={logo.alt}
@@ -79,7 +79,7 @@ export default function Home() {
                 alt={logo.alt}
                 width={logo.width}
                 height={logo.height}
-                className="h-[24px] md:h-[28px] w-auto"
+                className="h-[24px] md:h-[28px] w-auto brightness-0 opacity-90"
               />
             ))}
           </div>

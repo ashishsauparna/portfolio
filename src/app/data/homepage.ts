@@ -1,10 +1,10 @@
 export const caseStudies = [
   {
-    href: '/projects/rozgar-research',
-    image: '/case_study_rozgar.jpg',
-    alt: 'Rozgar case study',
-    title: 'Rozgar Case Study - Jan 22',
-    description: 'Research and understanding of the online and offline market of Blue collar workers',
+    href: '/projects/e-commerce',
+    image: '/projects/e-commerce/vH6xvuNSjvWsS1GFxqXBemFrTYQ.jpg',
+    alt: 'E-commerce Case Study',
+    title: 'E-commerce Case Study - Apr 25',
+    description: 'Enhancing web experience of an e-commerce distribution company',
   },
   {
     href: '/projects/fontswap-research',
@@ -42,6 +42,7 @@ export const skills = [
     image: '/services/ux_research.png',
     imageAlt: 'UX Research',
     label: 'UX Research',
+    swingClass: 'skill-frame-swing-a',
     imageClass: 'absolute left-[15px] top-[58px] w-[170px] h-auto object-cover',
   },
   {
@@ -50,6 +51,7 @@ export const skills = [
     imageAlt: 'Creating Wireframes',
     label: 'Creating Wireframes',
     rotate: 'rotate(1.16deg)',
+    swingClass: 'skill-frame-swing-b',
     imageClass: 'absolute left-[15px] top-[58px] w-[170px] h-auto object-cover',
   },
   {
@@ -58,6 +60,7 @@ export const skills = [
     imageAlt: 'Prototyping',
     label: 'Prototyping',
     rotate: 'rotate(-1.25deg)',
+    swingClass: 'skill-frame-swing-c',
     imageClass: 'absolute left-[15px] top-[58px] w-[170px] h-auto object-cover',
   },
   {

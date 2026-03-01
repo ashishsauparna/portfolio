@@ -1,121 +1,85 @@
-"use client"
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { motion, animate } from "motion/react";
+import Image from "next/image";
+import Link from "next/link";
 
+const people = [
+  {
+    img: "/inspiration/chris_do.jpeg",
+    alt: "Chris Do",
+    name: "Chris Do",
+    social: "Instagram",
+    href: "https://instagram.com/thechrisdo?igshid=MzRlODBiNWFlZA==",
+  },
+  {
+    img: "/inspiration/mat_kal.jpeg",
+    alt: "Maitreyee Kalaskar",
+    name: "Maitreyee Kalaskar",
+    social: "Instagram",
+    href: "https://instagram.com/maitreyee_kal?igshid=MzRlODBiNWFlZA==",
+  },
+  {
+    img: "/inspiration/femke.jpeg",
+    alt: "Femke",
+    name: "Femke",
+    social: "Instagram",
+    href: "https://instagram.com/femkedotdesign?igshid=MzRlODBiNWFlZA==",
+  },
+  {
+    img: "/inspiration/kimya.jpeg",
+    alt: "Kimya Gandhi",
+    name: "Kimya Gandhi",
+    social: "Instagram",
+    href: "https://instagram.com/kimyagandhi?igshid=MzRlODBiNWFlZA==",
+  },
+  {
+    img: "/inspiration/sapta.jpeg",
+    alt: "Saptarshi Prakash",
+    name: "Saptarshi Prakash",
+    social: "Instagram",
+    href: "https://instagram.com/saptarshiux?igshid=MzRlODBiNWFlZA==",
+  },
+  {
+    img: "/inspiration/ashwini.jpeg",
+    alt: "Ashwini Deshpande",
+    name: "Ashwini Deshpande",
+    social: "Instagram",
+    href: "https://instagram.com/ashwinielephant?igshid=MzRlODBiNWFlZA==",
+  },
+  {
+    img: "/inspiration/Phoebe_Yu.jpg",
+    alt: "Phoebe Yu",
+    name: "Phoebe Yu",
+    social: "YouTube",
+    href: "https://www.youtube.com/@phoebeyutbt",
+  },
+];
 
 export default function Inspirations() {
-
-    const people = [
-        {
-          img: "/inspiration/chris_do.jpeg",
-          alt:"",
-          name:"Cris Do",
-          social: "Instagram",
-          href:"https://instagram.com/thechrisdo?igshid=MzRlODBiNWFlZA=="
-        },
-        {
-          img: "/inspiration/mat_kal.jpeg",
-          alt:"",
-          name:"Maitreyee Kalaskar",
-          social: "Instagram",
-          href:"https://instagram.com/maitreyee_kal?igshid=MzRlODBiNWFlZA=="
-        },
-        {
-          img: "/inspiration/femke.jpeg",
-          alt:"",
-          name:"Femke",
-          social: "Instagram",
-          href:"https://instagram.com/femkedotdesign?igshid=MzRlODBiNWFlZA=="
-        },
-        {
-          img: "/inspiration/kimya.jpeg",
-          alt:"",
-          name:"Kimya Gandhi",
-          social: "Instagram",
-          href:"https://instagram.com/kimyagandhi?igshid=MzRlODBiNWFlZA=="
-        },
-        {
-          img: "/inspiration/sapta.jpeg",
-          alt:"",
-          name:"Saptarshi Prakash",
-          social: "Instagram",
-          href:"https://instagram.com/saptarshiux?igshid=MzRlODBiNWFlZA=="
-        },
-        // {
-        //   img: Jim,
-        //   alt:"",
-        //   name:"Jim Raptis",
-        //   href:"https://instagram.com/jim.ux?igshid=MzRlODBiNWFlZA=="
-        // },
-        {
-          img: "/inspiration/ashwini.jpeg",
-          alt:"",
-          name:"Ashwini Deshpande",
-          social: "Instagram",
-          href:"https://instagram.com/ashwinielephant?igshid=MzRlODBiNWFlZA=="
-        },
-        {
-          img: "/inspiration/Phoebe_Yu.jpg",
-          alt:"",
-          name:"Phoebe Yu",
-          social: "Youtube",
-          href:"https://www.youtube.com/@phoebeyutbt"
-        },
-      ]
-
-    const fadeInAnimation = {
-        initial:{
-          opacity:0,
-          y:40
-        },
-        animate: (index: number) => ({
-          opacity: 1,
-          y: 0,
-          transition:{
-            type: "spring",
-            stiffness: 100,
-            damping: 15,
-            delay: 0.1 * index
-          },
-        })
-      }
-  
-    return (
-      <div className='items-left w-full'>
-          <div className='avatar_grid'>
-            {people.map((data, index) => (
-              <motion.div
-              key={index}
-              variants={fadeInAnimation}
-              initial="initial"
-              whileInView="animate"
-              custom={index}
-              viewport={{
-                once:true
-              }}>
-              <Link key={index} href={data.href} target='_blank'>
-
-              <div className='flex gap-4 mb-6'>
-                <div className='w-12 h-12'>
-                  <Image src={data.img}
-                  width={40}
-                  height={40} 
-                  alt={data.alt} 
-                  className='object-cover w-full h-full'
-                  />
-                </div>
-                <div>
-                  <h3>{data.name}</h3>
-                  <p className='text-base -mt-2 link_button'>{data.social}</p>
-                </div>
-              </div>
-              </Link>
-              </motion.div>
-            ))}
+  return (
+    <div className="grid w-full grid-cols-1 gap-y-0">
+      {people.map((person) => (
+        <Link
+          key={person.name}
+          href={person.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex min-h-[88px] items-center gap-4 border-t border-[#E6E6E6] py-3"
+        >
+          <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-[8px]">
+            <Image
+              src={person.img}
+              alt={person.alt}
+              fill
+              className="object-cover"
+            />
           </div>
-        </div>
-    )
-  }
-  
+          <div className="grid min-w-0 gap-0.5">
+            <p className="token-body-emphasis truncate text-black">{person.name}</p>
+            <p className="token-body-sm truncate text-[#5E5E5E]">{person.social}</p>
+          </div>
+        </Link>
+      ))}
+    </div>
+  );
+}

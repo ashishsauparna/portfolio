@@ -16,6 +16,10 @@
 
   /* Typography sizes */
   --font-size-display: 42px;
+  --font-size-project-title: 40px;
+  --font-size-project-section: 28px;
+  --font-size-project-subheading: 24px;
+  --font-size-project-problem: 20px;
   --font-size-footer-heading: 28px;
   --font-size-h1: 32px;
   --font-size-h2: 24px;
@@ -114,6 +118,42 @@
   font-weight: var(--font-weight-book);
   line-height: var(--line-height-heading);
   letter-spacing: var(--letter-spacing-normal);
+  color: var(--color-text-heading);
+}
+
+.token-project-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-project-title);
+  font-weight: var(--font-weight-book);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: var(--color-text-heading);
+}
+
+.token-project-section-heading {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-project-section);
+  font-weight: var(--font-weight-book);
+  line-height: var(--line-height-heading);
+  letter-spacing: -0.01em;
+  color: var(--color-text-heading);
+}
+
+.token-project-subheading {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-project-subheading);
+  font-weight: var(--font-weight-book);
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  color: var(--color-text-primary);
+}
+
+.token-project-problem-title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-project-problem);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-title);
   color: var(--color-text-heading);
 }
 

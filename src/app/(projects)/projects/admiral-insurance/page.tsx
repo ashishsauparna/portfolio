@@ -1,639 +1,463 @@
-"use client"
+"use client";
 
 import Image from "next/image";
-import Script from 'next/script';
-import Footer from '@/app/components/ui/footer';
+import Script from "next/script";
+import { useState } from "react";
+import Footer from "@/app/components/ui/footer";
 import ArrowHeading from "@/app/components/ui/arrowheading";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import { AnimatePresence, motion } from "framer-motion";
+import SectionContainer from "@/app/components/ui/section-container";
+import {
+  CaseStudyHeroImage,
+  CaseStudyLightbox,
+  CaseStudyOverviewCard,
+  CaseStudySectionFrame,
+  CaseStudyStickyNav,
+  ZoomableCaseImage,
+  useCaseStudyActiveSection,
+  type LightboxImage,
+} from "@/app/components/ui/case-study-primitives";
 
+const NAV_ITEMS = [
+  { id: "story", label: "Story" },
+  { id: "research", label: "Research Approach" },
+  { id: "design", label: "Design Approach" },
+  { id: "learnings", label: "Learnings & Challenges" },
+  { id: "takeaways", label: "Key Takeaways" },
+];
 
-export default function RozgarResearch() {
-  
+const OVERVIEW = [
+  { label: "Timeline", value: "1 week and 3 days" },
+  { label: "Regions", value: "Italy, Spain, and France" },
+  { label: "Panel Size", value: "4 people" },
+  { label: "Output", value: "High-fidelity wireframe prototype" },
+];
 
-  const [activeSection, setActiveSection] = useState('story');
-  const [showBackArrow, setShowBackArrow] = useState(false);
-  const router = useRouter();
+const TEAM = [
+  { name: "Ashish", role: "UX Designer", badge: "AS" },
+  { name: "Mahesh", role: "UX Designer", badge: "MH" },
+  { name: "Shweta", role: "UX Designer", badge: "SW" },
+  { name: "Indranil", role: "Project Manager", badge: "IN" },
+];
 
-  const handleScroll = (e: React.MouseEvent<HTMLDivElement>, id: string) => {
-    e.preventDefault();
+const RESEARCH_HIGHLIGHTS = [
+  "Information Architecture",
+  "Organizing syncing calls",
+  "Opportunity mapping",
+  "Taking feedbacks",
+];
 
-    const target = document.getElementById(id);
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+const DESIGN_HIGHLIGHTS = [
+  "Exploring Artifacts",
+  "Hi-fi Wireframes",
+  "Prototyping",
+  "Usability testing",
+];
 
-      // Adjust the scroll position slightly above the section
-      setTimeout(() => {
-        window.scrollBy({ top: 1, behavior: 'smooth' });
-      }, 300);
+const CHALLENGES = [
+  {
+    problem:
+      "Organize the questionnaires because we needed them to create IA for all three countries within 3 days so we could clear doubts and better understand the overall needs.",
+    solution:
+      "Restructured the questionnaires to ensure a logical flow, addressing multiple similar questions issues. We clarified doubts through Teams chat and presented our IA during the call, incorporating feedback. Afterward, we shared the Figma file, updated the IA flow with comments, and ensured we were ready to proceed with the UI design by Monday.",
+  },
+  {
+    problem:
+      "Overcome location-based restrictions and unable to get VPN access on time so we can access insurance websites screens for interface research ideas.",
+    solution:
+      "Collaborated with all three European teams to source website screenshots, allowing us to continue the design process without direct access to the websites. This solution helped us gather necessary data and keep the project moving forward despite access limitations due to location restrictions.",
+  },
+  {
+    problem:
+      "Delivering the final wireframe prototype that also needs to be language tested.",
+    solution:
+      "Managed urgent verification calls and gathered feedback under tight deadlines while ensuring accurate translations and adjusting phrases to commonly used terms for clarity.",
+  },
+  {
+    problem:
+      "Understanding industry standards so that we know what is the best possible UI solution in the current market.",
+    solution:
+      "Analyzed UI interaction styles from competitors and newly introduced insurance companies in India as well as other platforms to inform design decisions in the absence of direct website access.",
+  },
+];
 
-      // Update URL without reloading the page
-      router.replace(`#${id}`);
-    }
-  };
+function ChallengeCard({
+  index,
+  problem,
+  solution,
+}: {
+  index: number;
+  problem: string;
+  solution: string;
+}) {
+  return (
+    <article className="rounded-[8px] border border-[#E3E3E3] bg-[#FAFAFA] p-5 md:p-6">
+      <p className="token-label text-[#0069E5] uppercase">Problem {index + 1}</p>
+      <p className="token-project-problem-title mt-3 text-[#232122]">{problem}</p>
+      <p className="token-body mt-4 text-[#1A1A1A]">
+        <span className="token-weight-medium">Solution:</span> {solution}
+      </p>
+    </article>
+  );
+}
 
-  useEffect(() => {
-    const sections = document.querySelectorAll('div[data-section]');
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-
-            // Show back arrow if we've scrolled past 'story'
-            if (entry.target.id === 'story') {
-              setShowBackArrow(false);
-            } else {
-              setShowBackArrow(true);
-            }
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
-
+export default function AdmiralInsuranceCaseStudy() {
+  const { activeSection } = useCaseStudyActiveSection("story");
+  const [selectedImage, setSelectedImage] = useState<LightboxImage | null>(null);
 
   return (
-  <main id="top" className="flex min-h-screen flex-col items-center">
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-2N9F9N8KHK" />
-        <Script id="google-analytics">
-            {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+    <main id="top" className="flex min-h-screen flex-col items-center bg-white">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-2N9F9N8KHK" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2N9F9N8KHK');
+        `}
+      </Script>
 
-            gtag('config', 'G-2N9F9N8KHK');
-            `}
-        </Script>
+      <CaseStudyStickyNav items={NAV_ITEMS} activeSection={activeSection} />
 
-
-        {/* ---------- Back button and Navigation Menu Here ---------- */}
-
-
-        <div className="flex sticky top-4 body_width token-weight-medium z-50 gap-4 justify-center">
-
-          <div className={`left-0 flex items-center ${activeSection === 'story' ? 'active' : ''}`} onClick={() => router.back()}>
-              <div className="goback_button">
-                <Image
-                  src="/arrow_back.svg"
-                  alt="back arrow icon"
-                  width={20}
-                  height={20}
-                  className="arrow-back-icon"
-                />
-              </div>
-          </div>
-
-          <div className="sticky_navigation flex gap-1 justify-center">
-            <Link href="#story" passHref>
-              <div onClick={(e) => handleScroll(e, 'story')} 
-              className={`nav_link ${activeSection === 'story' ? 'active' : ''}`}>Story</div>
-            </Link>
-            <Link href="#research" passHref>
-              <div onClick={(e) => handleScroll(e, 'research')} 
-              className={`nav_link ${activeSection === 'research' ? 'active' : ''}`}>Research Approach</div>
-            </Link>
-            <Link href="#design" passHref>
-              <div onClick={(e) => handleScroll(e, 'design')}
-              className={`nav_link ${activeSection === 'design' ? 'active' : ''}`}>Design Approach</div>
-            </Link>
-            <Link href="#learnings" passHref>
-              <div onClick={(e) => handleScroll(e, 'learnings')}
-              className={`nav_link ${activeSection === 'learnings' ? 'active' : ''}`}>Learnings & Challenges</div>
-            </Link>
-            <Link href="#takeaways" passHref>
-              <div onClick={(e) => handleScroll(e, 'takeaways')}
-              className={`nav_link ${activeSection === 'takeaways' ? 'active' : ''}`}>Key Takeaways</div>
-            </Link>
-          </div>
-
-        </div>
-
-
-
-
-        <div className="items-left body_width grid gap-24 mt-48">
-
-
-
-
-        {/* ---------- Title here ---------- */}
-
-
-        <div className="flex flex-col justify-center items-center w-full">
-            <h4 className="project_intro_text" style={{fontWeight:"300", textAlign:"center"}}>
-            Design a mobile-friendly auto insurance registration site for Admiral Insurance, ensuring a seamless and user-friendly 
-            experience for customers accessing it via mobile devices.
-            </h4>
-            <h1 className="project_intro_heading">
+      <SectionContainer
+        className="pt-16 md:pt-24"
+        innerClassName="items-center gap-12 md:gap-16"
+      >
+        <section className="w-full flex flex-col items-center gap-10">
+          <div className="w-full max-w-[720px] flex flex-col items-center gap-5">
+            <p className="token-label text-[#0069E5] uppercase tracking-[0.18em] text-center">
+              Insurance case study
+            </p>
+            <p className="project_intro_text token-body text-black !w-full max-w-[620px]">
+              Design a mobile-friendly auto insurance registration site for
+              Admiral Insurance, ensuring a seamless and user-friendly experience
+              for customers accessing it via mobile devices.
+            </p>
+            <h1 className="project_intro_heading token-project-title !mt-0 !mb-0 !gap-4 text-black text-center whitespace-normal">
               <Image
-              src={"/star.svg"}
-              alt="Star image"
-              width={32}
-              height={32}
-              className="rotating-star"
+                src="/star.svg"
+                alt="Star image"
+                width={28}
+                height={28}
+                className="rotating-star"
               />
               Admiral Insurance
               <Image
-              src={"/star.svg"}
-              alt="Star image"
-              width={32}
-              height={32}
-              className="rotating-star"
+                src="/star.svg"
+                alt="Star image"
+                width={28}
+                height={28}
+                className="rotating-star"
               />
             </h1>
-        </div>
-        </div>
+          </div>
 
+          <div className="grid w-full gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {OVERVIEW.map((item) => (
+              <CaseStudyOverviewCard
+                key={item.label}
+                label={item.label}
+                value={item.value}
+              />
+            ))}
+          </div>
 
-        {/* ---------- Image ---------- */}
+          <CaseStudyHeroImage
+            src="/projects/admiralinsurance/banner.png"
+            sizes="(max-width: 1280px) 92vw, 75vw"
+            width={1920}
+            height={1080}
+            alt="Admiral Insurance banner"
+            className="object-cover"
+            priority
+          />
+        </section>
+      </SectionContainer>
 
-        <Image
-        src={"/projects/admiralinsurance/banner.png"}
-        alt="Rozgar Banner"
-        width={1920}
-        height={1080}
-        className="w-full"
-        />
-
-
-
-
-
-        <div className="items-left body_width grid">
-
-        {/* ---------- Objective ---------- */}
-
-
-        <div id="story" className='content_grid_two w-full gap-24 pt-24' data-section>
-        <div className="md:w-[70%] w-full"></div>
-          <div className="flex flex-col gap-24">
-            <div>
-                <ArrowHeading heading = "Story worth talking about"/>
-                <div className="md:w-[70%] w-full">
-                With a goal to create a mobile-friendly auto insurance site for Admiral Insurance, we overcame location restrictions 
-                by collaborating with UX teams in Spain, Italy, and France. Despite tight deadlines and holiday delays, we delivered a 
-                high-fidelity wireframe prototype, demonstrating adaptability and teamwork.
-                </div>
+      <SectionContainer
+        className="pt-10 md:pt-16"
+        innerClassName="items-start gap-20 md:gap-28"
+      >
+        <CaseStudySectionFrame id="story" number="01" title="Story worth talking about">
+          <div className="grid gap-6">
+            <div className="rounded-[8px] border border-[#E3E3E3] bg-white p-6 md:p-8">
+              <p className="token-body text-[#1A1A1A]">
+                With a goal to create a mobile-friendly auto insurance site for
+                Admiral Insurance, we overcame location restrictions by
+                collaborating with UX teams in Spain, Italy, and France. Despite
+                tight deadlines and holiday delays, we delivered a high-fidelity
+                wireframe prototype, demonstrating adaptability and teamwork.
+              </p>
             </div>
 
-                <div>
-                    <ArrowHeading heading = "Timeline"/>
-                    <div>
-                    1 week and 3 days
+            <div className="rounded-[8px] border border-[#E3E3E3] bg-[#FAFAFA] p-6">
+              <ArrowHeading
+                heading="Panel Size"
+                number="4"
+                headingClassName="token-heading-md"
+              />
+              <div className="mt-4 grid gap-3 md:grid-cols-2">
+                {TEAM.map((member) => (
+                  <div
+                    key={member.name}
+                    className="flex items-center gap-3 border-b border-[#E7E7E7] pb-3 last:border-b-0 last:pb-0"
+                  >
+                    <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[#EDEDED]">
+                      <span className="token-label text-[#232122]">{member.badge}</span>
                     </div>
-                </div>
-                <div>
-                    <ArrowHeading heading = "Panel Size" number = "4"/>
-                      <div className="flex flex-wrap gap-8" style={{width:"80%"}}>
-
-                        <div className='flex gap-4'>
-                          <div className='w-12 h-12'>
-                            <Image src={"/ashish_sharma.png"} 
-                            width={42}
-                            height={42}
-                            alt={"Ashish Sharma Profile picture"} 
-                            className='object-cover w-full h-full'/>
-                          </div>
-                          <div>
-                            <h3>Ashish</h3>
-                            <p className='text-base -mt-2'>UX Designer</p>
-                          </div>
-                        </div>
-
-                        <div className='flex gap-4'>
-                          <div className='w-12 h-12 bg-slate-200 text-white token-weight-semibold text-xl content-center text-center'>
-                            👥
-                          </div>
-                          <div>
-                            <h3>Mahesh</h3>
-                            <p className='text-base -mt-2'>UX Designer</p>
-                          </div>
-                        </div>
-
-                        <div className='flex gap-4'>
-                          <div className='w-12 h-12 bg-slate-200 text-white token-weight-semibold text-xl content-center text-center'>
-                            👥
-                          </div>
-                          <div>
-                            <h3>Shweta</h3>
-                            <p className='text-base -mt-2'>UX Designer</p>
-                          </div>
-                        </div>
-
-                        <div className='flex gap-4'>
-                          <div className='w-12 h-12 bg-slate-200 text-white token-weight-semibold text-xl content-center text-center'>
-                            👥
-                          </div>
-                          <div>
-                            <h3>Indranil</h3>
-                            <p className='text-base -mt-2'>Project Manager</p>
-                          </div>
-                        </div>
-
-                      </div>
-
-                </div>
-            </div>
-            
-        </div>
-
-
-
-
-
-
-        {/* ---------- Research Approach ---------- */}
-
-
-        <div id="research" className='content_grid_two gap-24 w-full pt-24' data-section>
-          <div className="md:w-[70%] w-full">
-            <ArrowHeading heading = "Research Approach" arrow={true}/>
-            <div className='grid grid-cols-1 grid-rows-2 gap-x-1 justify-between gap-y-2'>
-            <div className="description_tab">
-                    <h4 style={{fontWeight: "350"}}>
-                      Information Architecture
-                    </h4>
-                </div>
-                <div className="description_tab">
-                    <h4 style={{fontWeight: "350"}}>
-                      Organizing syncing calls
-                    </h4>
-                </div>
-                <div className="description_tab">
-                    <h4 style={{fontWeight: "350"}}>
-                      Opportunity mapping
-                    </h4>
-                </div>
-                <div className="description_tab">
-                    <h4 style={{fontWeight: "350"}}>
-                      Taking feedbacks
-                    </h4>
-                </div>
-            </div>
-          </div>
-
-
-          <div>
-          <div className="md:w-[80%] w-full" style={{display:"grid", gap:"1rem"}}>
-            <b style={{fontWeight:"500"}}>[Approach 1] </b>
-            <div>
-            We explored the existing questionnaire that is followed by the number of questions for all 
-            three countries. We took 3 days to get them organize in such a way that all the questions are 
-            in sequence and any cascading situations are minimized while also maintaining stakeholders/insurance 
-            companies requirements.
-            </div>
-          </div>
-
-          <br/><br/>
-
-          <div className="md:w-[80%] w-full" style={{display:"grid", gap:"1rem"}}>
-            <b style={{fontWeight:"500"}}>[Approach 2] </b>
-            <div>
-            Since the most of staff was going on summer vacation being all in France. We had to 
-            conduct the verification check on call with all clients before weekend. which took a lot of 
-            effort in organizing calls and making sure we get feedback on some which was later received 
-            on Monday next week for france.
-            </div>
-          </div>
-          </div>
-
-
-        </div>
-        </div>
-
-
-
-
-
-
-
-        {/* ---------- Image ---------- */}
-
-
-        <Image
-        src={"/projects/admiralinsurance/ia.jpg"}
-        sizes="100vw"
-        width={500}
-        height={500}
-        alt="Information Architecture"
-        className="w-full mt-24"
-        />
-
-
-
-
-        {/* ---------- Image ---------- */}
-
-
-        <Image
-        src={"/projects/admiralinsurance/teams_call.jpg"}
-        sizes="100vw"
-        width={500}
-        height={500}
-        alt="how might we questions"
-        className="w-full mt-24"
-        />
-
-
-        {/* ---------- Image ---------- */}
-
-
-        <Image
-        src={"/projects/admiralinsurance/feedbacks.jpg"}
-        sizes="100vw"
-        width={500}
-        height={500}
-        alt="how might we questions"
-        className="w-full mt-24"
-        />
-
-
-
-
-
-        {/* ---------- Design Approach ---------- */}
-
-
-        <div id="design" className="content_grid_two gap-24 pt-24 body_width" data-section>
-
-          <div style={{width:"70%"}}>
-            <ArrowHeading heading = "Design Approach" arrow={true}/>
-            <div className='grid md:grid-cols-2 grid-rows-2 mb-4 mt-8 gap-y-2 gap-x-0'>
-                <div className="description_tab">
-                    <h4 style={{fontWeight: "350"}}>
-                      Exploring Artifacts
-                    </h4>
-                </div>
-                <div className="description_tab">
-                    <h4 style={{fontWeight: "350"}}>
-                      Hi-fi Wireframes
-                    </h4>
-                </div>
-                <div className="description_tab">
-                    <h4 style={{fontWeight: "350"}}>
-                      Prototyping
-                    </h4>
-                </div>
-                <div className="description_tab">
-                    <h4 style={{fontWeight: "350"}}>
-                      Usability testing
-                    </h4>
-                </div>
-            </div>
-          </div>
-
-          <div>
-
-          <div className="md:w-[80%] w-full" style={{display:"grid", gap:"0.5rem"}}>
-          <b>[Approach 1] </b>
-            <div>
-            Since we had an issue to access the insurance websites due to location. We did not have access to VPN a
-            s well and aranging one could have taken time. Hence we took help from the support available from Europe 
-            teams and they helped us arangind screenshots of the websites.
-            </div>
-          </div>
-
-          <br/><br/>
-
-          <div className="md:w-[80%] w-full" style={{display:"grid", gap:"0.5rem"}}>
-            <b>[Approach 2] </b>
-            <div>
-            We later on started looking at competitors and their website how they are handling the long form questions in 
-            segments and hence created a mood board that included Number plates styles used in Italy, Spain and France. 
-            We also explored with multiple stepper interface designs and hence started designing with the Wireframes UI.
-            </div>
-          </div>
-
-          </div>
-
-        </div>
-
-
-
-        
-
-        {/* ---------- Image ---------- */}
-
-
-        <Image
-        src={"/projects/admiralinsurance/exploration.jpg"}
-        sizes="100vw"
-        width={500}
-        height={500}
-        alt="how might we questions"
-        className="w-full mt-24"
-        />
-
-
-
-        {/* ---------- Image ---------- */}
-
-
-        <Image
-        src={"/projects/admiralinsurance/moodboard.jpg"}
-        sizes="100vw"
-        width={500}
-        height={500}
-        alt="Moodboard"
-        className="w-full mt-24"
-        />
-
-
-
-        {/* ---------- Image ---------- */}
-
-
-        <Image
-        src={"/projects/admiralinsurance/design_language.jpg"}
-        sizes="100vw"
-        width={500}
-        height={500}
-        alt="how might we questions"
-        className="w-full mt-24"
-        />
-
-
-
-        {/* ---------- Image ---------- */}
-
-
-        <Image
-        src={"/projects/admiralinsurance/ui_1.jpg"}
-        sizes="100vw"
-        width={500}
-        height={500}
-        alt="how might we questions"
-        className="w-full mt-24"
-        />
-
-
-        {/* ---------- Image ---------- */}
-
-
-        <Image
-        src={"/projects/admiralinsurance/ui_2.jpg"}
-        sizes="100vw"
-        width={500}
-        height={500}
-        alt="how might we questions"
-        className="w-full mt-24"
-        />
-
-
-        {/* ---------- Image ---------- */}
-
-
-        <Image
-        src={"/projects/admiralinsurance/ui_3.jpg"}
-        sizes="100vw"
-        width={500}
-        height={500}
-        alt="how might we questions"
-        className="w-full mt-24"
-        />
-
-
-
-
-        {/* ---------- Solution and Challenges ---------- */}
-
-
-        <div id="learnings" className='content_grid_two gap-24 body_width pt-24' data-section>
-          {/* Challenges & learnings */}
-
-              <ArrowHeading heading = "Challenges & learnings" arrow={true}/>
-              <div className='grid mb-4 gap-8 md:w-[80%] w-full'>
-                {/* <b style={{fontWeight:"500", marginBottom:"0.5rem"}}>What was the Problem?</b> */}
-                  <div className="w-full" style={{display:"grid", gap:"0.5rem"}}>
-                      <b className="token-weight-bold">[Problem 1] </b>
-                      <h5 className="italic text-gray-900">
-                      “Organize the questionnaires because we needed them to create IA for all three countries within 3 days 
-                      so we could clear doubts and better understand the overall needs.”
-                      </h5>
-                      <div style={{fontWeight: "400"}}>
-                      Restructured the questionnaires to ensure a logical flow, addressing multiple similar questions issues. 
-                      We clarified doubts through Teams chat and presented our IA during the call, incorporating feedback. Afterward, 
-                      we shared the Figma file, updated the IA flow with comments, and ensured we were ready to proceed with the UI 
-                      design by Monday.
-                      </div>
+                    <div>
+                      <p className="token-body-emphasis text-black">{member.name}</p>
+                      <p className="token-caption-md text-[#5E5E5E]">{member.role}</p>
+                    </div>
                   </div>
-                  <div className="w-full" style={{display:"grid", gap:"0.5rem"}}>
-                      <b className="token-weight-bold">[Problem 2] </b>
-                      <h5 className="italic text-gray-900">
-                      “Overcome location-based restrictions and unable to get VPN access on time so we can access insurance 
-                      websites screens for interface research ideas”
-                      </h5>
-                      <div style={{fontWeight: "400"}}>
-                      Collaborated with all three European teams to source website screenshots, allowing us to continue the design 
-                      process without direct access to the websites. This solution helped us gather necessary data and keep the project 
-                      moving forward despite access limitations due to location restrictions.
-                      </div>
-                  </div>
-                  <div className="w-full" style={{display:"grid", gap:"0.5rem"}}>
-                      <b className="token-weight-bold">[Problem 3] </b>
-                      <h5 className="italic text-gray-900">
-                      “Delivering the final wireframe prototype that also needs to be language tested”
-                      </h5>
-                      <div style={{fontWeight: "400"}}>
-                      Managing urgent verification calls and gathering feedback under tight deadlines while ensuring accurate translations 
-                      and adjusting phrases to commonly used terms for clarity.
-                      </div>
-                  </div>
-                  <div className="w-full" style={{display:"grid", gap:"0.5rem"}}>
-                      <b className="token-weight-bold">[Problem 4] </b>
-                      <h5 className="italic text-gray-900">
-                      “Understanding industry standards so that we know what is the best possible UI solution in the current market”
-                      </h5>
-                      <div style={{fontWeight: "400"}}>
-                      Analyzing UI interaction styles from competitors and newly introduced insurance companies in India as well as other 
-                      platforms to inform design decisions in the absence of direct website access.
-                      </div>
-                  </div>
-          </div>
-        </div>
-
-
-
-
-
-
-        {/* ---------- Images ---------- */}
-
-
-        <Image
-        src={"/projects/admiralinsurance/wireframes.jpg"}
-        sizes="100vw"
-        width={500}
-        height={500}
-        alt="how might we questions"
-        className="w-full mt-24"
-        />
-
-
-
-
-
-        {/* ---------- Images ---------- */}
-
-
-        <Image
-        src={"/projects/admiralinsurance/design_library.jpg"}
-        sizes="100vw"
-        width={500}
-        height={500}
-        alt="how might we questions"
-        className="w-full mt-24"
-        />
-
-
-
-
-        {/* ---------- Final thoughts & conclusion ---------- */}
-
-
-        <div id="takeaways" className='content_grid_two gap-24 body_width pt-24 mb-24' data-section>
-        
-              <ArrowHeading heading = "Key Takeaways" arrow={true}/>
-              <div className="grid md:w-[80%] w-full">
-              Collaborative wireframe planning aligned the team, minimizing rework and boosting efficiency. We managed tight 
-              deadlines across three scenarios, demonstrating strong time management and problem-solving skills. Simplifying complex 
-              data into a clear IA, we built accessible, user-friendly wireframes and delivered an interactive hi-fidelity prototype 
-              for early stakeholder feedback and validation.
+                ))}
               </div>
-        </div>
+            </div>
+          </div>
+        </CaseStudySectionFrame>
 
+        <CaseStudySectionFrame id="research" number="02" title="Research Approach">
+          <div className="grid gap-6">
+            <div className="rounded-[8px] border border-[#E3E3E3] bg-white p-6 md:p-8">
+              <div className="grid gap-2 md:grid-cols-2">
+                {RESEARCH_HIGHLIGHTS.map((item) => (
+                  <div key={item} className="description_tab">
+                    <p className="token-body text-black">{item}</p>
+                  </div>
+                ))}
+              </div>
 
+              <div className="mt-8 grid gap-6">
+                <div>
+                  <p className="token-body-emphasis text-black">[Approach 1]</p>
+                  <p className="token-body mt-3 text-[#1A1A1A]">
+                    We explored the existing questionnaire that is followed by
+                    the number of questions for all three countries. We took 3
+                    days to get them organize in such a way that all the
+                    questions are in sequence and any cascading situations are
+                    minimized while also maintaining stakeholders/insurance
+                    companies requirements.
+                  </p>
+                </div>
 
+                <div>
+                  <p className="token-body-emphasis text-black">[Approach 2]</p>
+                  <p className="token-body mt-3 text-[#1A1A1A]">
+                    Since the most of staff was going on summer vacation being
+                    all in France. We had to conduct the verification check on
+                    call with all clients before weekend. which took a lot of
+                    effort in organizing calls and making sure we get feedback on
+                    some which was later received on Monday next week for france.
+                  </p>
+                </div>
+              </div>
+            </div>
 
+            <div className="grid gap-6 md:grid-cols-2">
+              <ZoomableCaseImage
+                src="/projects/admiralinsurance/ia.jpg"
+                sizes="(max-width: 1280px) 92vw, 36vw"
+                width={500}
+                height={500}
+                alt="Information architecture"
+                className="object-cover"
+                onOpen={setSelectedImage}
+              />
+              <ZoomableCaseImage
+                src="/projects/admiralinsurance/teams_call.jpg"
+                sizes="(max-width: 1280px) 92vw, 36vw"
+                width={500}
+                height={500}
+                alt="Research sync calls"
+                className="object-cover"
+                onOpen={setSelectedImage}
+              />
+            </div>
 
+            <ZoomableCaseImage
+              src="/projects/admiralinsurance/feedbacks.jpg"
+              sizes="(max-width: 1280px) 92vw, 75vw"
+              width={500}
+              height={500}
+              alt="Feedback collection"
+              className="object-cover"
+              onOpen={setSelectedImage}
+            />
+          </div>
+        </CaseStudySectionFrame>
 
-        {/* ---------- Images ---------- */}
+        <CaseStudySectionFrame id="design" number="03" title="Design Approach">
+          <div className="grid gap-6">
+            <div className="rounded-[8px] border border-[#E3E3E3] bg-white p-6 md:p-8">
+              <div className="grid gap-2 md:grid-cols-2">
+                {DESIGN_HIGHLIGHTS.map((item) => (
+                  <div key={item} className="description_tab">
+                    <p className="token-body text-black">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
 
+            <div className="rounded-[8px] border border-[#E3E3E3] bg-[#FAFAFA] p-5">
+              <p className="token-body-emphasis text-black">[Approach 1]</p>
+              <p className="token-body mt-3 text-[#1A1A1A]">
+                Since we had an issue to access the insurance websites due to
+                location. We did not have access to VPN as well and aranging one
+                could have taken time. Hence we took help from the support
+                available from Europe teams and they helped us arangind
+                screenshots of the websites.
+              </p>
+            </div>
 
-        <Image
-        src={"/projects/admiralinsurance/testimonial.jpg"}
-        sizes="100vw"
-        width={500}
-        height={500}
-        alt="how might we questions"
-        className="w-full mt-24"
-        />
+            <div className="rounded-[8px] border border-[#E3E3E3] bg-[#FAFAFA] p-5">
+              <p className="token-body-emphasis text-black">[Approach 2]</p>
+              <p className="token-body mt-3 text-[#1A1A1A]">
+                We later on started looking at competitors and their website how
+                they are handling the long form questions in segments and hence
+                created a mood board that included Number plates styles used in
+                Italy, Spain and France. We also explored with multiple stepper
+                interface designs and hence started designing with the Wireframes
+                UI.
+              </p>
+            </div>
 
+            <div className="grid gap-6 md:grid-cols-2">
+              <ZoomableCaseImage
+                src="/projects/admiralinsurance/exploration.jpg"
+                sizes="(max-width: 1280px) 92vw, 36vw"
+                width={500}
+                height={500}
+                alt="Exploration"
+                className="object-cover"
+                onOpen={setSelectedImage}
+              />
+              <ZoomableCaseImage
+                src="/projects/admiralinsurance/moodboard.jpg"
+                sizes="(max-width: 1280px) 92vw, 36vw"
+                width={500}
+                height={500}
+                alt="Moodboard"
+                className="object-cover"
+                onOpen={setSelectedImage}
+              />
+            </div>
 
+            <ZoomableCaseImage
+              src="/projects/admiralinsurance/design_language.jpg"
+              sizes="(max-width: 1280px) 92vw, 75vw"
+              width={500}
+              height={500}
+              alt="Design language"
+              className="object-cover"
+              onOpen={setSelectedImage}
+            />
 
-        {/* ---------- Footer ---------- */}
+            <div className="grid gap-6 md:grid-cols-3">
+              <ZoomableCaseImage
+                src="/projects/admiralinsurance/ui_1.jpg"
+                sizes="(max-width: 1280px) 92vw, 24vw"
+                width={500}
+                height={500}
+                alt="UI screen 1"
+                className="object-cover"
+                onOpen={setSelectedImage}
+              />
+              <ZoomableCaseImage
+                src="/projects/admiralinsurance/ui_2.jpg"
+                sizes="(max-width: 1280px) 92vw, 24vw"
+                width={500}
+                height={500}
+                alt="UI screen 2"
+                className="object-cover"
+                onOpen={setSelectedImage}
+              />
+              <ZoomableCaseImage
+                src="/projects/admiralinsurance/ui_3.jpg"
+                sizes="(max-width: 1280px) 92vw, 24vw"
+                width={500}
+                height={500}
+                alt="UI screen 3"
+                className="object-cover"
+                onOpen={setSelectedImage}
+              />
+            </div>
+          </div>
+        </CaseStudySectionFrame>
 
-        <Footer/>
+        <CaseStudySectionFrame
+          id="learnings"
+          number="04"
+          title="Learnings & Challenges"
+        >
+          <div className="grid gap-8">
+            <div className="grid gap-4">
+              {CHALLENGES.map((item, index) => (
+                <ChallengeCard
+                  key={item.problem}
+                  index={index}
+                  problem={item.problem}
+                  solution={item.solution}
+                />
+              ))}
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-2">
+              <ZoomableCaseImage
+                src="/projects/admiralinsurance/wireframes.jpg"
+                sizes="(max-width: 1280px) 92vw, 36vw"
+                width={500}
+                height={500}
+                alt="Wireframes"
+                className="object-cover"
+                onOpen={setSelectedImage}
+              />
+              <ZoomableCaseImage
+                src="/projects/admiralinsurance/design_library.jpg"
+                sizes="(max-width: 1280px) 92vw, 36vw"
+                width={500}
+                height={500}
+                alt="Design library"
+                className="object-cover"
+                onOpen={setSelectedImage}
+              />
+            </div>
+          </div>
+        </CaseStudySectionFrame>
+
+        <CaseStudySectionFrame id="takeaways" number="05" title="Key Takeaways">
+          <div className="grid gap-6">
+            <div className="rounded-[8px] border border-[#E3E3E3] bg-white p-6 md:p-8">
+              <p className="token-body text-[#1A1A1A]">
+                Collaborative wireframe planning aligned the team, minimizing
+                rework and boosting efficiency. We managed tight deadlines
+                across three scenarios, demonstrating strong time management and
+                problem-solving skills. Simplifying complex data into a clear IA,
+                we built accessible, user-friendly wireframes and delivered an
+                interactive hi-fidelity prototype for early stakeholder feedback
+                and validation.
+              </p>
+            </div>
+
+            <ZoomableCaseImage
+              src="/projects/admiralinsurance/testimonial.jpg"
+              sizes="(max-width: 1280px) 92vw, 75vw"
+              width={500}
+              height={500}
+              alt="Client testimonial"
+              className="object-cover"
+              onOpen={setSelectedImage}
+            />
+          </div>
+        </CaseStudySectionFrame>
+      </SectionContainer>
+
+      <div className="w-full mt-20">
+        <Footer />
+      </div>
+
+      <CaseStudyLightbox
+        image={selectedImage}
+        onClose={() => setSelectedImage(null)}
+      />
     </main>
-  )
+  );
 }

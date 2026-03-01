@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.4",
+    "@phosphor-icons/react": "^2.1.10",
     "@radix-ui/react-slot": "^1.1.1",
     "@types/node": "20.4.5",
     "@types/react": "npm:types-react@^19.0.0-rc.1",

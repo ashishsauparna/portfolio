@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-[#FAFAFA] flex justify-center py-6">
       <div className="w-full flex flex-col items-center gap-14 xl:gap-[72px]">
-        <div className="relative token-container pt-12 flex flex-col gap-8 xl:gap-0">
+        <div className="token-container pt-12 flex flex-col gap-8 xl:flex-row xl:items-start xl:justify-between">
           <div className="flex flex-col gap-8">
             <h2 className="token-heading-footer text-black w-[228px]">
               Interested in working together?
@@ -20,7 +20,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row sm:items-start gap-5 sm:gap-[17px] xl:absolute xl:top-1 xl:right-0">
+          <div className="flex flex-col sm:flex-row sm:items-start gap-5 sm:gap-[17px] xl:pt-1">
             <div className="flex flex-col items-start gap-0">
               <a
                 href="https://www.figma.com/@ashishsauparna"

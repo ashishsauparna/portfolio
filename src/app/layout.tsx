@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${SpaceGothic.variable} ${RecklessNeue.variable} ${NotoSerif.variable} ${AlegreyaSans.variable}`}>
-      <body>
+      <body className="font-alegreya-sans">
         <NavBar />
         {children}
       </body>

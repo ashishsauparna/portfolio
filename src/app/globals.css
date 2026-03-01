@@ -151,11 +151,47 @@ h5{
   }
 }
 
+@keyframes hangingSwing {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2.25deg);
+  }
+}
+
 .rotating-star {
   display: inline-block;
   animation: rotate 8s linear infinite;
   transform-origin: center center;
   vertical-align: middle;
+}
+
+.skill-frame-swing {
+  animation: hangingSwing 4.2s ease-in-out infinite;
+  transform-origin: 50% 4%;
+  will-change: transform;
+}
+
+.skill-frame-swing-a {
+  animation: hangingSwing 4.8s ease-in-out infinite;
+  animation-delay: -0.6s;
+  transform-origin: 50% 4%;
+  will-change: transform;
+}
+
+.skill-frame-swing-b {
+  animation: hangingSwing 4.1s ease-in-out infinite reverse;
+  animation-delay: -1.1s;
+  transform-origin: 50% 4%;
+  will-change: transform;
+}
+
+.skill-frame-swing-c {
+  animation: hangingSwing 4.4s ease-in-out infinite;
+  animation-delay: -1.8s;
+  transform-origin: 50% 4%;
+  will-change: transform;
 }
 
 .para-width{
